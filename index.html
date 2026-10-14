@@ -43,7 +43,8 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 .noimg{font-size:10px;color:var(--mute)}
 .mid{min-width:0}
 .ym{font-weight:500}
-.tail{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--acc)} .tail.mute{color:var(--mute)}
+.tail{font-family:"IBM Plex Mono",monospace;font-size:30px;font-weight:500;line-height:1.05;color:var(--acc);letter-spacing:.01em}
+.tail.none{font-size:13px;color:var(--mute);font-weight:400;line-height:1.3}
 .sub2,.sub{font-size:12.5px;color:var(--mute)}
 .mid .sub{overflow:hidden;text-overflow:ellipsis}
 .right{text-align:right}
@@ -61,7 +62,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 .srcs{border-top:1px solid var(--line);padding-top:8px}
 .srclinks{display:flex;gap:10px;flex-wrap:wrap;font-size:13px}
 .rec{background:var(--card);border:1px solid var(--line);padding:10px;font-size:13px;display:flex;flex-direction:column;gap:6px}
-.rech{overflow-wrap:anywhere}
+.rech{overflow-wrap:anywhere} .rech .tail{font-size:20px;display:inline}
 .srcgrid{display:grid;grid-template-columns:120px 1fr;gap:4px 8px;font-size:13px}
 .foot{margin-top:26px;font-size:12px;color:var(--mute);border-top:1px solid var(--line);padding-top:10px}
 @media (min-width:700px){.row summary{grid-template-columns:72px 1fr auto}.ph{width:72px;height:54px}.dl{grid-template-columns:110px 1fr}}
@@ -95,9 +96,9 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="sec">
 <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px"><h2>The market</h2><div class="sub">tap a row for the full ad facts</div></div>
 <div class="tools">Sort:
-<button data-key="price" data-dir="1" aria-pressed="true">cheapest first</button>
-<button data-key="price" data-dir="-1">dearest first</button>
-<button data-key="hrs" data-dir="1">lowest hours</button>
+<button data-key="price" data-dir="1" aria-pressed="true">lowest price</button>
+<button data-key="price" data-dir="-1">highest price</button>
+<button data-key="hrs" data-dir="1">lowest airframe hours</button>
 <button data-key="year" data-dir="-1">newest</button>
 <button data-key="year" data-dir="1">oldest</button>
 <button data-key="country" data-dir="1">by country</button>
@@ -106,11 +107,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-mesa" data-price="85000" data-year="1964" data-hrs="2100.0" data-country="US" data-rec="nosn">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">1964 Cessna 185C <span class="tail mute">tail not published</span></div><div class="sub">🇺🇸 Mesa, AZ · 2,100 hrs · no serial or tail published · not screened</div></div>
+<div class="mid"><div class="tail none">tail not published</div><div class="ym">1964 Cessna 185C</div><div class="sub">🇺🇸 Mesa, AZ · 2,100 airframe hrs · no serial or tail published · not screened</div></div>
 <div class="right"><div class="price">$85k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$85,000</div><div class="k">Airframe</div><div class="v">2,100 hrs, as advertised</div><div class="k">Engine</div><div class="v">1,100 since overhaul</div><div class="k">History</div><div class="v">Prop strike, wing and vertical fin damage disclosed in the ad; seller estimates $65,000 to repair</div><div class="k">Record</div><div class="v">no serial or tail published · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$85,000</div><div class="k">Airframe</div><div class="v">2,100 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">1,100 since overhaul</div><div class="k">History</div><div class="v">Prop strike, wing and vertical fin damage disclosed in the ad; seller estimates $65,000 to repair</div><div class="k">Record</div><div class="v">no serial or tail published · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Contact through the ad</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.barnstormers.com/category-17400-Cessna--C-185.html" target="_blank" rel="noopener">Barnstormers</a></div></div>
 </div>
@@ -118,11 +119,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-siouxlookout" data-price="135000" data-year="1976" data-hrs="8807.0" data-country="CA" data-rec="nosn">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">1976 Cessna A185F <span class="tail mute">tail not published</span></div><div class="sub">🇨🇦 Sioux Lookout, ON · 8,807 hrs · no serial or tail published · not screened</div></div>
+<div class="mid"><div class="tail none">tail not published</div><div class="ym">1976 Cessna A185F</div><div class="sub">🇨🇦 Sioux Lookout, ON · 8,807 airframe hrs · no serial or tail published · not screened</div></div>
 <div class="right"><div class="price">$135k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$135,000</div><div class="k">Airframe</div><div class="v">8,807 (on wheels) hrs, as advertised</div><div class="k">Engine</div><div class="v">667 since overhaul</div><div class="k">Prop</div><div class="v">168 since overhaul</div><div class="k">Gear</div><div class="v">Wheels · float kit · ski plumbing</div><div class="k">Mods</div><div class="v">Bubble windows · as advertised</div><div class="k">Record</div><div class="v">no serial or tail published · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$135,000</div><div class="k">Airframe</div><div class="v">8,807 (on wheels) airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">667 since overhaul</div><div class="k">Prop</div><div class="v">168 since overhaul</div><div class="k">Gear</div><div class="v">Wheels · float kit · ski plumbing</div><div class="k">Mods</div><div class="v">Bubble windows · as advertised</div><div class="k">Record</div><div class="v">no serial or tail published · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Allen Airways · David Allen</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.barnstormers.com/category-17400-Cessna--C-185.html" target="_blank" rel="noopener">Barnstormers</a><a href="https://www.barnstormers.com/category-17401-Cessna--C-185.html" target="_blank" rel="noopener">Barnstormers</a></div></div>
 </div>
@@ -130,11 +131,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-ZSCVI" data-price="160000" data-year="1962" data-hrs="10123.0" data-country="ZA" data-rec="nomatch">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">1962 Cessna 185A <span class="tail">ZS-CVI</span></div><div class="sub">🇿🇦 <span class="foreign">foreign</span> South Africa · about 10,123 hrs · serial not in the record · not screened</div></div>
+<div class="mid"><div class="tail">ZS-CVI</div><div class="ym">1962 Cessna 185A</div><div class="sub">🇿🇦 <span class="foreign">foreign</span> South Africa · about 10,123 airframe hrs · serial not in the record · not screened</div></div>
 <div class="right"><div class="price">$160k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$160,000 <span class="mute">· $150,000 also printed; plus VAT for South African buyers</span></div><div class="k">Airframe</div><div class="v">about 10,123 hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-470-F</div><div class="k">Record</div><div class="v">serial not in the record · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$160,000 <span class="mute">· $150,000 also printed; plus VAT for South African buyers</span></div><div class="k">Airframe</div><div class="v">about 10,123 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-470-F</div><div class="k">Record</div><div class="v">serial not in the record · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Absolute Aircraft Sales</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.globalplanesearch.com/" target="_blank" rel="noopener">GlobalPlaneSearch</a></div></div>
 </div>
@@ -142,11 +143,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-chatham180" data-price="185000" data-year="1965" data-hrs="1000000000" data-country="US" data-rec="nosn">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">1965 Cessna 180H <span class="tail mute">tail not published</span></div><div class="sub">🇺🇸 Chatham, NY · hours not published · no serial or tail published · not screened</div></div>
+<div class="mid"><div class="tail none">tail not published</div><div class="ym">1965 Cessna 180H</div><div class="sub">🇺🇸 Chatham, NY · airframe hours not published · no serial or tail published · not screened</div></div>
 <div class="right"><div class="price">$185k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$185,000</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental O-470-L or O-470-R, 230 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Gear</div><div class="v">Amphibious floats</div><div class="k">Record</div><div class="v">no serial or tail published · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$185,000</div><div class="k">Airframe</div><div class="v">airframe hours not published</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental O-470-L or O-470-R, 230 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Gear</div><div class="v">Amphibious floats</div><div class="k">Record</div><div class="v">no serial or tail published · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Jim McMahon</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.barnstormers.com/category-16268-Cessna--Amphibian.html" target="_blank" rel="noopener">Barnstormers amphibian</a></div></div>
 </div>
@@ -154,11 +155,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-N1795R" data-price="190000" data-year="1974" data-hrs="5313.0" data-country="US" data-rec="entries">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">1974 Cessna A185F <span class="tail">N1795R</span></div><div class="sub">🇺🇸 Anchorage, AK · 5,313 hrs · 2 NTSB · 2 AIDS</div></div>
+<div class="mid"><div class="tail">N1795R</div><div class="ym">1974 Cessna A185F</div><div class="sub">🇺🇸 Anchorage, AK · 5,313 airframe hrs · 2 NTSB · 2 AIDS</div></div>
 <div class="right"><div class="price">$190k</div><div class="pm up">up from $180,000</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$190,000 <span class="mute">· aerogurus still prints $180,000; the Facebook tile shows a placeholder figure</span></div><div class="k">Serial</div><div class="v"><span class="mono">18502511</span></div><div class="k">Airframe</div><div class="v">5,313 hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520-D · 1,231 since new · 75 since top</div><div class="k">Gear</div><div class="v">Aerocet 3500L floats</div><div class="k">Record</div><div class="v">2 NTSB · 2 AIDS · <a href="#rec-N1795R">see the entries below</a></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$190,000 <span class="mute">· aerogurus still prints $180,000; the Facebook tile shows a placeholder figure</span></div><div class="k">Serial</div><div class="v"><span class="mono">18502511</span></div><div class="k">Airframe</div><div class="v">5,313 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520-D · 1,231 since new · 75 since top</div><div class="k">Gear</div><div class="v">Aerocet 3500L floats</div><div class="k">Record</div><div class="v">2 NTSB · 2 AIDS · <a href="#rec-N1795R">see the entries below</a></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Black Dog Holding · Steven Styles</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2460907" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.barnstormers.com/category-17400-Cessna--C-185.html" target="_blank" rel="noopener">Barnstormers</a><a href="https://www.barnstormers.com/category-17401-Cessna--C-185.html" target="_blank" rel="noopener">Barnstormers</a><a href="https://www.hangar67.com/aircraft-for-sale" target="_blank" rel="noopener">Hangar67</a></div></div>
 </div>
@@ -166,11 +167,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-N70713" data-price="190000" data-year="1971" data-hrs="7963.0" data-country="US" data-rec="entries">
 <summary>
 <div class="ph"><img src="photos/N70713.jpg" alt="" loading="lazy"></div>
-<div class="mid"><div class="ym">1971 Cessna A185E <span class="tail">N70713</span></div><div class="sub">🇺🇸 Anchorage, AK · 7,963 hrs · 1 NTSB · 1 SDR · 1 AIDS</div></div>
+<div class="mid"><div class="tail">N70713</div><div class="ym">1971 Cessna A185E</div><div class="sub">🇺🇸 Anchorage, AK · 7,963 airframe hrs · 1 NTSB · 1 SDR · 1 AIDS</div></div>
 <div class="right"><div class="price">$190k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$190,000</div><div class="k">Serial</div><div class="v"><span class="mono">18501878</span></div><div class="k">Airframe</div><div class="v">7,963 hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520-D factory rebuilt · 351 since overhaul</div><div class="k">Gear</div><div class="v">Wheels · ski fittings</div><div class="k">Record</div><div class="v">1 NTSB · 1 SDR · 1 AIDS · <a href="#rec-N70713">see the entries below</a></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$190,000</div><div class="k">Serial</div><div class="v"><span class="mono">18501878</span></div><div class="k">Airframe</div><div class="v">7,963 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520-D factory rebuilt · 351 since overhaul</div><div class="k">Gear</div><div class="v">Wheels · ski fittings</div><div class="k">Record</div><div class="v">1 NTSB · 1 SDR · 1 AIDS · <a href="#rec-N70713">see the entries below</a></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Contact through the ad</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;category_level1=Single%20Engine%20Piston&amp;make=CESSNA&amp;model_group=CESSNA+185+SERIES&amp;s-page_size=96" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.controller.com/listings/for-sale/cessna/185/piston-single-aircraft" target="_blank" rel="noopener">Controller</a></div></div>
 </div>
@@ -178,11 +179,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-N111EY" data-price="195000" data-year="1974" data-hrs="4500.0" data-country="US" data-rec="entries">
 <summary>
 <div class="ph"><img src="photos/N111EY.jpg" alt="" loading="lazy"></div>
-<div class="mid"><div class="ym">1974 Cessna 185E <span class="tail">N111EY</span></div><div class="sub">🇺🇸 Viola, ID · 4,500 hrs · 1 NTSB · 1 AIDS</div></div>
+<div class="mid"><div class="tail">N111EY</div><div class="ym">1974 Cessna 185E</div><div class="sub">🇺🇸 Viola, ID · 4,500 airframe hrs · 1 NTSB · 1 AIDS</div></div>
 <div class="right"><div class="price">$195k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$195,000</div><div class="k">Serial</div><div class="v"><span class="mono">18502407</span></div><div class="k">Airframe</div><div class="v">4,500 (the ad also prints 4,400) hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520 · 1,300 since overhaul · 200 since top</div><div class="k">Gear</div><div class="v">Wheels</div><div class="k">Record</div><div class="v">1 NTSB · 1 AIDS · <a href="#rec-N111EY">see the entries below</a></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$195,000</div><div class="k">Serial</div><div class="v"><span class="mono">18502407</span></div><div class="k">Airframe</div><div class="v">4,500 (the ad also prints 4,400) airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520 · 1,300 since overhaul · 200 since top</div><div class="k">Gear</div><div class="v">Wheels</div><div class="k">Record</div><div class="v">1 NTSB · 1 AIDS · <a href="#rec-N111EY">see the entries below</a></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Private seller · Jared</div><div class="btns"><a class="btn" href="tel:2083010683">Call 208-301-0683</a></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2452517" target="_blank" rel="noopener">Trade-A-Plane</a></div></div>
 </div>
@@ -190,11 +191,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-N185EE" data-price="200000" data-year="1961" data-hrs="7300.0" data-country="US" data-rec="clean">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">1961 Cessna 185 <span class="tail">N185EE</span></div><div class="sub">🇺🇸 Boulder, CO · 7,300 hrs · no entries found</div></div>
+<div class="mid"><div class="tail">N185EE</div><div class="ym">1961 Cessna 185</div><div class="sub">🇺🇸 Boulder, CO · 7,300 airframe hrs · no entries found</div></div>
 <div class="right"><div class="price">$200k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$200,000</div><div class="k">Serial</div><div class="v"><span class="mono">1850105</span></div><div class="k">Airframe</div><div class="v">7,300 hrs, as advertised</div><div class="k">Engine</div><div class="v">430 since field overhaul</div><div class="k">Gear</div><div class="v">Wheels / wheel-skis</div><div class="k">History</div><div class="v">Previously C-FNNQ and N4419C</div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$200,000</div><div class="k">Serial</div><div class="v"><span class="mono">1850105</span></div><div class="k">Airframe</div><div class="v">7,300 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">430 since field overhaul</div><div class="k">Gear</div><div class="v">Wheels / wheel-skis</div><div class="k">History</div><div class="v">Previously C-FNNQ and N4419C</div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Contact through the ad</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.barnstormers.com/category-17400-Cessna--C-185.html" target="_blank" rel="noopener">Barnstormers</a></div></div>
 </div>
@@ -202,11 +203,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-spokane" data-price="205000" data-year="1962" data-hrs="1000000000" data-country="US" data-rec="nosn">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">1962 Cessna 185A <span class="tail mute">tail not published</span></div><div class="sub">🇺🇸 Spokane, WA · hours not published · no serial or tail published · not screened</div></div>
+<div class="mid"><div class="tail none">tail not published</div><div class="ym">1962 Cessna 185A</div><div class="sub">🇺🇸 Spokane, WA · airframe hours not published · no serial or tail published · not screened</div></div>
 <div class="right"><div class="price">$205k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$205,000</div><div class="k">Engine</div><div class="v">Continental IO-470-F · times not in the ad</div><div class="k">Gear</div><div class="v">Wheels</div><div class="k">Record</div><div class="v">no serial or tail published · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$205,000</div><div class="k">Airframe</div><div class="v">airframe hours not published</div><div class="k">Engine</div><div class="v">Continental IO-470-F · times not in the ad</div><div class="k">Gear</div><div class="v">Wheels</div><div class="k">Record</div><div class="v">no serial or tail published · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Doug Colley (for the owner)</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.barnstormers.com/category-17400-Cessna--C-185.html" target="_blank" rel="noopener">Barnstormers</a><a href="https://www.barnstormers.com/category-17401-Cessna--C-185.html" target="_blank" rel="noopener">Barnstormers</a></div></div>
 </div>
@@ -214,11 +215,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-N9998X" data-price="205000" data-year="1961" data-hrs="4440.0" data-country="US" data-rec="clean">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">1961 Cessna 185 <span class="tail">N9998X</span></div><div class="sub">🇺🇸 Peachtree City, GA · 4,440 hrs · no entries found</div></div>
+<div class="mid"><div class="tail">N9998X</div><div class="ym">1961 Cessna 185</div><div class="sub">🇺🇸 Peachtree City, GA · 4,440 airframe hrs · no entries found</div></div>
 <div class="right"><div class="price">$205k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$205,000</div><div class="k">Serial</div><div class="v"><span class="mono">1850198</span></div><div class="k">Airframe</div><div class="v">4,440 hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-470 · 110 since factory overhaul</div><div class="k">Gear</div><div class="v">Wheels</div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$205,000</div><div class="k">Serial</div><div class="v"><span class="mono">1850198</span></div><div class="k">Airframe</div><div class="v">4,440 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-470 · 110 since factory overhaul</div><div class="k">Gear</div><div class="v">Wheels</div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Private seller · James Sells</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2456187" target="_blank" rel="noopener">Trade-A-Plane</a></div></div>
 </div>
@@ -226,11 +227,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-CGIAL" data-price="209000" data-year="1980" data-hrs="10427.0" data-country="CA" data-rec="entries">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">1980 Cessna A185F <span class="tail">C-GIAL</span></div><div class="sub">🇨🇦 Port Elgin, ON · 10,427 hrs · 5 TSB</div></div>
+<div class="mid"><div class="tail">C-GIAL</div><div class="ym">1980 Cessna A185F</div><div class="sub">🇨🇦 Port Elgin, ON · 10,427 airframe hrs · 5 TSB</div></div>
 <div class="right"><div class="price">$209k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$209,000 <span class="mute">· Accepting offers</span></div><div class="k">Serial</div><div class="v"><span class="mono">18504138</span></div><div class="k">Airframe</div><div class="v">10,427 (Barnstormers prints 10,407.2) hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520-D · 1,429.7 since overhaul</div><div class="k">Gear</div><div class="v">Float and ski fittings</div><div class="k">Record</div><div class="v">5 TSB · <a href="#rec-CGIAL">see the entries below</a></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$209,000 <span class="mute">· Accepting offers</span></div><div class="k">Serial</div><div class="v"><span class="mono">18504138</span></div><div class="k">Airframe</div><div class="v">10,427 (Barnstormers prints 10,407.2) airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520-D · 1,429.7 since overhaul</div><div class="k">Gear</div><div class="v">Float and ski fittings</div><div class="k">Record</div><div class="v">5 TSB · <a href="#rec-CGIAL">see the entries below</a></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Contact through the ad</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2460410" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.barnstormers.com/category-17401-Cessna--C-185.html" target="_blank" rel="noopener">Barnstormers</a></div></div>
 </div>
@@ -238,11 +239,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-YV1742" data-price="210000" data-year="1978" data-hrs="7430.0" data-country="VE" data-rec="clean">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">1978 Cessna A185F <span class="tail">YV-1742</span></div><div class="sub">🇻🇪 <span class="foreign">foreign</span> Venezuela · 7,430 hrs · no entries found</div></div>
+<div class="mid"><div class="tail">YV-1742</div><div class="ym">1978 Cessna A185F</div><div class="sub">🇻🇪 <span class="foreign">foreign</span> Venezuela · 7,430 airframe hrs · no entries found</div></div>
 <div class="right"><div class="price">$210k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$210,000</div><div class="k">Serial</div><div class="v"><span class="mono">18503641</span></div><div class="k">Airframe</div><div class="v">7,430 hrs, as advertised</div><div class="k">Engine</div><div class="v">19.3 since overhaul</div><div class="k">Prop</div><div class="v">20.8 since overhaul</div><div class="k">History</div><div class="v">Previously N3106Y</div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$210,000</div><div class="k">Serial</div><div class="v"><span class="mono">18503641</span></div><div class="k">Airframe</div><div class="v">7,430 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">19.3 since overhaul</div><div class="k">Prop</div><div class="v">20.8 since overhaul</div><div class="k">History</div><div class="v">Previously N3106Y</div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">YVFLEET · Alejandro Bermúdez</div><div class="btns"><a class="btn" href="tel:9412880291">Call 941-288-0291</a></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2461340" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.barnstormers.com/category-17400-Cessna--C-185.html" target="_blank" rel="noopener">Barnstormers</a><a href="https://www.barnstormers.com/category-17401-Cessna--C-185.html" target="_blank" rel="noopener">Barnstormers</a></div></div>
 </div>
@@ -250,11 +251,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-whiterock" data-price="211000" data-year="1973" data-hrs="9400.0" data-country="CA" data-rec="nosn">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">1973 Cessna A185F <span class="tail mute">tail not published</span></div><div class="sub">🇨🇦 White Rock, BC · 9,400 hrs · no serial or tail published · not screened</div></div>
+<div class="mid"><div class="tail none">tail not published</div><div class="ym">1973 Cessna A185F</div><div class="sub">🇨🇦 White Rock, BC · 9,400 airframe hrs · no serial or tail published · not screened</div></div>
 <div class="right"><div class="price">$211k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$211,000 <span class="mute">· CAD 295,000 · seller says the price is firm</span></div><div class="k">Airframe</div><div class="v">9,400 hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520-D · 25 since overhaul · 7-stud case by Pro Aero</div><div class="k">Prop</div><div class="v">McCauley 401 88-inch Bear Paw · 0 since overhaul</div><div class="k">Gear</div><div class="v">Wheels · Seaplanes West float mount</div><div class="k">Record</div><div class="v">no serial or tail published · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$211,000 <span class="mute">· CAD 295,000 · seller says the price is firm</span></div><div class="k">Airframe</div><div class="v">9,400 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520-D · 25 since overhaul · 7-stud case by Pro Aero</div><div class="k">Prop</div><div class="v">McCauley 401 88-inch Bear Paw · 0 since overhaul</div><div class="k">Gear</div><div class="v">Wheels · Seaplanes West float mount</div><div class="k">Record</div><div class="v">no serial or tail published · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Contact through the ad</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.barnstormers.com/classified-2073292-A185F-Fresh-Engine-and-Mac-401.html" target="_blank" rel="noopener">Barnstormers</a></div></div>
 </div>
@@ -262,11 +263,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-N4841C" data-price="219000" data-year="1975" data-hrs="5530.0" data-country="US" data-rec="clean">
 <summary>
 <div class="ph"><img src="photos/N4841C.jpg" alt="" loading="lazy"></div>
-<div class="mid"><div class="ym">1975 Cessna A185F <span class="tail">N4841C</span></div><div class="sub">🇺🇸 Mount Vernon, WA · 5,530 hrs · no entries found</div></div>
+<div class="mid"><div class="tail">N4841C</div><div class="ym">1975 Cessna A185F</div><div class="sub">🇺🇸 Mount Vernon, WA · 5,530 airframe hrs · no entries found</div></div>
 <div class="right"><div class="price">$219k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$219,000</div><div class="k">Serial</div><div class="v"><span class="mono">18502609</span></div><div class="k">Airframe</div><div class="v">5,530 hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520</div><div class="k">Gear</div><div class="v">Wheels · factory float kit, never on floats</div><div class="k">Fuel</div><div class="v">80 gallons</div><div class="k">Mods</div><div class="v">Robertson STOL · as advertised</div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$219,000</div><div class="k">Serial</div><div class="v"><span class="mono">18502609</span></div><div class="k">Airframe</div><div class="v">5,530 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520</div><div class="k">Gear</div><div class="v">Wheels · factory float kit, never on floats</div><div class="k">Fuel</div><div class="v">80 gallons</div><div class="k">Mods</div><div class="v">Robertson STOL · as advertised</div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Seitz Aviation · Evan Seitz</div><div class="btns"><a class="btn" href="tel:4254787163">Call 425-478-7163</a></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;category_level1=Single%20Engine%20Piston&amp;make=CESSNA&amp;model_group=CESSNA+185+SERIES&amp;s-page_size=96" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.aircraftforsale.com/aircraft/single-engine-piston/cessna/185" target="_blank" rel="noopener">AircraftForSale</a><a href="https://www.facebook.com/marketplace/seattle/search?query=cessna%20185" target="_blank" rel="noopener">Facebook Marketplace</a></div></div>
 </div>
@@ -274,11 +275,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-N9911X" data-price="219900" data-year="1961" data-hrs="4500.0" data-country="US" data-rec="clean">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">1961 Cessna 185 <span class="tail">N9911X</span></div><div class="sub">🇺🇸 Bend, OR · 4,500 hrs · no entries found</div></div>
+<div class="mid"><div class="tail">N9911X</div><div class="ym">1961 Cessna 185</div><div class="sub">🇺🇸 Bend, OR · 4,500 airframe hrs · no entries found</div></div>
 <div class="right"><div class="price">$220k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$219,900</div><div class="k">Serial</div><div class="v"><span class="mono">1850111</span></div><div class="k">Airframe</div><div class="v">4,500 hrs, as advertised</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-470-F, 260 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Gear</div><div class="v">EDO 2960 floats</div><div class="k">Mods</div><div class="v">Robertson STOL · as advertised</div><div class="k">Registry</div><div class="v">Standard airworthiness · registry lists an IO-470 engine</div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$219,900</div><div class="k">Serial</div><div class="v"><span class="mono">1850111</span></div><div class="k">Airframe</div><div class="v">4,500 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-470-F, 260 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Gear</div><div class="v">EDO 2960 floats</div><div class="k">Mods</div><div class="v">Robertson STOL · as advertised</div><div class="k">Registry</div><div class="v">Standard airworthiness · registry lists an IO-470 engine</div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Contact through the ad</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.controller.com/listing/for-sale/261154307/1961-cessna-185-piston-single-aircraft" target="_blank" rel="noopener">Controller</a></div></div>
 </div>
@@ -286,11 +287,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-N115AW" data-price="220000" data-year="1976" data-hrs="3940.0" data-country="US" data-rec="clean">
 <summary>
 <div class="ph"><img src="photos/N115AW.jpg" alt="" loading="lazy"></div>
-<div class="mid"><div class="ym">1976 Cessna A185F <span class="tail">N115AW</span></div><div class="sub">🇺🇸 Placerville, CA · 3,940 hrs · no entries found</div></div>
+<div class="mid"><div class="tail">N115AW</div><div class="ym">1976 Cessna A185F</div><div class="sub">🇺🇸 Placerville, CA · 3,940 airframe hrs · no entries found</div></div>
 <div class="right"><div class="price">$220k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$220,000</div><div class="k">Serial</div><div class="v"><span class="mono">18502941</span></div><div class="k">Airframe</div><div class="v">3,940 hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520-D · 950 since overhaul · top overhaul 50 hrs ago</div><div class="k">Prop</div><div class="v">McCauley C58 three-blade · 250 since overhaul</div><div class="k">Gear</div><div class="v">Wheels · factory float kit installed</div><div class="k">Fuel</div><div class="v">84 gallons long range</div><div class="k">Mods</div><div class="v">Factory extended baggage, Atlee Dodge middle seats, P-Ponk gear legs, bubble windows, 6-bolt wheels and brakes · as advertised</div><div class="k">Panel</div><div class="v">KX-175B, KX-170B, Apollo GX55, KT76 transponder</div><div class="k">Annual</div><div class="v">Due September 2027</div><div class="k">History</div><div class="v">Private, non-commercial Alaska history, as advertised</div><div class="k">Registry</div><div class="v">Standard airworthiness · registered owner in Anchorage, AK</div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">first 2026-09-09 · last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$220,000</div><div class="k">Serial</div><div class="v"><span class="mono">18502941</span></div><div class="k">Airframe</div><div class="v">3,940 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520-D · 950 since overhaul · top overhaul 50 hrs ago</div><div class="k">Prop</div><div class="v">McCauley C58 three-blade · 250 since overhaul</div><div class="k">Gear</div><div class="v">Wheels · factory float kit installed</div><div class="k">Fuel</div><div class="v">84 gallons long range</div><div class="k">Mods</div><div class="v">Factory extended baggage, Atlee Dodge middle seats, P-Ponk gear legs, bubble windows, 6-bolt wheels and brakes · as advertised</div><div class="k">Panel</div><div class="v">KX-175B, KX-170B, Apollo GX55, KT76 transponder</div><div class="k">Annual</div><div class="v">Due September 2027</div><div class="k">History</div><div class="v">Private, non-commercial Alaska history, as advertised</div><div class="k">Registry</div><div class="v">Standard airworthiness · registered owner in Anchorage, AK</div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">first 2026-09-09 · last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Skywagons LLC · Mark Pilkington</div><div class="btns"><a class="btn" href="tel:5306422806">Call 530-642-2806</a></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.barnstormers.com/classified-2072084-1976-Cessna-A185F.html?catid=17400" target="_blank" rel="noopener">Barnstormers</a><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2460353" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.controller.com/listings/for-sale/cessna/185/piston-single-aircraft" target="_blank" rel="noopener">Controller</a><a href="https://www.hangar67.com/aircraft-for-sale" target="_blank" rel="noopener">Hangar67</a><a href="https://www.globalplanesearch.com/" target="_blank" rel="noopener">GlobalPlaneSearch</a><a href="https://www.findaircraft.com/" target="_blank" rel="noopener">FindAircraft</a></div></div>
 </div>
@@ -298,11 +299,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-CFNHM" data-price="230000" data-year="1961" data-hrs="3155.0" data-country="CA" data-rec="clean">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">1961 Cessna 185 <span class="tail">C-FNHM</span></div><div class="sub">🇨🇦 Nipawin, SK · 3,155 hrs · no entries found</div></div>
+<div class="mid"><div class="tail">C-FNHM</div><div class="ym">1961 Cessna 185</div><div class="sub">🇨🇦 Nipawin, SK · 3,155 airframe hrs · no entries found</div></div>
 <div class="right"><div class="price">$230k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$230,000</div><div class="k">Serial</div><div class="v"><span class="mono">1850064</span></div><div class="k">Airframe</div><div class="v">3,155 hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-470-F · 15 since overhaul</div><div class="k">Gear</div><div class="v">Aero Set 3500 floats</div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$230,000</div><div class="k">Serial</div><div class="v"><span class="mono">1850064</span></div><div class="k">Airframe</div><div class="v">3,155 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-470-F · 15 since overhaul</div><div class="k">Gear</div><div class="v">Aero Set 3500 floats</div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Aircraft Canada</div><div class="btns"><a class="btn" href="tel:5875835013">Call 587-583-5013</a></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.controller.com/listings/for-sale/cessna/185/piston-single-aircraft" target="_blank" rel="noopener">Controller</a><a href="https://www.hangar67.com/aircraft-for-sale" target="_blank" rel="noopener">Hangar67</a></div></div>
 </div>
@@ -310,11 +311,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-N185DL" data-price="235000" data-year="1964" data-hrs="5463.0" data-country="US" data-rec="entries">
 <summary>
 <div class="ph"><img src="photos/N185DL.jpg" alt="" loading="lazy"></div>
-<div class="mid"><div class="ym">1964 Cessna 185C <span class="tail">N185DL</span></div><div class="sub">🇺🇸 Sheridan, MI · 5,463 hrs · 1 NTSB · 3 AIDS</div></div>
+<div class="mid"><div class="tail">N185DL</div><div class="ym">1964 Cessna 185C</div><div class="sub">🇺🇸 Sheridan, MI · 5,463 airframe hrs · 1 NTSB · 3 AIDS</div></div>
 <div class="right"><div class="price">$235k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$235,000</div><div class="k">Serial</div><div class="v"><span class="mono">1850690</span></div><div class="k">Airframe</div><div class="v">5,463 hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-470 · 270 since factory reman</div><div class="k">Gear</div><div class="v">Wheels / skis</div><div class="k">Tail</div><div class="v">Tail read from the ad photo</div><div class="k">Record</div><div class="v">1 NTSB · 3 AIDS · <a href="#rec-N185DL">see the entries below</a></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$235,000</div><div class="k">Serial</div><div class="v"><span class="mono">1850690</span></div><div class="k">Airframe</div><div class="v">5,463 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-470 · 270 since factory reman</div><div class="k">Gear</div><div class="v">Wheels / skis</div><div class="k">Tail</div><div class="v">Tail read from the ad photo</div><div class="k">Record</div><div class="v">1 NTSB · 3 AIDS · <a href="#rec-N185DL">see the entries below</a></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Contact through the ad</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.facebook.com/marketplace/item/2172659143355197/" target="_blank" rel="noopener">Facebook Marketplace</a></div></div>
 </div>
@@ -322,11 +323,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-N103AM" data-price="249000" data-year="1975" data-hrs="7653.0" data-country="US" data-rec="entries">
 <summary>
 <div class="ph"><img src="photos/N103AM.jpg" alt="" loading="lazy"></div>
-<div class="mid"><div class="ym">1975 Cessna A185F <span class="tail">N103AM</span></div><div class="sub">🇺🇸 La Grande, OR · 7,653 hrs · 1 NTSB · 2 AIDS</div></div>
+<div class="mid"><div class="tail">N103AM</div><div class="ym">1975 Cessna A185F</div><div class="sub">🇺🇸 La Grande, OR · 7,653 airframe hrs · 1 NTSB · 2 AIDS</div></div>
 <div class="right"><div class="price">$249k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$249,000</div><div class="k">Serial</div><div class="v"><span class="mono">18502615</span></div><div class="k">Airframe</div><div class="v">7,653 hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520-D · 431 since overhaul (October 2022)</div><div class="k">Gear</div><div class="v">Wheels</div><div class="k">History</div><div class="v">Part 135 history, as advertised</div><div class="k">Record</div><div class="v">1 NTSB · 2 AIDS · <a href="#rec-N103AM">see the entries below</a></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$249,000</div><div class="k">Serial</div><div class="v"><span class="mono">18502615</span></div><div class="k">Airframe</div><div class="v">7,653 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520-D · 431 since overhaul (October 2022)</div><div class="k">Gear</div><div class="v">Wheels</div><div class="k">History</div><div class="v">Part 135 history, as advertised</div><div class="k">Record</div><div class="v">1 NTSB · 2 AIDS · <a href="#rec-N103AM">see the entries below</a></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Contact through the ad</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2457083" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.aircraftforsale.com/aircraft/single-engine-piston/cessna/185" target="_blank" rel="noopener">AircraftForSale</a></div></div>
 </div>
@@ -334,11 +335,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-N8536T" data-price="250000" data-year="1970" data-hrs="6009.0" data-country="US" data-rec="clean">
 <summary>
 <div class="ph"><img src="photos/N8536T.jpg" alt="" loading="lazy"></div>
-<div class="mid"><div class="ym">1970 Cessna A185E <span class="tail">N8536T</span></div><div class="sub">🇺🇸 Minden, NV · 6,009 hrs · no entries found</div></div>
+<div class="mid"><div class="tail">N8536T</div><div class="ym">1970 Cessna A185E</div><div class="sub">🇺🇸 Minden, NV · 6,009 airframe hrs · no entries found</div></div>
 <div class="right"><div class="price">$250k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$250,000 <span class="mute">· Barnstormers, GlobalPlaneSearch and aircraftdealer.com still print $265,000</span></div><div class="k">Serial</div><div class="v"><span class="mono">18501784</span></div><div class="k">Airframe</div><div class="v">6,009 hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-550-D factory reman · 170 since overhaul</div><div class="k">Gear</div><div class="v">Wheels</div><div class="k">Fuel</div><div class="v">Tip tanks, as advertised</div><div class="k">Weights</div><div class="v">useful load 1,550 lb, as advertised</div><div class="k">History</div><div class="v">Hail damage disclosed in the ad</div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$250,000 <span class="mute">· Barnstormers, GlobalPlaneSearch and aircraftdealer.com still print $265,000</span></div><div class="k">Serial</div><div class="v"><span class="mono">18501784</span></div><div class="k">Airframe</div><div class="v">6,009 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-550-D factory reman · 170 since overhaul</div><div class="k">Gear</div><div class="v">Wheels</div><div class="k">Fuel</div><div class="v">Tip tanks, as advertised</div><div class="k">Weights</div><div class="v">useful load 1,550 lb, as advertised</div><div class="k">History</div><div class="v">Hail damage disclosed in the ad</div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Dan Howard Aircraft Sales</div><div class="btns"><a class="btn" href="tel:9184987073">Call 918-498-7073</a></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2448106" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.controller.com/listings/for-sale/cessna/185/piston-single-aircraft" target="_blank" rel="noopener">Controller</a><a href="https://www.barnstormers.com/category-17401-Cessna--C-185.html" target="_blank" rel="noopener">Barnstormers</a><a href="https://www.globalplanesearch.com/" target="_blank" rel="noopener">GlobalPlaneSearch</a><a href="https://www.aircraftdealer.com/" target="_blank" rel="noopener">aircraftdealer.com</a></div></div>
 </div>
@@ -346,11 +347,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-N4448R" data-price="250000" data-year="1976" data-hrs="4681.6" data-country="US" data-rec="entries">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">1976 Cessna 185F <span class="tail">N4448R</span></div><div class="sub">🇺🇸 Anchorage, AK · 4,681.6 hrs · 1 NTSB · 1 AIDS</div></div>
+<div class="mid"><div class="tail">N4448R</div><div class="ym">1976 Cessna 185F</div><div class="sub">🇺🇸 Anchorage, AK · 4,681.6 airframe hrs · 1 NTSB · 1 AIDS</div></div>
 <div class="right"><div class="price">$250k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$250,000</div><div class="k">Airframe</div><div class="v">4,681.6 hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520-F reman February 2009 · 222.7 since</div><div class="k">Gear</div><div class="v">EDO 2960 floats</div><div class="k">Mods</div><div class="v">Robertson STOL · as advertised</div><div class="k">Record</div><div class="v">1 NTSB · 1 AIDS · <a href="#rec-N4448R">see the entries below</a> <span class="mute">(matched by registration; the record lists serial 18502960)</span></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$250,000</div><div class="k">Airframe</div><div class="v">4,681.6 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520-F reman February 2009 · 222.7 since</div><div class="k">Gear</div><div class="v">EDO 2960 floats</div><div class="k">Mods</div><div class="v">Robertson STOL · as advertised</div><div class="k">Record</div><div class="v">1 NTSB · 1 AIDS · <a href="#rec-N4448R">see the entries below</a> <span class="mute">(matched by registration; the record lists serial 18502960)</span></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Contact through the ad</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.facebook.com/marketplace/item/1399740905369736/" target="_blank" rel="noopener">Facebook Marketplace</a></div></div>
 </div>
@@ -358,11 +359,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-N969WM" data-price="250000" data-year="1962" data-hrs="9524.0" data-country="US" data-rec="clean">
 <summary>
 <div class="ph"><img src="photos/N969WM.jpg" alt="" loading="lazy"></div>
-<div class="mid"><div class="ym">1962 Cessna 185A <span class="tail">N969WM</span></div><div class="sub">🇺🇸 Little Rock, AR · 9,524 hrs · no entries found</div></div>
+<div class="mid"><div class="tail">N969WM</div><div class="ym">1962 Cessna 185A</div><div class="sub">🇺🇸 Little Rock, AR · 9,524 airframe hrs · no entries found</div></div>
 <div class="right"><div class="price">$250k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$250,000</div><div class="k">Serial</div><div class="v"><span class="mono">1850506</span></div><div class="k">Airframe</div><div class="v">9,524 hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-470-F · 249 since overhaul</div><div class="k">Gear</div><div class="v">Wheels · float kit</div><div class="k">Mods</div><div class="v">Sportsman STOL, Bushwheels · as advertised</div><div class="k">Weights</div><div class="v">empty 1,868 lb, as advertised · useful load 1,322 lb, as advertised</div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$250,000</div><div class="k">Serial</div><div class="v"><span class="mono">1850506</span></div><div class="k">Airframe</div><div class="v">9,524 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-470-F · 249 since overhaul</div><div class="k">Gear</div><div class="v">Wheels · float kit</div><div class="k">Mods</div><div class="v">Sportsman STOL, Bushwheels · as advertised</div><div class="k">Weights</div><div class="v">empty 1,868 lb, as advertised · useful load 1,322 lb, as advertised</div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Contact through the ad</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2453669" target="_blank" rel="noopener">Trade-A-Plane</a></div></div>
 </div>
@@ -370,11 +371,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-N18500" data-price="250000" data-year="1977" data-hrs="661.8" data-country="US" data-rec="clean">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">1977 Cessna A185F <span class="tail">N18500</span></div><div class="sub">🇺🇸 Anchorage, AK · 661.8 hrs · no entries found</div></div>
+<div class="mid"><div class="tail">N18500</div><div class="ym">1977 Cessna A185F</div><div class="sub">🇺🇸 Anchorage, AK · 661.8 airframe hrs · no entries found</div></div>
 <div class="right"><div class="price">$250k</div><div class="pm down">down from $255,000</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$250,000</div><div class="k">Serial</div><div class="v"><span class="mono">18503305</span></div><div class="k">Airframe</div><div class="v">661.8, as advertised hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520-D · 661.8 since new · disassembled, sold as-is</div><div class="k">Gear</div><div class="v">Wheels · factory float kit, never on floats</div><div class="k">Fuel</div><div class="v">84 gallons in bladders</div><div class="k">Mods</div><div class="v">Robertson STOL · as advertised</div><div class="k">Tail</div><div class="v">Tail read from the panel photo</div><div class="k">Posted</div><div class="v">Ad dated 2026-09-23</div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$250,000</div><div class="k">Serial</div><div class="v"><span class="mono">18503305</span></div><div class="k">Airframe</div><div class="v">661.8, as advertised airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520-D · 661.8 since new · disassembled, sold as-is</div><div class="k">Gear</div><div class="v">Wheels · factory float kit, never on floats</div><div class="k">Fuel</div><div class="v">84 gallons in bladders</div><div class="k">Mods</div><div class="v">Robertson STOL · as advertised</div><div class="k">Tail</div><div class="v">Tail read from the panel photo</div><div class="k">Posted</div><div class="v">Ad dated 2026-09-23</div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Private seller · Dennis Thompson (Craigslist relay)</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.craigslist.org/view/d/anchorage-1977-cessna-185-one-of-kind/tVHLWyNru81PSLjbqTzrtN" target="_blank" rel="noopener">Craigslist</a></div></div>
 </div>
@@ -382,11 +383,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-N91PH" data-price="265000" data-year="1973" data-hrs="3550.0" data-country="US" data-rec="clean">
 <summary>
 <div class="ph"><img src="photos/N91PH.jpg" alt="" loading="lazy"></div>
-<div class="mid"><div class="ym">1973 Cessna A185F <span class="tail">N91PH</span></div><div class="sub">🇺🇸 Pampa, TX · 3,550 hrs · no entries found</div></div>
+<div class="mid"><div class="tail">N91PH</div><div class="ym">1973 Cessna A185F</div><div class="sub">🇺🇸 Pampa, TX · 3,550 airframe hrs · no entries found</div></div>
 <div class="right"><div class="price">$265k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$265,000</div><div class="k">Serial</div><div class="v"><span class="mono">18502325</span></div><div class="k">Airframe</div><div class="v">3,550 hrs, as advertised</div><div class="k">Engine</div><div class="v">1,020 since overhaul</div><div class="k">Gear</div><div class="v">Wipline 3730 amphibious floats</div><div class="k">Panel</div><div class="v">GNS 430</div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$265,000</div><div class="k">Serial</div><div class="v"><span class="mono">18502325</span></div><div class="k">Airframe</div><div class="v">3,550 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">1,020 since overhaul</div><div class="k">Gear</div><div class="v">Wipline 3730 amphibious floats</div><div class="k">Panel</div><div class="v">GNS 430</div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Hudson Flight Ltd · Ron Fernuik</div><div class="btns"><a class="btn" href="tel:8066625823">Call 806-662-5823</a></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2459651" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.globalplanesearch.com/" target="_blank" rel="noopener">GlobalPlaneSearch</a><a href="https://www.findaircraft.com/" target="_blank" rel="noopener">FindAircraft</a><a href="https://www.aircraftdealer.com/" target="_blank" rel="noopener">aircraftdealer.com</a></div></div>
 </div>
@@ -394,11 +395,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-brasschaat" data-price="265000" data-year="1961" data-hrs="6031.0" data-country="BE" data-rec="nosn">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">1961 Cessna 185 <span class="tail mute">tail not published</span></div><div class="sub">🇧🇪 <span class="foreign">foreign</span> Brasschaat, Belgium · about 6,031 hrs · no serial or tail published · not screened</div></div>
+<div class="mid"><div class="tail none">tail not published</div><div class="ym">1961 Cessna 185</div><div class="sub">🇧🇪 <span class="foreign">foreign</span> Brasschaat, Belgium · about 6,031 airframe hrs · no serial or tail published · not screened</div></div>
 <div class="right"><div class="price">$265k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$265,000</div><div class="k">Airframe</div><div class="v">about 6,031 hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520 · 36 hours</div><div class="k">Gear</div><div class="v">EDO floats</div><div class="k">Record</div><div class="v">no serial or tail published · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$265,000</div><div class="k">Airframe</div><div class="v">about 6,031 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520 · 36 hours</div><div class="k">Gear</div><div class="v">EDO floats</div><div class="k">Record</div><div class="v">no serial or tail published · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">US1 Exports · Ricardo Birsa (broker address San Isidro, Argentina)</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.barnstormers.com/category-17401-Cessna--C-185.html" target="_blank" rel="noopener">Barnstormers</a><a href="https://www.barnstormers.com/category-16268-Cessna--Amphibian.html" target="_blank" rel="noopener">Barnstormers amphibian</a><a href="https://www.hangar67.com/aircraft-for-sale" target="_blank" rel="noopener">Hangar67</a></div></div>
 </div>
@@ -406,11 +407,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-CGUIC" data-price="268000" data-year="1976" data-hrs="4825.0" data-country="CA" data-rec="entries">
 <summary>
 <div class="ph"><img src="photos/CGUIC.jpg" alt="" loading="lazy"></div>
-<div class="mid"><div class="ym">1976 Cessna A185F <span class="tail">C-GUIC</span></div><div class="sub">🇨🇦 Hawkesbury, ON · 4,825 hrs · 2 TSB</div></div>
+<div class="mid"><div class="tail">C-GUIC</div><div class="ym">1976 Cessna A185F</div><div class="sub">🇨🇦 Hawkesbury, ON · 4,825 airframe hrs · 2 TSB</div></div>
 <div class="right"><div class="price">$268k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$268,000 <span class="mute">· GlobalAir prints $286,000; the dealer&#x27;s own site prints CAD 369,000, reduced</span></div><div class="k">Serial</div><div class="v"><span class="mono">18503009</span></div><div class="k">Airframe</div><div class="v">4,825 hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-550-D · 150 since overhaul (2018)</div><div class="k">Prop</div><div class="v">Hartzell three-blade · overhauled 2025</div><div class="k">Gear</div><div class="v">EDO 3430 floats</div><div class="k">Tail</div><div class="v">Tail read from the ad photo</div><div class="k">Record</div><div class="v">2 TSB · <a href="#rec-CGUIC">see the entries below</a></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$268,000 <span class="mute">· GlobalAir prints $286,000; the dealer&#x27;s own site prints CAD 369,000, reduced</span></div><div class="k">Serial</div><div class="v"><span class="mono">18503009</span></div><div class="k">Airframe</div><div class="v">4,825 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-550-D · 150 since overhaul (2018)</div><div class="k">Prop</div><div class="v">Hartzell three-blade · overhauled 2025</div><div class="k">Gear</div><div class="v">EDO 3430 floats</div><div class="k">Tail</div><div class="v">Tail read from the ad photo</div><div class="k">Record</div><div class="v">2 TSB · <a href="#rec-CGUIC">see the entries below</a></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Canadian Aircraft Sales · Pier Labelle</div><div class="btns"><a class="btn" href="tel:6136320123">Call 613-632-0123</a></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2436256" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.globalair.com/aircraft-for-sale/single-engine-piston/cessna-185" target="_blank" rel="noopener">GlobalAir</a><a href="https://www.csplane.com/" target="_blank" rel="noopener">Canadian Aircraft Sales</a></div></div>
 </div>
@@ -418,11 +419,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-N4761Q" data-price="275000" data-year="1967" data-hrs="9788.0" data-country="US" data-rec="entries">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">1967 Cessna 185E <span class="tail">N4761Q</span></div><div class="sub">🇺🇸 Anchorage, AK · 9,788 hrs · 2 NTSB · 1 AIDS</div></div>
+<div class="mid"><div class="tail">N4761Q</div><div class="ym">1967 Cessna 185E</div><div class="sub">🇺🇸 Anchorage, AK · 9,788 airframe hrs · 2 NTSB · 1 AIDS</div></div>
 <div class="right"><div class="price">$275k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$275,000</div><div class="k">Serial</div><div class="v"><span class="mono">1851226</span></div><div class="k">Airframe</div><div class="v">9,788 hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520 · 297.2 since overhaul</div><div class="k">Gear</div><div class="v">Wipline 3800 floats</div><div class="k">Mods</div><div class="v">Sportsman STOL · as advertised</div><div class="k">Record</div><div class="v">2 NTSB · 1 AIDS · <a href="#rec-N4761Q">see the entries below</a></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$275,000</div><div class="k">Serial</div><div class="v"><span class="mono">1851226</span></div><div class="k">Airframe</div><div class="v">9,788 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520 · 297.2 since overhaul</div><div class="k">Gear</div><div class="v">Wipline 3800 floats</div><div class="k">Mods</div><div class="v">Sportsman STOL · as advertised</div><div class="k">Record</div><div class="v">2 NTSB · 1 AIDS · <a href="#rec-N4761Q">see the entries below</a></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Seaplanes North</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.craigslist.org/view/d/anchorage-1967-cessna-185e/pYXqN7oXFPykVwcmi1oN9B" target="_blank" rel="noopener">Craigslist</a><a href="https://www.hangar67.com/aircraft-for-sale" target="_blank" rel="noopener">Hangar67</a></div></div>
 </div>
@@ -430,11 +431,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-TFORN" data-price="275000" data-year="1974" data-hrs="4503.7" data-country="CA" data-rec="entries">
 <summary>
 <div class="ph"><img src="photos/TFORN.jpg" alt="" loading="lazy"></div>
-<div class="mid"><div class="ym">1974 Cessna A185F <span class="tail">TF-ORN</span></div><div class="sub">🇨🇦 Gimli, MB · 4,503.7 hrs · 1 AIDS</div></div>
+<div class="mid"><div class="tail">TF-ORN</div><div class="ym">1974 Cessna A185F</div><div class="sub">🇨🇦 Gimli, MB · 4,503.7 airframe hrs · 1 AIDS</div></div>
 <div class="right"><div class="price">$275k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$275,000</div><div class="k">Serial</div><div class="v"><span class="mono">18502355</span></div><div class="k">Airframe</div><div class="v">4,503.7 hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520-D 300 hp</div><div class="k">Gear</div><div class="v">Wheels</div><div class="k">Weights</div><div class="v">empty 1,971 lb, as advertised</div><div class="k">Registry</div><div class="v">Icelandic registration · previously N53068</div><div class="k">Record</div><div class="v">1 AIDS · <a href="#rec-TFORN">see the entries below</a></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$275,000</div><div class="k">Serial</div><div class="v"><span class="mono">18502355</span></div><div class="k">Airframe</div><div class="v">4,503.7 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520-D 300 hp</div><div class="k">Gear</div><div class="v">Wheels</div><div class="k">Weights</div><div class="v">empty 1,971 lb, as advertised</div><div class="k">Registry</div><div class="v">Icelandic registration · previously N53068</div><div class="k">Record</div><div class="v">1 AIDS · <a href="#rec-TFORN">see the entries below</a></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Private seller · Sijo Zach</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.controller.com/listings/for-sale/cessna/185/piston-single-aircraft" target="_blank" rel="noopener">Controller</a><a href="https://www.aircraftforsale.com/listing/1974-cessna-a185f-skywagon-c7147970" target="_blank" rel="noopener">AircraftForSale</a><a href="https://www.hangar67.com/aircraft-for-sale" target="_blank" rel="noopener">Hangar67</a><a href="https://www.kijiji.ca/b-canada/cessna-185/k0l0" target="_blank" rel="noopener">Kijiji</a></div></div>
 </div>
@@ -442,11 +443,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-CGGKA" data-price="280000" data-year="1979" data-hrs="5569.0" data-country="CA" data-rec="entries">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">1979 Cessna A185F <span class="tail">C-GGKA</span></div><div class="sub">🇨🇦 Mill Bay / Victoria, BC · 5,569 hrs · 2 NTSB · 3 AIDS</div></div>
+<div class="mid"><div class="tail">C-GGKA</div><div class="ym">1979 Cessna A185F</div><div class="sub">🇨🇦 Mill Bay / Victoria, BC · 5,569 airframe hrs · 2 NTSB · 3 AIDS</div></div>
 <div class="right"><div class="price">$280k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$280,000</div><div class="k">Serial</div><div class="v"><span class="mono">18503844</span></div><div class="k">Airframe</div><div class="v">5,569 hrs, as advertised</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Gear</div><div class="v">Amphibious floats</div><div class="k">History</div><div class="v">Previously N185ME and N4695E</div><div class="k">Record</div><div class="v">2 NTSB · 3 AIDS · <a href="#rec-CGGKA">see the entries below</a></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$280,000</div><div class="k">Serial</div><div class="v"><span class="mono">18503844</span></div><div class="k">Airframe</div><div class="v">5,569 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Gear</div><div class="v">Amphibious floats</div><div class="k">History</div><div class="v">Previously N185ME and N4695E</div><div class="k">Record</div><div class="v">2 NTSB · 3 AIDS · <a href="#rec-CGGKA">see the entries below</a></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Contact through the ad</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.barnstormers.com/classified-2057932-1979-Cessna-A185F-Amphibian.html" target="_blank" rel="noopener">Barnstormers</a></div></div>
 </div>
@@ -454,11 +455,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-N6307B" data-price="285000" data-year="1979" data-hrs="7145.0" data-country="US" data-rec="clean">
 <summary>
 <div class="ph"><img src="photos/N6307B.jpg" alt="" loading="lazy"></div>
-<div class="mid"><div class="ym">1979 Cessna A185F <span class="tail">N6307B</span></div><div class="sub">🇺🇸 Palmer, AK · 7,145 hrs · no entries found</div></div>
+<div class="mid"><div class="tail">N6307B</div><div class="ym">1979 Cessna A185F</div><div class="sub">🇺🇸 Palmer, AK · 7,145 airframe hrs · no entries found</div></div>
 <div class="right"><div class="price">$285k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$285,000</div><div class="k">Serial</div><div class="v"><span class="mono">18503742</span></div><div class="k">Airframe</div><div class="v">7,145 hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520-D · 1,110 since overhaul · 340 since top</div><div class="k">Gear</div><div class="v">EDO 3430 floats</div><div class="k">Mods</div><div class="v">Wing-X STOL · as advertised</div><div class="k">Tail</div><div class="v">Tail read from the ad photo</div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$285,000</div><div class="k">Serial</div><div class="v"><span class="mono">18503742</span></div><div class="k">Airframe</div><div class="v">7,145 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520-D · 1,110 since overhaul · 340 since top</div><div class="k">Gear</div><div class="v">EDO 3430 floats</div><div class="k">Mods</div><div class="v">Wing-X STOL · as advertised</div><div class="k">Tail</div><div class="v">Tail read from the ad photo</div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Private seller, Wasilla AK</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.facebook.com/marketplace/item/809408015382816/" target="_blank" rel="noopener">Facebook Marketplace</a></div></div>
 </div>
@@ -466,11 +467,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-N666SB" data-price="285000" data-year="1980" data-hrs="2620.0" data-country="US" data-rec="entries">
 <summary>
 <div class="ph"><img src="photos/N666SB.jpg" alt="" loading="lazy"></div>
-<div class="mid"><div class="ym">1980 Cessna A185F <span class="tail">N666SB</span></div><div class="sub">🇺🇸 Santa Paula, CA · 2,620 hrs · 1 NTSB · 1 AIDS</div></div>
+<div class="mid"><div class="tail">N666SB</div><div class="ym">1980 Cessna A185F</div><div class="sub">🇺🇸 Santa Paula, CA · 2,620 airframe hrs · 1 NTSB · 1 AIDS</div></div>
 <div class="right"><div class="price">$285k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$285,000</div><div class="k">Airframe</div><div class="v">2,620 hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520-D · 1,392 since overhaul</div><div class="k">Gear</div><div class="v">Wheels · factory float kit</div><div class="k">Record</div><div class="v">1 NTSB · 1 AIDS · <a href="#rec-N666SB">see the entries below</a> <span class="mute">(matched by registration; the record lists serial 18503994)</span></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$285,000</div><div class="k">Airframe</div><div class="v">2,620 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520-D · 1,392 since overhaul</div><div class="k">Gear</div><div class="v">Wheels · factory float kit</div><div class="k">Record</div><div class="v">1 NTSB · 1 AIDS · <a href="#rec-N666SB">see the entries below</a> <span class="mute">(matched by registration; the record lists serial 18503994)</span></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Contact through the ad</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2458523" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.barnstormers.com/category-17400-Cessna--C-185.html" target="_blank" rel="noopener">Barnstormers</a></div></div>
 </div>
@@ -478,11 +479,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-CGAIX" data-price="285000" data-year="1979" data-hrs="16965.0" data-country="CA" data-rec="entries">
 <summary>
 <div class="ph"><img src="photos/CGAIX.jpg" alt="" loading="lazy"></div>
-<div class="mid"><div class="ym">1979 Cessna A185F <span class="tail">C-GAIX</span></div><div class="sub">🇨🇦 Fort Smith, NT · 16,965 hrs · 1 TSB</div></div>
+<div class="mid"><div class="tail">C-GAIX</div><div class="ym">1979 Cessna A185F</div><div class="sub">🇨🇦 Fort Smith, NT · 16,965 airframe hrs · 1 TSB</div></div>
 <div class="right"><div class="price">$285k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$285,000</div><div class="k">Airframe</div><div class="v">16,965 hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520-F · 0 since overhaul</div><div class="k">Gear</div><div class="v">Wipline 3730 amphibious floats</div><div class="k">Mods</div><div class="v">Robertson STOL, Flint tips · as advertised</div><div class="k">Record</div><div class="v">1 TSB · <a href="#rec-CGAIX">see the entries below</a> <span class="mute">(matched by registration; the record lists serial 18503890)</span></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$285,000</div><div class="k">Airframe</div><div class="v">16,965 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520-F · 0 since overhaul</div><div class="k">Gear</div><div class="v">Wipline 3730 amphibious floats</div><div class="k">Mods</div><div class="v">Robertson STOL, Flint tips · as advertised</div><div class="k">Record</div><div class="v">1 TSB · <a href="#rec-CGAIX">see the entries below</a> <span class="mute">(matched by registration; the record lists serial 18503890)</span></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Contact through the ad</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2440682" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.controller.com/listings/for-sale/cessna/185/piston-single-aircraft" target="_blank" rel="noopener">Controller</a><a href="https://www.hangar67.com/aircraft-for-sale" target="_blank" rel="noopener">Hangar67</a></div></div>
 </div>
@@ -490,11 +491,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-N4757Q" data-price="288000" data-year="1967" data-hrs="3850.0" data-country="US" data-rec="entries">
 <summary>
 <div class="ph"><img src="photos/N4757Q.jpg" alt="" loading="lazy"></div>
-<div class="mid"><div class="ym">1967 Cessna 185E <span class="tail">N4757Q</span></div><div class="sub">🇺🇸 Willow / Wasilla, AK · about 3,850 hrs · 1 AIDS</div></div>
+<div class="mid"><div class="tail">N4757Q</div><div class="ym">1967 Cessna 185E</div><div class="sub">🇺🇸 Willow / Wasilla, AK · about 3,850 airframe hrs · 1 AIDS</div></div>
 <div class="right"><div class="price">$288k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$288,000</div><div class="k">Serial</div><div class="v"><span class="mono">1851216</span></div><div class="k">Airframe</div><div class="v">about 3,850 (the Trade-A-Plane header prints 850) hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520-D · about 410 since overhaul</div><div class="k">Gear</div><div class="v">Wheels</div><div class="k">Mods</div><div class="v">P-Ponk gear · as advertised</div><div class="k">Record</div><div class="v">1 AIDS · <a href="#rec-N4757Q">see the entries below</a></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$288,000</div><div class="k">Serial</div><div class="v"><span class="mono">1851216</span></div><div class="k">Airframe</div><div class="v">about 3,850 (the Trade-A-Plane header prints 850) airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520-D · about 410 since overhaul</div><div class="k">Gear</div><div class="v">Wheels</div><div class="k">Mods</div><div class="v">P-Ponk gear · as advertised</div><div class="k">Record</div><div class="v">1 AIDS · <a href="#rec-N4757Q">see the entries below</a></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Backcountry Aircraft Group (broker, $288,000) · owner John Bradley ($285,000)</div><div class="btns"><a class="btn" href="tel:6824077957">Call 682-407-7957</a></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;category_level1=Single%20Engine%20Piston&amp;make=CESSNA&amp;model_group=CESSNA+185+SERIES&amp;s-page_size=96" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.barnstormers.com/category-17400-Cessna--C-185.html" target="_blank" rel="noopener">Barnstormers</a><a href="https://www.facebook.com/marketplace/anchorage/search?query=cessna%20185" target="_blank" rel="noopener">Facebook Marketplace</a></div></div>
 </div>
@@ -502,11 +503,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-N93033" data-price="295000" data-year="1976" data-hrs="1623.0" data-country="US" data-rec="entries">
 <summary>
 <div class="ph"><img src="photos/N93033.jpg" alt="" loading="lazy"></div>
-<div class="mid"><div class="ym">1976 Cessna A185F <span class="tail">N93033</span></div><div class="sub">🇺🇸 Plymouth, MA · 1,623 hrs · 1 AIDS</div></div>
+<div class="mid"><div class="tail">N93033</div><div class="ym">1976 Cessna A185F</div><div class="sub">🇺🇸 Plymouth, MA · 1,623 airframe hrs · 1 AIDS</div></div>
 <div class="right"><div class="price">$295k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$295,000</div><div class="k">Serial</div><div class="v"><span class="mono">18503166</span></div><div class="k">Airframe</div><div class="v">1,623 hrs, as advertised</div><div class="k">Engine</div><div class="v">1,180 since overhaul</div><div class="k">Gear</div><div class="v">Amphibious floats</div><div class="k">Annual</div><div class="v">Fresh annual March 2026</div><div class="k">Record</div><div class="v">1 AIDS · <a href="#rec-N93033">see the entries below</a></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$295,000</div><div class="k">Serial</div><div class="v"><span class="mono">18503166</span></div><div class="k">Airframe</div><div class="v">1,623 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">1,180 since overhaul</div><div class="k">Gear</div><div class="v">Amphibious floats</div><div class="k">Annual</div><div class="v">Fresh annual March 2026</div><div class="k">Record</div><div class="v">1 AIDS · <a href="#rec-N93033">see the entries below</a></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Yankee Aviation Services</div><div class="btns"><a class="btn" href="tel:5085658208">Call 508-565-8208</a></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2454518" target="_blank" rel="noopener">Trade-A-Plane</a></div></div>
 </div>
@@ -514,11 +515,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-N5227R" data-price="295000" data-year="1976" data-hrs="3070.0" data-country="US" data-rec="entries">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">1976 Cessna A185F <span class="tail">N5227R</span></div><div class="sub">🇺🇸 Fairbanks, AK · 3,070 hrs · 1 NTSB · 2 AIDS</div></div>
+<div class="mid"><div class="tail">N5227R</div><div class="ym">1976 Cessna A185F</div><div class="sub">🇺🇸 Fairbanks, AK · 3,070 airframe hrs · 1 NTSB · 2 AIDS</div></div>
 <div class="right"><div class="price">$295k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$295,000</div><div class="k">Serial</div><div class="v"><span class="mono">18503023</span></div><div class="k">Airframe</div><div class="v">3,070 (prop total time as printed) hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-550-D · Western Skyways reman April 2022 · 325 since</div><div class="k">Gear</div><div class="v">CAP 3000 floats</div><div class="k">Registry</div><div class="v">Restricted category · Other, Aerial Advertising, Agriculture and Pest Control</div><div class="k">Record</div><div class="v">1 NTSB · 2 AIDS · <a href="#rec-N5227R">see the entries below</a></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$295,000</div><div class="k">Serial</div><div class="v"><span class="mono">18503023</span></div><div class="k">Airframe</div><div class="v">3,070 (prop total time as printed) airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-550-D · Western Skyways reman April 2022 · 325 since</div><div class="k">Gear</div><div class="v">CAP 3000 floats</div><div class="k">Registry</div><div class="v">Restricted category · Other, Aerial Advertising, Agriculture and Pest Control</div><div class="k">Record</div><div class="v">1 NTSB · 2 AIDS · <a href="#rec-N5227R">see the entries below</a></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Contact through the ad</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.barnstormers.com/category-17401-Cessna--C-185.html" target="_blank" rel="noopener">Barnstormers</a></div></div>
 </div>
@@ -526,11 +527,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-N5830J" data-price="299000" data-year="1970" data-hrs="3470.0" data-country="US" data-rec="clean">
 <summary>
 <div class="ph"><img src="photos/N5830J.jpg" alt="" loading="lazy"></div>
-<div class="mid"><div class="ym">1970 Cessna A185E <span class="tail">N5830J</span></div><div class="sub">🇺🇸 Fort Myers, FL · 3,470 hrs · no entries found</div></div>
+<div class="mid"><div class="tail">N5830J</div><div class="ym">1970 Cessna A185E</div><div class="sub">🇺🇸 Fort Myers, FL · 3,470 airframe hrs · no entries found</div></div>
 <div class="right"><div class="price">$299k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$299,000</div><div class="k">Serial</div><div class="v"><span class="mono">18501799</span></div><div class="k">Airframe</div><div class="v">3,470 hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-550-D · 780 since overhaul</div><div class="k">Gear</div><div class="v">Amphibious floats</div><div class="k">Fuel</div><div class="v">Long range fuel</div><div class="k">Panel</div><div class="v">WAAS IFR</div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$299,000</div><div class="k">Serial</div><div class="v"><span class="mono">18501799</span></div><div class="k">Airframe</div><div class="v">3,470 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-550-D · 780 since overhaul</div><div class="k">Gear</div><div class="v">Amphibious floats</div><div class="k">Fuel</div><div class="v">Long range fuel</div><div class="k">Panel</div><div class="v">WAAS IFR</div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Southwind Aviation</div><div class="btns"><a class="btn" href="tel:2392783113">Call 239-278-3113</a></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2459533" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2459529" target="_blank" rel="noopener">Trade-A-Plane (second ad)</a><a href="https://www.barnstormers.com/category-17401-Cessna--C-185.html" target="_blank" rel="noopener">Barnstormers</a><a href="https://www.barnstormers.com/category-16268-Cessna--Amphibian.html" target="_blank" rel="noopener">Barnstormers amphibian</a></div></div>
 </div>
@@ -538,11 +539,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-CFSEC" data-price="299000" data-year="1973" data-hrs="6883.0" data-country="CA" data-rec="entries">
 <summary>
 <div class="ph"><img src="photos/CFSEC.jpg" alt="" loading="lazy"></div>
-<div class="mid"><div class="ym">1973 Cessna 185 <span class="tail">C-FSEC</span></div><div class="sub">🇨🇦 Hawkesbury, ON · 6,883 hrs · 1 TSB</div></div>
+<div class="mid"><div class="tail">C-FSEC</div><div class="ym">1973 Cessna 185</div><div class="sub">🇨🇦 Hawkesbury, ON · 6,883 airframe hrs · 1 TSB</div></div>
 <div class="right"><div class="price">$299k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$299,000</div><div class="k">Serial</div><div class="v"><span class="mono">18502152</span></div><div class="k">Airframe</div><div class="v">6,883 hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520 · 558 since overhaul</div><div class="k">Prop</div><div class="v">0 since overhaul</div><div class="k">Gear</div><div class="v">Wipline 3730 amphibious floats</div><div class="k">Tail</div><div class="v">Tail read from the ad photo</div><div class="k">Record</div><div class="v">1 TSB · <a href="#rec-CFSEC">see the entries below</a></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$299,000</div><div class="k">Serial</div><div class="v"><span class="mono">18502152</span></div><div class="k">Airframe</div><div class="v">6,883 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520 · 558 since overhaul</div><div class="k">Prop</div><div class="v">0 since overhaul</div><div class="k">Gear</div><div class="v">Wipline 3730 amphibious floats</div><div class="k">Tail</div><div class="v">Tail read from the ad photo</div><div class="k">Record</div><div class="v">1 TSB · <a href="#rec-CFSEC">see the entries below</a></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Canadian Aircraft Sales · Pier Labelle</div><div class="btns"><a class="btn" href="tel:6136320123">Call 613-632-0123</a></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2452630" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.globalair.com/aircraft-for-sale/single-engine-piston/cessna-185" target="_blank" rel="noopener">GlobalAir</a><a href="https://www.csplane.com/" target="_blank" rel="noopener">Canadian Aircraft Sales</a></div></div>
 </div>
@@ -550,11 +551,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-anch80" data-price="300000" data-year="1980" data-hrs="2200.0" data-country="US" data-rec="nosn">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">1980 Cessna A185F <span class="tail mute">tail not published</span></div><div class="sub">🇺🇸 Wasilla, AK · 2,200 hrs · no serial or tail published · not screened</div></div>
+<div class="mid"><div class="tail none">tail not published</div><div class="ym">1980 Cessna A185F</div><div class="sub">🇺🇸 Wasilla, AK · 2,200 airframe hrs · no serial or tail published · not screened</div></div>
 <div class="right"><div class="price">$300k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$300,000</div><div class="k">Airframe</div><div class="v">2,200 hrs, as advertised</div><div class="k">Engine</div><div class="v">500 since overhaul (the ad does not say when)</div><div class="k">Gear</div><div class="v">Wheels and EDO 2960 floats</div><div class="k">Mods</div><div class="v">Robertson STOL · as advertised</div><div class="k">Posted</div><div class="v">Ad dated 2026-09-12</div><div class="k">Record</div><div class="v">no serial or tail published · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$300,000</div><div class="k">Airframe</div><div class="v">2,200 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">500 since overhaul (the ad does not say when)</div><div class="k">Gear</div><div class="v">Wheels and EDO 2960 floats</div><div class="k">Mods</div><div class="v">Robertson STOL · as advertised</div><div class="k">Posted</div><div class="v">Ad dated 2026-09-12</div><div class="k">Record</div><div class="v">no serial or tail published · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Private seller · Gar Jordan</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://anchorage.craigslist.org/search/sss?query=cessna%20185" target="_blank" rel="noopener">Craigslist</a><a href="https://www.facebook.com/marketplace/anchorage/search?query=cessna%20a185f" target="_blank" rel="noopener">Facebook Marketplace</a></div></div>
 </div>
@@ -562,11 +563,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-alberta78" data-price="310000" data-year="1978" data-hrs="1000000000" data-country="CA" data-rec="nosn">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">1978 Cessna A185F <span class="tail mute">tail not published</span></div><div class="sub">🇨🇦 Alberta · hours not published · no serial or tail published · not screened</div></div>
+<div class="mid"><div class="tail none">tail not published</div><div class="ym">1978 Cessna A185F</div><div class="sub">🇨🇦 Alberta · airframe hours not published · no serial or tail published · not screened</div></div>
 <div class="right"><div class="price">$310k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$310,000 <span class="mute">· aircraftdealer.com labels it recently reduced; the figure has not changed in weeks</span></div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">no serial or tail published · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$310,000 <span class="mute">· aircraftdealer.com labels it recently reduced; the figure has not changed in weeks</span></div><div class="k">Airframe</div><div class="v">airframe hours not published</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">no serial or tail published · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Front Sight · Dennis</div><div class="btns"><a class="btn" href="tel:7808490583">Call 780-849-0583</a></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.globalplanesearch.com/" target="_blank" rel="noopener">GlobalPlaneSearch</a><a href="https://www.aircraftdealer.com/" target="_blank" rel="noopener">aircraftdealer.com</a></div></div>
 </div>
@@ -574,11 +575,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-N4095L" data-price="313809" data-year="0" data-hrs="10904.2" data-country="CH" data-rec="nomatch">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">Cessna A185F <span class="tail">N4095L</span></div><div class="sub">🇨🇭 <span class="foreign">foreign</span> Locarno, Switzerland · 10,904.2 hrs · serial not in the record · not screened</div></div>
+<div class="mid"><div class="tail">N4095L</div><div class="ym">Cessna A185F</div><div class="sub">🇨🇭 <span class="foreign">foreign</span> Locarno, Switzerland · 10,904.2 airframe hrs · serial not in the record · not screened</div></div>
 <div class="right"><div class="price">$314k</div><div class="pm up">up from $312,891</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$313,809 <span class="mute">· GlobalPlaneSearch prints $321,412</span></div><div class="k">Airframe</div><div class="v">10,904.2 (GlobalPlaneSearch prints 10,889) hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520-D · 2,280 total · 179 since overhaul (2019)</div><div class="k">Prop</div><div class="v">328.5 since overhaul</div><div class="k">Record</div><div class="v">serial not in the record · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$313,809 <span class="mute">· GlobalPlaneSearch prints $321,412</span></div><div class="k">Airframe</div><div class="v">10,904.2 (GlobalPlaneSearch prints 10,889) airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520-D · 2,280 total · 179 since overhaul (2019)</div><div class="k">Prop</div><div class="v">328.5 since overhaul</div><div class="k">Record</div><div class="v">serial not in the record · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Aeromeccanica SA</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.controller.com/listings/for-sale/cessna/185/piston-single-aircraft" target="_blank" rel="noopener">Controller</a><a href="https://www.globalplanesearch.com/" target="_blank" rel="noopener">GlobalPlaneSearch</a><a href="https://www.aircraftdealer.com/" target="_blank" rel="noopener">aircraftdealer.com</a></div></div>
 </div>
@@ -586,11 +587,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-N93183" data-price="315000" data-year="1976" data-hrs="2194.0" data-country="US" data-rec="entries">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">1976 Cessna A185F <span class="tail">N93183</span></div><div class="sub">🇺🇸 Anchorage, AK · 2,194 hrs · 1 NTSB · 2 AIDS</div></div>
+<div class="mid"><div class="tail">N93183</div><div class="ym">1976 Cessna A185F</div><div class="sub">🇺🇸 Anchorage, AK · 2,194 airframe hrs · 1 NTSB · 2 AIDS</div></div>
 <div class="right"><div class="price">$315k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$315,000</div><div class="k">Serial</div><div class="v"><span class="mono">18503190</span></div><div class="k">Airframe</div><div class="v">2,194 hrs, as advertised</div><div class="k">Engine</div><div class="v">550 engine and prop upgrade, as advertised</div><div class="k">Gear</div><div class="v">Aerocet floats · hydraulic wheel skis</div><div class="k">Mods</div><div class="v">Sportsman leading edge, VGs, HID lights · as advertised</div><div class="k">History</div><div class="v">Privately owned 44 years; the ad discloses minor wingtip damage in 1978; complete logs, as advertised</div><div class="k">Registry</div><div class="v">Restricted category · Other</div><div class="k">Record</div><div class="v">1 NTSB · 2 AIDS · <a href="#rec-N93183">see the entries below</a></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$315,000</div><div class="k">Serial</div><div class="v"><span class="mono">18503190</span></div><div class="k">Airframe</div><div class="v">2,194 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">550 engine and prop upgrade, as advertised</div><div class="k">Gear</div><div class="v">Aerocet floats · hydraulic wheel skis</div><div class="k">Mods</div><div class="v">Sportsman leading edge, VGs, HID lights · as advertised</div><div class="k">History</div><div class="v">Privately owned 44 years; the ad discloses minor wingtip damage in 1978; complete logs, as advertised</div><div class="k">Registry</div><div class="v">Restricted category · Other</div><div class="k">Record</div><div class="v">1 NTSB · 2 AIDS · <a href="#rec-N93183">see the entries below</a></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Alaska Aircraft Sales</div><div class="btns"><a class="btn" href="tel:9072431966">Call 907-243-1966</a></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2458037" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.hangar67.com/aircraft-for-sale" target="_blank" rel="noopener">Hangar67</a></div></div>
 </div>
@@ -598,11 +599,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-N1089F" data-price="325000" data-year="0" data-hrs="2776.0" data-country="US" data-rec="entries">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">Cessna A185F <span class="tail">N1089F</span></div><div class="sub">🇺🇸 Alaska · 2,776 hrs · 1 NTSB · 1 AIDS</div></div>
+<div class="mid"><div class="tail">N1089F</div><div class="ym">Cessna A185F</div><div class="sub">🇺🇸 Alaska · 2,776 airframe hrs · 1 NTSB · 1 AIDS</div></div>
 <div class="right"><div class="price">$325k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$325,000</div><div class="k">Airframe</div><div class="v">2,776 hrs, as advertised</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">1 NTSB · 1 AIDS · <a href="#rec-N1089F">see the entries below</a> <span class="mute">(matched by registration; the record lists serial 18502744)</span></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$325,000</div><div class="k">Airframe</div><div class="v">2,776 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">1 NTSB · 1 AIDS · <a href="#rec-N1089F">see the entries below</a> <span class="mute">(matched by registration; the record lists serial 18502744)</span></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Seaplanes North</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.hangar67.com/aircraft-for-sale" target="_blank" rel="noopener">Hangar67</a></div></div>
 </div>
@@ -610,11 +611,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-CFGCG" data-price="335000" data-year="0" data-hrs="1000000000" data-country="CA" data-rec="clean">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">Cessna A185F <span class="tail">CF-GCG</span></div><div class="sub">🇨🇦 Canada · hours not published · no entries found</div></div>
+<div class="mid"><div class="tail">CF-GCG</div><div class="ym">Cessna A185F</div><div class="sub">🇨🇦 Canada · airframe hours not published · no entries found</div></div>
 <div class="right"><div class="price">$335k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$335,000</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found <span class="mute">(matched by registration; the record lists serial 1851412)</span></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$335,000</div><div class="k">Airframe</div><div class="v">airframe hours not published</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found <span class="mute">(matched by registration; the record lists serial 1851412)</span></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Contact through the ad</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.controller.com/listings/for-sale/cessna/185/piston-single-aircraft" target="_blank" rel="noopener">Controller</a></div></div>
 </div>
@@ -622,11 +623,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-N1050F" data-price="340000" data-year="0" data-hrs="1000000000" data-country="CA" data-rec="entries">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">Cessna A185F <span class="tail">N1050F</span></div><div class="sub">🇨🇦 British Columbia · hours not published · 2 NTSB · 3 AIDS</div></div>
+<div class="mid"><div class="tail">N1050F</div><div class="ym">Cessna A185F</div><div class="sub">🇨🇦 British Columbia · airframe hours not published · 2 NTSB · 3 AIDS</div></div>
 <div class="right"><div class="price">$340k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$340,000</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">2 NTSB · 3 AIDS · <a href="#rec-N1050F">see the entries below</a> <span class="mute">(matched by registration; the record lists serial 18502707)</span></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$340,000</div><div class="k">Airframe</div><div class="v">airframe hours not published</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">2 NTSB · 3 AIDS · <a href="#rec-N1050F">see the entries below</a> <span class="mute">(matched by registration; the record lists serial 18502707)</span></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Contact through the ad</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.hangar67.com/aircraft-for-sale" target="_blank" rel="noopener">Hangar67</a><a href="https://www.globalplanesearch.com/" target="_blank" rel="noopener">GlobalPlaneSearch</a><a href="https://www.aircraftdealer.com/" target="_blank" rel="noopener">aircraftdealer.com</a></div></div>
 </div>
@@ -634,11 +635,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-N86SS" data-price="349900" data-year="0" data-hrs="1000000000" data-country="US" data-rec="entries">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">Cessna A185F <span class="tail">N86SS</span></div><div class="sub">🇺🇸 United States · hours not published · 1 NTSB · 1 AIDS</div></div>
+<div class="mid"><div class="tail">N86SS</div><div class="ym">Cessna A185F</div><div class="sub">🇺🇸 United States · airframe hours not published · 1 NTSB · 1 AIDS</div></div>
 <div class="right"><div class="price">$350k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$349,900</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">1 NTSB · 1 AIDS · <a href="#rec-N86SS">see the entries below</a> <span class="mute">(matched by registration; the record lists serial 18503334)</span></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$349,900</div><div class="k">Airframe</div><div class="v">airframe hours not published</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">1 NTSB · 1 AIDS · <a href="#rec-N86SS">see the entries below</a> <span class="mute">(matched by registration; the record lists serial 18503334)</span></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Contact through the ad</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.controller.com/listings/for-sale/cessna/185/piston-single-aircraft" target="_blank" rel="noopener">Controller</a></div></div>
 </div>
@@ -646,11 +647,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-N866PH" data-price="357500" data-year="1976" data-hrs="1000000000" data-country="US" data-rec="entries">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">1976 Cessna A185F <span class="tail">N866PH</span></div><div class="sub">🇺🇸 United States · hours not published · 1 SDR</div></div>
+<div class="mid"><div class="tail">N866PH</div><div class="ym">1976 Cessna A185F</div><div class="sub">🇺🇸 United States · airframe hours not published · 1 SDR</div></div>
 <div class="right"><div class="price">$358k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$357,500</div><div class="k">Serial</div><div class="v"><span class="mono">18503167</span></div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">1 SDR · <a href="#rec-N866PH">see the entries below</a></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$357,500</div><div class="k">Serial</div><div class="v"><span class="mono">18503167</span></div><div class="k">Airframe</div><div class="v">airframe hours not published</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">1 SDR · <a href="#rec-N866PH">see the entries below</a></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Contact through the ad</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.controller.com/listings/for-sale/cessna/185/piston-single-aircraft" target="_blank" rel="noopener">Controller</a><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2457588" target="_blank" rel="noopener">Trade-A-Plane</a></div></div>
 </div>
@@ -658,11 +659,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-alpena" data-price="359000" data-year="1975" data-hrs="3000.0" data-country="US" data-rec="nosn">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">1975 Cessna A185F <span class="tail mute">tail not published</span></div><div class="sub">🇺🇸 Alpena, MI · 3,000 hrs · no serial or tail published · not screened</div></div>
+<div class="mid"><div class="tail none">tail not published</div><div class="ym">1975 Cessna A185F</div><div class="sub">🇺🇸 Alpena, MI · 3,000 airframe hrs · no serial or tail published · not screened</div></div>
 <div class="right"><div class="price">$359k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$359,000 <span class="mute">· Make offer</span></div><div class="k">Airframe</div><div class="v">3,000 hrs, as advertised</div><div class="k">Engine</div><div class="v">1,060 since factory new</div><div class="k">Prop</div><div class="v">McCauley on the P-Ponk STC · 144 since</div><div class="k">Gear</div><div class="v">Wipline 3000A amphibious floats · land gear included</div><div class="k">Mods</div><div class="v">Wing-X, VGs · as advertised</div><div class="k">Panel</div><div class="v">S-Tec 30 autopilot</div><div class="k">Record</div><div class="v">no serial or tail published · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$359,000 <span class="mute">· Make offer</span></div><div class="k">Airframe</div><div class="v">3,000 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">1,060 since factory new</div><div class="k">Prop</div><div class="v">McCauley on the P-Ponk STC · 144 since</div><div class="k">Gear</div><div class="v">Wipline 3000A amphibious floats · land gear included</div><div class="k">Mods</div><div class="v">Wing-X, VGs · as advertised</div><div class="k">Panel</div><div class="v">S-Tec 30 autopilot</div><div class="k">Record</div><div class="v">no serial or tail published · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Air Devices · Randy Patterson</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.barnstormers.com/category-16268-Cessna--Amphibian.html" target="_blank" rel="noopener">Barnstormers amphibian</a><a href="https://www.barnstormers.com/category-17400-Cessna--C-185.html" target="_blank" rel="noopener">Barnstormers</a></div></div>
 </div>
@@ -670,11 +671,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-uk80" data-price="360000" data-year="1980" data-hrs="6458.0" data-country="GB" data-rec="nosn">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">1980 Cessna 185F <span class="tail mute">tail not published</span></div><div class="sub">🇬🇧 <span class="foreign">foreign</span> United Kingdom · 6,458 hrs · no serial or tail published · not screened</div></div>
+<div class="mid"><div class="tail none">tail not published</div><div class="ym">1980 Cessna 185F</div><div class="sub">🇬🇧 <span class="foreign">foreign</span> United Kingdom · 6,458 airframe hrs · no serial or tail published · not screened</div></div>
 <div class="right"><div class="price">$360k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$360,000</div><div class="k">Airframe</div><div class="v">6,458 hrs, as advertised</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">no serial or tail published · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$360,000</div><div class="k">Airframe</div><div class="v">6,458 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">no serial or tail published · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Contact through the ad</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.findaircraft.com/" target="_blank" rel="noopener">FindAircraft</a></div></div>
 </div>
@@ -682,11 +683,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-ZSFNF" data-price="360000" data-year="0" data-hrs="6540.0" data-country="ZA" data-rec="nomatch">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">Cessna A185F <span class="tail">ZS-FNF</span></div><div class="sub">🇿🇦 <span class="foreign">foreign</span> Sandton / Mosselbay / Johannesburg, South Africa · 6,540 hrs · serial not in the record · not screened</div></div>
+<div class="mid"><div class="tail">ZS-FNF</div><div class="ym">Cessna A185F</div><div class="sub">🇿🇦 <span class="foreign">foreign</span> Sandton / Mosselbay / Johannesburg, South Africa · 6,540 airframe hrs · serial not in the record · not screened</div></div>
 <div class="right"><div class="price">$360k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$360,000 <span class="mute">· R4,750,000</span></div><div class="k">Serial</div><div class="v">Controller prints serial 185-04095, which the registries file under a different aircraft; not screened</div><div class="k">Airframe</div><div class="v">6,540 hrs, as advertised</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">serial not in the record · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$360,000 <span class="mute">· R4,750,000</span></div><div class="k">Serial</div><div class="v">Controller prints serial 185-04095, which the registries file under a different aircraft; not screened</div><div class="k">Airframe</div><div class="v">6,540 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">serial not in the record · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Contact through the ad</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.controller.com/listings/for-sale/cessna/185/piston-single-aircraft" target="_blank" rel="noopener">Controller</a><a href="https://www.hangar67.com/aircraft-for-sale" target="_blank" rel="noopener">Hangar67</a><a href="https://www.globalplanesearch.com/" target="_blank" rel="noopener">GlobalPlaneSearch</a></div></div>
 </div>
@@ -694,11 +695,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-N78BL" data-price="369900" data-year="1977" data-hrs="1000000000" data-country="US" data-rec="clean">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">1977 Cessna A185F <span class="tail">N78BL</span></div><div class="sub">🇺🇸 Hampstead, NH · hours not published · no entries found</div></div>
+<div class="mid"><div class="tail">N78BL</div><div class="ym">1977 Cessna A185F</div><div class="sub">🇺🇸 Hampstead, NH · airframe hours not published · no entries found</div></div>
 <div class="right"><div class="price">$370k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$369,900</div><div class="k">Serial</div><div class="v"><span class="mono">18503324</span></div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$369,900</div><div class="k">Serial</div><div class="v"><span class="mono">18503324</span></div><div class="k">Airframe</div><div class="v">airframe hours not published</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Contact through the ad</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.facebook.com/marketplace/boston/search?query=cessna%20185" target="_blank" rel="noopener">Facebook Marketplace</a></div></div>
 </div>
@@ -706,11 +707,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-N4711E" data-price="379000" data-year="0" data-hrs="1000000000" data-country="US" data-rec="clean">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">Cessna A185F <span class="tail">N4711E</span></div><div class="sub">🇺🇸 United States · hours not published · no entries found</div></div>
+<div class="mid"><div class="tail">N4711E</div><div class="ym">Cessna A185F</div><div class="sub">🇺🇸 United States · airframe hours not published · no entries found</div></div>
 <div class="right"><div class="price">$379k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$379,000</div><div class="k">Serial</div><div class="v"><span class="mono">18503845</span></div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Mods</div><div class="v">Robertson STOL · as advertised</div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$379,000</div><div class="k">Serial</div><div class="v"><span class="mono">18503845</span></div><div class="k">Airframe</div><div class="v">airframe hours not published</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Mods</div><div class="v">Robertson STOL · as advertised</div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Contact through the ad</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.controller.com/listings/for-sale/cessna/185/piston-single-aircraft" target="_blank" rel="noopener">Controller</a></div></div>
 </div>
@@ -718,11 +719,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-CGGKJ" data-price="379000" data-year="0" data-hrs="1000000000" data-country="CA" data-rec="entries">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">Cessna A185F <span class="tail">C-GGKJ</span></div><div class="sub">🇨🇦 Canada · hours not published · 1 AIDS</div></div>
+<div class="mid"><div class="tail">C-GGKJ</div><div class="ym">Cessna A185F</div><div class="sub">🇨🇦 Canada · airframe hours not published · 1 AIDS</div></div>
 <div class="right"><div class="price">$379k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$379,000</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">History</div><div class="v">Previously N78011</div><div class="k">Record</div><div class="v">1 AIDS · <a href="#rec-CGGKJ">see the entries below</a> <span class="mute">(matched by registration; the record lists serial 18503902)</span></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$379,000</div><div class="k">Airframe</div><div class="v">airframe hours not published</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">History</div><div class="v">Previously N78011</div><div class="k">Record</div><div class="v">1 AIDS · <a href="#rec-CGGKJ">see the entries below</a> <span class="mute">(matched by registration; the record lists serial 18503902)</span></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Contact through the ad</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.hangar67.com/aircraft-for-sale" target="_blank" rel="noopener">Hangar67</a><a href="https://www.globalplanesearch.com/" target="_blank" rel="noopener">GlobalPlaneSearch</a></div></div>
 </div>
@@ -730,11 +731,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-N7802F" data-price="389000" data-year="0" data-hrs="1000000000" data-country="US" data-rec="entries">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">Cessna A185F <span class="tail">N7802F</span></div><div class="sub">🇺🇸 United States · hours not published · 1 NTSB</div></div>
+<div class="mid"><div class="tail">N7802F</div><div class="ym">Cessna A185F</div><div class="sub">🇺🇸 United States · airframe hours not published · 1 NTSB</div></div>
 <div class="right"><div class="price">$389k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$389,000</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Mods</div><div class="v">Robertson STOL · as advertised</div><div class="k">Record</div><div class="v">1 NTSB · <a href="#rec-N7802F">see the entries below</a> <span class="mute">(matched by registration; the record lists serial 18502210)</span></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$389,000</div><div class="k">Airframe</div><div class="v">airframe hours not published</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Mods</div><div class="v">Robertson STOL · as advertised</div><div class="k">Record</div><div class="v">1 NTSB · <a href="#rec-N7802F">see the entries below</a> <span class="mute">(matched by registration; the record lists serial 18502210)</span></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Contact through the ad</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.controller.com/listings/for-sale/cessna/185/piston-single-aircraft" target="_blank" rel="noopener">Controller</a></div></div>
 </div>
@@ -742,11 +743,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-N1790R" data-price="395000" data-year="0" data-hrs="2400.0" data-country="US" data-rec="entries">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">Cessna A185F <span class="tail">N1790R</span></div><div class="sub">🇺🇸 United States · 2,400 hrs · 1 NTSB · 1 AIDS</div></div>
+<div class="mid"><div class="tail">N1790R</div><div class="ym">Cessna A185F</div><div class="sub">🇺🇸 United States · 2,400 airframe hrs · 1 NTSB · 1 AIDS</div></div>
 <div class="right"><div class="price">$395k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$395,000 <span class="mute">· The Barnstormers ad says NEW PRICE and prints no figure</span></div><div class="k">Airframe</div><div class="v">2,400 on Trade-A-Plane; 2,200 on Barnstormers hrs, as advertised</div><div class="k">Engine</div><div class="v">550 since new on Trade-A-Plane; 590 on Barnstormers</div><div class="k">Prop</div><div class="v">25 since new on Trade-A-Plane; 20 on Barnstormers</div><div class="k">Record</div><div class="v">1 NTSB · 1 AIDS · <a href="#rec-N1790R">see the entries below</a> <span class="mute">(matched by registration; the record lists serial 18502506)</span></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$395,000 <span class="mute">· The Barnstormers ad says NEW PRICE and prints no figure</span></div><div class="k">Airframe</div><div class="v">2,400 on Trade-A-Plane; 2,200 on Barnstormers airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">550 since new on Trade-A-Plane; 590 on Barnstormers</div><div class="k">Prop</div><div class="v">25 since new on Trade-A-Plane; 20 on Barnstormers</div><div class="k">Record</div><div class="v">1 NTSB · 1 AIDS · <a href="#rec-N1790R">see the entries below</a> <span class="mute">(matched by registration; the record lists serial 18502506)</span></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Contact through the ad</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2460909" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.barnstormers.com/category-17400-Cessna--C-185.html" target="_blank" rel="noopener">Barnstormers</a></div></div>
 </div>
@@ -754,11 +755,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-N185KS" data-price="399000" data-year="0" data-hrs="1000000000" data-country="US" data-rec="multi">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">Cessna A185F <span class="tail">N185KS</span></div><div class="sub">🇺🇸 United States · hours not published · more than one aircraft has worn this mark · not screened</div></div>
+<div class="mid"><div class="tail">N185KS</div><div class="ym">Cessna A185F</div><div class="sub">🇺🇸 United States · airframe hours not published · more than one aircraft has worn this mark · not screened</div></div>
 <div class="right"><div class="price">$399k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$399,000</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">more than one aircraft has worn this mark · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$399,000</div><div class="k">Airframe</div><div class="v">airframe hours not published</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">more than one aircraft has worn this mark · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Contact through the ad</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.controller.com/listings/for-sale/cessna/185/piston-single-aircraft" target="_blank" rel="noopener">Controller</a></div></div>
 </div>
@@ -766,11 +767,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-N87TM" data-price="399900" data-year="0" data-hrs="1000000000" data-country="US" data-rec="clean">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">Cessna A185E <span class="tail">N87TM</span></div><div class="sub">🇺🇸 United States · hours not published · no entries found</div></div>
+<div class="mid"><div class="tail">N87TM</div><div class="ym">Cessna A185E</div><div class="sub">🇺🇸 United States · airframe hours not published · no entries found</div></div>
 <div class="right"><div class="price">$400k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$399,900</div><div class="k">Serial</div><div class="v"><span class="mono">18501786</span></div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$399,900</div><div class="k">Serial</div><div class="v"><span class="mono">18501786</span></div><div class="k">Airframe</div><div class="v">airframe hours not published</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Contact through the ad</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;category_level1=Single%20Engine%20Piston&amp;make=CESSNA&amp;model_group=CESSNA+185+SERIES&amp;s-page_size=96" target="_blank" rel="noopener">Trade-A-Plane</a></div></div>
 </div>
@@ -778,11 +779,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-CGGMP" data-price="429900" data-year="0" data-hrs="1000000000" data-country="CA" data-rec="entries">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">Cessna A185F <span class="tail">C-GGMP</span></div><div class="sub">🇨🇦 Canada · hours not published · 1 NTSB · 2 AIDS</div></div>
+<div class="mid"><div class="tail">C-GGMP</div><div class="ym">Cessna A185F</div><div class="sub">🇨🇦 Canada · airframe hours not published · 1 NTSB · 2 AIDS</div></div>
 <div class="right"><div class="price">$430k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$429,900</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">1 NTSB · 2 AIDS · <a href="#rec-CGGMP">see the entries below</a> <span class="mute">(matched by registration; the record lists serial 18504037)</span></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$429,900</div><div class="k">Airframe</div><div class="v">airframe hours not published</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">1 NTSB · 2 AIDS · <a href="#rec-CGGMP">see the entries below</a> <span class="mute">(matched by registration; the record lists serial 18504037)</span></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Contact through the ad</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2457405" target="_blank" rel="noopener">Trade-A-Plane</a></div></div>
 </div>
@@ -790,11 +791,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-CFTLM" data-price="495000" data-year="0" data-hrs="1000000000" data-country="CA" data-rec="clean">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">Cessna A185F <span class="tail">C-FTLM</span></div><div class="sub">🇨🇦 Canada · hours not published · no entries found</div></div>
+<div class="mid"><div class="tail">C-FTLM</div><div class="ym">Cessna A185F</div><div class="sub">🇨🇦 Canada · airframe hours not published · no entries found</div></div>
 <div class="right"><div class="price">$495k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$495,000</div><div class="k">Serial</div><div class="v"><span class="mono">18502952</span></div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$495,000</div><div class="k">Serial</div><div class="v"><span class="mono">18502952</span></div><div class="k">Airframe</div><div class="v">airframe hours not published</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Contact through the ad</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.controller.com/listings/for-sale/cessna/185/piston-single-aircraft" target="_blank" rel="noopener">Controller</a></div></div>
 </div>
@@ -802,11 +803,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-N185HR" data-price="540000" data-year="1975" data-hrs="459.0" data-country="US" data-rec="clean">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">1975 Cessna A185F <span class="tail">N185HR</span></div><div class="sub">🇺🇸 Liberal, KS · 459 hrs · no entries found</div></div>
+<div class="mid"><div class="tail">N185HR</div><div class="ym">1975 Cessna A185F</div><div class="sub">🇺🇸 Liberal, KS · 459 airframe hrs · no entries found</div></div>
 <div class="right"><div class="price">$540k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$540,000</div><div class="k">Serial</div><div class="v"><span class="mono">18502815</span></div><div class="k">Airframe</div><div class="v">459 hrs, as advertised</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$540,000</div><div class="k">Serial</div><div class="v"><span class="mono">18502815</span></div><div class="k">Airframe</div><div class="v">459 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Ron Drosselmeyer, Aurora CO (buyers referred to Lyddon Aero Center)</div><div class="btns"><a class="btn" href="tel:7196023578">Call 719-602-3578</a></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.controller.com/listing/for-sale/257412531/1975-cessna-a185f-piston-single-aircraft" target="_blank" rel="noopener">Controller</a></div></div>
 </div>
@@ -814,11 +815,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-N185GG" data-price="650000" data-year="0" data-hrs="1000000000" data-country="US" data-rec="entries">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">Cessna A185F <span class="tail">N185GG</span></div><div class="sub">🇺🇸 Loveland, CO · hours not published · 2 NTSB · 1 TSB · 2 AIDS</div></div>
+<div class="mid"><div class="tail">N185GG</div><div class="ym">Cessna A185F</div><div class="sub">🇺🇸 Loveland, CO · airframe hours not published · 2 NTSB · 1 TSB · 2 AIDS</div></div>
 <div class="right"><div class="price">$650k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$650,000</div><div class="k">Serial</div><div class="v"><span class="mono">18502787</span></div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">2 NTSB · 1 TSB · 2 AIDS · <a href="#rec-N185GG">see the entries below</a></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$650,000</div><div class="k">Serial</div><div class="v"><span class="mono">18502787</span></div><div class="k">Airframe</div><div class="v">airframe hours not published</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">2 NTSB · 1 TSB · 2 AIDS · <a href="#rec-N185GG">see the entries below</a></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Contact through the ad</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.controller.com/listings/for-sale/cessna/185/piston-single-aircraft" target="_blank" rel="noopener">Controller</a></div></div>
 </div>
@@ -826,11 +827,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-N4800Q" data-price="899500" data-year="0" data-hrs="1000000000" data-country="US" data-rec="clean">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">Cessna A185F <span class="tail">N4800Q</span></div><div class="sub">🇺🇸 United States · hours not published · no entries found</div></div>
+<div class="mid"><div class="tail">N4800Q</div><div class="ym">Cessna A185F</div><div class="sub">🇺🇸 United States · airframe hours not published · no entries found</div></div>
 <div class="right"><div class="price">$900k</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v">$899,500</div><div class="k">Serial</div><div class="v"><span class="mono">18503562</span></div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v">$899,500</div><div class="k">Serial</div><div class="v"><span class="mono">18503562</span></div><div class="k">Airframe</div><div class="v">airframe hours not published</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Contact through the ad</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.controller.com/listings/for-sale/cessna/185/piston-single-aircraft" target="_blank" rel="noopener">Controller</a></div></div>
 </div>
@@ -838,11 +839,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-N53044" data-price="1000000000000" data-year="0" data-hrs="650.0" data-country="US" data-rec="clean">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">Cessna A185F <span class="tail">N53044</span></div><div class="sub">🇺🇸 Punta Gorda, FL · 650 hrs · no entries found</div></div>
+<div class="mid"><div class="tail">N53044</div><div class="ym">Cessna A185F</div><div class="sub">🇺🇸 Punta Gorda, FL · 650 airframe hrs · no entries found</div></div>
 <div class="right"><div class="price">call</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v"> <span class="mute">· Call for price (a $520,000 figure was published earlier)</span></div><div class="k">Serial</div><div class="v"><span class="mono">18502334</span></div><div class="k">Airframe</div><div class="v">650 hrs, as advertised</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v"> <span class="mute">· Call for price (a $520,000 figure was published earlier)</span></div><div class="k">Serial</div><div class="v"><span class="mono">18502334</span></div><div class="k">Airframe</div><div class="v">650 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Contact through the ad</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.controller.com/listings/for-sale/cessna/185/piston-single-aircraft" target="_blank" rel="noopener">Controller</a><a href="https://www.globalair.com/aircraft-for-sale/single-engine-piston/cessna-185" target="_blank" rel="noopener">GlobalAir</a></div></div>
 </div>
@@ -850,11 +851,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-fla82" data-price="1000000000000" data-year="1982" data-hrs="5620.0" data-country="US" data-rec="nosn">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">1982 Cessna A185F <span class="tail mute">tail not published</span></div><div class="sub">🇺🇸 Florida · 5,620 hrs · no serial or tail published · not screened</div></div>
+<div class="mid"><div class="tail none">tail not published</div><div class="ym">1982 Cessna A185F</div><div class="sub">🇺🇸 Florida · 5,620 airframe hrs · no serial or tail published · not screened</div></div>
 <div class="right"><div class="price">call</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v"> <span class="mute">· Call for price</span></div><div class="k">Airframe</div><div class="v">5,620 hrs, as advertised</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Gear</div><div class="v">Amphibious floats</div><div class="k">Record</div><div class="v">no serial or tail published · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v"> <span class="mute">· Call for price</span></div><div class="k">Airframe</div><div class="v">5,620 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Gear</div><div class="v">Amphibious floats</div><div class="k">Record</div><div class="v">no serial or tail published · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Contact through the ad</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.findaircraft.com/" target="_blank" rel="noopener">FindAircraft</a></div></div>
 </div>
@@ -862,11 +863,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-CGYIS" data-price="1000000000000" data-year="0" data-hrs="1000000000" data-country="CA" data-rec="entries">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">Cessna A185F <span class="tail">C-GYIS</span></div><div class="sub">🇨🇦 Pinehouse, SK · hours not published · 1 TSB</div></div>
+<div class="mid"><div class="tail">C-GYIS</div><div class="ym">Cessna A185F</div><div class="sub">🇨🇦 Pinehouse, SK · airframe hours not published · 1 TSB</div></div>
 <div class="right"><div class="price">call</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v"> <span class="mute">· Please call</span></div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">1 TSB · <a href="#rec-CGYIS">see the entries below</a> <span class="mute">(matched by registration; the record lists serial 18502895)</span></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v"> <span class="mute">· Please call</span></div><div class="k">Airframe</div><div class="v">airframe hours not published</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">1 TSB · <a href="#rec-CGYIS">see the entries below</a> <span class="mute">(matched by registration; the record lists serial 18502895)</span></div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Contact through the ad</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.controller.com/listings/for-sale/cessna/185/piston-single-aircraft" target="_blank" rel="noopener">Controller</a><a href="https://www.aircraftforsale.com/aircraft/single-engine-piston/cessna/185" target="_blank" rel="noopener">AircraftForSale</a><a href="https://www.hangar67.com/aircraft-for-sale" target="_blank" rel="noopener">Hangar67</a></div></div>
 </div>
@@ -874,11 +875,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-CFCUK" data-price="1000000000000" data-year="0" data-hrs="6927.0" data-country="CA" data-rec="clean">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">Cessna A185F <span class="tail">C-FCUK</span></div><div class="sub">🇨🇦 Delta, BC · 6,927 hrs · no entries found</div></div>
+<div class="mid"><div class="tail">C-FCUK</div><div class="ym">Cessna A185F</div><div class="sub">🇨🇦 Delta, BC · 6,927 airframe hrs · no entries found</div></div>
 <div class="right"><div class="price">call</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v"> <span class="mute">· Call for price</span></div><div class="k">Serial</div><div class="v"><span class="mono">18502270</span></div><div class="k">Airframe</div><div class="v">6,927 hrs, as advertised</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">History</div><div class="v">Previously N477H</div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v"> <span class="mute">· Call for price</span></div><div class="k">Serial</div><div class="v"><span class="mono">18502270</span></div><div class="k">Airframe</div><div class="v">6,927 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">History</div><div class="v">Previously N477H</div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Contact through the ad</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2444847" target="_blank" rel="noopener">Trade-A-Plane</a></div></div>
 </div>
@@ -886,11 +887,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-fairley76" data-price="1000000000000" data-year="1976" data-hrs="7270.1" data-country="CA" data-rec="nosn">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">1976 Cessna A185F <span class="tail mute">tail not published</span></div><div class="sub">🇨🇦 Vancouver, BC · 7,270.1 hrs · no serial or tail published · not screened</div></div>
+<div class="mid"><div class="tail none">tail not published</div><div class="ym">1976 Cessna A185F</div><div class="sub">🇨🇦 Vancouver, BC · 7,270.1 airframe hrs · no serial or tail published · not screened</div></div>
 <div class="right"><div class="price">call</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v"> <span class="mute">· No price in the ad</span></div><div class="k">Airframe</div><div class="v">7,270.1 hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520 · 293.4 since overhaul</div><div class="k">Prop</div><div class="v">C58 · 12.8 since overhaul</div><div class="k">Gear</div><div class="v">3500L floats</div><div class="k">Mods</div><div class="v">Sportsman STOL, VGs, Atlee Dodge rear seats · as advertised</div><div class="k">Record</div><div class="v">no serial or tail published · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v"> <span class="mute">· No price in the ad</span></div><div class="k">Airframe</div><div class="v">7,270.1 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Continental IO-520 · 293.4 since overhaul</div><div class="k">Prop</div><div class="v">C58 · 12.8 since overhaul</div><div class="k">Gear</div><div class="v">3500L floats</div><div class="k">Mods</div><div class="v">Sportsman STOL, VGs, Atlee Dodge rear seats · as advertised</div><div class="k">Record</div><div class="v">no serial or tail published · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Kevin Fairley</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.barnstormers.com/category-17400-Cessna--C-185.html" target="_blank" rel="noopener">Barnstormers</a><a href="https://www.barnstormers.com/category-17401-Cessna--C-185.html" target="_blank" rel="noopener">Barnstormers</a><a href="https://www.barnstormers.com/category-17450-Cessna--C-185.html" target="_blank" rel="noopener">Barnstormers float plane</a></div></div>
 </div>
@@ -898,11 +899,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-OODUK" data-price="1000000000000" data-year="1961" data-hrs="1000000000" data-country="FR" data-rec="nomatch">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">1961 Cessna 185 <span class="tail">OO-DUK</span></div><div class="sub">🇫🇷 <span class="foreign">foreign</span> Paris, France · hours not published · serial not in the record · not screened</div></div>
+<div class="mid"><div class="tail">OO-DUK</div><div class="ym">1961 Cessna 185</div><div class="sub">🇫🇷 <span class="foreign">foreign</span> Paris, France · airframe hours not published · serial not in the record · not screened</div></div>
 <div class="right"><div class="price">call</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v"> <span class="mute">· Call for price</span></div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-470-F, 260 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">serial not in the record · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v"> <span class="mute">· Call for price</span></div><div class="k">Airframe</div><div class="v">airframe hours not published</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-470-F, 260 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">serial not in the record · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Tregor Air Services</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.globalplanesearch.com/" target="_blank" rel="noopener">GlobalPlaneSearch</a></div></div>
 </div>
@@ -910,11 +911,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-GOMUD" data-price="1000000000000" data-year="1972" data-hrs="3050.0" data-country="GB" data-rec="nomatch">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">1972 Cessna A185F <span class="tail">G-OMUD</span></div><div class="sub">🇬🇧 <span class="foreign">foreign</span> Maidenhead, United Kingdom · 3,050 hrs · serial not in the record · not screened</div></div>
+<div class="mid"><div class="tail">G-OMUD</div><div class="ym">1972 Cessna A185F</div><div class="sub">🇬🇧 <span class="foreign">foreign</span> Maidenhead, United Kingdom · 3,050 airframe hrs · serial not in the record · not screened</div></div>
 <div class="right"><div class="price">call</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v"> <span class="mute">· Call for price on Controller and GlobalPlaneSearch; aerogurus prints $211,459</span></div><div class="k">Airframe</div><div class="v">3,050 hrs, as advertised</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">History</div><div class="v">Nearly £100,000 spent restoring the airframe, as advertised</div><div class="k">Record</div><div class="v">serial not in the record · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v"> <span class="mute">· Call for price on Controller and GlobalPlaneSearch; aerogurus prints $211,459</span></div><div class="k">Airframe</div><div class="v">3,050 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">History</div><div class="v">Nearly £100,000 spent restoring the airframe, as advertised</div><div class="k">Record</div><div class="v">serial not in the record · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Europlane Sales</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.controller.com/listings/for-sale/cessna/185/piston-single-aircraft" target="_blank" rel="noopener">Controller</a><a href="https://www.globalplanesearch.com/" target="_blank" rel="noopener">GlobalPlaneSearch</a></div></div>
 </div>
@@ -922,11 +923,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-poland79" data-price="1000000000000" data-year="1979" data-hrs="1000000000" data-country="PL" data-rec="nosn">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">1979 Cessna A185F <span class="tail mute">tail not published</span></div><div class="sub">🇵🇱 <span class="foreign">foreign</span> Białystok, Poland · hours not published · no serial or tail published · not screened</div></div>
+<div class="mid"><div class="tail none">tail not published</div><div class="ym">1979 Cessna A185F</div><div class="sub">🇵🇱 <span class="foreign">foreign</span> Białystok, Poland · airframe hours not published · no serial or tail published · not screened</div></div>
 <div class="right"><div class="price">call</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v"> <span class="mute">· Call for price · open to a trade for a C182R or newer</span></div><div class="k">Engine</div><div class="v">Continental IO-520-D 300 hp</div><div class="k">Panel</div><div class="v">GFC 500 autopilot</div><div class="k">History</div><div class="v">Bought in the USA in 2021, shipped containerised, assembled by North Service</div><div class="k">Record</div><div class="v">no serial or tail published · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v"> <span class="mute">· Call for price · open to a trade for a C182R or newer</span></div><div class="k">Airframe</div><div class="v">airframe hours not published</div><div class="k">Engine</div><div class="v">Continental IO-520-D 300 hp</div><div class="k">Panel</div><div class="v">GFC 500 autopilot</div><div class="k">History</div><div class="v">Bought in the USA in 2021, shipped containerised, assembled by North Service</div><div class="k">Record</div><div class="v">no serial or tail published · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Contact through the ad</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.globalplanesearch.com/" target="_blank" rel="noopener">GlobalPlaneSearch</a></div></div>
 </div>
@@ -934,11 +935,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-norway81" data-price="1000000000000" data-year="1981" data-hrs="1139.0" data-country="NO" data-rec="nosn">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">1981 Cessna A185F <span class="tail mute">tail not published</span></div><div class="sub">🇳🇴 <span class="foreign">foreign</span> Norway · 1,139 hrs · no serial or tail published · not screened</div></div>
+<div class="mid"><div class="tail none">tail not published</div><div class="ym">1981 Cessna A185F</div><div class="sub">🇳🇴 <span class="foreign">foreign</span> Norway · 1,139 airframe hrs · no serial or tail published · not screened</div></div>
 <div class="right"><div class="price">call</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v"> <span class="mute">· Call for price</span></div><div class="k">Airframe</div><div class="v">1,139 hrs, as advertised</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">no serial or tail published · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v"> <span class="mute">· Call for price</span></div><div class="k">Airframe</div><div class="v">1,139 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">no serial or tail published · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Contact through the ad</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.globalplanesearch.com/" target="_blank" rel="noopener">GlobalPlaneSearch</a></div></div>
 </div>
@@ -946,11 +947,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-norway77" data-price="1000000000000" data-year="1977" data-hrs="1000000000" data-country="NO" data-rec="nosn">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">1977 Cessna A185F <span class="tail mute">tail not published</span></div><div class="sub">🇳🇴 <span class="foreign">foreign</span> Rakkestad, Norway · hours not published · no serial or tail published · not screened</div></div>
+<div class="mid"><div class="tail none">tail not published</div><div class="ym">1977 Cessna A185F</div><div class="sub">🇳🇴 <span class="foreign">foreign</span> Rakkestad, Norway · airframe hours not published · no serial or tail published · not screened</div></div>
 <div class="right"><div class="price">call</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v"> <span class="mute">· Call for price</span></div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Gear</div><div class="v">Amphibious floats</div><div class="k">Record</div><div class="v">no serial or tail published · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v"> <span class="mute">· Call for price</span></div><div class="k">Airframe</div><div class="v">airframe hours not published</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Gear</div><div class="v">Amphibious floats</div><div class="k">Record</div><div class="v">no serial or tail published · not screened</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Contact through the ad</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.globalplanesearch.com/" target="_blank" rel="noopener">GlobalPlaneSearch</a></div></div>
 </div>
@@ -958,11 +959,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <details class="row" id="r-V5RED" data-price="1000000000000" data-year="0" data-hrs="5112.0" data-country="NA" data-rec="clean">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
-<div class="mid"><div class="ym">Cessna A185F <span class="tail">V5-RED</span></div><div class="sub">🇳🇦 <span class="foreign">foreign</span> Namibia · 5,112 hrs · no entries found</div></div>
+<div class="mid"><div class="tail">V5-RED</div><div class="ym">Cessna A185F</div><div class="sub">🇳🇦 <span class="foreign">foreign</span> Namibia · 5,112 airframe hrs · no entries found</div></div>
 <div class="right"><div class="price">call</div></div>
 </summary>
 <div class="det">
-<div class="dl"><div class="k">Asking</div><div class="v"> <span class="mute">· Call for price</span></div><div class="k">Serial</div><div class="v"><span class="mono">18503573</span></div><div class="k">Airframe</div><div class="v">5,112 hrs, as advertised</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
+<div class="dl"><div class="k">Asking</div><div class="v"> <span class="mute">· Call for price</span></div><div class="k">Serial</div><div class="v"><span class="mono">18503573</span></div><div class="k">Airframe</div><div class="v">5,112 airframe hrs, as advertised</div><div class="k">Engine</div><div class="v">Not named in the ad. <span class="likely">Likely installed: Continental IO-520-D, 300 hp — the factory engine for this model per the type certificate. Not confirmed by the ad.</span></div><div class="k">Record</div><div class="v">NTSB 0 · TSB 0 · SDR 0 · AIDS 0 · no entries found</div><div class="k">Seen</div><div class="v">last 2026-10-14</div></div>
 <div class="contact"><div class="seller">Contact through the ad</div><div class="btns"></div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.controller.com/listings/for-sale/cessna/185/piston-single-aircraft" target="_blank" rel="noopener">Controller</a></div></div>
 </div>

@@ -108,14 +108,14 @@ def row_html(l):
     st, row, ents = screen(l)
     rk, rtext = record_summary(l)
     ymodel = f"{l.get('year') or ''} Cessna {esc(l.get('model') or '')}".strip()
-    tail = f'<span class="tail">{esc(l["tail"])}</span>' if l.get('tail') else '<span class="tail mute">tail not published</span>'
+    tail = f'<div class="tail">{esc(l["tail"])}</div>' if l.get('tail') else '<div class="tail none">tail not published</div>'
     thumb = f'<img src="photos/{l["photo"]}.jpg" alt="" loading="lazy">' if l.get('photo') else '<div class="noimg">no photo</div>'
     pm = ''
     if l.get('price_was') is not None and l.get('price') is not None:
         up = l['price'] > l['price_was']
         pm = f'<div class="pm {"up" if up else "down"}">{"up" if up else "down"} from {money(l["price_was"])}</div>'
     mnum = re.search(r'[0-9][0-9,]*(?:\.[0-9]+)?', l.get('tt') or '')
-    hrs = (('about ' if (l.get('tt') or '').lower().startswith('about') else '') + f'{esc(mnum.group(0))} hrs') if mnum else 'hours not published'
+    hrs = (('about ' if (l.get('tt') or '').lower().startswith('about') else '') + f'{esc(mnum.group(0))} airframe hrs') if mnum else 'airframe hours not published'
     loc = esc(l.get('location','').split(' (')[0])
     # details
     fields = []
@@ -123,7 +123,7 @@ def row_html(l):
         if val: fields.append((label, val))
     F('Asking', (money(l['price']) if l.get('price') is not None else '') + (f' <span class="mute">· {esc(l["price_note"])}</span>' if l.get('price_note') else ''))
     F('Serial', f'<span class="mono">{esc(l["serial"])}</span>' if l.get('serial') else (esc(l.get('serial_note')) if l.get('serial_note') else None))
-    F('Airframe', esc(l['tt']) + ' hrs, as advertised' if l.get('tt') else None)
+    F('Airframe', esc(l['tt']) + ' airframe hrs, as advertised' if l.get('tt') else 'airframe hours not published')
     le = likely_engine(l)
     if l.get('engine'): F('Engine', esc(l['engine']))
     elif le: F('Engine', f'Not named in the ad. <span class="likely">Likely installed: {esc(le)} — the factory engine for this model per the type certificate. Not confirmed by the ad.</span>')
@@ -158,7 +158,7 @@ def row_html(l):
     return f'''<details class="row" id="r-{l["key"]}" data-price="{pnum}" data-year="{ynum}" data-hrs="{hnum}" data-country="{esc(l["country"])}" data-rec="{rk}">
 <summary>
 <div class="ph">{thumb}</div>
-<div class="mid"><div class="ym">{ymodel} {tail}</div><div class="sub">{flag(l)} {loc} · {hrs} · {esc(rtext)}</div></div>
+<div class="mid">{tail}<div class="ym">{ymodel}</div><div class="sub">{flag(l)} {loc} · {hrs} · {esc(rtext)}</div></div>
 <div class="right"><div class="price">{kprice(l.get("price"))}</div>{pm}</div>
 </summary>
 <div class="det">
@@ -252,7 +252,8 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 .noimg{font-size:10px;color:var(--mute)}
 .mid{min-width:0}
 .ym{font-weight:500}
-.tail{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--acc)} .tail.mute{color:var(--mute)}
+.tail{font-family:"IBM Plex Mono",monospace;font-size:30px;font-weight:500;line-height:1.05;color:var(--acc);letter-spacing:.01em}
+.tail.none{font-size:13px;color:var(--mute);font-weight:400;line-height:1.3}
 .sub2,.sub{font-size:12.5px;color:var(--mute)}
 .mid .sub{overflow:hidden;text-overflow:ellipsis}
 .right{text-align:right}
@@ -270,7 +271,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 .srcs{border-top:1px solid var(--line);padding-top:8px}
 .srclinks{display:flex;gap:10px;flex-wrap:wrap;font-size:13px}
 .rec{background:var(--card);border:1px solid var(--line);padding:10px;font-size:13px;display:flex;flex-direction:column;gap:6px}
-.rech{overflow-wrap:anywhere}
+.rech{overflow-wrap:anywhere} .rech .tail{font-size:20px;display:inline}
 .srcgrid{display:grid;grid-template-columns:120px 1fr;gap:4px 8px;font-size:13px}
 .foot{margin-top:26px;font-size:12px;color:var(--mute);border-top:1px solid var(--line);padding-top:10px}
 @media (min-width:700px){.row summary{grid-template-columns:72px 1fr auto}.ph{width:72px;height:54px}.dl{grid-template-columns:110px 1fr}}
@@ -336,9 +337,9 @@ page = f'''<!doctype html>
 <div class="sec">
 <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px"><h2>The market</h2><div class="sub">tap a row for the full ad facts</div></div>
 <div class="tools">Sort:
-<button data-key="price" data-dir="1" aria-pressed="true">cheapest first</button>
-<button data-key="price" data-dir="-1">dearest first</button>
-<button data-key="hrs" data-dir="1">lowest hours</button>
+<button data-key="price" data-dir="1" aria-pressed="true">lowest price</button>
+<button data-key="price" data-dir="-1">highest price</button>
+<button data-key="hrs" data-dir="1">lowest airframe hours</button>
 <button data-key="year" data-dir="-1">newest</button>
 <button data-key="year" data-dir="1">oldest</button>
 <button data-key="country" data-dir="1">by country</button>
@@ -370,5 +371,6 @@ page = f'''<!doctype html>
 </body>
 </html>'''
 open(os.path.join(OUT,'index.html'),'w',encoding='utf-8').write(page)
-shutil.copy(LIST, os.path.join(OUT,'data', f'{RUN}.json'))
+dst=os.path.join(OUT,'data', f'{RUN}.json')
+if os.path.abspath(LIST)!=os.path.abspath(dst): shutil.copy(LIST, dst)
 print('wrote', os.path.join(OUT,'index.html'), len(page)//1024, 'KB;', len(L), 'rows;', len(recs), 'records;', sum(1 for l in L if l.get('photo')), 'photos')
