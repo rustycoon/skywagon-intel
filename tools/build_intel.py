@@ -117,6 +117,7 @@ def row_html(l):
     mnum = re.search(r'[0-9][0-9,]*(?:\.[0-9]+)?', l.get('tt') or '')
     hrs = (('about ' if (l.get('tt') or '').lower().startswith('about') else '') + f'{esc(mnum.group(0))} airframe hrs') if mnum else 'airframe hours not published'
     loc = esc(l.get('location','').split(' (')[0])
+    kind = f' · <span class="kind">{esc(l["kind"])}</span>' if l.get('kind') else ''
     # details
     fields = []
     def F(label, val):
@@ -158,7 +159,7 @@ def row_html(l):
     return f'''<details class="row" id="r-{l["key"]}" data-price="{pnum}" data-year="{ynum}" data-hrs="{hnum}" data-country="{esc(l["country"])}" data-rec="{rk}">
 <summary>
 <div class="ph">{thumb}</div>
-<div class="mid">{tail}<div class="ym">{ymodel}</div><div class="sub">{flag(l)} {loc} · {hrs} · {esc(rtext)}</div></div>
+<div class="mid">{tail}<div class="ym">{ymodel}</div><div class="sub">{flag(l)} {loc}{kind} · {hrs} · {esc(rtext)}</div></div>
 <div class="right"><div class="price">{kprice(l.get("price"))}</div>{pm}</div>
 </summary>
 <div class="det">
@@ -252,7 +253,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 .noimg{font-size:10px;color:var(--mute)}
 .mid{min-width:0}
 .ym{font-weight:500}
-.tail{font-family:"IBM Plex Mono",monospace;font-size:30px;font-weight:500;line-height:1.05;color:var(--acc);letter-spacing:.01em}
+.tail{font-family:"IBM Plex Mono",monospace;font-size:24px;font-weight:500;line-height:1.05;color:var(--acc);letter-spacing:.01em}
 .tail.none{font-size:13px;color:var(--mute);font-weight:400;line-height:1.3}
 .sub2,.sub{font-size:12.5px;color:var(--mute)}
 .mid .sub{overflow:hidden;text-overflow:ellipsis}
@@ -260,6 +261,14 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 .price{font-family:"Barlow Condensed",sans-serif;font-size:24px;font-weight:600;line-height:1;white-space:nowrap}
 .pm{font-size:11px;white-space:nowrap} .pm.up{color:var(--bad)} .pm.down{color:var(--ok)}
 .foreign{color:var(--bad);font-weight:600}
+.kind{color:var(--warn);font-weight:600}
+.how{background:var(--card);border:1px solid var(--line)}
+.how summary{list-style:none;cursor:pointer;padding:10px 12px;font-weight:500;display:flex;justify-content:space-between;align-items:center;min-height:44px}
+.how summary::-webkit-details-marker{display:none}
+.how summary::after{content:"show";color:var(--link);font-weight:400;font-size:13px}
+.how[open] summary::after{content:"hide"}
+.how .body{border-top:1px solid var(--line);padding:10px 12px 12px;font-size:13.5px;display:flex;flex-direction:column;gap:8px}
+.how p{margin:0} .how b{font-weight:500}
 .det{border-top:1px solid var(--line);padding:10px 10px 12px;display:flex;flex-direction:column;gap:10px;font-size:13px}
 .dl{display:grid;grid-template-columns:92px 1fr;row-gap:5px;column-gap:8px}
 .dl .k{color:var(--mute)} .dl .v{min-width:0;overflow-wrap:anywhere}
@@ -319,6 +328,19 @@ page = f'''<!doctype html>
 <div>Nothing found in the accident and service databases is a strong sign, not a guarantee. Form 337s and the logbooks are still mandatory before any purchase.</div>
 <div class="src"><b>Where this comes from.</b> Asking prices, times and equipment are copied from each seller's advertisement on Trade-A-Plane, Controller, Barnstormers, Hangar67, Craigslist, Facebook Marketplace, AircraftForSale, GlobalAir, GlobalPlaneSearch, FindAircraft, Kijiji and dealer sites, and are not verified. Tail, serial, owner and airworthiness class come from the FAA and Transport Canada registries. Records come from the NTSB, the Transportation Safety Board of Canada, FAA Service Difficulty Reports and the FAA Accident/Incident Data System. Nothing here is this site's opinion. Where two sites disagree, both figures are shown.</div>
 </div>
+
+
+<details class="how">
+<summary>How this page is put together, and where it looks</summary>
+<div class="body">
+<p><b>Every morning around six Central</b> an automated sweep reads the Cessna 180 and 185 pages of the main aircraft sales sites: Trade-A-Plane, Controller, Barnstormers, Hangar67, AircraftForSale, GlobalAir, GlobalPlaneSearch, FindAircraft and Kijiji, plus the dealer sites for Canadian Aircraft Sales and aircraftdealer.com. Those sites are national or worldwide, so one read covers everything they carry.</p>
+<p><b>Facebook Marketplace works differently.</b> Facebook only shows ads within roughly forty miles of a chosen city, whatever radius you ask it for. So the sweep stands in fourteen cities in turn — Anchorage, Seattle, Portland, Boise, Spokane, Denver, San Francisco, Los Angeles, Minneapolis, Chicago, Dallas, Boston, Bangor and Miami — and searches each one for “cessna 180”, “cessna 185” and “cessna a185f”. An ad posted far from all fourteen, in Montana or the Dakotas say, will not be seen here unless it is also on another site.</p>
+<p><b>Craigslist is searched from twenty-one points</b> across the lower 48 and Alaska, each reaching 500 miles, which covers the whole country with overlap. Same search words.</p>
+<p><b>What is kept:</b> whole aircraft offered for sale, including projects, non-flying airframes and partial shares, which are marked as such in orange on the row. <b>What is left out:</b> parts ads (floats, props, engines, seats, wings on their own), ads the sweep cannot open, and anything a dealer’s own site marks sold. An ad that can no longer be found drops off the page the next morning.</p>
+<p><b>Each aircraft is then matched to its serial number</b> from the ad or the registry, and that serial is checked against the NTSB, the Transportation Safety Board of Canada, FAA Service Difficulty Reports and the FAA Accident/Incident Data System. Where the ad gives no tail or serial, the row says “not screened”. Where more than one aircraft has worn the same registration over the years, it also says so rather than guess.</p>
+<p><b>Honest limits.</b> Figures are copied from the ads and are not verified. When two sites print different numbers for the same aircraft, both are shown. Some listing sites repeat airplanes that have already sold, so nothing is counted from them unless another site confirms it. The Sources section at the bottom says which sites answered today and which did not.</p>
+</div>
+</details>
 
 <div class="sec">
 <h2>Since yesterday</h2>
