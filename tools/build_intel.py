@@ -321,7 +321,7 @@ JS = r'''
     items.sort(function(a,b){
       var av=a.dataset[key], bv=b.dataset[key];
       if(key==='country'){ var o={US:0,CA:1}; av=(o[av]!==undefined?o[av]:2)+av; bv=(o[bv]!==undefined?o[bv]:2)+bv; return av<bv?-1:av>bv?1:0; }
-      av=parseFloat(av); bv=parseFloat(bv); return dir*(av-bv);
+      av=parseFloat(av); bv=parseFloat(bv); var U=1e11; if(av>=U||bv>=U){ if(av>=U&&bv>=U) return 0; return av>=U?1:-1; } return dir*(av-bv);
     });
     items.forEach(function(el){rows.appendChild(el)});
     document.querySelectorAll('.tools button').forEach(function(b){b.setAttribute('aria-pressed', b.dataset.key===key && String(b.dataset.dir)===String(dir));});
