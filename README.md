@@ -1,2 +1,2 @@
-# Skywagon-intel
-serving Skywagon intel
+# skywagon-intel
+serving skywagon intel
