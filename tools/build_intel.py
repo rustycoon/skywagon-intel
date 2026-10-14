@@ -97,14 +97,29 @@ def sort_key(l):
     return (l.get('price') is None, l.get('price') or 0)
 L_sorted = sorted(L, key=sort_key)
 
+def counts_from(row, ents):
+    """Entries decide. The index's count columns are stale for ~400 rows (mostly 180s), so derive
+    counts from the digest entries when they disagree. Returns (counts dict, disagree flag)."""
+    idxc = {k: int(row[k]) for k in ('ntsb','tsb','sdr','aids')}
+    dc = {'ntsb':0,'tsb':0,'sdr':0,'aids':0}
+    for e in ents:
+        src = e['source'].strip().upper()
+        if src.startswith('NTSB'): dc['ntsb'] += 1
+        elif src.startswith('TSB'): dc['tsb'] += 1
+        elif src.startswith('SDR'): dc['sdr'] += 1
+        elif src.startswith('AIDS'): dc['aids'] += 1
+    use = {k: max(idxc[k], dc[k]) for k in idxc}
+    return use, (sum(idxc.values()) == 0 and sum(dc.values()) > 0)
+
 def record_summary(l):
     st, row, ents = screen(l)
     if st == 'none': return ('nosn', 'no serial or tail published · not screened')
     if st == 'multi': return ('multi', 'more than one aircraft has worn this mark · not screened')
     if st == 'nomatch': return ('nomatch', 'serial not in the record · not screened')
-    c = sum(int(row[k]) for k in ('ntsb','tsb','sdr','aids'))
+    use, _ = counts_from(row, ents)
+    c = sum(use.values())
     if c == 0: return ('clean', 'no entries found')
-    parts = [f"{row[k]} {k.upper()}" for k in ('ntsb','tsb','sdr','aids') if int(row[k])]
+    parts = [f"{use[k]} {k.upper()}" for k in ('ntsb','tsb','sdr','aids') if use[k]]
     return ('entries', ' · '.join(parts))
 
 def row_html(l):
@@ -179,13 +194,15 @@ recs = []
 for l in L_sorted:
     st, row, ents = screen(l)
     if st != 'ok': continue
-    c = sum(int(row[k]) for k in ('ntsb','tsb','sdr','aids'))
+    use, disagree = counts_from(row, ents)
+    c = sum(use.values())
     if c == 0: continue
     ymodel = f"{l.get('year') or ''} Cessna {esc(l.get('model') or '')}".strip()
     head = (f'<span class="tail">{esc(l["tail"])}</span>' if l.get('tail') else 'tail not published') + f' · serial <span class="mono">{esc(row["serial"])}</span> · {ymodel} · {flag(l)} {esc(l.get("location","").split(" (")[0])} · {money(l["price"]) if l.get("price") is not None else "price not published"}'
     lines = ''
     if l.get('registry'): lines += f'<div class="k">Registry</div><div class="v">{esc(l["registry"])}</div>'
-    counts = ' · '.join(f"{k.upper()} {row[k]}" for k in ('ntsb','tsb','sdr','aids'))
+    counts = ' · '.join(f"{k.upper()} {use[k]}" for k in ('ntsb','tsb','sdr','aids'))
+    if disagree: counts += ' <span class="mute">(the summary index listed none for this serial; the entries below are what the databases hold, and they are what this page reports)</span>'
     lines += f'<div class="k">Counts</div><div class="v">{counts}</div>'
     if ents:
         for e in ents:
