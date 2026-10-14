@@ -40,6 +40,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 .row summary::-webkit-details-marker{display:none}
 .ph{width:56px;height:42px;background:var(--tint);display:flex;align-items:center;justify-content:center;overflow:hidden}
 .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.zoom{display:block;width:100%;height:100%}
+#lb{position:fixed;inset:0;background:rgba(0,0,0,.82);display:none;align-items:center;justify-content:center;z-index:50;padding:16px}
+#lb.on{display:flex}
+#lb img{max-width:92vw;max-height:90vh;height:auto;box-shadow:0 8px 40px rgba(0,0,0,.5)}
+#lb .x{position:absolute;top:10px;right:12px;min-width:44px;min-height:44px;background:transparent;border:0;color:#fff;font-size:28px;cursor:pointer}
 .noimg{font-size:10px;color:var(--mute)}
 .mid{min-width:0}
 .ym{font-weight:500}
@@ -98,7 +103,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <p><b>Craigslist is searched from twenty-one points</b> across the lower 48 and Alaska, each reaching 500 miles, which covers the whole country with overlap. Same search words.</p>
 <p><b>What is kept:</b> whole aircraft offered for sale, including projects, non-flying airframes and partial shares, which are marked as such in orange on the row. <b>What is left out:</b> parts ads (floats, props, engines, seats, wings on their own), ads the sweep cannot open, and anything a dealer’s own site marks sold. An ad that can no longer be found drops off the page the next morning.</p>
 <p><b>Each aircraft is then matched to its serial number</b> from the ad or the registry, and that serial is checked against the NTSB, the Transportation Safety Board of Canada, FAA Service Difficulty Reports and the FAA Accident/Incident Data System. Where the ad gives no tail or serial, the row says “not screened”. Where more than one aircraft has worn the same registration over the years, it also says so rather than guess.</p>
-<p><b>The record sources, for anyone who has not met them.</b> <b>NTSB</b> is the US National Transportation Safety Board — it investigates accidents and records whether the damage was minor, substantial or destroyed, and the probable cause. <b>TSB</b> is the Transportation Safety Board of Canada, the same job north of the border. <b>CADORS</b> is Transport Canada’s daily log of occurrences, including minor ones the TSB never investigates — it is not part of the daily check here yet. <b>SDR</b> means Service Difficulty Report — a mechanic’s report to the FAA of a defect found during maintenance, which is how cracked spars and corroded bulkheads get on the record without an accident. <b>AIDS</b> is the FAA’s Accident/Incident Data System — the FAA’s own log, which catches incidents (a ground loop, a gear collapse) that never reached the NTSB. <b>The registry line</b> comes from the FAA or Transport Canada register: who holds the registration and in what state, and whether the airworthiness certificate is Standard or something narrower like Restricted, which limits what the aircraft may legally be used for. <b>Form 337s</b> are the FAA’s major repair and alteration records; they are not on any public database and must be read from the aircraft’s own file, which is why the box at the top says the logbooks are still mandatory.</p>
+<p><b>The record sources, for anyone who has not met them.</b> Each name links to that database’s own public search page, so you can look up any tail or serial yourself. <b><a href="https://data.ntsb.gov/carol-main-public/basic-search" target="_blank" rel="noopener">NTSB</a></b> is the US National Transportation Safety Board — it investigates accidents and records whether the damage was minor, substantial or destroyed, and the probable cause. <b><a href="https://www.tsb.gc.ca/eng/rapports-reports/aviation/index.html" target="_blank" rel="noopener">TSB</a></b> is the Transportation Safety Board of Canada, the same job north of the border. <b><a href="https://wwwapps.tc.gc.ca/saf-sec-sur/2/cadors-screaq/q.aspx?lang=eng" target="_blank" rel="noopener">CADORS</a></b> is Transport Canada’s daily log of occurrences, including minor ones the TSB never investigates — it is not part of the daily check here yet. <b><a href="https://sdrs.faa.gov/Query.aspx" target="_blank" rel="noopener">SDR</a></b> means Service Difficulty Report — a mechanic’s report to the FAA of a defect found during maintenance, which is how cracked spars and corroded bulkheads get on the record without an accident. <b><a href="https://www.asias.faa.gov/apex/f?p=100:12" target="_blank" rel="noopener">AIDS</a></b> is the FAA’s Accident/Incident Data System — the FAA’s own log, which catches incidents (a ground loop, a gear collapse) that never reached the NTSB. <b>The registry line</b> comes from the <a href="https://registry.faa.gov/aircraftinquiry/" target="_blank" rel="noopener">FAA register</a> or the <a href="https://wwwapps.tc.gc.ca/saf-sec-sur/2/ccarcs-riacc/RchSimp.aspx" target="_blank" rel="noopener">Transport Canada register</a>: who holds the registration and in what state, and whether the airworthiness certificate is Standard or something narrower like Restricted, which limits what the aircraft may legally be used for. <b><a href="https://www.faa.gov/licenses_certificates/aircraft_certification/aircraft_registry/copies_aircraft_records" target="_blank" rel="noopener">Form 337s</a></b> are the FAA’s major repair and alteration records; they are not on any public database — you order the aircraft’s file from the FAA — which is why the box at the top says the logbooks are still mandatory.</p>
 <p><b>Honest limits.</b> Figures are copied from the ads and are not verified. When two sites print different numbers for the same aircraft, both are shown. Some listing sites repeat airplanes that have already sold, so nothing is counted from them unless another site confirms it. The Sources section at the bottom says which sites answered today and which did not.</p>
 </div>
 </details>
@@ -190,7 +195,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 </details>
 <details class="row" id="r-N70713" data-price="190000" data-year="1971" data-hrs="7963.0" data-country="US" data-rec="entries">
 <summary>
-<div class="ph"><img src="photos/N70713.jpg" alt="" loading="lazy"></div>
+<div class="ph"><a class="zoom" href="photos/N70713_l.jpg" aria-label="Enlarge photo"><img src="photos/N70713.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N70713</div><div class="ym">1971 Cessna A185E</div><div class="sub">🇺🇸 Anchorage, AK · 7,963 airframe hrs · 1 NTSB · 1 SDR · 1 AIDS</div></div>
 <div class="right"><div class="price">$190k</div></div>
 </summary>
@@ -202,7 +207,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 </details>
 <details class="row" id="r-N111EY" data-price="195000" data-year="1974" data-hrs="4500.0" data-country="US" data-rec="entries">
 <summary>
-<div class="ph"><img src="photos/N111EY.jpg" alt="" loading="lazy"></div>
+<div class="ph"><a class="zoom" href="photos/N111EY_l.jpg" aria-label="Enlarge photo"><img src="photos/N111EY.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N111EY</div><div class="ym">1974 Cessna 185E</div><div class="sub">🇺🇸 Viola, ID · 4,500 airframe hrs · 1 NTSB · 1 AIDS</div></div>
 <div class="right"><div class="price">$195k</div></div>
 </summary>
@@ -286,7 +291,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 </details>
 <details class="row" id="r-N4841C" data-price="219000" data-year="1975" data-hrs="5530.0" data-country="US" data-rec="clean">
 <summary>
-<div class="ph"><img src="photos/N4841C.jpg" alt="" loading="lazy"></div>
+<div class="ph"><a class="zoom" href="photos/N4841C_l.jpg" aria-label="Enlarge photo"><img src="photos/N4841C.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N4841C</div><div class="ym">1975 Cessna A185F</div><div class="sub">🇺🇸 Mount Vernon, WA · 5,530 airframe hrs · no entries found</div></div>
 <div class="right"><div class="price">$219k</div></div>
 </summary>
@@ -310,7 +315,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 </details>
 <details class="row" id="r-N115AW" data-price="220000" data-year="1976" data-hrs="3940.0" data-country="US" data-rec="clean">
 <summary>
-<div class="ph"><img src="photos/N115AW.jpg" alt="" loading="lazy"></div>
+<div class="ph"><a class="zoom" href="photos/N115AW_l.jpg" aria-label="Enlarge photo"><img src="photos/N115AW.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N115AW</div><div class="ym">1976 Cessna A185F</div><div class="sub">🇺🇸 Placerville, CA · 3,940 airframe hrs · no entries found</div></div>
 <div class="right"><div class="price">$220k</div></div>
 </summary>
@@ -334,7 +339,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 </details>
 <details class="row" id="r-N185DL" data-price="235000" data-year="1964" data-hrs="5463.0" data-country="US" data-rec="entries">
 <summary>
-<div class="ph"><img src="photos/N185DL.jpg" alt="" loading="lazy"></div>
+<div class="ph"><a class="zoom" href="photos/N185DL_l.jpg" aria-label="Enlarge photo"><img src="photos/N185DL.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N185DL</div><div class="ym">1964 Cessna 185C</div><div class="sub">🇺🇸 Sheridan, MI · 5,463 airframe hrs · 1 NTSB · 3 AIDS</div></div>
 <div class="right"><div class="price">$235k</div></div>
 </summary>
@@ -346,7 +351,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 </details>
 <details class="row" id="r-N103AM" data-price="249000" data-year="1975" data-hrs="7653.0" data-country="US" data-rec="entries">
 <summary>
-<div class="ph"><img src="photos/N103AM.jpg" alt="" loading="lazy"></div>
+<div class="ph"><a class="zoom" href="photos/N103AM_l.jpg" aria-label="Enlarge photo"><img src="photos/N103AM.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N103AM</div><div class="ym">1975 Cessna A185F</div><div class="sub">🇺🇸 La Grande, OR · 7,653 airframe hrs · 1 NTSB · 2 AIDS</div></div>
 <div class="right"><div class="price">$249k</div></div>
 </summary>
@@ -358,7 +363,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 </details>
 <details class="row" id="r-N8536T" data-price="250000" data-year="1970" data-hrs="6009.0" data-country="US" data-rec="clean">
 <summary>
-<div class="ph"><img src="photos/N8536T.jpg" alt="" loading="lazy"></div>
+<div class="ph"><a class="zoom" href="photos/N8536T_l.jpg" aria-label="Enlarge photo"><img src="photos/N8536T.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N8536T</div><div class="ym">1970 Cessna A185E</div><div class="sub">🇺🇸 Minden, NV · 6,009 airframe hrs · no entries found</div></div>
 <div class="right"><div class="price">$250k</div></div>
 </summary>
@@ -382,7 +387,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 </details>
 <details class="row" id="r-N969WM" data-price="250000" data-year="1962" data-hrs="9524.0" data-country="US" data-rec="clean">
 <summary>
-<div class="ph"><img src="photos/N969WM.jpg" alt="" loading="lazy"></div>
+<div class="ph"><a class="zoom" href="photos/N969WM_l.jpg" aria-label="Enlarge photo"><img src="photos/N969WM.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N969WM</div><div class="ym">1962 Cessna 185A</div><div class="sub">🇺🇸 Little Rock, AR · 9,524 airframe hrs · no entries found</div></div>
 <div class="right"><div class="price">$250k</div></div>
 </summary>
@@ -406,7 +411,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 </details>
 <details class="row" id="r-N91PH" data-price="265000" data-year="1973" data-hrs="3550.0" data-country="US" data-rec="clean">
 <summary>
-<div class="ph"><img src="photos/N91PH.jpg" alt="" loading="lazy"></div>
+<div class="ph"><a class="zoom" href="photos/N91PH_l.jpg" aria-label="Enlarge photo"><img src="photos/N91PH.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N91PH</div><div class="ym">1973 Cessna A185F</div><div class="sub">🇺🇸 Pampa, TX · 3,550 airframe hrs · no entries found</div></div>
 <div class="right"><div class="price">$265k</div></div>
 </summary>
@@ -430,7 +435,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 </details>
 <details class="row" id="r-CGUIC" data-price="268000" data-year="1976" data-hrs="4825.0" data-country="CA" data-rec="entries">
 <summary>
-<div class="ph"><img src="photos/CGUIC.jpg" alt="" loading="lazy"></div>
+<div class="ph"><a class="zoom" href="photos/CGUIC_l.jpg" aria-label="Enlarge photo"><img src="photos/CGUIC.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">C-GUIC</div><div class="ym">1976 Cessna A185F</div><div class="sub">🇨🇦 Hawkesbury, ON · 4,825 airframe hrs · 2 TSB</div></div>
 <div class="right"><div class="price">$268k</div></div>
 </summary>
@@ -454,7 +459,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 </details>
 <details class="row" id="r-TFORN" data-price="275000" data-year="1974" data-hrs="4503.7" data-country="CA" data-rec="entries">
 <summary>
-<div class="ph"><img src="photos/TFORN.jpg" alt="" loading="lazy"></div>
+<div class="ph"><a class="zoom" href="photos/TFORN_l.jpg" aria-label="Enlarge photo"><img src="photos/TFORN.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">TF-ORN</div><div class="ym">1974 Cessna A185F</div><div class="sub">🇨🇦 Gimli, MB · 4,503.7 airframe hrs · 1 AIDS</div></div>
 <div class="right"><div class="price">$275k</div></div>
 </summary>
@@ -478,7 +483,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 </details>
 <details class="row" id="r-N6307B" data-price="285000" data-year="1979" data-hrs="7145.0" data-country="US" data-rec="clean">
 <summary>
-<div class="ph"><img src="photos/N6307B.jpg" alt="" loading="lazy"></div>
+<div class="ph"><a class="zoom" href="photos/N6307B_l.jpg" aria-label="Enlarge photo"><img src="photos/N6307B.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N6307B</div><div class="ym">1979 Cessna A185F</div><div class="sub">🇺🇸 Palmer, AK · 7,145 airframe hrs · no entries found</div></div>
 <div class="right"><div class="price">$285k</div></div>
 </summary>
@@ -490,7 +495,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 </details>
 <details class="row" id="r-N666SB" data-price="285000" data-year="1980" data-hrs="2620.0" data-country="US" data-rec="entries">
 <summary>
-<div class="ph"><img src="photos/N666SB.jpg" alt="" loading="lazy"></div>
+<div class="ph"><a class="zoom" href="photos/N666SB_l.jpg" aria-label="Enlarge photo"><img src="photos/N666SB.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N666SB</div><div class="ym">1980 Cessna A185F</div><div class="sub">🇺🇸 Santa Paula, CA · 2,620 airframe hrs · 1 NTSB · 1 AIDS</div></div>
 <div class="right"><div class="price">$285k</div></div>
 </summary>
@@ -502,7 +507,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 </details>
 <details class="row" id="r-CGAIX" data-price="285000" data-year="1979" data-hrs="16965.0" data-country="CA" data-rec="entries">
 <summary>
-<div class="ph"><img src="photos/CGAIX.jpg" alt="" loading="lazy"></div>
+<div class="ph"><a class="zoom" href="photos/CGAIX_l.jpg" aria-label="Enlarge photo"><img src="photos/CGAIX.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">C-GAIX</div><div class="ym">1979 Cessna A185F</div><div class="sub">🇨🇦 Fort Smith, NT · 16,965 airframe hrs · 1 TSB</div></div>
 <div class="right"><div class="price">$285k</div></div>
 </summary>
@@ -514,7 +519,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 </details>
 <details class="row" id="r-N4757Q" data-price="288000" data-year="1967" data-hrs="3850.0" data-country="US" data-rec="entries">
 <summary>
-<div class="ph"><img src="photos/N4757Q.jpg" alt="" loading="lazy"></div>
+<div class="ph"><a class="zoom" href="photos/N4757Q_l.jpg" aria-label="Enlarge photo"><img src="photos/N4757Q.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N4757Q</div><div class="ym">1967 Cessna 185E</div><div class="sub">🇺🇸 Willow / Wasilla, AK · about 3,850 airframe hrs · 1 AIDS</div></div>
 <div class="right"><div class="price">$288k</div></div>
 </summary>
@@ -526,7 +531,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 </details>
 <details class="row" id="r-N93033" data-price="295000" data-year="1976" data-hrs="1623.0" data-country="US" data-rec="entries">
 <summary>
-<div class="ph"><img src="photos/N93033.jpg" alt="" loading="lazy"></div>
+<div class="ph"><a class="zoom" href="photos/N93033_l.jpg" aria-label="Enlarge photo"><img src="photos/N93033.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N93033</div><div class="ym">1976 Cessna A185F</div><div class="sub">🇺🇸 Plymouth, MA · 1,623 airframe hrs · 1 AIDS</div></div>
 <div class="right"><div class="price">$295k</div></div>
 </summary>
@@ -550,7 +555,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 </details>
 <details class="row" id="r-N5830J" data-price="299000" data-year="1970" data-hrs="3470.0" data-country="US" data-rec="clean">
 <summary>
-<div class="ph"><img src="photos/N5830J.jpg" alt="" loading="lazy"></div>
+<div class="ph"><a class="zoom" href="photos/N5830J_l.jpg" aria-label="Enlarge photo"><img src="photos/N5830J.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N5830J</div><div class="ym">1970 Cessna A185E</div><div class="sub">🇺🇸 Fort Myers, FL · 3,470 airframe hrs · no entries found</div></div>
 <div class="right"><div class="price">$299k</div></div>
 </summary>
@@ -562,7 +567,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 </details>
 <details class="row" id="r-CFSEC" data-price="299000" data-year="1973" data-hrs="6883.0" data-country="CA" data-rec="entries">
 <summary>
-<div class="ph"><img src="photos/CFSEC.jpg" alt="" loading="lazy"></div>
+<div class="ph"><a class="zoom" href="photos/CFSEC_l.jpg" aria-label="Enlarge photo"><img src="photos/CFSEC.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">C-FSEC</div><div class="ym">1973 Cessna 185</div><div class="sub">🇨🇦 Hawkesbury, ON · 6,883 airframe hrs · 1 TSB</div></div>
 <div class="right"><div class="price">$299k</div></div>
 </summary>
@@ -1040,6 +1045,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 
 <div class="foot">Skywagon Intel is an automated daily record. Listings leave this page the day their advertisement can no longer be found. Nothing is sold here and no seller is affiliated with this site.</div>
 </div>
+<div id="lb" role="dialog" aria-modal="true" aria-label="Photo"><button class="x" aria-label="Close">×</button><img alt=""></div>
 <script>
 (function(){
   var rows=document.getElementById('rows');
@@ -1058,6 +1064,13 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
   });
   function openHash(){var h=location.hash.replace('#',''); if(!h) return; var el=document.getElementById(h); if(el&&el.tagName==='DETAILS'){el.open=true;}}
   openHash(); window.addEventListener('hashchange',openHash);
+  var lb=document.getElementById('lb'), lbi=lb.querySelector('img');
+  function closeLb(){lb.classList.remove('on'); lbi.src='';}
+  document.querySelectorAll('a.zoom').forEach(function(a){
+    a.addEventListener('click',function(e){e.preventDefault(); e.stopPropagation(); var tw=a.getBoundingClientRect().width||56; lbi.style.width=Math.min(window.innerWidth*0.92, Math.max(tw*4,320))+'px'; lbi.src=a.getAttribute('href'); lb.classList.add('on');});
+  });
+  lb.addEventListener('click',closeLb);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLb();});
 })();
 </script>
 </body>

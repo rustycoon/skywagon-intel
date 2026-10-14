@@ -76,6 +76,9 @@ for l in L:
     src = os.path.join(PHOTOS, k + '.jpg')
     if not os.path.exists(src): l['photo'] = None; continue
     im = Image.open(src).convert('RGB')
+    big = im.copy()
+    if big.size[0] > 896: big = big.resize((896, round(big.size[1]*896/big.size[0])))
+    big.save(os.path.join(OUT,'photos', k + '_l.jpg'), quality=80, optimize=True)
     w, h = im.size; tw = 224; th = round(h * tw / w)
     im = im.resize((tw, th));
     # crop to 4:3
@@ -109,7 +112,7 @@ def row_html(l):
     rk, rtext = record_summary(l)
     ymodel = f"{l.get('year') or ''} Cessna {esc(l.get('model') or '')}".strip()
     tail = f'<div class="tail">{esc(l["tail"])}</div>' if l.get('tail') else '<div class="tail none">tail not published</div>'
-    thumb = f'<img src="photos/{l["photo"]}.jpg" alt="" loading="lazy">' if l.get('photo') else '<div class="noimg">no photo</div>'
+    thumb = f'<a class="zoom" href="photos/{l["photo"]}_l.jpg" aria-label="Enlarge photo"><img src="photos/{l["photo"]}.jpg" alt="" loading="lazy"></a>' if l.get('photo') else '<div class="noimg">no photo</div>'
     pm = ''
     if l.get('price_was') is not None and l.get('price') is not None:
         up = l['price'] > l['price_was']
@@ -250,6 +253,11 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 .row summary::-webkit-details-marker{display:none}
 .ph{width:56px;height:42px;background:var(--tint);display:flex;align-items:center;justify-content:center;overflow:hidden}
 .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.zoom{display:block;width:100%;height:100%}
+#lb{position:fixed;inset:0;background:rgba(0,0,0,.82);display:none;align-items:center;justify-content:center;z-index:50;padding:16px}
+#lb.on{display:flex}
+#lb img{max-width:92vw;max-height:90vh;height:auto;box-shadow:0 8px 40px rgba(0,0,0,.5)}
+#lb .x{position:absolute;top:10px;right:12px;min-width:44px;min-height:44px;background:transparent;border:0;color:#fff;font-size:28px;cursor:pointer}
 .noimg{font-size:10px;color:var(--mute)}
 .mid{min-width:0}
 .ym{font-weight:500}
@@ -306,6 +314,13 @@ JS = r'''
   });
   function openHash(){var h=location.hash.replace('#',''); if(!h) return; var el=document.getElementById(h); if(el&&el.tagName==='DETAILS'){el.open=true;}}
   openHash(); window.addEventListener('hashchange',openHash);
+  var lb=document.getElementById('lb'), lbi=lb.querySelector('img');
+  function closeLb(){lb.classList.remove('on'); lbi.src='';}
+  document.querySelectorAll('a.zoom').forEach(function(a){
+    a.addEventListener('click',function(e){e.preventDefault(); e.stopPropagation(); var tw=a.getBoundingClientRect().width||56; lbi.style.width=Math.min(window.innerWidth*0.92, Math.max(tw*4,320))+'px'; lbi.src=a.getAttribute('href'); lb.classList.add('on');});
+  });
+  lb.addEventListener('click',closeLb);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLb();});
 })();
 '''
 
@@ -340,7 +355,7 @@ page = f'''<!doctype html>
 <p><b>Craigslist is searched from twenty-one points</b> across the lower 48 and Alaska, each reaching 500 miles, which covers the whole country with overlap. Same search words.</p>
 <p><b>What is kept:</b> whole aircraft offered for sale, including projects, non-flying airframes and partial shares, which are marked as such in orange on the row. <b>What is left out:</b> parts ads (floats, props, engines, seats, wings on their own), ads the sweep cannot open, and anything a dealer’s own site marks sold. An ad that can no longer be found drops off the page the next morning.</p>
 <p><b>Each aircraft is then matched to its serial number</b> from the ad or the registry, and that serial is checked against the NTSB, the Transportation Safety Board of Canada, FAA Service Difficulty Reports and the FAA Accident/Incident Data System. Where the ad gives no tail or serial, the row says “not screened”. Where more than one aircraft has worn the same registration over the years, it also says so rather than guess.</p>
-<p><b>The record sources, for anyone who has not met them.</b> <b>NTSB</b> is the US National Transportation Safety Board — it investigates accidents and records whether the damage was minor, substantial or destroyed, and the probable cause. <b>TSB</b> is the Transportation Safety Board of Canada, the same job north of the border. <b>CADORS</b> is Transport Canada’s daily log of occurrences, including minor ones the TSB never investigates — it is not part of the daily check here yet. <b>SDR</b> means Service Difficulty Report — a mechanic’s report to the FAA of a defect found during maintenance, which is how cracked spars and corroded bulkheads get on the record without an accident. <b>AIDS</b> is the FAA’s Accident/Incident Data System — the FAA’s own log, which catches incidents (a ground loop, a gear collapse) that never reached the NTSB. <b>The registry line</b> comes from the FAA or Transport Canada register: who holds the registration and in what state, and whether the airworthiness certificate is Standard or something narrower like Restricted, which limits what the aircraft may legally be used for. <b>Form 337s</b> are the FAA’s major repair and alteration records; they are not on any public database and must be read from the aircraft’s own file, which is why the box at the top says the logbooks are still mandatory.</p>
+<p><b>The record sources, for anyone who has not met them.</b> Each name links to that database’s own public search page, so you can look up any tail or serial yourself. <b><a href="https://data.ntsb.gov/carol-main-public/basic-search" target="_blank" rel="noopener">NTSB</a></b> is the US National Transportation Safety Board — it investigates accidents and records whether the damage was minor, substantial or destroyed, and the probable cause. <b><a href="https://www.tsb.gc.ca/eng/rapports-reports/aviation/index.html" target="_blank" rel="noopener">TSB</a></b> is the Transportation Safety Board of Canada, the same job north of the border. <b><a href="https://wwwapps.tc.gc.ca/saf-sec-sur/2/cadors-screaq/q.aspx?lang=eng" target="_blank" rel="noopener">CADORS</a></b> is Transport Canada’s daily log of occurrences, including minor ones the TSB never investigates — it is not part of the daily check here yet. <b><a href="https://sdrs.faa.gov/Query.aspx" target="_blank" rel="noopener">SDR</a></b> means Service Difficulty Report — a mechanic’s report to the FAA of a defect found during maintenance, which is how cracked spars and corroded bulkheads get on the record without an accident. <b><a href="https://www.asias.faa.gov/apex/f?p=100:12" target="_blank" rel="noopener">AIDS</a></b> is the FAA’s Accident/Incident Data System — the FAA’s own log, which catches incidents (a ground loop, a gear collapse) that never reached the NTSB. <b>The registry line</b> comes from the <a href="https://registry.faa.gov/aircraftinquiry/" target="_blank" rel="noopener">FAA register</a> or the <a href="https://wwwapps.tc.gc.ca/saf-sec-sur/2/ccarcs-riacc/RchSimp.aspx" target="_blank" rel="noopener">Transport Canada register</a>: who holds the registration and in what state, and whether the airworthiness certificate is Standard or something narrower like Restricted, which limits what the aircraft may legally be used for. <b><a href="https://www.faa.gov/licenses_certificates/aircraft_certification/aircraft_registry/copies_aircraft_records" target="_blank" rel="noopener">Form 337s</a></b> are the FAA’s major repair and alteration records; they are not on any public database — you order the aircraft’s file from the FAA — which is why the box at the top says the logbooks are still mandatory.</p>
 <p><b>Honest limits.</b> Figures are copied from the ads and are not verified. When two sites print different numbers for the same aircraft, both are shown. Some listing sites repeat airplanes that have already sold, so nothing is counted from them unless another site confirms it. The Sources section at the bottom says which sites answered today and which did not.</p>
 </div>
 </details>
@@ -392,6 +407,7 @@ page = f'''<!doctype html>
 
 <div class="foot">Skywagon Intel is an automated daily record. Listings leave this page the day their advertisement can no longer be found. Nothing is sold here and no seller is affiliated with this site.</div>
 </div>
+<div id="lb" role="dialog" aria-modal="true" aria-label="Photo"><button class="x" aria-label="Close">×</button><img alt=""></div>
 <script>{JS}</script>
 </body>
 </html>'''
