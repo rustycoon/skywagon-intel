@@ -191,7 +191,7 @@ for l in L_sorted:
         lines += '<div class="k">Entries</div><div class="v">Counts are on file for this serial; the entry text is not yet in this record.</div>'
     if len(re.split(r'[|,]', row['marks'])) > 1:
         lines += f'<div class="k">Marks</div><div class="v">This serial has also been registered as {esc(row["marks"].replace("|", ", ").replace(",", ", "))}</div>'
-    recs.append(f'<div class="rec" id="rec-{l["key"]}"><div class="rech">{head}</div><div class="dl">{lines}</div></div>')
+    recs.append(f'<div class="rec" id="rec-{l["key"]}"><div class="rech"><div>{head}</div><a class="back" href="#r-{l["key"]}">↑ back to this listing</a></div><div class="dl">{lines}</div></div>')
 recs_html = '\n'.join(recs)
 
 # ---------- since yesterday ----------
@@ -280,7 +280,9 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 .srcs{border-top:1px solid var(--line);padding-top:8px}
 .srclinks{display:flex;gap:10px;flex-wrap:wrap;font-size:13px}
 .rec{background:var(--card);border:1px solid var(--line);padding:10px;font-size:13px;display:flex;flex-direction:column;gap:6px}
-.rech{overflow-wrap:anywhere} .rech .tail{font-size:20px;display:inline}
+.rech{overflow-wrap:anywhere;display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap} .rech .tail{font-size:20px;display:inline}
+.back{white-space:nowrap;font-size:13px;min-height:44px;display:inline-flex;align-items:center}
+.rec:target,.row:target{outline:2px solid var(--acc);outline-offset:2px}
 .srcgrid{display:grid;grid-template-columns:120px 1fr;gap:4px 8px;font-size:13px}
 .foot{margin-top:26px;font-size:12px;color:var(--mute);border-top:1px solid var(--line);padding-top:10px}
 @media (min-width:700px){.row summary{grid-template-columns:72px 1fr auto}.ph{width:72px;height:54px}.dl{grid-template-columns:110px 1fr}}
@@ -302,8 +304,8 @@ JS = r'''
   document.querySelectorAll('.tools button').forEach(function(b){
     b.addEventListener('click',function(){sortBy(b.dataset.key,parseInt(b.dataset.dir,10));});
   });
-  var h=location.hash.replace('#','');
-  if(h){var el=document.getElementById(h); if(el&&el.tagName==='DETAILS'){el.open=true;}}
+  function openHash(){var h=location.hash.replace('#',''); if(!h) return; var el=document.getElementById(h); if(el&&el.tagName==='DETAILS'){el.open=true;}}
+  openHash(); window.addEventListener('hashchange',openHash);
 })();
 '''
 
@@ -338,6 +340,7 @@ page = f'''<!doctype html>
 <p><b>Craigslist is searched from twenty-one points</b> across the lower 48 and Alaska, each reaching 500 miles, which covers the whole country with overlap. Same search words.</p>
 <p><b>What is kept:</b> whole aircraft offered for sale, including projects, non-flying airframes and partial shares, which are marked as such in orange on the row. <b>What is left out:</b> parts ads (floats, props, engines, seats, wings on their own), ads the sweep cannot open, and anything a dealer’s own site marks sold. An ad that can no longer be found drops off the page the next morning.</p>
 <p><b>Each aircraft is then matched to its serial number</b> from the ad or the registry, and that serial is checked against the NTSB, the Transportation Safety Board of Canada, FAA Service Difficulty Reports and the FAA Accident/Incident Data System. Where the ad gives no tail or serial, the row says “not screened”. Where more than one aircraft has worn the same registration over the years, it also says so rather than guess.</p>
+<p><b>The record sources, for anyone who has not met them.</b> <b>NTSB</b> is the US National Transportation Safety Board — it investigates accidents and records whether the damage was minor, substantial or destroyed, and the probable cause. <b>TSB</b> is the Transportation Safety Board of Canada, the same job north of the border. <b>CADORS</b> is Transport Canada’s daily log of occurrences, including minor ones the TSB never investigates — it is not part of the daily check here yet. <b>SDR</b> means Service Difficulty Report — a mechanic’s report to the FAA of a defect found during maintenance, which is how cracked spars and corroded bulkheads get on the record without an accident. <b>AIDS</b> is the FAA’s Accident/Incident Data System — the FAA’s own log, which catches incidents (a ground loop, a gear collapse) that never reached the NTSB. <b>The registry line</b> comes from the FAA or Transport Canada register: who holds the registration and in what state, and whether the airworthiness certificate is Standard or something narrower like Restricted, which limits what the aircraft may legally be used for. <b>Form 337s</b> are the FAA’s major repair and alteration records; they are not on any public database and must be read from the aircraft’s own file, which is why the box at the top says the logbooks are still mandatory.</p>
 <p><b>Honest limits.</b> Figures are copied from the ads and are not verified. When two sites print different numbers for the same aircraft, both are shown. Some listing sites repeat airplanes that have already sold, so nothing is counted from them unless another site confirms it. The Sources section at the bottom says which sites answered today and which did not.</p>
 </div>
 </details>
