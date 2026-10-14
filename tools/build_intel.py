@@ -319,9 +319,10 @@ JS = r'''
   function sortBy(key,dir){
     var items=Array.prototype.slice.call(rows.querySelectorAll('.row'));
     items.sort(function(a,b){
+      var U=1e11, au=parseFloat(a.dataset.price)>=U, bu=parseFloat(b.dataset.price)>=U; if(au!==bu) return au?1:-1;
       var av=a.dataset[key], bv=b.dataset[key];
       if(key==='country'){ var o={US:0,CA:1}; av=(o[av]!==undefined?o[av]:2)+av; bv=(o[bv]!==undefined?o[bv]:2)+bv; return av<bv?-1:av>bv?1:0; }
-      av=parseFloat(av); bv=parseFloat(bv); var U=1e11; if(av>=U||bv>=U){ if(av>=U&&bv>=U) return 0; return av>=U?1:-1; } return dir*(av-bv);
+      av=parseFloat(av); bv=parseFloat(bv); return dir*(av-bv);
     });
     items.forEach(function(el){rows.appendChild(el)});
     document.querySelectorAll('.tools button').forEach(function(b){b.setAttribute('aria-pressed', b.dataset.key===key && String(b.dataset.dir)===String(dir));});
