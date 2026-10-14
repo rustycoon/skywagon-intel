@@ -52,7 +52,9 @@ def kprice(n):
     if n is None: return "call"
     return "$%dk" % round(n/1000) if n % 1000 == 0 or n >= 100000 else money(n)
 
-# Likely installed engine from the type certificates (TCDS 3A24 for the 185, 5A6 for the 180).
+# Likely installed engine from the type certificates. Verified 2026-10-14 against FAA TCDS 5A6 rev 68 (180 series)
+# and TCDS 3A24 rev 40 (185 series): 185/185A-E IO-470-F 260 hp; A185E/A185F IO-520-D 300 hp; 180 O-470-A/J/K 225-230 hp;
+# 180A-B O-470-K; 180C-H O-470-L/R; 180J O-470-R (s/n to 18052500) or O-470-S (18052501 up); 180K O-470-U. All 230 hp.
 def likely_engine(l):
     if l.get('engine'): return None
     m = (l.get('model') or '').upper()
