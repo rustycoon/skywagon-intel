@@ -27,7 +27,7 @@
   "planephd",
   "AvPay"
  ],
- "provenance": "Every source listed was reached, all of them through the browser pane on the Mac mini: the cloud fetcher refused every Controller address this run (it wants a provenance it did not have), so nothing in this record came from the cloud side. Facebook Marketplace was searched at fourteen cities with four terms each and holds to about forty miles of each city; twenty-eight Facebook groups were searched with four terms each. aerogurus and FindAircraft repeat inventory other sites have sold or never carried, so nothing enters from either unless a primary advertisement confirms it. Three listings were not re-sighted this run and are flagged on the row rather than dropped; a listing leaves the record only after seven consecutive unsighted runs with no ad page.",
+ "provenance": "Every source listed was reached, all of them through the browser pane on the Mac mini: the cloud fetcher refused every Controller address this run (it wants a provenance it did not have), so nothing in this record came from the cloud side. Facebook Marketplace was searched at fourteen cities with four terms each and holds to about forty miles of each city; twenty-eight Facebook groups were searched with four terms each. aerogurus and FindAircraft repeat inventory other sites have sold or never carried, so nothing enters from either unless a primary advertisement confirms it. Eleven Facebook photographs were added after the evening publish (8:50 PM) with the post-scoped picker. Three listings were not re-sighted this run and are flagged on the row rather than dropped; a listing leaves the record only after seven consecutive unsighted runs with no ad page.",
  "new": [
   "N585Z",
   "N6328E",
@@ -566,7 +566,8 @@
      "Facebook Marketplace",
      "https://www.facebook.com/marketplace/item/1399740905369736/"
     ]
-   ]
+   ],
+   "photo": "N4448R"
   },
   {
    "key": "N969WM",
@@ -762,7 +763,8 @@
      "Facebook Marketplace",
      "https://www.facebook.com/marketplace/item/2902903376769108/"
     ]
-   ]
+   ],
+   "photo": "anch80"
   },
   {
    "key": "N93183",
@@ -3102,7 +3104,7 @@
    "location": "Renton, WA (the Facebook tile shows Auburn, WA)",
    "country": "US",
    "seller": "Contact through the ad (Craigslist relay)",
-   "photo": null,
+   "photo": "renton180share",
    "posted": "Craigslist item posted 7 June 2026, updated 8 October 2026",
    "kind": "1/4 share",
    "price_note": "$85,000 for a quarter share, not a whole aircraft",
@@ -3147,7 +3149,7 @@
    ],
    "phone": [],
    "email": [],
-   "photo": null,
+   "photo": "gigharbor180share",
    "first_seen": "2026-10-14"
   },
   {
@@ -3172,7 +3174,7 @@
    ],
    "phone": [],
    "email": [],
-   "photo": null,
+   "photo": "anchorage1954",
    "first_seen": "2026-10-14"
   },
   {
@@ -3400,6 +3402,10 @@
    "sources": [
     [
      "Facebook group",
+     "https://www.facebook.com/groups/bigtireaircraft/permalink/1695158208215813/"
+    ],
+    [
+     "Facebook group",
      "https://www.facebook.com/groups/bigtireaircraft"
     ],
     [
@@ -3417,7 +3423,8 @@
    ],
    "first_seen": "2026-10-14",
    "phone": [],
-   "email": []
+   "email": [],
+   "photo": "N2817A"
   },
   {
    "key": "anchorage1976",
@@ -3479,7 +3486,8 @@
    ],
    "first_seen": "2026-10-14",
    "phone": [],
-   "email": []
+   "email": [],
+   "photo": "CFJXF"
   },
   {
    "key": "CFSRQ",
@@ -3509,7 +3517,8 @@
    ],
    "first_seen": "2026-10-14",
    "phone": [],
-   "email": []
+   "email": [],
+   "photo": "CFSRQ"
   },
   {
    "key": "N85AJ",
@@ -3570,7 +3579,8 @@
    ],
    "first_seen": "2026-10-14",
    "phone": [],
-   "email": []
+   "email": [],
+   "photo": "huntsville185"
   },
   {
    "key": "kathu185",
@@ -3663,7 +3673,8 @@
    ],
    "first_seen": "2026-10-14",
    "phone": [],
-   "email": []
+   "email": [],
+   "photo": "booneville180"
   },
   {
    "key": "uk185",
@@ -3692,7 +3703,8 @@
    ],
    "first_seen": "2026-10-14",
    "phone": [],
-   "email": []
+   "email": [],
+   "photo": "uk185"
   }
  ]
 }
