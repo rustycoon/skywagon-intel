@@ -190,11 +190,16 @@ def row_html(l):
         F('Record', esc(rtext))
     F('Seen', ('first ' + esc(l['first_seen']) + ' · ' if l.get('first_seen') else '') + 'last ' + RUN)
     dl = ''.join(f'<div class="k">{k}</div><div class="v">{v}</div>' for k, v in fields)
-    # the full ad, in the seller's own words
+    # specs and equipment read from the ad itself, as lists of facts
     full = ''
-    for ad in l.get('ad_sections', []):
-        secs = ''.join(f'<div class="adsec"><div class="adh">{esc(h)}</div><div class="adt">{esc(t.strip()).replace(chr(10), "<br>")}</div></div>' for h, t in ad['sections'].items() if t and t.strip())
-        if secs: full += f'<div class="fullad"><div class="mute small">The full ad, as the seller wrote it on <a href="{esc(ad["url"])}" target="_blank" rel="noopener">{esc(ad["source"])}</a></div>{secs}</div>'
+    af = l.get('ad_facts') or {}
+    HEAD = [('engine','Engine'),('prop','Propeller'),('avionics','Avionics'),('equipment','Equipment and mods'),('airframe','Airframe and weights'),('interior','Interior'),('exterior','Exterior'),('inspection','Inspections'),('history','Logs and history')]
+    secs = ''.join(f'<div class="adsec"><div class="adh">{h} <span class="mute">({len(af[k])})</span></div><ul class="adl">' + ''.join(f'<li>{esc(x)}</li>' for x in af[k]) + '</ul></div>' for k, h in HEAD if af.get(k))
+    if secs:
+        frm = ', '.join(f'<a href="{esc(u)}" target="_blank" rel="noopener">{esc(n)}</a>' for n, u in af.get('from', []))
+        full = f'<div class="fullad"><div class="mute small">Specs and equipment as listed in the ad{" on " + frm if frm else ""}, read {esc(af.get("read",""))}. Copied from the seller, not verified.</div><div class="adgrid">{secs}</div></div>'
+    elif l.get('specs_note'):
+        full = f'<div class="fullad"><div class="mute small">{esc(l["specs_note"])}</div></div>'
     # contact
     btns = ''.join(f'<a class="btn" href="tel:{re.sub(r"[^0-9+]","",p)}">Call {esc(p)}</a>' for p in l.get('phone', []))
     btns += ''.join(f'<a class="btn" href="mailto:{esc(e)}">Email</a>' for e in l.get('email', []))
@@ -329,6 +334,9 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 .dl .k{color:var(--mute)} .dl .v{min-width:0;overflow-wrap:anywhere}
 .fullad{border-top:1px solid var(--line);padding-top:8px;display:flex;flex-direction:column;gap:8px}
 .adh{font-weight:500;margin-bottom:2px} .adt{overflow-wrap:anywhere;line-height:1.45}
+.adgrid{display:grid;grid-template-columns:1fr;gap:10px 18px}
+.adl{margin:0;padding-left:18px;line-height:1.45} .adl li{overflow-wrap:anywhere;margin:1px 0}
+@media (min-width:700px){.adgrid{grid-template-columns:1fr 1fr}}
 .likely{background:var(--warnbg);color:var(--warn);padding:1px 6px;font-size:12px}
 .contact{border-top:1px solid var(--line);padding-top:8px;display:flex;flex-direction:column;gap:4px}
 .seller{font-weight:500}
