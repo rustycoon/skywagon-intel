@@ -40,6 +40,27 @@ def screen(l):
     return ('ok', row, ents)
 
 # ---------- helpers ----------
+SPECIFIC = re.compile(r'listing_id=|/listing/|/listings?/for-sale/\d|/item/|/posts/|/permalink/|classified-\d|/aircraft/\d|/view/d/|/aircraft/[a-z0-9-]+-\d|/aircraft/\d{4}-')
+def dedupe_sources(srcs):
+    """One link per site, unless a site carries two different ads. Links that open the ad itself
+    replace category or search pages for the same site."""
+    groups = {}; order = []
+    for n, u in srcs:
+        base = re.sub(r'\s*\(.*\)$', '', n).strip()
+        if base not in groups: order.append(base); groups[base] = []
+        groups[base].append((n, u))
+    out = []
+    for b in order:
+        items = groups[b]
+        spec = []; seen = set()
+        for n, u in items:
+            if SPECIFIC.search(u or '') and u not in seen: spec.append((n, u)); seen.add(u)
+        keep = spec if spec else items[:1]
+        for i, (n, u) in enumerate(keep):
+            if i and not re.search(r'\(.*\)$', n): n = f'{n} (another ad)'
+            out.append((n, u))
+    return out
+
 DMG={'SUBS':'SUBSTANTIAL','DEST':'DESTROYED','MIN':'MINOR','MINOR':'MINOR','NONE':'NONE','UNK':'UNKNOWN','SUBSTANTIAL':'SUBSTANTIAL','DESTROYED':'DESTROYED','INCIDENT':'INCIDENT'}
 FLAG = {"US":"🇺🇸","CA":"🇨🇦","VE":"🇻🇪","CH":"🇨🇭","BE":"🇧🇪","FR":"🇫🇷","GB":"🇬🇧","PL":"🇵🇱","NO":"🇳🇴","ZA":"🇿🇦","NA":"🇳🇦","NZ":"🇳🇿","IS":"🇮🇸"}
 def flag(l):
@@ -74,7 +95,10 @@ for l in L:
     k = l.get('photo')
     if not k: continue
     src = os.path.join(PHOTOS, k + '.jpg')
-    if not os.path.exists(src): l['photo'] = None; continue
+    if not os.path.exists(src):
+        # no new source image: keep the thumbnail already published, drop the photo only if none exists
+        if os.path.exists(os.path.join(OUT,'photos', k + '.jpg')): continue
+        l['photo'] = None; continue
     im = Image.open(src).convert('RGB')
     big = im.copy()
     if big.size[0] > 896: big = big.resize((896, round(big.size[1]*896/big.size[0])))
@@ -170,7 +194,7 @@ def row_html(l):
     btns = ''.join(f'<a class="btn" href="tel:{re.sub(r"[^0-9+]","",p)}">Call {esc(p)}</a>' for p in l.get('phone', []))
     btns += ''.join(f'<a class="btn" href="mailto:{esc(e)}">Email</a>' for e in l.get('email', []))
     seller = esc(l.get('seller','Contact through the ad'))
-    srcs = ''.join(f'<a href="{esc(u)}" target="_blank" rel="noopener">{esc(n)}</a>' for n, u in l.get('sources', []))
+    srcs = ''.join(f'<a href="{esc(u)}" target="_blank" rel="noopener">{esc(n)}</a>' for n, u in dedupe_sources(l.get('sources', [])))
     pnum = l['price'] if l.get('price') is not None else 10**12
     ynum = l.get('year') or 0
     hnum = float(mnum.group(0).replace(',','')) if mnum else 10**9
