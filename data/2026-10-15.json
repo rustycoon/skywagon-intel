@@ -64,7 +64,8 @@
    "country": "US",
    "seller": "Skywagons LLC · Mark Pilkington",
    "phone": [
-    "530-642-2806"
+    "530-642-2806",
+    "(530) 306-4648"
    ],
    "photo": "N115AW",
    "first_seen": "2026-09-09",
@@ -93,7 +94,22 @@
      "FindAircraft",
      "https://www.findaircraft.com/"
     ]
-   ]
+   ],
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2460353",
+     "sections": {
+      "Detailed Description": "1976 Cessna A185F Skywagon, 3940TT, 950 SMOH, 250 SPOH, King KMA 20 audio panel with 3 LMB, King KT76 transponder with mode C, Apollo GX55 GPS, Pilot side articulating seat, Factory extended baggage, 850 main tires, Polished spinner, P-ponk Gear Leg beef Up kit, Complete logs. Private ownership Alaska History. Not commercial. No recorded damage history. No hail. No corrosion.",
+      "Avionics / Equipment": "Avionics:\nKing KMA 20 audio panel with 3 LMB\nKing KX 175B analog 760 channel Nav/Com\nKing KI 209 Glide slope/VOR/Localizer indicator\nKing KX 170B analog 760 channel Nav/Com\nKing KI 209 VOR/Localizer indicator\nKing KT76 transponder with mode C\nApollo GX55 GPS\nDual push to talk buttons\nFlightcom 403 Intercom\nAlcor Analog EGT Gauge\nOutside air temperature Gauge\n12 Volt power outlet\nRemote ELT arming panel",
+      "Airframe": "TOTAL TIME: 3940 Hours\nAirframe:\n84 gallons long range fuel\n4 small raised gas caps\nFactory Float Kit\nWindshield V brace\nStainless steel cables\nZinc chromate corrosion proofing\nBubble windows\nShoulder harnesses\nPilot side articulating seat\nRear seat vents\nFactory extended baggage\n6 seats\nTail cone lift handles\nHorizontal stabilizer abrasion boots\nRefueling steps and handles\n6 bolt Macaulay double puck brakes and wheels\n850 main tires\nEngine preheater\nPolished spinner\nbracket air filter\nThree bladed propeller\nHeavy bumpy backed phase three case with 7th stud\nLarge non congealing oil cooler\nGround service plug\nHockey Stick tail AD complied with\nP-ponk Gear Leg beef Up kit",
+      "Engines / Mods / Prop": "Engine:\nENGINE TIME: 950 hours SMOH on Continential IO-520D\nTOP OVERHAUL: 50 hours ago\nProp:\nPROP TIME: 250 Hours SPOH (On McCauley C58 three blade)",
+      "Interior / Exterior": "Interior:\nTan utility interior throughout. 6 seats with the middle row being F-Atlee Dodge jump seats. Overall rated 6 out of 10\nExterior:\nOverall with red major and Gray minor accents in classic traditional 1976 Cessna Skywagon scheme. Some minor scratching and use related where but overall rated 7 out of 10.",
+      "Remarks": "ANNUAL DUE: September 2027\nUSEFUL LOAD: 1340 Lbs\nHistory:\nComplete logs. Private ownership Alaska History. Not commercial. No recorded damage history. No hail. No corrosion."
+     }
+    }
+   ],
+   "useful_load": "1340 lb, as advertised"
   },
   {
    "key": "N8536T",
@@ -112,7 +128,9 @@
    "country": "US",
    "seller": "Dan Howard Aircraft Sales",
    "phone": [
-    "918-498-7073"
+    "918-498-7073",
+    "(918) 296-4326",
+    "(781) 623-5386"
    ],
    "photo": "N8536T",
    "price_note": "$250,000 on Trade-A-Plane and Controller; $265,000 on GlobalPlaneSearch, aircraftdealer.com and Barnstormers",
@@ -137,6 +155,20 @@
      "aircraftdealer.com",
      "https://www.aircraftdealer.com/"
     ]
+   ],
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2448106",
+     "sections": {
+      "Detailed Description": "A clean, well-maintained A185E w/ low-time IO-550D FRMN engine, 3-bld prop, long range fuel (tip tanks), Cessna camera port, Dual G5's, GTN-650Xi, GFC-500 AP, JPI Dig FF, JPI Dig EGT, 4-point shoulder harnesses, oversize tires/wheels/fairings, nice paint & interior. Ready to go !",
+      "Avionics / Equipment": "AVIONICS:\nPS Engineering PMA-8000-BT Bluetooth Audio Panel w/ Voice-Activated Stereo Intercom System\nGarmin GTN-650Xi WAAS-IFR GPS-Com w/ ILS, LPV, and Color 'Touchscreen' Moving Map Display & Terrain Avoidance\nGarmin G5 EFIS Artificial Horizon\nGarmin G5 EFIS Slaved HSI\nTKM MX-170C Digital Nav-Com #2 w/ VOR\nKing KR-85 ADF\nNarco AT-150- TSO Transponder w/ Mode-C Encoder\nGarmin GFC-500 Digital Autopilot with Hdg/Nav/GPS Tracking, GPSS, Altitude Hold, Approach Mode, Vertical Speed Mode, Emergency 'Level Off' Mode, & Glidesllope Couplin\nADDITIONAL EQUIPMENT:\nOversized Tires & Wheels, as well as Oversized Wheelpants\nCessna Factory Camera Port Kit installed\nOil-A-Matic Engine Pre-Oiler System\nPilot & Co-Pilot 4-Point Inertia Reel Shoulder Harnesses\nArticulating Front Seats with Headrests\nJPI Fuel Scan 450 Digital Fuel Flow Computer\nJPI EGT-100-6C 6-Probe Digital Exhaust Gas Temp Gauge\nAstro-Tech LC-2 Digital Chronometer\nOil-A-Matic Engine Pre-Oiler System\nPolished Prop Spinner\nEngine Oil Filter\nPilot Push-to-Talk Switches\nElectric Pitch Trim\nRudder Trim\nLocking Tail Wheel\nRight-Hand Hinged Window",
+      "Airframe": "6,009 Hours Total Time Since New",
+      "Engines / Mods / Prop": "ENGINE:\n170 hours on Continental IO-550-D Factory Reman Engine (June 2021)\n300-Horsepower Engine with 1,900-Hour Factory Recommended TBO\nPROPELLER:\n434 hours on Hartzell STC'd 3-Blade Constant-Speed Prop\nMODS:\nP. Ponk Aviation Heavy Duty Main Landing Gear 'Beef Up' Attach Castings (STC # SA2918NM)\nFlint Aero Inboard From Wingtip Fuel Tanks with 12 extra gallons per wing (STC $ SA2529WE)\nOil-A-Matic Electric Engine Pre-Oiler System (STC # SA4094NM)\nO'Berg 600 Series Heavy Duty Oil Filter (STC # SA4172NM)\nCessna Factory Camera Port Kit installed (Belly mounted Camera Hole)\nThermal Aircraft Co. Flap Gap Seals (STC # SA3313WE)\nCee Bailey One-Piece Windshield\nAlphin Cowling Louvers (STC # SA77NE)",
+      "Interior / Exterior": "INTERIOR:\nTwo-tone Light Beige leather interior with Brown fabric inserts.\nMatching two-tone sidepanels.\nBeige seatbelts.\nLight Beige interior window trim and headliner.\nNavy Blue carpeting.\nRated 7+.\nEXTERIOR:\nAircraft flight controls were removed, and aircraft was stripped, washed, primed with DuPont Vari-Prime primer, then painted with the following paint products in February 2012:\nSherwyn-William Acry-Glo Moondust base (W00248)\nDuPont Imron Blue (62203X) accent\nDuPont Imron Red (4492X) accent\nControls were balanced checked as per maintenance manual.\nHail dings on top skins of the aircraft, cosmetic only, no structural damage).\nRated - 8.",
+      "Remarks": "Annual Inspection underway in May 2026!\nLogs Status: First 2,000 hours of logs are missing. The aircraft sold to the Mexican Federal Government when brand new and stayed in the Mexican camera-equipped surveillance fleet until it was exported to the U.S. in 1981. The current owner has owned this aircraft since 1981! Always based in the dry climate of Minden, Nevada, just southeast of Lake Tahoe.\nOlder damage history: Horizontal stabilizer was dented and professionally repaired years ago. Aircraft has hail dings on all top surfaces."
+     }
+    }
    ]
   },
   {
@@ -154,7 +186,8 @@
    "country": "US",
    "seller": "Hudson Flight Ltd · Ron Fernuik",
    "phone": [
-    "806-662-5823"
+    "806-662-5823",
+    "(806) 665-3566"
    ],
    "photo": "N91PH",
    "sources": [
@@ -174,6 +207,20 @@
      "aircraftdealer.com",
      "https://www.aircraftdealer.com/"
     ]
+   ],
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2459651",
+     "sections": {
+      "Detailed Description": "1973 Cessna A185F Canadian freshwater history. 3550 TTSN, 1020 SMOH. Meticulous logs, Garmin 430. Complete Wipline 3730 Amphibious Floats, pump, rigging (floats really for parts). long range fuel. Offered at $265,000. Ron, (806) 662-5823.",
+      "Avionics / Equipment": "Avionics:\nGarmin 430\nKing KX 165 Nav Com\nKing KY 97A Com\nKing KR 86 ADF\nKing KT 76C Transponder\nADS-B Out uAvionix\nCessna audio panel\nIntercom\nEquipment and Notes:\nComplete Wipline 3730 Amphibious Floats, pump, rigging (floats really for parts)\nLong range fuel 74 gallons\nCGR-30P Engine Monitor\nExtended baggage\nBubble windows\nRosen visors\nLED landing lights\nFloat kit and V brace",
+      "Airframe": "Airframe:\n3550 TTSN",
+      "Engines / Mods / Prop": "Engine:\nContinental IO-520-D\n1020 SMOH\nProp:\n325 SMOH",
+      "Interior / Exterior": "Interior/Exterior:\nNew paint MENA and interior",
+      "Remarks": "Remarks:\nMeticulous complete detailed logs\nDamage history 1975"
+     }
+    }
    ]
   },
   {
@@ -223,7 +270,22 @@
      "Trade-A-Plane",
      "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2454518"
     ]
-   ]
+   ],
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2454518",
+     "sections": {
+      "Detailed Description": "Fresh to the market with a fresh 03/2026 annual is one of the lowest time (1623TT) and cleanest Cessna A185F in existence with all of the desirable mods. Currently on EDO Amphibious floats and the aircraft will come with the landing gear. Turn key, ready for any adventure you can imagine. Always well maintained and always hangared. Beautiful paint and beautiful interior. All logs, no known damage history.",
+      "Avionics / Equipment": "JPI EDM700 Engine Monitor\nCentury 1 Autopilot\nBendix/King HSI 100-1\nKing KMA20 Audio Panel\nGarmin GNS430W WAAS GPS/Navigator\nBendix/King KX165 Nav/Com\nGarmin GTX345 Transponder w/ ADSB In & Out\nRadar Altimeter\nPS Engineering Intercom w/ Audio In\nHobbs Meter\nELT Remote\nAmphibious Landing Gear Position Advisory System\nDual Aircraft Batteries w/ Selector Switch\nAvionics Master Switch\nPilot & Co-Pilot Push to Talk Switches\nArtex 401 ELT\n4 Place Intercom",
+      "Airframe": "Paint 8/10 - Painted in 1993 by Hotton Aviation Co. With JetGlo Matterhorn white and Nordic Grey and Acryglo Balboa Blue.\n1623 Aircraft Total Time\nEdo Amphibious Floats Model #696-3500\nLanding Gear to come with aircraft\nRobertson STOL #SA1441\nAir Research Wing Extensions\nDual Aircraft Batteries\nAmphibious Landing Gear Position Advisory System\nBogert Battery Cables\nRefueling Steps & Handles\nBoth Fuel Tanks Replaced with new in 12/2017",
+      "Engines / Mods / Prop": "Continental IO-520-D\nS/N: 174865R\nSMOH: 1175.2\nFactory Reman in 1980\nCylinders #1&4 Replaced @ 1082 SMOH in 04/2022\nEngine Hoses replaced 11/2015\nFuel Servo O/H in 11/2015\nAir Wolf Remote Oil Filter\nNew Muffler installed 01/2019 @ 1019 SMOH\nGAMI Fuel Nozzles STC#SE09217SC\nBoth Cowl Flap Control Cables Replaced 04/2022",
+      "Interior / Exterior": "Interior - 8/10\nLight Blue and cream seat covers in great condition with little to no signs of wear and no rips, stains or tears.\nSeatbelts in great condition.\nDark blue utility carpets in great condition.",
+      "Remarks": "Super low time, very well cared for and always hangared A185F. All of the mods to make this one serious bush plane, or to take fishing to the lake. Aircraft is still being flow, times are likely to slightly increase. Hangared at KPYM."
+     }
+    }
+   ],
+   "useful_load": "947 lb, as advertised"
   },
   {
    "key": "N5830J",
@@ -261,6 +323,20 @@
      "Barnstormers amphibian",
      "https://www.barnstormers.com/category-16268-Cessna--Amphibian.html"
     ]
+   ],
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2459533",
+     "sections": {
+      "Detailed Description": "1970 Cessna A185E Amphibian, 3470 TT, 780 SMOH IO-550D, Garmin WAAS IFR, Long Range Fuel, Many Improvements!",
+      "Avionics / Equipment": "AVIONICS:\nGarmin GMA 340 Audio Panel\nGNS 530W WAAS GPS/Nav/Com/MFD\nGNS 430W WAAS GPS/Nav/Com/MFD\nGTX 345 Transponder w/ADSB in/out\nKX 155 Nav/Com\nSTEC 30 Autopilot w/Alt Hold/GPSS\nGI 275 Engine Indication System\nGDL 69A XM Weather/Radio\nFEATURES:\nLong Range Fuel 84 Gals. (78 usable)\nHorton STOL Leading Edge & Wing Tips\nSelkirk Interior Panels\nLake & Air Gear Advisory System 9600\nJackscrew Access Cover\nDoor Steward both sides\nOne Piece Windshield\nBubble Windows in Doors",
+      "Airframe": "3470 hours since new",
+      "Engines / Mods / Prop": "ENGINE:\n780 since major overhaul (IO 550D, 300 HP)\nPROP:\n780 since prop overhaul (3 Blade)",
+      "Interior / Exterior": "INTERIOR:\nBlack leather, good condition\nEXTERIOR:\nWhite base/black/gold, nice condition",
+      "Remarks": "Complete logs, annual done 12/17//25, EDO 2790 Amphibious Floats\nSpecifications and availability subject to verification by purchaser"
+     }
+    }
    ]
   },
   {
@@ -319,7 +395,21 @@
    "phone": [
     "914-204-0400"
    ],
-   "photo": "N1795R"
+   "photo": "N1795R",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2460907",
+     "sections": {
+      "Detailed Description": "1974 A185F 5313 TTSN, IO-520-D 1231 SMOH, 75 STOP (2023), McCauley D3A34C401 86\", Fresh 9/26 FAA145 Annual (new Exhaust, Motor Mounts & more), Float Kit, Wing-X- STOL, VGs, Atlee Dodge Rear Seats, Garmin GTR-205 Comm & STEC-50 Autopilot, Sound Working AK Plane with complete books. At Lake Hood; owner just bought it, and the project/direction changed. Good Fall/Winter project. Our loss your gain!",
+      "Avionics / Equipment": "Garmin GTR-205 Comm\nS-TEC 50 Autopilot\nPS Engineering PM-1000 4-Place Intercom\nEI UBG-16 Engine Analyzer with EGT/CHT\nHoskins Digital Fuel Flow",
+      "Airframe": "N1795R\nSerial# 18502511\nAirframe Total Time: 5,313 Hrs.\nCessna Float Kit\nART Wing-X wing extensions with gross weight increase\nSportsman STOL leading edge cuff\nMicroAero vortex generators\nNorth Pacific stainless jackscrew\nLP Aeroplastics single piece windshield\nLH & RH Bubble Windows\nDoor Steward gas struts\nAtlee Dodge Rear Jump Seats\nComplete and very well documented logbooks\nFresh FAA145 annual signed off 9/2016",
+      "Engines / Mods / Prop": "Engine Time Since New: 1,231 Hrs.\nEngine: Teledyne Continental IO-520D\n75 Hrs. since top overhaul (2023)\nGAMI injectors\nBrackett air filter\nPropeller: McCauley D3A34C401\nPropeller TSOH: 1,158 Hrs. (May 2002)",
+      "Interior / Exterior": "4 Seats Utility ready for Hunting or AK work\nLP Aeroplastics single piece windshield\nDoor Steward gas struts\nAtlee Dodge Rear Jump Seats",
+      "Remarks": "Sound Working AK Plane with complete books. At Lake Hood; owner just bought it, and the project/direction changed. Good Fall/Winter project. Our loss your gain!"
+     }
+    }
+   ]
   },
   {
    "key": "N70713",
@@ -366,6 +456,19 @@
      "Trade-A-Plane",
      "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2452517"
     ]
+   ],
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2452517",
+     "sections": {
+      "Detailed Description": "1974 Cessna 185\nN111EY 1974 C-185\nTT 4400\nSMOH 1300\n200hrs since complete Top\nGami injectors.\nEDM 730 engine monitor\nDual Av 30d\nSpin on oil filter\nVGs\nMonarch fuel caps\nDoor stewards\nBAS harness\nAtlee dodge folding jump seats\nExtended baggage\nPponk gear kit\nGarmin radio & 430\nTailwheel lock\nLogs & pix ready to send\nCentral WA\n$199k\nJared 208-301-0683",
+      "Avionics / Equipment": "Digital fuel\nEDM 730 engine monitor\nDual Av 30d\nGarmin radio & 430",
+      "Airframe": "Nice straight airframe paint is nice. Lots of nice Mods",
+      "Engines / Mods / Prop": "IO-520D 300HP recent complete top with all New Cylinders. Running great & strong",
+      "Interior / Exterior": "Very nice clean. Folding jump seats."
+     }
+    }
    ]
   },
   {
@@ -431,7 +534,22 @@
      "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2456187"
     ]
    ],
-   "photo": "N9998X"
+   "photo": "N9998X",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2456187",
+     "sections": {
+      "Detailed Description": "76 year-old Pilot needs to sell an excellent Airplane! Will Deliver personally anywhere in the lower 48. As I age out, I don't want this in my estate. Get a great bird and save a bundle!\nBeautiful and well maintained, well documented, hangared and upgraded Cessna 185.\nRecent completed overhaul firewall forward including factory engine overhaul. Nice interior and baggage area. No corrosion.\nAlways Hangared! Will 4 place intercom, autopilot and exact fuel quantity measured. Short field performance in rough terrain no problem.\nThis year model C185 gives you a light frame and plenty of power with a This year model C185 gives you a light frame and plenty of power with an IO - 470 just rebuilt by the factory. You have a bulletproof dependable engine.\nQuality condition and documentation on a prebuy will impress you on this bird!",
+      "Avionics / Equipment": "Garmin GPS 175/ GNX 375\nADSB In/Out\nG5 installed\nLynx Transponder\nFL20XD Fuel computer\nCGR-30P engine analyzer\nNew Artex 406 ELT with remote control\nAutopilot",
+      "Airframe": "Airtex ELT\nCleveland 6 bolt wheels\nCleveland Brakes\nReplaced cockpit seat rails and rollers with Mcfarlane parts\nScott 3450 Tailwheel\nElevators recently overhauled by Airframe Components\nDual USB charging port\nPaint and Interior at least an 8!",
+      "Engines / Mods / Prop": "TSFOH 110 hrs engine\nContinental Factory Overhaul\nTSMOH 110 hrs Prop and Governor\nPropeller & Governor 110 hrs since overhaul\nRecent Alternator and voltage regulator replaced\nCGR-30P engine analyzer\nFL20XD Fuel computer\nLifetime silicone fireproof hoses",
+      "Interior / Exterior": "Interior is an 8\n4 place intercom\nReplaced cockpit seat rails and rollers with Mcfarlane parts\nDual USB charging port",
+      "Remarks": "Aircraft has been owned and maintained by meticulous AI!\nWill deliver!"
+     }
+    }
+   ],
+   "phone": []
   },
   {
    "key": "N4841C",
@@ -528,7 +646,7 @@
    "history": "Part 135 history, as advertised",
    "location": "La Grande, OR",
    "country": "US",
-   "seller": "Contact through the ad",
+   "seller": "Hiller Aviation Consulting",
    "photo": "N103AM",
    "sources": [
     [
@@ -539,6 +657,19 @@
      "AircraftForSale",
      "https://www.aircraftforsale.com/aircraft/single-engine-piston/cessna/185"
     ]
+   ],
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2457083",
+     "sections": {
+      "Detailed Description": "Hiller Aviation Brokerage & Consulting brings to market this 1975 Cessna A185F\nA proven, well-documented Cessna A185F (currently on a part 135 certificate) - Powered by an overhauled Continental IO-520-D with 431 hours SMOH and an overhauled Hartzell three-blade prop, this aircraft is ready to work. Equipped with long-range fuel tanks, Horton STOL kit, Wing \"X\" extensions, and a capable panel including the Garmin GNC 250XL and uAvionix AV-30C.\nPurchase assistance and delivery available.\nAIRFRAME:\nTTAF: 7,653 Hours\nUseful Load (on floats): 1,464 lbs ' Useful Load (on wheels): 1,771 lbs\nEmpty Weight (on floats): 2,061 lbs ' Empty Weight (on wheels): 1,753 lbs\nMax Gross Weight: 3,525 lbs\nAlaska Bush Wheels/8.50×10 Michelin Condor Tires (installed April 2026)\nPK 3500C Straight Floats (Available)\nHorton STOL Kit\nWing \"X\" STOL Extensions (Wing Extensions)\nLong Range Fuel Tanks\nWheelen Anti-Collision Beacon\nObservation Window & Sky Lights\nStep, Handles, and BAS Tail Handles\nSki Brackets\nLeather seats: Atlee Dodge 2nd-Row Passenger Seats, Rear Bench Seat (3rd Row)\nStrip and painted in 2014\nENGINE:\nContinental IO-520-D\nOverhauled by Alaskan Aircraft Engines, Anchorage AK (October 2022)\nSMOH: 431 Hours ' TBO: 1,700 hrs / 12 years\nSlick Magnetos\nSkytec Starter (replaced 2022)\nPROP:\nHartzell PHC-C3YF-1RF/8468A-6R\nOverhauled by A.C. Propeller Service, Seattle WA (January 2023)\nSMOH: 431 Hours ' TBO: 2,400 hrs / 72 months\nAerotech PCU-5000 Governor\nAVIONICS:\nKing/Bendix KX 155 Nav/Com\nGarmin GNC 250XL Nav/Com/GPS\nKing/Bendix KT 76A Mode C Transponder\nuAvionix AV-30C\nuAvionix Skybeacon TSO ADS-B Out\nGarmin GMA 340 Audio Panel\nACK E04 ELT - 406 MHz\nDisclaimer: The Seller and Agent provide the information herein solely to assist prospective buyers in their evaluation of the aircraft. While every effort has been made to ensure accuracy, errors and omissions may occur. All specifications, equipment, features, times, statuses, and conditions are the sole responsibility of the Buyer to verify prior to closing. Neither Seller nor Agent shall be held liable for any discrepancies, errors, or omissions discovered after closing, nor are they obligated to provide any equipment, features, inspections, or other considerations beyond what is expressly agreed upon. All aircraft, equipment, and prices are subject to change without notice, and are subject to prior sale, withdrawal from the market, or unavailability."
+     }
+    }
+   ],
+   "useful_load": "1771, as advertised",
+   "phone": [
+    "(206) 423-2913"
    ]
   },
   {
@@ -578,7 +709,7 @@
    "useful_load": "1,322 lb",
    "location": "Little Rock, AR (registry)",
    "country": "US",
-   "seller": "Contact through the ad",
+   "seller": "Chad Crank",
    "photo": "N969WM",
    "sources": [
     [
@@ -586,7 +717,22 @@
      "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2453669"
     ]
    ],
-   "price_note": "$250,000 in the Trade-A-Plane header and on Barnstormers; the Trade-A-Plane body text says $275,000"
+   "price_note": "$250,000 in the Trade-A-Plane header and on Barnstormers; the Trade-A-Plane body text says $275,000",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2453669",
+     "sections": {
+      "Detailed Description": "1962 Cessna Skywagon 185A - 249 SMOH - Sportsman STOL - Bushwheels - Float Kit - $275,000\nOverview: Exceptionally capable 1962 Cessna 185A \"Light\" Skywagon configured for backcountry and utility operations. Equipped with 24 STCs including Sportsman STOL, Alaska Bushwheels, vortex generators, P. Ponk structural upgrades, floatplane kit, and extended baggage.\nOnly 249 hours SMOH on the Continental engine and propeller.\nOriginally operated in the Pacific by Ansett and Territory Airlines and later returned to the United States in 2001 for modernization. Aircraft also appeared in the 1972 film La Vallée.\nWell-documented history with complete logs since new.\nAircraft Highlights\n• 249 SMOH Engine\n• Sportsman STOL Cuff\n• Micro AeroDynamics Vortex Generators\n• 29\" Alaska Bushwheels\n• Baby Bushwheel Tailwheel\n• P. Ponk Landing Gear Reinforcement\n• Floatplane Reinforcement Kit\n• Extended Baggage Compartment\n• Dual Middle Jump Seats\n• Folding 6 Seating Configuration\n• Alpha Systems Angle of Attack\n• JPI Engine Monitoring System\nEmpty Weight: 1,849 lbs\nUseful Load: 1,341 lbs",
+      "Airframe": "Total Time: 9,524 hours\nSerial: 185-0506\nPaint completed 2020\nAnnual August 2025\nDamage history: Minor right wing damage during ground handling in the 1970s while in Pacific airline service. Properly repaired with decades of subsequent operation. Right elevator skin replaced and repainted in 2025 following minor hangar (bullet) incident.\nEngine:\nContinental IO-470F\nTotal Time: 5,730 hours\nSMOH: 249 hours\nGAMI Injectors installed\nPropeller:\nMcCauley D2A34C58\nTime Since Overhaul: 249 hours\nAvionics:\nGarmin 150XL GPS\nBendix King KX-155 NAV/COM\nBendix King KY-197 COM\nBendix King KT-79 Transponder\nGarmin Aera 660 GPS\nFreeFlight ADS-B\nJPI EDM-800 Engine Analyzer\nPS Engineering PM3000 Intercom\nAudio Panel: KMA-24\nAltitude Encoder: Trans-Cal SSD120\nAircraft priced to allow buyer to tailor avionics upgrades if desired.\nInterior:\nSelkirk Aviation Interior Trim Panels\nBAS Shoulder Harnesses\nSix-place intercom\nFour folding passenger seats\nQuickly reconfigurable for passenger or cargo operations\nCustom leather front and removable mid seats\nLanding Gear & Tires:\nAlaska Bushwheels 29\" tundra tires\nABI wheels and brakes\nBaby Bushwheel tailwheel\nP. Ponk landing gear reinforcement kit\nFloat/Amphib kit\nFuel System:\nEagle Fuel Cells installed 2021\nSTOL / Bush Modifications:\nSportsman STOL Leading Edge\nMicro AeroDynamics Vortex Generators\nHeads Up Alpha Angle of Attack System\nExtended Baggage\nFloatplane Reinforcement Kit\nReason for Sale\nOwner moving east\nNo Brokers",
+      "Avionics / Equipment": "Avionics:\nGarmin 150XL GPS\nBendix King KX-155 NAV/COM\nBendix King KY-197 COM\nBendix King KT-79 Transponder\nGarmin Aera 660 GPS\nFreeFlight ADS-B\nJPI EDM-800 Engine Analyzer\nPS Engineering PM3000 Intercom\nAudio Panel: KMA-24\nAltitude Encoder: Trans-Cal SSD120\nAircraft priced to allow buyer to tailor avionics upgrades if desired.\nAirframe\nAirframe\nTotal Time: 9,524 hours\nSerial: 185-0506\nPaint completed 2020\nAnnual August 2025\nDamage history: Minor right wing damage during ground handling in the 1970s while in Pacific airline service. Properly repaired with decades of subsequent operation. Right elevator skin replaced and repainted in 2025 following minor hangar (bullet) incident.\nLanding Gear & Tires:\nAlaska Bushwheels 29\" tundra tires\nABI wheels and brakes\nBaby Bushwheel tailwheel\nP. Ponk landing gear reinforcement kit\nFloat/Amphib kit\nFuel System:\nEagle Fuel Cells installed 2021\nSTOL / Bush Modifications:\nSportsman STOL Leading Edge\nMicro AeroDynamics Vortex Generators\nHeads Up Alpha Angle of Attack System\nExtended Baggage\nFloatplane Reinforcement Kit",
+      "Engines / Mods / Prop": "Engine:\nContinental IO-470F\n260HP\nTotal Time: 5,730 hours\nSMOH: 249 hours\nGAMI Injectors installed\nPropeller:\nMcCauley D2A34C58\nTime Since Overhaul: 249 hours",
+      "Interior / Exterior": "Interior:\nSelkirk Aviation Interior Trim Panels\nBAS Shoulder Harnesses\nSix-place intercom\nFour folding passenger seats\nQuickly reconfigurable for passenger or cargo operations\nCustom leather front and removable mid seats",
+      "Remarks": "24 Supplemental Type Certificates and key 337's to be bush ready - The estimated cost of these including parts and labor is approximately $100k!\nSA2256WE\nStene Aviation\nSportsman STOL Cuff\nSA01015SE\nAlaska Bushwheels Inc\n29\" Bushwheels\nSA01636SE\nAlaska Bushwheels Inc\nBaby Bushwheel Tailwheel\nSA63GL\nAlaska Bushwheels Inc\nABI Brakes\nSA01015SE\nAlaska Bushwheels Inc\nABI Wheels and Tires\nSA933NW\nLakeVue Aeronautics\nDual Middle LakeVue Jump Seats\nSA01646SE\nMicro AeroDynamics, Inc.\nMicroDynamics Vortex Generators\nSE09356SC\nStratus Tool Technologies, LLC\nTempest oil filter Spin on adapter C6LC\nSA2067NM\nBAS, Inc.\nDual Retractable Shoulder Harness Seatbelts\nSE09217SC\nGAMI\nGAMI Injectors\nSA4170NM\nP. Ponk Aviation\nOutboard Landing Gear Brackets\nSA2918NM\nP. Ponk Aviation\nP Ponk Beef Up Kit\nSA10682SC\nPlane Power\nAlternator and Voltage Regulator\nSA472GL\nGreat Lakes Aero Products\nGreat Lakes Windshield\nSA3813NM\nBAS\nTail Pull Handle\nSA71GL\nBracket Aero Filters\nAir Filter\nSA02426AK\nFree Flight Systems\nFree Flight ADSB\nSA63GL\nParker Hannifin\nCleveland Main Wheels and Brakes 199-62A\nSA361NW\nKenmore Air Harbor\nLarge Tires - 8.5x6+\nSA00760SE\nSelkirk Aviation\nGlare Shield\nSA00679SE\nSelkirk Aviation\nInterior Trim Pannels;\nSA00954SE\nJ. P. Instruments\nJPI Temperature Indicating System\nSA2586NM\nJ. P. Instruments\nJPI EGT\nSA00432SE\nJ. P. Instruments\nJPI Fuel Flow\nNotable 337's:\n•\nExtended baggage compartment from 185E\n•\nInstrument panel removal, reconfiguration and installation\n•\nAvionics Installation\n•\nManifold pressure/fuel flow gauge\n•\nCessna ground power service plug kit 185-4\n•\nCessna assecory kit 180-1 floatplane/amphibious reinforcement kit"
+     }
+    }
+   ],
+   "phone": []
   },
   {
    "key": "N18500",
@@ -652,7 +798,7 @@
    "gear": "Wheels · factory float kit",
    "location": "Santa Paula, CA",
    "country": "US",
-   "seller": "Contact through the ad",
+   "seller": "Thomas Koff",
    "photo": "N666SB",
    "sources": [
     [
@@ -670,7 +816,22 @@
    "mods": "Factory float kit (never on floats), 8.50 x 10 mains, XPMods 14-inch tailwheel, extended baggage",
    "panel": "Garmin GNS430, King KNS80 NAV/DME/RNAV/GS, King KY196, Garmin GTX335 with ADS-B out, King KMA26 audio panel, JPI 700 six-probe EGT",
    "annual": "September 2026",
-   "history": "The ad says the current owner, a retired airline captain, has owned it since 1984."
+   "history": "The ad says the current owner, a retired airline captain, has owned it since 1984.",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2458523",
+     "sections": {
+      "Detailed Description": "Low-time, original 1980 Cessna A185F Skywagon - 2620 TTAF with Continental IO-520D, 1392 SMOH, McCauley 401 86\" 3-Blade Prop, 270 SPOH, Factory Float Kit (Never on Floats), 8.50 X 10 Mains, XPMods 14\" Tailwheel, 88 Gal. Fuel, 1373.8 useful load with the factory belly pod.\nNice Original Paint (always hangared), Leather 6-place utility interior. Extended baggage area, Garmin GNS430 GPS, King KNS80 NAV/DME/RNAV/GS, King KY196 comm, Garmin GTX335 transponder w/ADS-B out. King KMA26 audio panel/intercom. JPI 700 6-Probe EGT. IFR Certified. September 2026 Annual, Complete logbooks since new.\nCurrent owner (a retired airline captain) has owned the airplane since 1984 and flew it in a single-pilot Part 135 operation.\nCheckout and Dual Instruction Available",
+      "Avionics / Equipment": "Avionics:\nKing KMA26 Audio Panel\nGarmin 430 Com/Nav/GPS/GS\nKing KY196 Com\nKing KNS80 NAV/DME/RNAV/GS\nDual King KI204 (2) CDI with glideslope\nLC2 Digital Clock\nJPI EDM 700 Engine Monitor\nGarmin GTX335 Transponder ADS-B Out\n121.5 MHz ELT\nCessna 300 ADF\nHoneywell QAT Accelerometer\nAirframe Options:\nFactory Float Kit - Windshield V-Brace Installed, Never on Floats\nPPONK Gear Boxes\nStrobes and Rotating Beacon\nArticulating, Vertical Adjusting Pilot Seat\nPilot and Copilot Inertial Reel Harnesses\nSecondary Seat Stop\n8:50 X 10 Tires Main Gear (New Tires and Tubes 9/26)\nXP Mods 14\" Tailwheel (New Tire and Tube 9/26)\nTail Pull Handles\nStabilizer Abrasion Boots\nCowl Louvres\nRefueling Steps and Handles\nBrackett Air Filter\nOpenable Left and Right-Hand Window\n6-Place Interior\nRosen Visors\nExtended Baggage Area\nFactory Belly Pod\nAlways Hangared",
+      "Airframe": "1980 Cessna A185F\nSerial Number: 18503994\nTotal Time: 2620 Hr. (All aircraft, engine, and propeller times approximate as aircraft is being flown)\nAircraft Weight: 1976.13 Lbs. (with belly pod)\nMaximum Gross: 3350 Lbs.\nUseful Load 1373.87 Lbs.\nWt. & Balance: Howard Aviation, 10/4/2018\nFuel Capacity: 88 Gallons\nUsable Fuel: 84 Gallons\nWet Wing (No Bladders)",
+      "Engines / Mods / Prop": "Engine: Continental IO-520 D101B\nTBO 1700Hrs\n300HP 5 Minutes, 285HP Continuous\nSerial Number: 293151\nSMOH: 1392 Hr. (1/10/95)\nIRAN Inspection: 796 Hr. (7/16/10 - Tim's Aircraft Engines - Replaced camshaft, overhaul lower end)\nPropeller: McCauley D3A34401C/G90DFA-4 (86\" 3-Blade)\nSerial Number:150367\nTotal Time: 449 Hr. (7/23/15)\nSince Overhaul: 270 Hr. (3/1/2020)",
+      "Interior / Exterior": "Colors:\nExterior: White/Orange/Tan\nInterior: Tan Leather\n6-Place Utility Interior",
+      "Remarks": "Complete Logs Since New\nInspection Status:\nAnnual: 9/1/26\nTransponder: 8/1/2024\nPitot-Static: 8/1/2024\nELT: 9/21/26 Battery Due: October 2028\nDamage History:\n1982 Left wing and aileron damage - properly repaired and documented\n2014 taxi incident - landing gear box and fuselage repaired and documented by Aircraftsman, Chino Airport - Repair photos available\nDisclaimer: The Seller and Agent provide the information herein solely to assist prospective buyers in their evaluation of the aircraft. While every effort has been made to ensure accuracy, errors and omissions may occur. All specifications, equipment, features, times, statuses, and conditions are the sole responsibility of the Buyer to verify prior to closing. Neither Seller nor Agent shall be held liable for any discrepancies, errors, or omissions discovered after closing, nor are they obligated to provide any equipment, features, inspections, or other considerations beyond what is expressly agreed upon. All aircraft, equipment, and prices are subject to change without notice, and are subject to prior sale, withdrawal from the market, or unavailability."
+     }
+    }
+   ],
+   "phone": []
   },
   {
    "key": "N4757Q",
@@ -777,7 +938,9 @@
    "country": "US",
    "seller": "Alaska Aircraft Sales",
    "phone": [
-    "907-243-1966"
+    "907-243-1966",
+    "(907) 244-9605",
+    "(907) 243-1965"
    ],
    "sources": [
     [
@@ -790,7 +953,21 @@
     ]
    ],
    "useful_load": "1,032 lb",
-   "photo": "N93183"
+   "photo": "N93183",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2458037",
+     "sections": {
+      "Detailed Description": "Privately owned for 44 years, this is a real Alaskan Sportsman's airplane. He's flown it over many record setting trophy bow hunts and remote trips. Upgraded over the years with Aerocet floats, a 550 engine and prop upgrade, hydraulic wheel skis, Sportsman leading edge, VGs, HID high vis lights, etc., etc., etc.",
+      "Avionics / Equipment": "GNS430W\nGA35 WAAS antenna\nKing KX-155 N/C w/KI-209 GS\nAspen EFD-1000\nU-Avionix ADS-B out tail beacon\nGMA 340 stereo audio panel\nJPI EDM-700 engine monitor\nJPI FS-450 fuel flow\nAirgizmo dock w/GPS 695\nKannad 406MHz ELT\nCessna 300 ADF",
+      "Airframe": "2,194 hours TTAF. Only very minor damage (wingtip) back in 1978. Annuals every year, complete logs. See spec sheet",
+      "Engines / Mods / Prop": "TCM Factory Reman IO-550D in 2002.\nNew McCauley D3A34C401 in 2022.",
+      "Interior / Exterior": "New Sellkirk panels approx 2005\nNice leather upholstery\nExtended baggage",
+      "Remarks": "Aerocet 3500 straight floats\nFluidyne C-3600 hydraulic wheel skis w/tailski\nCleveland wheels & brakes\nATX vortex generators\nRMD wingtips\nSportsman STOL\nsee spec sheet for complete list"
+     }
+    }
+   ]
   },
   {
    "key": "N1089F",
@@ -838,9 +1015,25 @@
     ]
    ],
    "phone": [
-    "309-342-3134"
+    "309-342-3134",
+    "(888) 253-8247"
    ],
-   "photo": "N866PH"
+   "photo": "N866PH",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2457588",
+     "sections": {
+      "Detailed Description": "Exceptionally well-equipped 1977 Cessna A185F Skywagon featuring a 510-hour Continental IO-550D Conversion, Seaplanes West engine mount, Hartzell 3-blade prop, Flint tip tanks, Wing X-STOL extensions, Vortex Generators, and Quasar L.E.D. Lights!Complete logs since new, always hangared, and no damage history. Aspen EFD-1000 PFD, Garmin 430W WAAS, L3 Lynx ADS-B In/Out, extended baggage, BAS shoulder harnesses, and numerous backcountry upgrades make this a highly capable and exceptionally well-maintained Skywagon! Located in Cody, WY",
+      "Avionics / Equipment": "Aspen EDF-1000 Evolution Primary Flight Display\nGarmin GNS-430W WAAS GPS\nGarmin GTR-225 NAV/COM\nPS Engineering PMA7000B Audio Panel\nL3 Lynx NGT-9000 ADS-B In/Out Transponder\nGarmin Aera 660 Portable GPS\nJPI EDM-700 Engine Monitor / 6 Cyd EGT / CHT\nElectronics International Fuel Flow Manifold & RPM Gauges\nShadin Fuel Flow Computer",
+      "Airframe": "Hours Since New: 3,890 Hours\nAnnual Due: April 2027\nIFR Check: In Progress",
+      "Engines / Mods / Prop": "Engine: Continental IO-550D\nEngine Time Since New: 510 Hours\nSeaplanes West Engine Mount STC\nPropeller: Hartzell PHC-C3YF-1RF 3-Blade Propeller\nPropeller Time Since New: 510 Hours",
+      "Interior / Exterior": "Exterior: Very attractive Cream and Green paint scheme with a Silver accent stripe, Abrasion Boots, Red Flint Wing Tips and Polished Spinner\nInterior: Tasteful Gray and Beige leather interior with matching\nleather sidewall panels, and a wool headliner and carpet.\nFolding rear seats with a quick-removal kit and bubble-style\nPatroller windows create excellent visibility!",
+      "Remarks": "Flint Tip Tanks & Wing X-STOL Wing Extensions\nFactory Long Range Fuel (74 Gals - 98 Gals Total Fuel)\nVortex Generators\nBAS Pull Handles & BAS Inertia Shoulder Harnesses\nPatroller / Spotter Bubble Windows\nP. Ponk Main Landing Gear Attachments\nSteward Gas Spring Door Assist\nAirwolf Oil Filter\nSky Tec Starter\nEngine Pre-Heater\nRosen Sun Visors & Flight Products Wing Root Vents\nArtex ELT\nExtended Baggage\nQuasar L.E.D. Landing, Taxi Lights, and Wing-tip Strobes\n8.6 Main Tires & 10 Inch Tailwheel\nJMI Engine Gauges\nSeat Locks & Door Guardians\nCenter V Bar Support"
+     }
+    }
+   ],
+   "engine": "Engine: Continental IO-550D · Engine Time Since New: 510 Hours · Seaplanes West Engine Mount STC · full engine detail in the ad below"
   },
   {
    "key": "alpena",
@@ -898,7 +1091,23 @@
    ],
    "price_note": "$369,900 on Trade-A-Plane and Facebook; aerogurus prints $379,900",
    "useful_load": "1,609 lb",
-   "photo": "N78BL"
+   "photo": "N78BL",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2460918",
+     "sections": {
+      "Detailed Description": "1977 Cessna 185. Only 2772 hrs total time! No damage history / complete logbooks. PK 3050 amphibs, wheels and skis. Fresh annual and IFR cert Sept 2026. IO-520 w/ 541 hrs SMOH w/ 88\" Black Mac prop. Garmin 530w, S-Tec 55x Autopilot, extended baggage, long range fuel, leather interior, shoulder harnesses, Tannis engine pre-heat and more! Always hangared, no salt water and super clean. This is the one you've been waiting for!",
+      "Avionics / Equipment": "Standard 6-Pack Instruments\nGarmin 530W\nS-Tec 55X Auto Pilot\nKing KX170B\nGarmin GTX345 Transponder w/ ADSB\nArtex 345 ELT\nIFR Pitot Static Check August 2026",
+      "Airframe": "No Damage History / Complete Log Books / Hangared\n2772 Hours Total Time\nAnnual inspection Sept 2026\nTail AD inspection done at annual Sept 2026\nBAS Shoulder Harnesses\nExtended Baggage\nTail Handle Kit\nStainless Steel Screws",
+      "Engines / Mods / Prop": "Continental IO-520D 541 Hours SMOH (2014)\n88\" McCauley Black Mac 541 Hours Since New (2014)\nComprehensive annual Sept 2026 at a Cessna Service Center. Removed all lifters and borescoped the cylinders for pics and video showing no corrosion or pitting. This was done for the buyers piece of mind.",
+      "Interior / Exterior": "Painted in 2006 using Imron paint. Always hangared and in excellent condition. Just detailed, touched up and waxed. Condition (8.5/10)\nInterior: Leather/articulating seats in excellent condition. 3rd row seating.",
+      "Remarks": "PK 3050 Amphibs\nConventional Gear w/8.50 Tires\nAirglas 3600 Wheel Penetration Skis\nUseful load on floats 1030 lbs\nUseful load on wheels 1609 lbs\nAnnual inspection completed 9/2026\nTail inspection AD completed 9/2026\nIFR Pitot Static Check 8/2026\nExcellent condition inside and out! Please call or text for details or to set up a showing."
+     }
+    }
+   ],
+   "phone": [],
+   "engine": "Continental IO-520D 541 Hours SMOH (2014) · 88\" McCauley Black Mac 541 Hours Since New (2014) · full engine detail in the ad below"
   },
   {
    "key": "N4711E",
@@ -919,12 +1128,28 @@
     ]
    ],
    "useful_load": "952 lb",
-   "photo": "N4711E"
+   "photo": "N4711E",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2461300",
+     "sections": {
+      "Detailed Description": "Great Plane. I want it to go to a Pilot Family that will love it as we have.\nOnly selling as I am nearing 76, and climbing up, and down, and around, is getting old, like myself. LOL",
+      "Avionics / Equipment": "Garmin MX20 MFD\nApollo CNX80 Nav/Com/GPS w/WAAS\nGarmin GTX-345 ADS-B In/Out Transponder\nS-Tec 50 Autopilot w/GPSS\nBendix/King KX125 Nav/Com/CDI\nWSI AV-200 In Flight Weather Receiver\nPXE7300 CD Player w/AM/FM Radio\nICom IC-M302 Marine Band Radio Transceiver\nStratus ADS-B Receiver",
+      "Airframe": "NEVER in Salt Water.\nWingX Wing Extensions, Robertson STOL Kit, Micro Dynamics VGs, Long Range (88g) Fuel tanks with Monarch/Barton Fuel Caps,, Wipline 3450 Floats with Gear Advisory System, Whelen LED Wig Wag Pulse Landing Light System,",
+      "Engines / Mods / Prop": "IO-550/ GAMInjectors/ McCauley D3A34C401-C 88\" 3 Blade Prop/ ElectroAir Emag/ JPI EGT/CHT Scanner/ Shadin DIGIFLO-L Fuel Management System/ EZ Preheat Oil Heater/ Battery MINder Airframe Interface Kit with External Airframe Plug",
+      "Interior / Exterior": "SCS Interior Vinyl Flooring, B.A.S 4- point Shoulder Harnesses, Cessna 6\" Bubble Windows, Rosen Sunvisors, Door Stewards, Bose Headset jacks, Wing Mounted Gear Inspection Mirrors,",
+      "Remarks": "Included: AirGlass LW3600 Wheel Penetration Skis, Landing Gear 8.5 Mains with XP Mod 14\" Tailwheel with P Ponk Main Gear STC and B.A.S Tail Pull Handle. Many Miscellaneous Items totaling over $5000 such as Wipaire 3450 collapsible Tow Bar, Turbo Float Pump, 3 Bruce Custom Covers for Canopy, Engine Cowling, and Engine Inlets, and more."
+     }
+    }
+   ],
+   "phone": [],
+   "engine": "IO-550/ GAMInjectors/ McCauley D3A34C401-C 88\" 3 Blade Prop/ ElectroAir Emag/ JPI EGT/CHT Scanner/ Shadin DIGIFLO-L Fuel Management System/ EZ Preheat Oil Heater/ Battery MINder Airframe Interface Kit with External Airframe Plug"
   },
   {
    "key": "N7802F",
    "price": 389000,
-   "year": null,
+   "year": 1973,
    "model": "A185F",
    "tail": "N7802F",
    "serial": "185-02210",
@@ -941,12 +1166,27 @@
    ],
    "useful_load": "1,512 lb",
    "engine": "Continental IO-520-D · 547 since overhaul",
-   "photo": "N7802F"
+   "photo": "N7802F",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2460669",
+     "sections": {
+      "Detailed Description": "1973 Cessna A185F Skywagon - N7802F - $389,000\nExceptionally capable and highly modified Cessna 185 with 8,974 hours total time, a 1,512-pound useful load and outstanding documentation.\nContinental IO-520-D with approximately 980 hours total time and 547 hours since major overhaul. McCauley three-blade propeller with approximately 341 hours total time and 259 hours since overhaul.\nEquipped with Robertson STOL, vortex generators, Flint Aero tip tanks, float kit, belly pod, extended baggage, P. Ponk landing gear, heavy-duty seaplane engine mount, Atlee Dodge firewall battery, tail inspection cover modifications, Door Stewards and LED lighting throughout.\nIFR-equipped panel featuring a Garmin GNS 430 GPS/NAV/COM with Garmin navigation indicators and Garmin GTX 345 ADS-B In/Out transponder. Field-approved HF radio installation.\nSix-place high-density utility interior with folding middle seats, shoulder harnesses at all six seating positions, front inertia-reel restraints, carbon-fiber/aluminum flooring and multiple cargo tie-down locations.\nThe aircraft has prior damage history involving an overturn and subsequently received extensive professional structural repair and restoration completed in 2012. Approximately 346 hours have been flown since completion. The work is thoroughly supported by logbook entries, FAA Form 337s and related documentation. Aircraft is epoxy primed inside and out, including the wings and tail.\nFloat-ready and has not been operated on floats since early in its life. August 2026 annual inspection completed with no open discrepancies. All applicable ADs complied with. Detailed logbooks, FAA Form 337s, STCs and supporting records are available to qualified buyers.\nLocated in Arizona.",
+      "Avionics / Equipment": "IFR-equipped panel featuring a Garmin GNS 430 GPS/NAV/COM with Garmin navigation indicators. Garmin GTX 345 ADS-B In/Out transponder with GAE 12 altitude encoder. HF radio installation completed with appropriate field approval.\nAircraft is equipped with LED lighting throughout, including AeroLED lighting. Additional equipment includes adjustable cabin ventilation, sun shields, six-place seating, shoulder restraints at every seating position, and inertia-reel restraints for the front seats.\nThe panel and equipment provide a practical combination for cross-country, backcountry, utility, cargo and missionary operations.",
+      "Airframe": "1973 Cessna A185F Skywagon, N7802F, serial number 185-02210. 8,974 hours total time. Extensive professionally documented structural repair and restoration completed in 2012, including replacement wings and tail components. Approximately 346 hours since completion. Aircraft is epoxy primed inside and out, including the wings and tail. Float kit installed; aircraft has not been operated on floats since very early in its life. Complete, exceptionally well-organized records with supporting FAA Form 337s and STC documentation. All applicable ADs complied with. August 2026 annual inspection completed with no open discrepancies.",
+      "Engines / Mods / Prop": "Continental IO-520-D, serial number 293450-R. Approximately 980 hours total time and 547 hours since major overhaul.\nMcCauley three-blade D3A34C401-C propeller, serial number 101350, with approximately 341 hours total time and 259 hours since overhaul.\nMajor equipment and modifications include Robertson STOL kit, vortex generators, Flint Aero wingtip fuel tanks, float kit, belly pod, extended baggage compartment, P. Ponk landing gear modification, heavy-duty seaplane engine mount, Atlee Dodge firewall-mounted battery, tail inspection cover modifications, Door Stewards, multiple cargo tie-down provisions, and folding middle seats.\nThe engine received a documented propeller-strike teardown inspection and repair in 2012, including crankshaft nondestructive testing and replacement or repair of components as required. Full supporting records are available for review.",
+      "Interior / Exterior": "2012 paint and interior completed as part of the extensive restoration. Exterior paint remains in very good condition and is estimated at 85-90%.\nHigh-density six-place utility interior with folding middle seats, extended baggage, carbon-fiber and aluminum flooring, and multiple cargo tie-down locations. All six seating positions are equipped with shoulder harnesses, with inertia-reel restraints in the front. Clean, functional interior designed for passenger, cargo and backcountry operations.",
+      "Remarks": "N7802F is an exceptionally capable and highly modified 1973 Cessna A185F Skywagon with a strong combination of useful load, range, STOL performance and utility equipment. Wheel configuration gross weight is 3,600 pounds, empty weight is 2,088 pounds, providing a 1,512-pound useful load.\nThis aircraft is equipped for serious backcountry, cargo and cross-country use with Robertson STOL, vortex generators, Flint Aero tip tanks, belly pod, extended baggage, P. Ponk gear, heavy-duty seaplane engine mount and a complete float kit. It has a six-place high-density interior, folding middle seats, durable carbon-fiber/aluminum flooring and extensive cargo tie-down provisions.\nThe aircraft has prior damage history involving an overturn. It subsequently received extensive professional structural repair and restoration, completed in 2012 and thoroughly supported by logbook entries, FAA Form 337s and related documentation. The quality and completeness of the aircraft records are exceptional. Approximately 346 hours have been flown since completion of that work.\nThe aircraft has a missionary-service background and was configured with practical utility and reliability in mind. It is float-ready but has not been operated on floats since the early in its life.\nAugust 2026 annual inspection completed with no open discrepancies. All applicable ADs complied with. Detailed logbooks, FAA Form 337s, STCs and supporting records are available to qualified buyers.\nLocated in Arizona. Asking $389,000."
+     }
+    }
+   ],
+   "phone": []
   },
   {
    "key": "N1790R",
    "price": 395000,
-   "year": null,
+   "year": 1974,
    "model": "A185F",
    "tail": "N1790R",
    "serial": "18502506",
@@ -972,7 +1212,21 @@
     "914-204-0400"
    ],
    "mods": "Robertson STOL, Wing-X",
-   "photo": "N1790R"
+   "photo": "N1790R",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2460909",
+     "sections": {
+      "Detailed Description": "1974 A185F, 2400 +/_, IO-550-D 550 TTSN (8/2010), Hatzell Carbon Voyager 25 TTSN, R-STOL, Wing-X Extensions, VGs, Wig-Wag Lights, Atlee Dodge Rear Seats, AK Extended Baggage, Cargo Pod, 29\" AK Bushwheels, Deleted Vacuum, IFR GI275 ADI, Garmin Axis Flight Dispaly & EIS, Garmin GFC500 Digital Autopilot, 2 CieS Senders, GTX345, GTR-225, aerea 760 GPS, Bubble windows, Full set of AK Covers, Cargo Nets. Top of Wing Paint Faded, Utilitarian Interior. Excellent Logbooks.",
+      "Avionics / Equipment": "IFR Avionics\nGarmin GI275 ADI\nGarmin Axis Flight Display & EIS System\nGarmin GFC500 Digital Autopilot\nGarmin GTX345\nGarmin GTR-225\nGarmin Aerea 760 GPS\nGarmin GDL-51 SiriusXM\nCieS Digital Fuel Senders",
+      "Airframe": "1974 N1790R A185F Serial#18502506\n2400 +/-\nVery complete and organized logbooks\nYes, it has a damage history but was fixed correctly.\n5/2027 annual due",
+      "Engines / Mods / Prop": "IO-550-D 550 TTSN (8/2010 install date)\nHartzell Carbon Voyager 25 TTSN (7/2026 install Date)",
+      "Interior / Exterior": "Atlee Dodge Rear Seats\nAK Extended Baggage\nHeated Pilot & Copilot Seats\nMountain Wave Cargo Nets\nThe plane needs paint and interior if you are looking for a 185 bragging toy; otherwise, add 100LL and have fun!",
+      "Remarks": "Cessna Float Kit\nIO-550 Bonaire Engine Installation STC SA2933SO\nRoberston STOL Full Span Wing Flap Kit STC SA1441WE\nWing-X Wing Extension Kit R1582-1 STC SA000276NY\nAtlee Dodge Firewall Battery Box with Earth-X Battery STC SA02333AK\nP-Ponk PSK-1101-1 Main Landing Gear Blocks STC SA2918NM\nAK Bushwheel 29\" Tundra Tires STC SA01015SE\nAK Baby Bushwheel Tail Wheel Assembly STC SA01636SE\nAeropod Cargo Pod Installation STC SA00064DE\nATS Vortex Generators STC SA00165SE\nSeaton Engineering Max Pulse Landing Light s Controller STC SA01861SE\nWhelen Anti-Collision Strobe Lights System STC SA615EA\nFlat & Extended Tailcone Baggage- FAA337 Field Approved (12/23/2005)\nBrackett Air Filter STC SA71GL\nR.M.D. Aircraft Lighting Wingtips & Landing Light Kit STC SA000648SE\nConcorde RG24-15M STC SA01118WI\nAcorn Welding Muffler C185D-3 STC SA97-33\nSoros Ventubes Fresh Air Vents STC SA8150SW\nBAS Double Sided Tailcone Pull Handle Kit STC SA3813NM"
+     }
+    }
+   ]
   },
   {
    "key": "N185KS",
@@ -984,7 +1238,7 @@
    "tt": "3,413",
    "location": "Springfield, IL",
    "country": "US",
-   "seller": "Contact through the ad",
+   "seller": "Ludlam Jet",
    "sources": [
     [
      "Trade-A-Plane",
@@ -998,19 +1252,32 @@
    "gear": "Wipline 3730 amphibious floats",
    "engine": "Continental IO-550-D · 308 since overhaul",
    "prop": "MT",
-   "photo": "N185KS"
+   "photo": "N185KS",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2461408",
+     "sections": {
+      "Detailed Description": "1974 Cessna A185F on Wipline 3730 amphibious floats, 3,413 TT. Conventional wheel landing gear included, in great condition. Continental IO-550-D conversion, 308 SMOH. MT 3-blade propeller, 133 hours since new. Garmin GNS 530, dual Garmin G5, Garmin GTX ADS-B Out transponder, S-TEC autopilot, custom overhead switch panel, LED lighting, 100A alternator, and gear advisory system. STOL leading edge cuffs, wingtip extensions, flap roller kit, inflatable door seals, fuel quick drains, shoulder harnesses, strobes, and start booster. Extensive STC/337 list available. Prior damage history professionally repaired. Logs available for review. Serious inquiries welcome.\nAircraft based at KSPI, Springfield, IL.",
+      "Avionics / Equipment": "Garmin GNS 530 GPS/NAV/COM, dual Garmin G5 (attitude & HSI), S-TEC autopilot, Garmin GTX ADS-B Out transponder, ELT.",
+      "Airframe": "3,413 TT. On Wipline 3730 amphibious floats with conventional wheel landing gear included. STOL leading edge cuffs, wing tip extensions, flap roller kit, inflatable door seals, fuel quick drains. Extensive STC/337 list available. Prior damage history professionally repaired. Logs available.",
+      "Engines / Mods / Prop": "Continental IO-550-D conversion, 308 SMOH. MT MTV-9-D 3-blade propeller, 133 hrs since new. 100A alternator, start booster, custom overhead switch panel, LED lighting, gear advisory system.",
+      "Remarks": "Annual/100-hr completed 09/14/2025. Shoulder harnesses, strobes. Serious inquiries welcome."
+     }
+    }
+   ]
   },
   {
    "key": "N87TM",
    "price": 399900,
-   "year": null,
+   "year": 1970,
    "model": "A185E",
    "tail": "N87TM",
    "serial": "18501786",
    "tt": "1,032",
    "location": "Lexington, KY",
    "country": "US",
-   "seller": "Contact through the ad",
+   "seller": "AirMart - Grant Sutherlin",
    "sources": [
     [
      "Trade-A-Plane",
@@ -1022,12 +1289,33 @@
     ]
    ],
    "price_note": "$399,900 on Trade-A-Plane and Controller. Trade-A-Plane prints 1,032 airframe hours; aerogurus prints 986.",
-   "photo": "N87TM"
+   "photo": "N87TM",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2459170",
+     "sections": {
+      "Detailed Description": "Incredible opportunity to own of the lowest time and actively flown 185s. Loaded with Garmin G3X, GFC500, GTN650, GTX345R Transponder, G5 Backup, Upgraded IO550 Engine, Robertson STOL, FLOAT KIT, NDH, All Logs, Fresh Cessna Service Annual in process! Aircraft Flown over 500 hours in the last 3 years!",
+      "Avionics / Equipment": "Avionics:\nGarmin G3X Touch with GDU460 PFD\nGarmin GFC500 Autopilot\nGarmin GMA350 Audio Panel\nGarmin G5 Electronic Standby Flight Instrument\nGarmin GTN650 Touchscreen IFR GPS/NAV/COM\nGarmin GN255A NAV/COM\nGarmin GTX345R ADS-B Transponder\nMidContinent VOR/LOC/GS Indicator\nAdditional Features:\nUPGRADED IO550 Engine\nFULL Robertson STOL Kit\nFLOAT KIT\nPower Flow Exhaust\nMicro Aerodynamics Vortex Generators (VGs)\nP.Ponk Aviation Main Landing Gear Beef-up Kit\nLED Landing Light\nLED Taxi Light\nLED NAV Lights\nLED Flashing Beacon\nEagle Fuel Drains\nAbrasion Boots on Horizontal Stabilizer\nDoor Steward - Pilot's Side\niPad Mini Dock - Copilot's Side\nDual Push-to-Talk Switches",
+      "Airframe": "Airframe Hours:\n1032 Hours TT",
+      "Engines / Mods / Prop": "Engine Hours:\n868Hours SNEW\nContinental IO-550-D15B\nProp Hours:\n868Hours SNEW\n3-Blade Hartzell CS Prop",
+      "Interior / Exterior": "Interior:\n8 out of 10\nExterior:\n8 out of 10",
+      "Remarks": "Additional Details:\nLocated in Lexington, KY - KLEX\nNo Damage History\nComplete & Consecutive Logs\nHangared\nUseful Load 1,465.4 lbs.\nFRESH August 2026 Annual Inspection"
+     }
+    }
+   ],
+   "useful_load": "1465 lb, as advertised",
+   "phone": [
+    "(859) 233-9399",
+    "(859) 533-9399",
+    "(859) 223-0222"
+   ],
+   "engine": "Engine Hours: · 868Hours SNEW · Continental IO-550-D15B · Prop Hours: · 868Hours SNEW · 3-Blade Hartzell CS Prop"
   },
   {
    "key": "N86SS",
    "price": 349900,
-   "year": null,
+   "year": 1977,
    "model": "A185F",
    "tail": "N86SS",
    "serial": "18503334",
@@ -1046,7 +1334,16 @@
     "805-452-5555",
     "888-237-6532"
    ],
-   "photo": "N86SS"
+   "photo": "N86SS",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2452078",
+     "sections": {
+      "Detailed Description": "TOTAL TIME: 1801.0 Hours\nTSMOH: 405.2 Hours (new oil and fuel hoses) (Kenmore)\nTSPOH: 148.7 Hours (McCauley C-401, 86\" BLACK MAC)\nTSTOP: 258.9 Hours (Overhauled Magnetos, Exhaust)\nTurbo: 216.7 Hours (Main Turbo overhaul)\nAvionics:\n*\nKing KMA24H TSO Audio Panel w/3 light Marker Beacon\n*\nApollo GX55 GPS\n*\nTKM MX170B NAV/COM w/glide slope indicator\n*\nKing KX170B NAV/COM\n*\nKing KT76A Mode C Transponder\n*\nuAvionix Mode S OUT SkyBeacon\n*\nKing KR85 TSO ADF\nEquipment:\n*\n14 VOLT w/ Radio Master Switch\n*\nTURBO-TECH Turbo Normalizer w/extended exhaust\n*\nA.R.T. Wing Extensions\n*\nSportsman STOL Kit\n*\nMico VG's\n*\nFlap & Aileron Gap Seals\n*\nDigital Fuel Flow (Gallon Used/Remaining)\n*\nInsight Graphic Engine Monitor w/ turbo intake temp.\n*\nDavtron M811B Digital Clock\n*\nPulsar Recognition Lights (pulsating)\n*\nACK 406 E.L.T. w/remote\n*\nLong Range 74 Gallon Fuel\n*\nMonarch Screw-On Fuel Caps (4)\n*\nPrecise Flow Pilot/Co-Pilot Air Vents\n*\nBubble Windows each with dual latches\n*\nVertical Card Compass\n*\nPara-Cord Grab Handles (color coordinated)\n*\nNew Interior Plastics + Carbon Fiber front panels\n*\nNew Interior & Headliner\n*\nRosen 3 axis pilot/copilot sun visors\n*\nPilot/Copilot 4 point inertia shoulder harness reels (Pacific Scientific)\n*\nPilot Secondary Seat Stop\n*\nPilot/Co-pilot Intercom with Push to Talk\n*\nDoor Stewards pneumatic door openers Pilot/Co-Pilot\n*\nExterior under-wing lights\n*\nLanding Gear under-wing mirrors\n*\nPolished Aluminum Tail Grab Handles\n*\nWing Strobes & Beacon Strobe\n*\nStandard Exhaust (if you want to remove the turbo)\n*\nBoarding/Fuel Steps\n*\nLanding & Taxi Light Lens Covers w/ AERO L.E.D. Lights\nLanding Gear & Propulsion Options:\n*\nEDO 3500 Amphibious Floats (Excellent Condition) with removable OUTBOARD MOTOR MOUNT & dual oars\n*\nFixed gear includes brand new gear legs that have never been installed. Cleveland wheels, brakes, 8.50/6 tires, and Scott tailwheel.\n*\nOptional ABI 10\"X10\" Alaska Bush wheels with 31\" Aero Classics.\n*\nOptional XP Mods 5.00/5, 14\" tailwheel.\n*\nOptional McCauley locking tailwheel.\nNovember Eight Six Sugar Sugar is absolutely gorgeous in and out. Extremely low time, solid airframe (no creeks or moans). The exterior of this aircraft has been ceramic coated and shows as a 10 on a one to ten scale. The interior is new and gorgeous. The interior included new plastics/carbon fiber and headliner. The interior, with center jumps seats brought aft a few inches for clear span entry door and comfort. Middle bench seat also upholstered to match. Also, the 5th and 6th aft seats have removable Cessna factory jump seat backs that slide out for ease of loading and unloading. The engine, overhauled by Kenmore Air Harbor in Seattle, Washington is in excellent operating order that includes a TURBO-TECH turbo normalizer (normally aspirated exhaust also included, less than 100 hours). This allows for high altitude lake operations and excellent performance up through the flight levels. This aircraft has all of the best options for performance. The gross weight has been increased with the addition of the A.R.T. wing extensions. The optimized wing includes all the best STOL devices. The 1977 year model Cessna A185F is the most desired year. This is the last year of the 14 volt electrical system and the first year of the late style instrument panel. This aircraft also has an avionics master switch that was not an option until the following year. It would take months, maybe years to duplicate the equipment on this aircraft. Everything is done except for your desired avionics.\nAlso available, Sorensen 90 gallon belly tank with spray gear. This will allow customers in other countries to import without tariffs.\nPrice: $349,900.00 Subtract $10K off the price without the amphibious floats. Float removal can be accomplished on location."
+     }
+    }
+   ]
   },
   {
    "key": "N185HR",
@@ -1103,7 +1400,7 @@
    "tt": "997.7",
    "location": "Victor, NY",
    "country": "US",
-   "seller": "Contact through the ad",
+   "seller": "Van Bortel Aircraft, Inc - Howard G Van Bortel",
    "sources": [
     [
      "Trade-A-Plane",
@@ -1115,7 +1412,21 @@
    ],
    "engine": "Continental IO-550 · 195 since new",
    "gear": "Wipline 3000A amphibious floats",
-   "photo": "N4800Q"
+   "photo": "N4800Q",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2457081",
+     "sections": {
+      "Detailed Description": "1978 Cessna A185F Skywagon, 997.7 TT. 194.7 Since Brand New IO550 Engine Upgrade and Hartzell Trailblazer Propeller Upgrade. 35.7 Since Brand New Wipline 3000A Floats. Incredible Cessna A185F, New Garm TXi Touch Screen Avionics Suite, Nearly $1,000,000 Invested and Over 3 Years to Complete, One Owner Since New – Extremely Low Time – Always Hangared. $899,500. CALL FOR DETAILS!",
+      "Avionics / Equipment": "Avionics/Equipment:\nGarmin G500TXi Primary Flight Display\n•\nGarmin GDU-1060 PFD\n•\nGarmin GMN-01218 ADHARS\n•\nGarmin GMU-44 Magnetometer\n•\nGarmin GTP-59 OAT Probe\n•\nDatabase SD Card\nGarmin Synthetic Vision Technology (SVT)\nGarmin G500TXi Multi-Function Display\n•\nGarmin GDU-700L MFD\n•\nGarmin GEA-110 Engine Analyzer\n•\nBendix RPM Sensor\n•\nGarmin Oil Temp Sensor\n•\nCarb Temp Sensor\n•\nGarmin Oil Temp Transducer\n•\nGarmin FT-60 Fuel Flow Transducer\nGarmin GFC-500 Autopilot with Trim\n•\nGarmin GMC-507 AP Controller\n•\nGarmin GSA-28 Roll Servo\n•\nGarmin GSA-28 Pitch Servo\n•\nGarmin GSA-28 Trim Servo\n•\nGarmin GAD-29B\nGarmin GDL-69A SXM Weather/Music Receiver\nGarmin GSB-15 Dual USB Power Points\nGarmin GTN-750NXi #1 Com/Nav/WAAS GPS\n•\nGarmin GA-35 GPS Antenna\n•\nComant Left Com Antenna\n•\nData Base SD Card\nGarmin Flight Stream 510\nGarmin Smart Glide with Switch\nGarmin GTN-650NXi #2 Com/Nav/WAAS GPS\n•\nGarmin GA-35 GPS Antenna\n•\nComant Right Com Antenna\n•\nData Base SD Card\nGarmin G5 Pilot Standby Instrument\n•\nGarmin G5 GPS Antenna\n•\nGarmin G5 Battery\nGarmin G5 Co-Pilot Standby Instrument\n•\nGarmin G5 GPS Antenna\n•\nGarmin G5 Battery\nGarmin GMA-35C Bluetooth Audio Panel\n•\nComant Marker Antenna\nGarmin GTX-345R Transponder with ADS-B In/Out\n•\nComant Transponder Antenna\nAdditional Equipment:\nWipline 3000A Amphibious Floats\nRobertson STOL Kit\nFactory Float Kit\nFactory Corrosion Proofed\nCO Guardian 451 CO Detector\nArtex ELT-1000 400 MHz ELT\n•\nArtex ELT Remote Mounted Switch\n•\nArtex ELT Antenna\nWhelen LED Taxi/Landing Lights\nWingtip Strobes\nCiES Left/Right Fuel Probe/Senders\nConcorde Battery With Contactor\nFlap Position Indicator\nFlap Position Transmitter\nAlternate Static Source Valve",
+      "Airframe": "Airframe:\n997.7 Total Time Since New",
+      "Engines / Mods / Prop": "Engine:\n194.7 Total Time Since Brand New IO550 Engine Upgrade\nProp:\n194.7 Total Time Since Brand New Hartzell Trailblazer Propeller Upgrade\nFloats:\n35.7\nTotal Time Since Brand New Wipline 3000A Floats",
+      "Interior / Exterior": "Interior:\nFactory Original Chestnut Leather\nExterior:\nNew Paint by Wipaire. Factory Original Colors and Scheme. Allover White and Yellow",
+      "Remarks": "Highlights:\nLike Brand New!\nNo Expense Spared!\nNot Another One Like It!\nOne Owner Since New!\nAll Original Logbooks and all the Original Factory Paperwork (POH, Weight and Balance, Factory Order Forms, Logbook Bag, etc.)!\nAlways Fresh Water!\nExtremely Low Time!\nNew Paint by Wipaire!\nRobertson STOL Kit\nOriginal Factory interior in Amazing Condition!\nNo Hail!\nNo Corrosion!\nPerfect Airframe!\nRemarks:\nFinancing Available:\n$89,950 down and $5,185 per month."
+     }
+    }
+   ]
   },
   {
    "key": "N53044",
@@ -1169,7 +1480,21 @@
    ],
    "annual": "August 2026",
    "history": "Ad says no accident history, two owners",
-   "photo": "N53044"
+   "photo": "N53044",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2461471",
+     "sections": {
+      "Detailed Description": "Rare opportunity to own an incredibly low-time, 2-owner Skywagon with beautifully upgraded panel and interior. No accident history. This unicorn was purchased brand-new by a renowned doctor, who modified it in 1975 (including a new all-white paint scheme) for volunteer medical work but never put the airplane to work for that purpose. N53044 has since been impeccably updated by its current owner with a custom avionics suite featuring the latest and greatest Garmin avionics, including G500 TXi touchscreen primary flight display with engine indicating system. Garmin GTN 750 Xi touchscreen GPS/nav/comm, Garmin GFC 500 autopilot w/ SmartGlide, Garmin GTX 345 remote ADS-B In/Out transponder, Garmin Flightstream 510 for wirelessly sending flight plans, and so much more. Beautifully updated interior features woven vinyl flooring, coordinating sidewalls, and charcoal & light gray seating with diamond quilting across all four seats. N53044 is currently on Wipline 3730 amphibious floats. Landplane gear is also included. Don't miss this chance to be the next custodian of this amazing example of Cessna's legendary 185 Skywagon! Call for Details.",
+      "Avionics / Equipment": "Garmin G500 TXi Primary Flight Display w/ Engine Indicating System\nGarmin GTN 750 Xi GPS/Comm/Nav\nGarmin GFC 500 Autopilot w/ SmartGlide\nGarmin FlightStream 510 - Bluetooth Connectivity for Flight Plans and More\nGarmin GI 275 Backup Attitude Indicator\nGarmin GI 275 CDI\nGarmin Angle Of Attack\nGarmin GMA 35C Remote Audio Panel\nGarmin GTX 345 ADS-B In/Out Transponder\nGarmin GSB 15 USB Charging Port\nGarmin GNC 255A Comm\nMid-Continent Clock/USB Charger\nArtex 406 MHz ELT\nLandplane Gear Included",
+      "Airframe": "650 Hrs TT SNEW",
+      "Engines / Mods / Prop": "Engine: 650 Hrs TT SNEW\nContinental IO-520D24\nPropeller: 50 TT SNEW\nHartzell HC-C3YR-1RF / F8068-2 80\" Metal\nModifications & Conversions:\nWipline 3730 Amphibious Floats\nObserver Doors Pilot/Copilot\nWhelen LED lighting - Landing, Taxi, Nav, Beacon\nBAS Shoulder Harnesses\nBAS Stowable Rear Seats\nKnots2U Flap Gap Seals\nM-20 Air/Oil Separator\nBubble Windows\nDoor Stewards\nFlint Aero Auxiliary Fuel Tanks\nMonarch Fuel Caps\nMission Aviation Fellowship Dual Brake Installation",
+      "Interior / Exterior": "Interior: Custom Interior - Charcoal/light gray leather seating w/ diamond quilting, coordinating sidewall accents, woven vinyl flooring.\nExterior: Overall White with Gray and Green Striping."
+     }
+    }
+   ],
+   "engine": "Engine: 650 Hrs TT SNEW · Continental IO-520D24 · Propeller: 50 TT SNEW · Hartzell HC-C3YR-1RF / F8068-2 80\" Metal · full engine detail in the ad below"
   },
   {
    "key": "fla82",
@@ -1254,7 +1579,7 @@
    "gear": "Float and ski fittings",
    "location": "Port Elgin, ON",
    "country": "CA",
-   "seller": "Contact through the ad",
+   "seller": "Marcus Brace",
    "sources": [
     [
      "Trade-A-Plane",
@@ -1265,7 +1590,17 @@
      "https://www.barnstormers.com/category-17401-Cessna--C-185.html"
     ]
    ],
-   "photo": "CGIAL"
+   "photo": "CGIAL",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2460410",
+     "sections": {
+      "Detailed Description": "TT:10407.2\nEngine: Continental IO- 520D TAT 1429.7 since OH 1429.7 since installation\nProp: Mc Cauley 3 Blade D3A345C 403-B 109.4 since OH !0 yr inspection due 04/09/2027\nFactory Float and Ski fittings\nComplete records since new Nov 05 1980\nAnnual completed May 19, 2026\nAll ADs and SB checked and completed\nTail AD 2020-21-22 completed May 08,2025\nELT 406 checked and recertified June 03,2026\n500 HR Magneto Inspection performed May 08 2025\nMichelin Condor 8.00x6 tires and tubes installed May 08 2026\nPartmetheus Taxi and Landing lights installed May 08 2025\nTanis Engine Preheat System installed May 08 2026\nAvionics : Garmin GTR205D Garmin GPS175 Garmin GTX 345-D ADS B in and out\nPrior Static and ADS -B recertification completed July 13 2026\nEngine, windshield and cowl covers\nHangared since August 2024 at CYKM"
+     }
+    }
+   ],
+   "phone": []
   },
   {
    "key": "whiterock",
@@ -1339,7 +1674,8 @@
    "country": "CA",
    "seller": "Canadian Aircraft Sales · Pier Labelle",
    "phone": [
-    "613-632-0123"
+    "613-632-0123",
+    "(613) 632-9027"
    ],
    "photo": "CGUIC",
    "tail_note": "Tail read from the ad photo",
@@ -1356,6 +1692,20 @@
      "Canadian Aircraft Sales",
      "https://www.csplane.com/"
     ]
+   ],
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2436256",
+     "sections": {
+      "Detailed Description": "CESSNA 185-550, TT 4825 Hrs, Engine S.M.O.H. 150 Hrs Continental IO-550-D Overhauled in 2018, Propeller S.P.O.H. 0 Time 3 Blade Hartzell O/H in 2025. PMA 8000 Audio Panel, EDM JPI 700 engine monitor, Garmin 796 GPS on Gizmo, Garmin GNC 255\nFuel Scan 450, Garmin GTX 327 Transponder, Garmin GPS 150, USB Plug, EDO 3430 floats (Very tight no leaks), P.Ponk Landing gear\nFederal 3500 Ski's, Wing Extensions, Seaplane West engine mount, Sky-Tech starter, Bubble Windows, Bush and bench seats\nEmpty Weight Floats 2345 Lbs, Gross Weight 3525 Lbs, All logs since new, All new fuel bladders replaced in 2023,",
+      "Avionics / Equipment": "PMA 8000 Audio Panel\nEDM JPI 700 engine monitor\nGarmin 796 GPS on Gizmo\nGarmin GNC 255\nFuel Scan 450\nGarmin GTX 327 Transponder\nGarmin GPS 150\nUSB Plug\nEDO 3430 floats (Very tight no leaks)\nP.Ponk Landing gear\nFederal 3500 Ski's\nWing Extensions\nSeaplane West engine mount\nSky-Tech starter\nBubble Windows\nBush and bench seats",
+      "Airframe": "Airframe Time 4825 Hrs",
+      "Engines / Mods / Prop": "Engine S.M.O.H. 150 Hrs Continental IO-550-D Overhauled in 2018\nPropeller S.P.O.H.0 Time 3 Blade Hartzell O/H in 2025.",
+      "Interior / Exterior": "Interior Clean interior 8/10\nExterior 9+/10 New Paint",
+      "Remarks": "Empty Weight Floats 2345 Lbs\nGross Weight 3525 Lbs\nAll logs since new\nAll new fuel bladders replaced in 2023"
+     }
+    }
    ]
   },
   {
@@ -1406,7 +1756,7 @@
    "mods": "Robertson STOL, Flint tips",
    "location": "Fort Smith, NT",
    "country": "CA",
-   "seller": "Contact through the ad",
+   "seller": "Airside Aviation",
    "photo": "CGAIX",
    "sources": [
     [
@@ -1424,6 +1774,17 @@
    ],
    "phone": [
     "855-230-5386"
+   ],
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2440682",
+     "sections": {
+      "Detailed Description": "This 1979 Cessna A185F is commercially operated and freshly overhauled engine. Equipped with Wipline 3730 amphibious floats, a Robertson STOL kit, and Flint Aero extended range tip tanks. Features SkyTrac tracking, Garmin avionics, and full dual controls. Contact Airside Aviation today to find out more.",
+      "Avionics / Equipment": "Avionics\nStandard Equipment:\nASI, ADI (GH), ALT, CDI, TC (DC Electric), DG, VSI\nClock, Mag Compass, Ammeter, Fuel Gauge, Manifold PSI/Fuel Flow, Engine Tachometer, Vacuum\nKing KMA 20 Audio Panel\nKing KX 175B NAV/COMM 1\nKing KY 92 COMM 2\nKing KI 209 ILS/NAV Indicator\nGarmin MAP 196 GPS\nGarmin GTX 327 Transponder\nTrans-Cal Blind Encoder\nElectronics International CHT/EGT & Oil PSI\nSkyTrac DSAT-200 Tracking System\nKannad 406AF ELT & Remote\nTrue Blue USB Charger\nAdditional Equipment\nRobertson STOL Kit\nWipline 3730 Amphibious Floats\nFlint Aero Extended Range Fuel Tip Tanks\nExternal Loads STC (Floats/Amphibs)\nWipline 3000 Series Skis\nShoulder Harness Kit (SK185-52B, Cessna SEB92-88)\nSecondary Seat Stop (SK210-174 Kit, Cessna SEB07-5)\nSeaplane Ventral Fin Kit\nHorizontal Stabilizer Abrasion Boots\nSoundEx Thermal/Acoustic Cabin Insulation Kit\nFull Dual Controls (RH Pilot)\nArticulating LH Pilot Seat\nGround Power Receptacle",
+      "Engines / Mods / Prop": "Engine\nMake/Model: Continental IO-520-F\nTime: 0.0 SMOH\nOverhauled January 9, 2025\nPropeller\nMake/Model: Hartzell HC-C3YF-1RF/F8429\nTime: 575.4 SNEW\nInstalled May, 21, 2020"
+     }
+    }
    ]
   },
   {
@@ -1441,7 +1802,8 @@
    "country": "CA",
    "seller": "Canadian Aircraft Sales · Pier Labelle",
    "phone": [
-    "613-632-0123"
+    "613-632-0123",
+    "(613) 632-9027"
    ],
    "photo": "CFSEC",
    "tail_note": "Tail read from the ad photo",
@@ -1459,7 +1821,22 @@
      "https://www.csplane.com/"
     ]
    ],
-   "price_note": "$299,000 USD on Trade-A-Plane, GlobalAir and the dealer's own site, where it is badged a new listing"
+   "price_note": "$299,000 USD on Trade-A-Plane, GlobalAir and the dealer's own site, where it is badged a new listing",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2452630",
+     "sections": {
+      "Detailed Description": "Wipline 3730, Excellent history, All logs since new. Only 3 owners since new. Hangared, Located in Ontario, Sold with a fresh annual, \"Snag Free\" aircraft",
+      "Avionics / Equipment": "KLN90B\nGarmin Aera 660 panel mounted\nGarmin Com\nNarco Com 120\nTransponder\nMode C\nHorton Stol\nLonge Range Fuel\nAMPHIB - Wipline 3730 s/n 37505, 37506",
+      "Airframe": "6883",
+      "Engines / Mods / Prop": "Engine: 558 Hrs IO520\nProp: \"0\" SPOH MODEL PHC-C3YF-1RF/F8468A-6R,",
+      "Interior / Exterior": "Interior: Recent Navy Leather seats\nExterior: Paint is new 5 years ago (limited use since then)",
+      "Remarks": "Excellent history\nAll logs since new.\nOnly 3 owners since new.\nHangared\nLocated in Ontario\nSold with a fresh annual\n\"Snag Free\" aircraft\nGross Weight - 3350\nEmpty Weight - 2450\nUseful Load - 900 lbs"
+     }
+    }
+   ],
+   "useful_load": "900 lb, as advertised"
   },
   {
    "key": "alberta78",
@@ -1514,7 +1891,21 @@
     "800-208-2596"
    ],
    "engine": "400 since overhaul",
-   "photo": "CFGCG"
+   "photo": "CFGCG",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2455427",
+     "sections": {
+      "Detailed Description": "1968 Cessna A185E - Aircraft Description\nThis is a well-equipped and updated Cessna A185E that has been thoughtfully built out for serious utility and amphibious operations. With 1,938 hours total time, this aircraft has been maintained and upgraded to a standard that goes well beyond what you typically find in a machine of this vintage.\nFloats & Gear\nThe aircraft rides on EDO 2790 amphibious floats. The wheel gear was completely rebuilt in 2021 and 2022, making the amphib system current and well-maintained.\nPerformance & Fuel\nCruise speed sits at approximately 115 knots with a fuel burn of 12-14 gallons per hour. Long-range fuel tanks bring total capacity to 78 gallons, giving this aircraft a realistic endurance of 5-6 hours - a genuine operational advantage for remote or cross-country missions.\nSTOL & Aerodynamic Modifications\nThis aircraft has been set up for serious short-field and backcountry performance. Installed modifications include:\nHolten STOL kit\nVortex generators\nWingtip extensions\nBubble windows for enhanced ground and water visibility\nTogether, these upgrades meaningfully improve low-speed handling, visibility, and short-field capability.\nMaintenance\nThe aircraft will be sold with a fresh annual inspection. All records are available.",
+      "Avionics / Equipment": "ICOM IC-210 COM 1\nICOM IC-210 COM 2\nGarmin GTX 327 Transponder\nGarmin Aera 500 Touchscreen GPS\nGarmin GMA 340 Audio Panel",
+      "Airframe": "The aircraft underwent a comprehensive rebuild in 2010, during which significant structural improvements were made including a full tail rebuild, new ailerons, and complete wing work. Notably, the wing spars were upgraded beyond factory specification - replaced with heavier, full-length spars - a meaningful structural enhancement that improves long-term durability and load handling. Records have been maintained since new, and logbooks are complete.\nEDO 2790 Amphibious Floats (wheel gear completely rebuilt 2021-2022)\nHartzell 3-Blade Propeller (overhauled April 2021 - 58 SMOH)\nHolten STOL Kit\nVortex Generators\nWingtip Extensions\nBubble Windows\nLong Range Fuel Tanks (78 US gallons total)\nSeaplane West Exhaust Muffler\nSeaplane West Engine Mount\nUpgraded Wing Spars (heavy, full-length)\nSold with Fresh Annual Inspection",
+      "Engines / Mods / Prop": "Engine & Propeller\nPower comes from a Continental IO-520-D, currently sitting at approximately 400 hours since major overhaul. The aircraft is also equipped with a Seaplane West exhaust muffler, which improves exhaust flow, reduces back pressure, and offers enhanced durability - particularly relevant in float and amphibious operations where corrosion resistance matters. The Seaplane West engine mount is installed as well, a reinforced replacement for the factory mount designed to handle the additional stress loads of float and amphib operations. Factory mounts on the 185 are a known inspection and wear item over time, making this a substantive upgrade rather than a cosmetic one - both in terms of structural integrity and future buyer confidence.\nThe Hartzell 3-blade propeller was overhauled in April 2021 and currently shows just 58 hours since overhaul.",
+      "Interior / Exterior": "The aircraft was painted following the 2010 rebuild. The interior was refreshed at the time of the rebuild, with front seat foam and covers redone, and the rear seats were updated again in April 2021 with new Altree Dodge rear seats and Selkirk interior.",
+      "Remarks": "The aircraft will be sold with a fresh annual inspection.\nAll records are available."
+     }
+    }
+   ]
   },
   {
    "key": "N1050F",
@@ -1524,9 +1915,9 @@
    "tail": "N1050F",
    "serial": "18502707",
    "tt": "2,114",
-   "location": "British Columbia",
+   "location": "Sidney, BC",
    "country": "CA",
-   "seller": "Contact through the ad",
+   "seller": "Island Aero Services",
    "sources": [
     [
      "Hangar67",
@@ -1550,7 +1941,22 @@
     "778-350-7447",
     "250-656-7627"
    ],
-   "photo": "N1050F"
+   "photo": "N1050F",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2453496",
+     "sections": {
+      "Detailed Description": "1975 Cessna A185F, 2114TT, Garmin 340 Audio Panel, King KX155 Nav/Com/G/S, Garmin GTX335 Transponder ADSB out, Garmin Aera 796 GPS, Float Kit A, Aerocet 3400 amphibs (like new), Air Research Wing Extensions, Rosen Sun visors, Sportsman STOL, Sky-Tec Starter, Long Fuel, Original Owners Manual, All Logs, No Corrosion, Hangar Kept, US Registered.",
+      "Avionics / Equipment": "Avionics:\nGarmin 340 Audio Panel\nKing KX155 Nav/Com/G/S\nGarmin GTX335 Transponder ADSB out\nGarmin Aera 796 GPS",
+      "Airframe": "Total Airframe Time:\n2114 Hours",
+      "Engines / Mods / Prop": "Engine Time:\n412 Reimers A/C Engines Dec 2001\nProp:\n133 MT Propeller MTV-9-D Sept 2017",
+      "Interior / Exterior": "Interior:\nBrown Leather Seats and Brown Side Panels, LH Articulating\nAtlee Dodge Folding Rear Seats, Stock Rear Seat\nRated “8”\nExterior:\nBlue with White Trim\nWhite Floats\nRated “8”",
+      "Remarks": "Remarks:\nFloat Kit A\nAerocet 3400 amphibs (like new)\nAir Research Wing Extensions (175 LBS. GW increase to 3525 LBS.)\nMT Prop\nRosen Sun visors\nSteen Aviation 2 Piece Fiberglass Cowling\nSportsman STOL\nWheel Gear has 8.50 Tires\nXP Tailwheel\nBracket Air Filter\nSky-Tec Starter\nNew Slick Mags at 279 Engine Hours\nLarge Oil Cooler, Quick Drain Oil\nLong Fuel\nTags for Engine Overhaul\nUseful Load 1138 lbs\nOriginal Owners Manual,\nAll Logs,\nNo Corrosion\nHangar Kept\nAnnual July, 2025\nUS Registered"
+     }
+    }
+   ],
+   "engine": "Engine Time: · 412 Reimers A/C Engines Dec 2001 · Prop: · 133 MT Propeller MTV-9-D Sept 2017"
   },
   {
    "key": "CGGKJ",
@@ -1561,9 +1967,9 @@
    "serial": "18503902",
    "tt": "6,428",
    "history": "Previously N78011",
-   "location": "British Columbia, Canada",
+   "location": "Sidney, BC",
    "country": "CA",
-   "seller": "Contact through the ad",
+   "seller": "Island Aero Services",
    "sources": [
     [
      "Hangar67",
@@ -1582,7 +1988,23 @@
     "778-350-7447",
     "250-656-7627"
    ],
-   "photo": "CGGKJ"
+   "photo": "CGGKJ",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2458471",
+     "sections": {
+      "Detailed Description": "1979 Cessna A185F on Aerocets Amphibs, 6428TT, 772 hrs Continental IO-550-D, 446 hrs McCauley D3A34C-401 l, PS Engineering PMA4000 audio panel, 4-place intercom, Garmin SL 40 Com, Garmin GPS 695, Bendix King KT76C transponder, BAS shoulder harnesses, Rosen sunvisors, Great Lakes bubble windows, ART Wing Extension – gross weight increase to 3,525 lbs, Aerocet 3400 amphibs. Both main gear oleos replaced new, Aug 2024.",
+      "Avionics / Equipment": "AVIONICS\nPS Engineering PMA4000 audio panel, 4-place intercom\nGarmin SL 40 Com\nGarmin SL 40 Com\nGarmin GPS 695\nBendix King KT76C transponder\nACK E-04 ELT (battery certified to Jul 2027)",
+      "Airframe": "AIRFRAME\nTotal Airframe Time: 6428 Hours",
+      "Engines / Mods / Prop": "ENGINE\nEngine Time: 772 hrs Continental IO-550-D\nPROP\nProp: 446 hrs McCauley D3A34C-401 l (Jan 2020)",
+      "Interior / Exterior": "INTERIOR\nLight Grey and Dark Grey Seats and Side Panels\nRated “7.5”\nEXTERIOR\nWhite with Red Trim\nRated “7.5”",
+      "Remarks": "REMARKS\nEngine IO550-D\nAerocet 3400 amphibs. Both main gear oleos replaced new, Aug 2024.\nART Wing Extension – gross weight increase to 3,525 lbs\nEmpty Weight 2435 lbs\nUseful Load 1090 lbs\nBAS shoulder harnesses\nGreat Lakes bubble windows\nRosen sunvisors\nPrecise Flight pulse lights\nR.M.D Wing landing lights\nAlcor EGT / CHT\nCessna louvers\nBrackett air filter\nDoor steward\nSelkirk Fibreglass trim panels\nRecent Engine Work, New camshaft, lifters and bearings; six new cylinders; new oil cooler; crankshaft ultrasonically inspected. Completed early 2026 by Pro Aero, fully documented.\nLast flown Apr 15, 2026.\nCanadian Registered"
+     }
+    }
+   ],
+   "useful_load": "1090 lb, as advertised",
+   "engine": "ENGINE · Engine Time: 772 hrs Continental IO-550-D · PROP · Prop: 446 hrs McCauley D3A34C-401 l (Jan 2020)"
   },
   {
    "key": "CGGMP",
@@ -1603,9 +2025,23 @@
    ],
    "price_note": "$429,900 on Barnstormers; Trade-A-Plane prints call for price for the same aircraft",
    "phone": [
-    "901-262-0035"
+    "901-262-0035",
+    "(901) 345-8356"
    ],
-   "photo": "CGGMP"
+   "photo": "CGGMP",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2457405",
+     "sections": {
+      "Detailed Description": "2651 Total Time\nEngine IO-550-D17B: 797 Hours Since Factory Reman (12-21-98)\nProp: 75 Hours Since New MT MTV-9-D Reversing Propeller\nGTX-345 Transponder\nGMA-345 Audio\nDual Garmin GNS-430\nStec 55 Autopilot\nBubble Windows\nSecondary window Latches\nDoor stewards\nABI Mainwheels and Brakes 10\" 29x11-10 Tires\nABI Tailwheel\nAirwolf oil separator\nWing X wing tip extensions\nWipline 3730 amphib floats (Installed)\nPowerflow exhaust\nConcorde battery\nBAS pull handles\nAnnual Inspection completed 5-27-2026 At 2651 Total Time\nAll USA and Canadian Log Books since new.",
+      "Avionics / Equipment": "GTX-345 Transponder\nGMA-345 Audio\nDual Garmin GNS-430\nStec 55 Autopilot",
+      "Airframe": "Bubble Windows\nSecondary window Latches\nDoor stewards\nABI Mainwheels and Brakes 10\" 29x11-10 Tires\nABI Tailwheel\nAirwolf oil separator\nWing X wing tip extensions\nWipline 3730 amphib floats (Installed)\nPowerflow exhaust\nConcorde battery\nBAS pull handles",
+      "Engines / Mods / Prop": "IO-550-D17B: 797 Hours Since Factory Reman (12-21-98)\nProp: 75 Hours Since New MT MTV-9-D Reversing Propeller"
+     }
+    }
+   ],
+   "engine": "IO-550-D17B: 797 Hours Since Factory Reman (12-21-98) · Prop: 75 Hours Since New MT MTV-9-D Reversing Propeller"
   },
   {
    "key": "CFTLM",
@@ -1629,7 +2065,7 @@
    "key": "CGYIS",
    "price": null,
    "price_note": "Please call",
-   "year": null,
+   "year": 1976,
    "model": "A185F",
    "tail": "C-GYIS",
    "serial": "18502895",
@@ -1655,13 +2091,28 @@
      "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2431048"
     ]
    ],
-   "photo": "CGYIS"
+   "photo": "CGYIS",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2431048",
+     "sections": {
+      "Detailed Description": "SKIS, FLOATS, AND WHEELS!\nWill be sold with a fresh annual.\nThis 1976 Cessna A185F, is a commercial maintained aircraft. It has standard Cessna 185 avionics, with a Garmin 175 GPS. It's perfect for both commercial and personal use. Contact Airside Aviation today to find out more!",
+      "Avionics / Equipment": "Avionics\nStandard Cessna 185 Avionics\nGarmin 175 GPS\nEdo 628-2960\nSkis: FluiDyne C3200",
+      "Engines / Mods / Prop": "Engine\nMake/Model: Continental IO-520D\nTime: 406.3 SMOH\nTBO: 1,700\nOverhauled January 31, 2007\nPropeller\nMake/Model: McCauley D3A34C410/90DFA-4\nTime: 10 SMOH\nTBO: 2,400\nOverhauled Jun 26, 2015"
+     }
+    }
+   ],
+   "phone": [
+    "(855) 230-5386"
+   ],
+   "engine": "Engine · Make/Model: Continental IO-520D · Time: 406.3 SMOH · TBO: 1,700 · Overhauled January 31, 2007 · Propeller · full engine detail in the ad below"
   },
   {
    "key": "CFCUK",
    "price": null,
    "price_note": "Call for price",
-   "year": null,
+   "year": 1973,
    "model": "A185F",
    "tail": "C-FCUK",
    "serial": "18502270",
@@ -1676,7 +2127,26 @@
      "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2444847"
     ]
    ],
-   "photo": "CFCUK"
+   "photo": "CFCUK",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2444847",
+     "sections": {
+      "Detailed Description": "Amazing Cessna 185 with all the modification possible.\nThis 185 has a new io550 new Hartzell 3 Blade prop and new Garmin Avionics suite.\nGo anywhere do anything with this Aircraft .",
+      "Avionics / Equipment": "Full Garmin avionics suite\nGarmin G3X 10\" Electronic Display\nGarmin GTN750XI GPS/COM/NAV\nGarmin GNC255A Dual Com\nGarmin GI275 MFD\nGarmin GI275 MFD\nGarmin GMA350c Audio panel\nGarmin GFC 500 3 Axis Autopilot -aileron servo, pitch servo, yaw servo\nGarmin GTS 800 Active Traffic GA58\nTAWS/TCAS\nSynthetic Vision\nGarmin GSB-15 USB Ports\nMid Continent TA202 USB\nGuardian CO Detector\nCustom dash\nAll new wiring\nNew Circuit Breakers\nNew Switches\nCies Inc Fuel sensors\nPlane Power Alternator",
+      "Airframe": "Aircraft was completely gone through when repainted in May of 2012 . removed unused antennae's and wiring . The plane was stripped etched and alodined . All new hardware installed including PPONK bearings.\nAircraft has been maintained to a commercial standard all Ads and Sb complied with and up to date .",
+      "Engines / Mods / Prop": "Continental io550 ENGINE New installed 2024\nHartzell 3 blade Scimitar prop new installed 2024\nPropeller Dynamically Balanced\nSeaplanes west Engine mount.",
+      "Interior / Exterior": "Pilot articulating seat with lumbar\nCopilot articulating with lumbar\nAtlee Dodge bush seats\nRear cargo shelf\nRosin visors\nDoor Stewards\nKnots 2 U Wing tip Lights LED\nLED Landing Light\nLED Taxi Light\nLED Nav lights\nLED Whelen Beacon\nWhelen Tip Strobes",
+      "Remarks": "Amphibious Wipline 3000 floats\nMonarch Fuel Tanks\nWing X wing extensions\nMicro VGs\nSportsman STOL\nLaser Gear Advisory\nVacuum System Removed"
+     }
+    }
+   ],
+   "useful_load": "995, as advertised",
+   "phone": [
+    "(604) 809-2902"
+   ],
+   "engine": "Continental io550 ENGINE New installed 2024 · Hartzell 3 blade Scimitar prop new installed 2024 · Propeller Dynamically Balanced · full engine detail in the ad below"
   },
   {
    "key": "fairley76",
@@ -1742,7 +2212,21 @@
     ]
    ],
    "posted": "2026-10-13",
-   "photo": "YV1742"
+   "photo": "YV1742",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2461340",
+     "sections": {
+      "Detailed Description": "1978 Cessna A185F Skywagon - S/N 18503641 - Fresh Engine Overhaul - New Prop\nThe legendary A185F with a freshly overhauled engine, a brand-new factory propeller, a modern Garmin stack with ADS-B, 2025 paint and a fully renewed 2024 interior. Airworthy.\n- Total Time: 7,430 hrs\n- Engine: Continental IO-520, 19 hrs SMOH (TBO 1,700 hrs - approx. 1,680 hrs remaining)\n- Propeller: Hartzell 3-blade, NEW from factory - 21 hrs since new\n- 2 x Garmin GNC 255 NAV/COM\n- Garmin GMA 345 audio panel\n- Garmin GTX 345 transponder (ADS-B Out / In)\n- JPI EDM 900 engine monitor\n- Paint: 2025\n- Interior: 2024 - completely renewed\nLocated in Venezuela. Contact us for the full spec sheet. We can assist with export, ferry and logistics.",
+      "Avionics / Equipment": "- 2 x Garmin GNC 255 NAV/COM\n- Garmin GMA 345 audio panel\n- Garmin GTX 345 transponder (ADS-B Out / In)\n- JPI EDM 900 engine monitor",
+      "Airframe": "Total Time: 7,429.6 hrs\nYear: 1978\nAirworthy\nPaint: 2025\nInterior: 2024 - completely renewed",
+      "Engines / Mods / Prop": "Engine: Continental IO-520, 285 HP\n19.3 hrs SMOH - TBO 1,700 hrs (approx. 1,680 hrs remaining)\nOverhauled and installed by Meta Aerea (Venezuela)\nPropeller: Hartzell 3-blade\nNEW from factory - 20.8 hrs since new\nEngine monitor: JPI EDM 900",
+      "Interior / Exterior": "Exterior: New paint 2025. Silver with orange/red trim and orange wing struts.\nInterior: Completely renewed in 2024. Cream leather seats with red stitching.",
+      "Remarks": "A rare opportunity to acquire a classic Cessna A185F Skywagon with a freshly overhauled engine and a brand-new propeller.\nThe Continental IO-520 has only 19.3 hours since overhaul (performed by Meta Aerea, Venezuela), leaving approx. 1,680 hours to TBO. The Hartzell 3-blade propeller is new from the factory with only 20.8 hours.\nThe panel features a modern Garmin stack - dual GNC 255 NAV/COMs, GMA 345 audio panel and GTX 345 ADS-B transponder - plus a JPI EDM 900 engine monitor.\nNew paint in 2025 and a completely renewed interior in 2024. Airworthy.\nLocated in Venezuela. All specifications and times are subject to verification from aircraft records and pre-purchase inspection.\nPresented by YVFleet. Contact us for the full spec sheet, additional photos and logbook review."
+     }
+    }
+   ]
   },
   {
    "key": "N4095L",
@@ -2046,7 +2530,21 @@
     ]
    ],
    "email": [],
-   "first_seen": "2026-10-14"
+   "first_seen": "2026-10-14",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2459277",
+     "sections": {
+      "Detailed Description": "1953 Cessna 180 (First one ever sold) - N2802A - $169,900 (Northern California)",
+      "Avionics / Equipment": "Avionics:\nGarmin GTX 327 Transponder\nKing KX 170B Com\nKing KX 155 Nav/Com\nAnalog Clock\nKing KI 209 VOR/LOC/Glideslope #1\nKing KI 209 VOR/LOC/Glideslope #2\nJPI EDM-700 Engine Analyzer\nCarburetor Temperature Gauge\nGarmin 496 GPS\nuAvionix ADS-B In and Out\n4-Place Intercom",
+      "Airframe": "Aircraft Total Time: 5900 hours\nAirframe:\n50 gallons fuel capacity\nWheel Pants\nSnyder speed kit\nHorton Strut cuffs\nFour place shoulder harnesses\nRecent Battery\nSureFly Magneto\nKniseley exhaust\nChrome Induction Headers\nPolished Spinner\nStainless Steel Screw Kit\nHorizontal Stabilizer Abrasion Boots\nLater-1950s-Style Lower Cowling\nRight-Side Opening Window",
+      "Engines / Mods / Prop": "Engine Time: 1587 SMOH on O-470U (2000 TBO)\nPropeller Time: 575 SPOH on McCauley two blade",
+      "Interior / Exterior": "Interior:\nRed velour and brown seats with matching side panels and tan carpet. Overall rated 8 out of 10.\nExterior:\nOriginal 1953 paint scheme with red major accent over bright overall white. Rated 9 out of 10.",
+      "Remarks": "Annual Due: August 2027\nUseful Load: 1015 lbs\nHistory:\nThis is the first Production Cessna 180 ever produced, serial number 30002. Current owners have owned it since 1988.\nComplete logs. Early Damage history in 1991 when a brake failure meant that it rolled into a hangar at low speed. Right wing was repaired. No Hail."
+     }
+    }
+   ]
   },
   {
    "key": "N2493C",
@@ -2105,7 +2603,21 @@
     ]
    ],
    "email": [],
-   "first_seen": "2026-10-14"
+   "first_seen": "2026-10-14",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2452097",
+     "sections": {
+      "Detailed Description": "This classic 180 has all the modern upgrades to make it a formidable taildragger for cruising or back-country adventures. The Texas Skyways' Continental O-520-U/TS upgrade transforms this Skywagon, boasting 280 horsepower for stronger climb, better high-density-altitude performance, and more confident short-field capability. A fresh panel has been re-imagined with Garmin G5s, GNX-375 WAAS, GNS-430W WAAS, GTR-205 Com, EDM-930 Engine Monitor and S-Tec 50 autopilot with GPSS. What a bird for showing off or working hard!",
+      "Avionics / Equipment": "Garmin Dual G5 HSI and ADI\nGarmin GNX-375 WAAS IFR GPS/Nav/Comm\nGarmin GNS-430W WAAS IFR GPS/Nav/Comm\nGarmin GTR-205 Comm\nS-Tec 50 Autopilot\nS-Tec PS-901 GPSS\nuAvionix SkyBeacon ADS-B Out\nEDM-930 Engine Monitor\nAvionics Master Switch\nFeatures\nSTCs and MODS:\nCIES Fuel Senders\nBrackett Air Filter\nAir Wolf Air/Oil Separator\nGuardian CO Detector\nConcord Battery\nBAS Shoulder Harness System\nTail Pull Handles STC\nWheelen Strobes\nInterAv Alternator Conversion STC\nKnisley Exhaust STC\nCleveland Wheels and Brakes STC\nMax Gross Weight: 2,550 lbs\nEmpty Weight: 1,779 lbs\nUseful Load: 771 lbs\nFuel Capacity: 60 gal (55 gal Useable)",
+      "Airframe": "This classic 180 has all the modern upgrades to make it a formidable taildragger for cruising or back-country adventures. The Texas Skyways' Continental O-520-U/TS upgrade transforms this Skywagon, boasting 280 horsepower for stronger climb, better high-density-altitude performance, and more confident short-field capability. A fresh panel has been re-imagined with Garmin G5s, GNX-375 WAAS, GNS-430W WAAS, GTR-205 Com, EDM-930 Engine Monitor and S-Tec 50 autopilot with GPSS. What a bird for showing off or working hard!",
+      "Engines / Mods / Prop": "Texas Skyways\nContinental O-520-U/TS\ns/n 5U343\nTexas Skyways' Continental O-520-U/TS, with upgraded Knisley Exhaust , upgrade transforms this Cessna 180, boosting output to 280 horsepower for stronger climb, better high-density-altitude performance, and more confident short-field capability.\nHartzell Three-Blade\nHC-C3YRF_1RF/F8068\ns/n PY436B",
+      "Interior / Exterior": "Interior\n2026 Refurbished Interior\nExterior\nPolished Aluminum\nBlue Stripes and Accents",
+      "Remarks": "This classic 180 has all the modern upgrades to make it a formidable taildragger for cruising or back-country adventures. The Texas Skyways' Continental O-520-U/TS upgrade transforms this Skywagon, boasting 280 horsepower for stronger climb, better high-density-altitude performance, and more confident short-field capability. A fresh panel has been re-imagined with Garmin G5s, GNX-375 WAAS, GNS-430W WAAS, GTR-205 Com, EDM-930 Engine Monitor and S-Tec 50 autopilot with GPSS. What a bird for showing off or working hard!"
+     }
+    }
+   ]
   },
   {
    "key": "N3197C",
@@ -2140,7 +2652,21 @@
     ]
    ],
    "email": [],
-   "first_seen": "2026-10-14"
+   "first_seen": "2026-10-14",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2460678",
+     "sections": {
+      "Detailed Description": "1954 CESSNA 180 SKYWAGON - N3197C - $246,000\nPhoenix-Mesa Gateway (KIWA), Mesa, AZ\nIFR APPROVED · 260 HP · ONE OWNER SINCE 2006\nEngine: 42.5 HOURS TSMOH\nProp: 42.5 HOURS SNEW\nCompressions: 77, 72, 76, 78, 75 and 77 (04/2026 Annual)\n260 HORSEPOWER via the Norland STC (SA00562NY / SE00561NY) - thirty more than the factory 180 left Wichita with. 09/2026 Owner reports 140 kts true on 10.9 gph.\nIFR APPROVED, AND DONE PROPERLY\nGarmin GNS 430W - WAAS, approach approved, not enroute-restricted\nGarmin SL30 - a real second IFR nav/com\nGarmin GTX 345 - ADS-B In/Out with traffic and weather\nS-TEC Fifty Five X - two-axis autopilot, altitude hold, GPSS\nPS Engineering PMA8000 audio panel\nElectronics International digital engine instrumentation\nHorton STOL kit · Sky-Tec starter · 8.50x6 tires · air/oil separator · USB charging\n100% HANGARED SINCE 2006. NO CORROSION.\nTwenty years of dry Arizona air. There isn't a cubby, a floorboard or an inspection panel on this airplane that hasn't been opened, cleaned and gone through. Paint and interior done in 2012 - both rate 10/10. All ADs complied with and documented using electronic log system, signed and current.\nONE OWNER, ONE MECHANIC, TWENTY YEARS\nJim Scott has owned this airplane since 2006. He is a career A&P/IA - former Director of Maintenance, an aircraft maintenance instructor at local community college since 2009, and currently Operations Manager and Technical Advisor at a 145 repair station. Twenty years as both the owner and the mechanic. The logbooks read like a shop manual, not a sales pitch.\nAircraft cared for by someone who teaches other people how to do it correctly.\nTHE NUMBERS\nAirframe total time 5,628.5 hrs* · Engine 42.5 TSMOH* · Prop 42.5 hrs since new*\nAnnual completed 04/14/2026 · Serial 30996 · Gross 2,550 lbs\nEmpty 1,795 lbs · Useful load 755 lbs · 60 gal total / 55 usable\nPaint and interior 2012, both 10/10 · One owner since 2006\n$246,000 - NO BROKER, DEAL DIRECT WITH THE OWNER\nJim Scott · 480-703-1849 · aircraftmedic@live.com\nBased at KIWA, Mesa, Arizona\nSerious inquiries only. Logs and records available for review. Pre-buy inspection welcome and accommodated.\n*AIRCRAFT IS ACTIVELY FLYING - TIMES LISTED MAY VARY SLIGHTLY. Specifications and representations of aircraft are subject to verification by buyer before purchase.",
+      "Avionics / Equipment": "•Garmin GNS 430W - WAAS, enroute and approach IFR approved\n•Garmin SL30 nav/com #2 - dual IFR nav/com\n•Garmin GTX 345 - ADS-B In/Out with traffic and weather, certified 06/2022\n•S-TEC Fifty Five X two-axis autopilot - HDG, NAV, APR, REV, ALT hold, VS, GPSS\n•PS Engineering PMA8000 audio panel\n•Electronics International engine instrumentation - digital RPM, manifold pressure, fuel flow, CHT/EGT scanner, oil pressure, volt/amp\n•GI-106 and KI-209 indicators, Transcal encoder\n•Artex ME406 ELT, battery due 03/2029\n•Concorde RG35AXC battery, tested 93%",
+      "Airframe": "•1954 Cessna 180, S/N 30996, N3197C. Original Airworthiness Certificate issued 06/03/1954.\n•Airframe total time 5,628.5 hrs.* Annual completed 04/14/2026 by owner/IA.\n•100% hangared since 2006. No corrosion - dry Arizona climate, meticulously detailed throughout. There is not a cubby or an inspection panel on this airplane that has not been opened, cleaned and gone through.\n•All ADs complied with and documented - digital compliance reports signed and current for the airframe, engine and propeller.\n•Horton STOL kit, STC SA967CE\n•Gross 2,550 lbs • Empty 1,795 lbs (certified scales, 10/2022) • Useful load 755 lbs\n•60 gal total / 55 gal usable",
+      "Engines / Mods / Prop": "•Continental IO-470-D, S/N 171186, 260 HP Norland conversion, STC SA00562NY / SE00561NY\n•Major overhaul by LyCon of Arizona, 11/14/2018\n•Installed into this airframe 10/01/2022 - 42.5 hours TSMOH*.\n•Compressions at 04/2026 annual: 77, 72, 76, 78, 75, 77\n•Installed on new engine mounts and hardware - mount removed, stripped, inspected, powder coated. New Airforms baffling, new Knisley exhaust.",
+      "Interior / Exterior": "•Paint: 2012, rated 10/10 - white with chocolate and burgundy scheme, excellent gloss and detail\n•Interior: 2012, rated 10/10",
+      "Remarks": "EXTRAS\nSky-Tec starter • Interav alternator • 8.50x6 tires • air/oil separator • Steve's gascolator • Challenger air filter • USB charging jacks • Door Stewards\nPERFORMANCE\n09/2026 Owner reports 140 kts true on 10.9 gph. Panel photos at 10,225 ft included.\nCONTACT - NO BROKER, DEAL DIRECT WITH THE OWNER\nJim Scott • aircraftmedic@live.com • 480-703-1849 • KIWA, Mesa, AZ\nSerious inquiries only. Logs and records available for review. Pre-buy inspection encouraged and accommodated.\n* AIRCRAFT IS ACTIVELY FLYING - TIMES LISTED MAY VARY SLIGHTLY.\nSpecifications and representations of aircraft are subject to verification by buyer before purchase."
+     }
+    }
+   ]
   },
   {
    "key": "N217M",
@@ -2161,7 +2687,7 @@
    "registry": "FAA: MILES MANDERSON L, Lewiston ID. Valid to 04/30/2029. Airworthiness Standard.",
    "location": "Lewiston, ID",
    "country": "US",
-   "seller": "Contact through the ad",
+   "seller": "Tyler Peters",
    "photo": "N217M",
    "price_note": "Registry year of manufacture is 1954; the advertisement says 1955.",
    "sources": [
@@ -2172,7 +2698,16 @@
    ],
    "phone": [],
    "email": [],
-   "first_seen": "2026-10-14"
+   "first_seen": "2026-10-14",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2447202",
+     "sections": {
+      "Detailed Description": "Same owner for 37 years. Complete log books since new.\nTach: 1430\nTTAF: 5622\nTSMOH: 928 Hrs\nSPOH: 1218 Hrs\nFresh Annual\nEngine: Continental O-470S\nEngine overhaul done 6-29-95 by Brown Aviation\nProp: McCauley 2A34C66-NP\nAvionics;\n- Bendix/King KA124 TSO\n- Bendix/King KY 97A TSO\n- Narco MK 12A\n- Bendix TR-641B\n- Narco MBT-12\n- Sigtronics SPA 400\nAdditional Items;\n- Sportsman's Stol Kit\n- Snider Speed Kit\n- Narco AR850 Blind Encoder\n- SK180-44 Kits on LH inboard flap attach and RH outboard flap attach\n- RH muffler replaced with Knisley Muffler\n- Whelen strobe system\nDamage history - 1978\n- Wing & Engine mount repair\n$149,500"
+     }
+    }
+   ]
   },
   {
    "key": "N180BG",
@@ -2203,7 +2738,21 @@
    ],
    "phone": [],
    "email": [],
-   "first_seen": "2026-10-14"
+   "first_seen": "2026-10-14",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2460536",
+     "sections": {
+      "Detailed Description": "Amazing 1955 Cessna Super 180. Continental O-520F Zero Timed by Texas Skyways, 285 HP, 2,400 TBO. A 7 year complete restoration just completed. 6,150 TTAF, 10 SZeroTimed, McCauley 80\" 3-blade with 10 hours, all new blades. All log books since new.\nALL NEW: Sportsman leading edge cuffs, Selkirk light weight cowling, engine mount, exhaust, Bracket air filter, Large non-congealing oil cooler, engine accessories, P-Ponk main gear reinforcement kit, Flint Aero 12 gallon aux tanks, All new interior, C-185 seats with articulating pilot's seat, modern large rudder pedals, Cleveland 6 bolt brakes with dual puck brakes, tires, windows, carpets, extended baggage, Rosen visors, BAS tail pull handles, one piece windshield, and NEW paint.\nNo float kit as owner kept it light for backcountry operations. No ADSB installed. No rear seat installed, Prior damage to belly skin and right horizontal leading edge hence the complete restoration. NO ground loop and did NOT nose over.\nAVIONICS: Dual KX-170Bs with glide slope, Garmin 155 GPS, JPI-EDM 6 cylinder engine monitor, EI electric tachometer, 406 ELT, 60 AMP alternator. Pitot-Static check 10/25 Annual 10/2026-just completed.\nOver $325,000 invested, Asking $219,000",
+      "Avionics / Equipment": "KX-170Bs with ILS glide slope\nGarmin 155 GPS\nElectric tachometer\nJPI-EDM 6 cylinder engine monitor\n406 ELT\n60 AMP alternator\nNo ADSB installed",
+      "Airframe": "Amazing condition after 7 year ground up restoration. Owner has medical issue and needs airplane gone. Over $325,000 invested to get it to better than factory condition. Asking $219,000.\nNew full interior upgraded to C-185 seats; pilot's fully articulating, new paint, new new new...\nNo float kit as owner set it up to be light weight backcountry airplane.",
+      "Engines / Mods / Prop": "Texas Airways Firewall Forward Zero Timed O-520F; not a conversion to F but the real deal. 2,400 TBO. McCauley 3-blade prop has new 80\" blades, was inspected and found to be in as new condition. 10 hours total time.",
+      "Interior / Exterior": "All new interior; Rosen visors, extended baggage, no rear seat, large Cessna rudder pedals installed.",
+      "Remarks": "Annual 10/25\nPitot-Static 10/25"
+     }
+    }
+   ]
   },
   {
    "key": "N4961A",
@@ -2221,7 +2770,7 @@
    "history": "The ad says over $120,000 was spent in the last 24 months.",
    "location": "Caldwell, ID",
    "country": "US",
-   "seller": "Contact through the ad",
+   "seller": "Joe Dory Aviation LLC",
    "phone": [
     "208-484-7782"
    ],
@@ -2233,7 +2782,21 @@
     ]
    ],
    "email": [],
-   "first_seen": "2026-10-14"
+   "first_seen": "2026-10-14",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2454991",
+     "sections": {
+      "Detailed Description": "7200TT Factory float kit\n570 SMOH (2002) Alaskan Aircraft Engines.\n3 hours since 6 new cylinders (2025)\n570 SPOH (2002) Dominion Prop AK\n$120,000++ spent on this aircraft in last 24 months bringing it up to speed. To include, but not limited to:\nNew tail cone reinforcements (hockey sticks) in tail to satisfy FAA AD 2020-21-22 (6k)\nHorizontal stab repair (1k)\nRudder completely rebuilt with new skins (5k)\nBoth flaps completely rebuilt with new skins (8k)\n500hr mag inspections (2k)\nTrim Jack screws rebuilt (2k)\nNew muffler (1k)\nNew spark plugs ($600)\n6 new cylinders ( 12k)\nNew McFarland trim wheel (2k)\nEngine mount repair (1k)\nFuel valve rebuild (1k)\nNew Garmin GTN650XI nav/com/gps (12k)\nNew Garmin GI-275 x3 (12k)\nNew Garmin GTR-225 com ($2500)\nNew Garmin GTX-345 transponder with ADSN IN&OUT ($6k)\nNew Garmin GMA-350C audio panel/intercom (3k)\n$40+k in labor\nNew Leather wrapped yokes\nNew laser etched instrument panel",
+      "Avionics / Equipment": "All new Garmin panel with new laser etched instrument panel",
+      "Airframe": "Owned and Rebuilt in Alaska in 2002 by famed aircraft pilot and mechanic Kirk Ellis\nFactory float kit\nAlaska skycraft belly pod\nNew 6 bolt wheels and brakes.\nArticulating pilots seat\nStow-able light weight rear seats\nRosin visors\nTail pull handles\nAirframe steps and handles for refueling\nLED landing lights\nLED Nav/srobes",
+      "Engines / Mods / Prop": "550 SMOH (2002) Alaska Aircraft Engines\n3 hours since all new cylinders (millennium)(2025)\nPlane power alternator\nFirewall battery\n550 SPOH (2002)\nDoor stewards",
+      "Interior / Exterior": "Interior is in great condition 7.5/10\nPaint is poor condition 2.5/10",
+      "Remarks": "With a paint job this is a 250k airplane.\nReady for floats and skis"
+     }
+    }
+   ]
   },
   {
    "key": "N5900M",
@@ -2275,7 +2838,20 @@
     ]
    ],
    "email": [],
-   "first_seen": "2026-10-14"
+   "first_seen": "2026-10-14",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2456630",
+     "sections": {
+      "Detailed Description": "AirplanesUSA would like to present this beautiful 1956 Cessna 180 to the market! Complete and Original Logs, no damage history, and always stored in a climate controlled hangar in the Midwest, she is the perfect platform for the next owner to build on. Beautiful paint and the interior is in very good condition. Call today!\nAll Trades Considered\nDual Instruction, Export and Worldwide Delivery Available\nCall Matt McCormack at (847) 651-2042 at AirplanesUSA!",
+      "Avionics / Equipment": "Avionics Master Switches\nApollo II Morrow GPS\nDual VAL Com 760s\nTerra TRT 250 Transponder\nCollins AMR 350 Audio Panel\nFlightcom 403MC 2 Place Intercom\nMusic Input\nRemote ELT Switch\nPitot Heat\nCabin Heat/Air\nIn Panel Glove Box\nCowel Flaps\nDual Overhead Reading Lights\nDual Toe Brakes",
+      "Airframe": "SN: 32330\nTotal Time: 3225\nNo Damage History\nComplete and Original Logs\nLast Annual: May 2026\nNew Concord Battery: May 2026\nNew ELT Batteries: May 2026\nPaint: White 555U, Gold 5242U, Red 44457U - Excellent Condition\nUseful Load: 921 lbs",
+      "Engines / Mods / Prop": "Engine:\nContinental O-470-K 230hp\nSN: 66484-6L\nOverhauled in February 1969\n1,285 SMOH\nLatest Compressions: 78, 76, 79, 75, 76, 75/ 80\nProp:\nMcCauley 2A34C203-C/G90DCA-2 2 Blade\nHub SN: 993476\nBlade SNs: TH077, TH085\nInstalled New in June 2002\n295 SNEW",
+      "Remarks": "AirplanesUSA would like to present this beautiful 1956 Cessna 180 to the market! Complete and Original Logs, no damage history, and always stored in a climate controlled hangar in the Midwest, she is the perfect platform for the next owner to build on. Beautiful paint and the interior is in very good condition. Call today!\nAll Trades Considered\nDual Instruction, Export and Worldwide Delivery Available\nCall Matt McCormack at (847) 651-2042 at AirplanesUSA!"
+     }
+    }
+   ]
   },
   {
    "key": "N4979A",
@@ -2393,7 +2969,21 @@
     ]
    ],
    "email": [],
-   "first_seen": "2026-10-14"
+   "first_seen": "2026-10-14",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2460148",
+     "sections": {
+      "Detailed Description": "Previously US registered, Imported in 1972, Painted in 2023, Interior done in 2013, Presently on floats, Useful load on floats is 967 lbs\nUseful load on wheels is 1225 lbs, Last annual May 2026, No known damage, Logs starting from 1975",
+      "Avionics / Equipment": "Garmin SL40 Comm\nGarmin Aera 510 GPS on Gizmo\nMode C transponder\nSigtronics SCI-S series stereo intercom with pilot/copilot and passenger controls\nElectronics International digital manifold pressure gauge\nElectronics International digital tachometer/RPM gauge\nElectronics International digital volts/amps gauge\nElectronics International digital fuel pressure gauge\nElectronics International digital fuel quantity gauge\nElectronics International digital oil pressure/oil temperature gauge\nElectronics International digital carburetor temperature/outside air temperature gauge\nElectronics International ASC-5A multifunction altitude, OAT, timer and clock display\nELT done 2 years ago\nEDO 2870s\nWing X\nStol Kit\nComplete landing gear",
+      "Airframe": "8168 Hours",
+      "Engines / Mods / Prop": "ENGINE: 930 hours, O/H by Aero Atelier in 2009, Continental O-470-K, serial # 47405-6-KA\nPROP: 413 Hours, McCauley Prop due in 2028, Model 2A34C203-B/G",
+      "Interior / Exterior": "INTERIOR: Blue on white/light grey - Interior redone in 2013\nEXTERIOR: Navy Blue, Royal blue and grey on Arctic White - Painted in 2023",
+      "Remarks": "Located in Wentworth North, 25 minutes from Lachute, QC\nPreviously US registered, Imported in 1972\nPresently on floats\nUseful load on floats is 967 lbs\nUseful load on wheels is 1225 lbs\nLast annual May 2026\nNo known damage\nLogs starting from 1975\nSellers AME is no longer working on privately owned aircraft"
+     }
+    }
+   ]
   },
   {
    "key": "terlingua180",
@@ -2468,7 +3058,21 @@
     ]
    ],
    "email": [],
-   "first_seen": "2026-10-14"
+   "first_seen": "2026-10-14",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2456069",
+     "sections": {
+      "Detailed Description": "Huge price drop!\nStunning condition\nTT 5500\n1418 Since New IO-520D (fuel injected not carbureted) (1990)\n120 Since New MT 3 blade prop\nFresh April Annual\nFresh oil sample (see under documents)\nHangared at KKLS",
+      "Avionics / Equipment": "Aspen Avionics EFD1000 Pro PFD\nGarmin GTX-345\nGarmin GTN-650\nGarmin SL-40\nPS Engineering PMA8000BT\nElectronics International MVP-50P\nAlpha Systems Legacy AOA\nDavtron M800 Digital Clock\nADS-B In and Out\nAck ELT",
+      "Airframe": "Factory Float fittings\nArticulating front seats (both)\nHas damage history but well documented and repairs done correctly",
+      "Engines / Mods / Prop": "Airplains Fuel Injected IO-520D (1418 Since New )(300hp)\n3 blade MT Prop (120 hours since new)\nVG's\nRosen Visors\nSelkirk interior\nSelkirk extended baggage\nSelkirk glare shield\nAir forms engine baffling\nSelkirk composite cowling with cooling gills\n(Late model C185 \"S\" style induction with Donaldson Air Filter)\nFueling steps and handles\nAirframe lifting eyes (part of float kit)\n185 landing gear (overhauled)\nPponk gear beef up kit\nStratus oil filter adapter\nAcorn exhaust\nSeaplane engine mount\nDoor stewards\nBAS inertia real shoulder harnesses in front seats\nUpdated instrument panel\nWindshield V brace (float kit)\nMonarch fuel caps\nMonarch fiberglass fuel tanks (no bladders) (57 usable)\nStabilizer jack screw access covers\nBAS tail pull handles",
+      "Interior / Exterior": "Interior is an 8/10 leather seats\nPaint is an 8/10\nNew seat rails",
+      "Remarks": "You'll be hard pressed to find a nicer, better equip 180."
+     }
+    }
+   ]
   },
   {
    "key": "N889SL",
@@ -2500,7 +3104,21 @@
    ],
    "phone": [],
    "email": [],
-   "first_seen": "2026-10-14"
+   "first_seen": "2026-10-14",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2459430",
+     "sections": {
+      "Detailed Description": "Total Time: 3393.8, Engine TSMOH: 381.6 , Engine TS IRAN: 11, Prop Time: 11 SNEW. Aircraft has undergone an extensive refurbishment including: paint, interior, avionics, glass, wiring, engine, propeller, fuel system etc...Detailed specs page contains complete list of upgrades, updates, and completed work. All work performed by FAA Certified Repair Station and seperate Avionics Shop. Contact me for additional photos, aircraft logs and aircraft history.",
+      "Avionics / Equipment": "Avionics: (see logs for complete rebuild specs)\nDynon HDX 10 inch with Synthetic Vision & Battery Backup (certified)\nDynon HDX 7 inch with Synthetic Vision & Battery Backup (certified)\nDynon Remote Transponder ADSB In & Out (integrated with HDX system)\nDynon Secondary Comm Radio (integrated with HDX system)\nDynon EFIS 10A with Battery Backup\nDynon Engine Monitoring System\nRemote Magnetometer\nRadiorax Radio Rack System\nAvidyne IFD 540 (full IFR certified)\nPS Engineering PMA 450C Audio Panel with Dual Bluetooth\nAerocruze 100 Autopilot with Auto Level Button\nAbitlity to Select Between Dynon or IFD for Autopilot Navigation\nStratus Power Pro USB (2)\nPrecision Aviation PAI-700 Vertical Card Compass\nNew ELT battery due October 2026\nAll New Custom Instrument Panel\nAll New Honeywell Toggle Switches\nAll New Circuit Breakers\nAll New Wiring (complete aircraft)\nAll new GPS/Comm Antennas\nRed LED Lit Panel Lighting with Dimmer Controls\nRed LED Overhead Lighting with Dimmer Controls",
+      "Airframe": "Airframe:(see logs for complete rebuild specs)\nCustom 3 Color Paint Scheme, Epoxy Primed\nBoth Wings Completely Rebuilt, Epoxy Primed\nVertical Stabilizer Completely Rebuilt, Epoxy Primed\nHorizontal Stabilizer Completely Rebuilt, Epoxy Primed\nElevators Completely Rebuilt, Epoxy Primed\nAilerons Reskinned, Epoxy Primed\nFlaps Reskinned, Epoxy Primed\nStene Aviation Sportsman STOL Kit with New Wing Tips\nMicrodynamics Vortex Generators (wings, horizontal and vertical stabilizers)\nNEW Upper and Lower Wing Strut Fairings",
+      "Engines / Mods / Prop": "Engine: (see logs for complete IRAN specs)\nContinental O-470K\nEngine IRAN Performed by Pinnacle Aircraft Engines\nNew Camshaft\nNew Oil Pump Housing and Cover\nNew Tach Drive Assembly\nNew Oil Filler Cap Chain\nCrankshaft Overhauled\nNew Exhaust Lifters\nIntake Lifters Overhauled\nNew Surefly Left Electronic Magneto (1)\nRebuilt Right Magneto (1)\nNew Airwolf Remote Oil Filter\nNew Hartzell Generator Conversion Kit (alternator)\nPropeller: (NEW)\nMT MTV-15-D\nPropeller Governor Overhauled",
+      "Interior / Exterior": "Interior:\nMcFarlane Throttle Cable with Vernier Assist\nMcFarlane Propellor Cable with Vernier Assist\nMcFarlane Mixture Cable/Control Knob\nMcFarlane Cowl Flap Cable/Control Knob\nMcFarlane Heat and Vent Cables/Control Knobs\nSelkirk Black Interior Fiberglass Panels\nSelkirk Black Extended Baggage Panels\nOmnilite Foam Insulation\nSport Aircraft Seats Black Leather (upgraded) with Grey Contrast Stitching\nMatching Black Leather Armrests with Grey Contrast Stitching (front and rear)\nMatching black Black Leather Glare Shield with Grey Contrast Stitching\nAtlee Dodge Folding Rear Jumpseats\nBAS Metro Grey Shoulder Harnesses Front with Matching Rear Seat Belts\nLost River Paracord Grab Handles (2 front & 2 rear) Black, Grey, Yellow\nRosen Sun Visors with 3D axis\nPrecise-Flow Air Wing Root Vent Kit\nBlack Omnilite Eraser Head Rubber Black Flooring\nCessna Anti-Slip Seat Arrestor Belt\nAerostop Seat Locks (2) (additional backup)\nMountain View Door Stewards\nMcFarlane Front Seat Rollers, Frames Refinished\nExterior:\nGreat Lakes Aero Plastics 4\" Bubble Windows (grey tint)\nGreat Lakes Aero Plastics Windshield (grey tint)\nGreat Lakes Aero Plastics Side Windows (grey Tint)\nNew Window Latches (2 per side for bubble windows)\nP-Ponk Gear Leg Beef-Up Kit\nGoodyear 7.00x6 Main Tires with Heavy Duty Tubes\nAtlee Dodge Battery Firewall Relocation Kit\nAtlee Dodge Cowl Grab Handles\nAtlee Dodge Cowl Steps\nAtlee Dodge Wing Strut Steps\nAtlee Dodge Seaplane V-Brace\nWhelen PAR36 LED Landing Lights\nWhelen Orion 660 LED Position Lights with Strobes\nWhelen LED Tail Position Light\nWhelen LED Tail Mounted Anti Collision Beacon\nBAS Fuselage Pull Handles\nEagle Fuel Bladders (65gal total)\nCIES Fuel Sending Units\nBVT Cowl Louvre Set\nHockey Stick Tail AD in Compliance\nAll Door",
+      "Remarks": "Total Time: 3393.8, Engine TSMOH: 381.6 , Engine TS IRAN: 11, Prop Time: 11 SNEW. Aircraft has undergone an extensive refurbishment including: paint, interior, avionics, glass, wiring, engine, propeller, fuel system etc... All work performed by FAA Certified Repair Station and seperate Avionics Shop. Contact me for additional photos, aircraft logs and aircraft history. VREF Appraisal $366K"
+     }
+    }
+   ]
   },
   {
    "key": "waukesha180a",
@@ -2650,7 +3268,21 @@
     ]
    ],
    "email": [],
-   "first_seen": "2026-10-14"
+   "first_seen": "2026-10-14",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2451016",
+     "sections": {
+      "Detailed Description": "N164JD. 1967 Cessna 180 Skywagon (P-Ponk 470-50 engine). Not Here At Placerville. 5577TT, 51 SMOH, 51 SPOH. King KMA 24 Audio Panel with 3LMB, Garmin 430 WAAS Color IFR GPS/Com, Garmin GTX 327 Transponder. When new it went to Canada after 100 hours and was registered Canadian until 2024. The first 100 hour US logbooks was discarded when it was imported into the USA. Very complete Canadian Journey and technical logs since then.",
+      "Avionics / Equipment": "Avionics:\nKing KMA 24 Audio Panel with 3LMB\nGarmin 430 WAAS Color IFR GPS/Com\nGarmin 796 color moving map (Panel mounted)\nGarmin GDL 39 ADSB in\nDynon EFIS-D10A HSI/Glide slope #1\nDynon EFIS-D10A HSI/Glide slope #2\nDynon Autopilot\nGarmin GTX 327 Transponder\nGarmin GNC 255 digital flip/flop Nav/Com\nKing KI 209 Glide slope/VOR/ Localizer indicator\nAirtex 406 ELT with remote arming panel\nUavionix ADSB out tailbeacon\nFlightcom 403 four place intercom\nPush-to-talk buttons\nJPI 830 color graphic engine monitor with fuel flow\nElectronics international digital timer\nDynon \"Emergency Level\" button\nHamilton vertical card compass\nMusic input\nAvionics master switch\nEquipment:\nFactory float kit⁠\n(New Wip' 3000 Amphib floats available for $100,000)\nP-Ponk 275 HP engine\nCessna 185 vertical fin for GW increase\nStainless steel cables\nFactory zinc chromate corrosion proofing\nLifing rings\nWindshield V Brace\nSeaplanes West engine mount\nSportsman STOL Kit\nMicro Dynamics Vortex generators\n84 gallon long range fuel\nFour Small raised gas caps\nRight hand openable window\nDual front articulating seats\nBAS inertia reel shoulder harnesses\nOverhauled seaplane exhaust\nAirbox overhauled with strengthening kit\nRosen visors\nSki Kit\nP-Ponk gear leg beef-up kit\nBAS ⁠Tailcone lift handles\nExtended baggage\nDouble puck HD brakes\nHorizontal stabilizer abrasion boots\nBrackett air filter\nWingtip strobes\nGround service plug\nPolished spinner\nThree blade prop\nLED landing lights\nCowling cooling lovers\nExhaust speed fairing\nRefueling steps and handles\nNew windows and sealant\nLarge non-congealing oil cooler\nLED strobes, wingtips and landing lights\nCargo door organizer\n206 wheel pants\n206 middle row seats (Kenmore STC)\nPilot side secondary seat stop\nArticulating pilot seat\nExtended baggage\nPowder coated late style control wheels⁠\nNew throttle and prop cables\nOverhauled fuel valve\nFloat plane exhaust\nWipline 3000 Amphibious floats available for $100,000",
+      "Airframe": "Airframe:\nTotal Time: 5577 Hours",
+      "Engines / Mods / Prop": "Engine:\n51 SMOH on P-Ponk 470-50, 275HP engine\nProp:\n51 SPOH on 88\" Black Mac Wide chord three blade",
+      "Interior / Exterior": "Interior:\nGray fabric and leather seats. Selkirk side panels painted to match. New wool headliner and new carpet. Overall rated 8.5 out of 10.\nExterior:\nOverall bright white with black major accent and red minor accent in modified traditional 1979 180 factory scheme. Overall rated 8.5 out of 10.",
+      "Remarks": "Annual Due: April 2026\nUseful Load: 1134 Lbs"
+     }
+    }
+   ]
   },
   {
    "key": "conshohocken180h",
@@ -2762,7 +3394,17 @@
     ]
    ],
    "email": [],
-   "first_seen": "2026-10-14"
+   "first_seen": "2026-10-14",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2456289",
+     "sections": {
+      "Detailed Description": "C180J on Wipaire amphis, TT 7781.1 approx, IO-550-DCO ESFRM 1597.5 ESTOH approx, Garmin 750"
+     }
+    }
+   ],
+   "serial": "Not Listed"
   },
   {
    "key": "CGLCQ",
@@ -2858,7 +3500,9 @@
    "seller": "Scott MacDonald Aircraft Sales",
    "phone": [
     "772-781-5900",
-    "888-280-4900"
+    "888-280-4900",
+    "(772) 215-0805",
+    "(772) 288-1202"
    ],
    "photo": "N7681K",
    "posted": "The ad is headed \"JUST LISTED - NEW TO MARKET.\"",
@@ -2870,7 +3514,21 @@
     ]
    ],
    "email": [],
-   "first_seen": "2026-10-14"
+   "first_seen": "2026-10-14",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2441947",
+     "sections": {
+      "Detailed Description": "JUST LISTED - NEW TO MARKET. Cessna 180 Based in Polk County FL in Private Hangar. Low Time Engine!!! Your Summer Adventures Await! Call Listing Broker Scott MacDonald Aircraft Sales TOLL FREE (888) 280-4900.",
+      "Avionics / Equipment": "Avionics:\nPS Engineering Audio Panel\nKing KX 125 Digital Nav/Com\nSperry 300 ADF\nSperry 300 Transponder\nuAvionix Tail Beacon ADS-B Out\nAdditional Equipment:\nPosition Lights\nLanding Light\nTaxi Light\nBeacon Light",
+      "Airframe": "Airframe:\n5444 Total Time",
+      "Engines / Mods / Prop": "Engine:\n28 SMOH\nProp:\n521 SOH Prop\n2 Blades",
+      "Interior / Exterior": "Interior:\nRed Fabric Seats in Good Condition Hangared\n4 Seats\nExterior:\nWhite and Red in Hangared Condition",
+      "Remarks": "Inspection Status:\n1006 Useful Load\nSpecifications and/or descriptions are provided as introductory information. They do not constitute representations or warranties of Scott MacDonald Aircraft Sales, Inc.; Accordingly, you should rely on your own inspection of the aircraft. The offer for sale of this aircraft is subject to contract and the aircraft may at any time be withdrawn from the market without prior notice. Specification is subject to verification by the purchaser."
+     }
+    }
+   ]
   },
   {
    "key": "N717SW",
@@ -2916,7 +3574,20 @@
     ]
    ],
    "email": [],
-   "first_seen": "2026-10-14"
+   "first_seen": "2026-10-14",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2460458",
+     "sections": {
+      "Detailed Description": "AirplanesUSA proudly presents this impeccably maintained, loaded Cessna 180K factory seaplane with Kenmore Gross Weight Increase STC. Complete logbooks and meticulous maintenance records. Upgraded Garmin avionics. Many very desirable STCs. Needs absolutely nothing. Strong performing, legendary four-place aircraft ready for your next family, backcountry adventure or commercial floatplane operation!\nExport and worldwide delivery are available.\nAll trades considered.\nCall Dean Castillo at AirplanesUSA! (757) 575-1516",
+      "Avionics / Equipment": "Garmin 650 WAAS GPS/NAV/COMM\nGarmin 400 GPS\nGarmin G5 Electronic Flight Instruments Attitude Indicator\nGarmin G5 Electronic Flight Instruments HSI\nGarmin GFC-500 Autopilot\nGarmin GNX-375 GPS TRANSPONDER\nGarmin GMA-340 Audio Panel\nGarmin GTR-200 COMM\nJPI EDM-700 Engine Monitor\nGarmin GSB-15 USB Ports\nFactory Float Kit\nKenmore Air Gross Weight Increase STC\nSTOL Craft/Horton STOL Kit\nAirframes Alaska / Alaska Bushwheels Wheel and Brake Upgrade\nAITHRE Shield EDOT 5.0 Carbon Monoxide Detector with IOS App\nTextron Aviation Pilot Secondary Seat Stop\nNew Fuel Cells 2022\nWhelen LED Lights\nBAS Tail Pull Handles\nBAS Inertial Reel Harnesses\nMcFarlane Tailcone Reinforcement Kit\nRosen Sun Visors\nDoor Stewards\nExtended Baggage\nKnots 2 U Flap Gap Seals\nSnider Gear Leg Speed Kit\nLoree Air Heat Shield Kit\nFlight Products Wing Root Vents",
+      "Airframe": "Total Time: 4,246\nFuel Capacity: 60 Gallons\nUseful Load: 1,391.5 pounds\nPitot-Static/Transponder Check: due AUG 2027\nAirtex ELT 1000 Battery Due 2032\nComplete and original logs and records\nExcellent, extensively documented maintenance history\n1989 airframe log entry mentions replacement of horizontal stabilizer, right elevator and right trim jack screw. No amplifying information provided.",
+      "Engines / Mods / Prop": "Continental O-470-U\nS/N: 469790\nTTSMOH: 1021\nOverhauled by Signature Engines Inc., Cincinnati, OH, February 2007\n1500 Hour TBO\nInstalled on Aircraft February 2007\nMcCauley 2A34C204/90DCB-0 Two Blade Constant Speed\nTTSPOH: 982.7",
+      "Interior / Exterior": "Custom gray leather. Grey Carpet. Grey leather sidewalls with red cloth inserts.\nOverall white with red striping - Good Condition"
+     }
+    }
+   ]
   },
   {
    "key": "N2988K",
@@ -2973,7 +3644,8 @@
    "seller": "Alaska Aircraft Sales",
    "phone": [
     "907-243-1966",
-    "907-244-9605"
+    "907-244-9605",
+    "(907) 243-1965"
    ],
    "photo": "N92AT",
    "sources": [
@@ -2991,7 +3663,21 @@
     ]
    ],
    "email": [],
-   "first_seen": "2026-10-14"
+   "first_seen": "2026-10-14",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2458111",
+     "sections": {
+      "Detailed Description": "Limited opportunity: this 1981 Skywagon II was pampered by two owners who could afford the best. Late model, sub-2,000 hour, as close to stock Cessna in fine condition the way Cessna built them. Complete logs, including a short stay in Canada. The windscreen and all windows (including bubble side windows) were replaced when the aircraft was repainted in 2002, the paint & interior still show very well. Float kit \"Option A\" installed with almost new WIP 3,000s. Owner moved out of state to care for elderly loved ones, but engine was preserved before he left. Reason for selling - no longer in Alaska & decided someone else should enjoy it like he did. If doesn't sell, will relocate to lower 48 & keep flying.",
+      "Avionics / Equipment": "Garmin GTX 327 Transponder\nKing KY96A Comm\nApollo IIMorrow GPS\nNAT Intercom\nMount for GPS 496\nAlcor EGT gauge",
+      "Airframe": "1981 Skywagon II\n1,911 TTAF\nNo major damage history\nComplete Logs\nFloat kit option A\n3,190 Gross Weight",
+      "Engines / Mods / Prop": "Continental O-470-U (49 Hrs since Factory Reman 2016)\n- Engine shipped to Lycon for Port/Polish/Flow Balance\nMcCauley C2A34C204 (49 Hrs SOH 2016)\nLED landing/taxi lights\nRMD wingtips w/lights\nP-Ponk main landing gear reinforcements\nBrackett air filter\nSportsmans STOL leading edge cuff",
+      "Interior / Exterior": "2002 complete repaint, shows very well.\nOriginal factory interior, some slight bleaching but shows well and in good condition.\nCessna rear jump seats.\n3rd row bench seat and rear bulkhead included.\nPilot/Copilot AMSAFE shoulder harnesses\nAll seatbelts re-webbed by Aviation Safety Products 2007",
+      "Remarks": "WIPAIRE 3,000 straight floats (almost new condition)\nFederal A3500A straight skis w/Burl's Magnum 1 tailski\n2 tail stingers, one w/10\" XP mods, one w/Scott 3600\nGarAero wheel adapters w/8.50x10"
+     }
+    }
+   ]
   },
   {
    "key": "N8SQ",
@@ -3105,7 +3791,16 @@
     ]
    ],
    "email": [],
-   "first_seen": "2026-10-14"
+   "first_seen": "2026-10-14",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2459643",
+     "sections": {
+      "Detailed Description": "Cessna 180H on low time 31in Bushwheels with a Factory Float Kit. This backcountry weapon is powered by a Northpoint O-470-50 converted from a low time IO-520 with a fresh top end and a McCauley 3 blade propeller. The Sportsman STOL and VG's ensure positive control at slow speeds. 6892 TT, 710 SMOH, 35 STOH, 161 SPOH. All compressions 70 and above. GMA 340 audio panel, Garmin GNS 530W, Garmin GTX 345 Transponder, KX155 NAV/COM, New Acorn Muffler with about 50hrs. 206 adjustable rear seats, BAS pull handles, Selkirk interior, Extended baggage, Baby Bushwheel. Located at B19.\nAsking $199,000"
+     }
+    }
+   ]
   },
   {
    "key": "renton180share",
@@ -3304,7 +3999,23 @@
    ],
    "first_seen": "2026-10-14",
    "email": [],
-   "photo": "N6328E"
+   "photo": "N6328E",
+   "ad_sections": [
+    {
+     "source": "Trade-A-Plane",
+     "url": "https://www.trade-a-plane.com/search?s-type=aircraft&listing_id=2429154",
+     "sections": {
+      "Detailed Description": "1980 A185F. 2096 AFTT. 204 SMOH Engine. 204 SNEW Prop. Edo Floats. Garmin 430W. ADS-B Out. Complete Logs Since new. Contact us for digital copies.",
+      "Avionics / Equipment": "King KMA20 Audio Panel\nGarmin GNS-430W GPS/NAV/COM\nGarmin SL40 COM\nKing KR87 ADF\nKing KT-76A Transponder\nSigtronics SPA-4S Audio Panel\nuAvionix skyBeacon ADS-B Out",
+      "Airframe": "Total Time: 2,096.0 Hours\nRange: 600 Nautical Miles\nMax Takeoff Weight: 3,350 Pounds\nEmpty Weight: 2,545.68 Pounds\nUseful Load: 804.32 Pounds\nFuel Capacity: 88 Gallons",
+      "Engines / Mods / Prop": "Engine\nEngine Make & Model: Continental IO-520-D\nEngine Serial Number: 572566\nEngine Time: 204.9 SMOH\nOverhaul Date: 2-14-2017\nOverhaul By: Jewell Aviation Inc.\nEngine TBO: 1,700 Hours\nProp\nProp Make & Model: McCauley D3A34C401-C\nProp Serial Number: 180148\nNumber of Blades: 3\nProp Time: 204.9 Hours Since New\nNew Date: 2-23-2018\nAdditional Equipment\nAmchris Aviation Systems Gear View Mirrors\nAmphibian Landing Gear Position Advisory System\nHorton STOL-Kit\nHorton Flap Gap Seal Kit\nEdo 696-3500 Amphibious Floats",
+      "Interior / Exterior": "Exterior\nDetails: Overall White with Red & Burgundy Accents\nRated: 6.5/10\nOriginal Factory Paint\nInterior\nNumber of Seats: 4\nDetails: Overall Tan with Brown & Cream Accents\nRated: 5.5/10\nOriginal Factory Interior",
+      "Remarks": "Inspection Status\nAnnual Due: 6-31-2024"
+     }
+    }
+   ],
+   "useful_load": "804 lb, as advertised",
+   "engine": "Engine · Engine Make & Model: Continental IO-520-D · Engine Serial Number: 572566 · Engine Time: 204.9 SMOH · Overhaul Date: 2-14-2017 · full engine detail in the ad below"
   },
   {
    "key": "N4775U",

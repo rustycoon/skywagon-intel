@@ -190,6 +190,11 @@ def row_html(l):
         F('Record', esc(rtext))
     F('Seen', ('first ' + esc(l['first_seen']) + ' · ' if l.get('first_seen') else '') + 'last ' + RUN)
     dl = ''.join(f'<div class="k">{k}</div><div class="v">{v}</div>' for k, v in fields)
+    # the full ad, in the seller's own words
+    full = ''
+    for ad in l.get('ad_sections', []):
+        secs = ''.join(f'<div class="adsec"><div class="adh">{esc(h)}</div><div class="adt">{esc(t.strip()).replace(chr(10), "<br>")}</div></div>' for h, t in ad['sections'].items() if t and t.strip())
+        if secs: full += f'<div class="fullad"><div class="mute small">The full ad, as the seller wrote it on <a href="{esc(ad["url"])}" target="_blank" rel="noopener">{esc(ad["source"])}</a></div>{secs}</div>'
     # contact
     btns = ''.join(f'<a class="btn" href="tel:{re.sub(r"[^0-9+]","",p)}">Call {esc(p)}</a>' for p in l.get('phone', []))
     btns += ''.join(f'<a class="btn" href="mailto:{esc(e)}">Email</a>' for e in l.get('email', []))
@@ -206,6 +211,7 @@ def row_html(l):
 </summary>
 <div class="det">
 <div class="dl">{dl}</div>
+{full}
 <div class="contact"><div class="seller">{seller}</div><div class="btns">{btns}</div></div>
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks">{srcs}</div></div>
 </div>
@@ -321,6 +327,8 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 .det{border-top:1px solid var(--line);padding:10px 10px 12px;display:flex;flex-direction:column;gap:10px;font-size:13px}
 .dl{display:grid;grid-template-columns:92px 1fr;row-gap:5px;column-gap:8px}
 .dl .k{color:var(--mute)} .dl .v{min-width:0;overflow-wrap:anywhere}
+.fullad{border-top:1px solid var(--line);padding-top:8px;display:flex;flex-direction:column;gap:8px}
+.adh{font-weight:500;margin-bottom:2px} .adt{overflow-wrap:anywhere;line-height:1.45}
 .likely{background:var(--warnbg);color:var(--warn);padding:1px 6px;font-size:12px}
 .contact{border-top:1px solid var(--line);padding-top:8px;display:flex;flex-direction:column;gap:4px}
 .seller{font-weight:500}
