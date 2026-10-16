@@ -1050,7 +1050,7 @@
    "tail": "N4841C",
    "serial": "18502609",
    "tt": "5,530",
-   "engine": "Continental IO-520",
+   "engine": "Continental IO-520 · 1,339 since overhaul",
    "gear": "Wheels · factory float kit, never on floats",
    "fuel": "80 gallons",
    "mods": "Robertson STOL",
@@ -1079,7 +1079,39 @@
      "https://www.aircraftforsale.com/listing/cessna-185f-skywagon-601555"
     ]
    ],
-   "specs_note": "AircraftForSale lists this aircraft (/listing/cessna-185f-skywagon-601555, $219,000, 5,530 hours, Seitz Aviation) but every listing page on the redesigned site returned a server error on 16 October, so the ad could not be read in full"
+   "ad_facts": {
+    "engine": [
+     "Continental IO-520 · 1,339 since overhaul"
+    ],
+    "equipment": [
+     "Factory partial float kit (no known float operations)",
+     "V-brace",
+     "Long-range tanks, 80 gal (new bladders 2020)",
+     "Belly cargo pod",
+     "Refueling step kit",
+     "Robertson STOL",
+     "Wing-X extensions",
+     "Vortex generators"
+    ],
+    "airframe": [
+     "5,530 total time",
+     "Six seats"
+    ],
+    "inspection": [
+     "Going in for a fresh annual by Vertex Aviation, per the ad"
+    ],
+    "history": [
+     "Zinc chromate internal primer",
+     "Digital logbooks available on request"
+    ],
+    "read": "2026-10-16",
+    "from": [
+     [
+      "AircraftForSale",
+      "https://www.aircraftforsale.com/listing/cessna-185f-skywagon-601555"
+     ]
+    ]
+   }
   },
   {
    "key": "N9911X",
@@ -6042,8 +6074,8 @@
    "tail": "N4979A",
    "serial": "32376",
    "tt": "4,290",
-   "engine": "Continental O-470-K, 230 hp, 2,586 SMOH, as advertised",
-   "prop": "McCauley 88\", 409 since new",
+   "engine": "Continental O-470-K, 230 hp · 2,586 since overhaul",
+   "prop": "McCauley 88\" · 409 since new",
    "gear": "P-Ponk landing gear kit, STC SA2918NM; Cleveland brakes",
    "fuel": "55 gallons; new left and right wing tanks, zero time, current AD vent conversion",
    "mods": "P-Ponk gear kit SA2918NM, new Loree Air engine mounts, new Knisley muffler and exhaust manifold, solid one-piece windshield, overhauled six-station primer",
@@ -6065,7 +6097,34 @@
    "email": [],
    "photo": "N4979A",
    "first_seen": "2026-10-14",
-   "specs_note": "AircraftForSale's listing page (/listing/cessna-180-skywagon-502363) returned a server error on 16 October; the facts shown were read on 14 October"
+   "ad_facts": {
+    "engine": [
+     "Continental O-470-K, 230 hp · 2,586 since overhaul"
+    ],
+    "prop": [
+     "McCauley 88\" · 409 since new"
+    ],
+    "equipment": [
+     "6-station primer, overhauled"
+    ],
+    "airframe": [
+     "4,290 total time"
+    ],
+    "inspection": [
+     "Fresh annual January 2022, per the ad",
+     "Tailwheel bushing AD and horizontal stabilizer AD"
+    ],
+    "history": [
+     "Same owner since 1991 · always hangared"
+    ],
+    "read": "2026-10-16",
+    "from": [
+     [
+      "AircraftForSale",
+      "https://www.aircraftforsale.com/listing/cessna-180-skywagon-502363"
+     ]
+    ]
+   }
   },
   {
    "key": "N4619A",
