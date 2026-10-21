@@ -66,6 +66,7 @@ FLAG = {"US":"🇺🇸","CA":"🇨🇦","VE":"🇻🇪","CH":"🇨🇭","BE":"�
 def flag(l):
     c = l.get('country','')
     f = FLAG.get(c, '🏳️')
+    if not c: return f + ' <span class="foreign">country not stated</span>'
     return f if c in ('US','CA') else f + ' <span class="foreign">foreign</span>'
 def money(n):
     return "$%s" % format(n, ",") if n is not None else ""
