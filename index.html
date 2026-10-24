@@ -31,6 +31,9 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 .tile .v{font-family:"Barlow Condensed",sans-serif;font-size:26px;font-weight:600;line-height:1.1;font-variant-numeric:tabular-nums}
 .tile .d{font-size:11.5px;color:var(--mute)}
 .tools{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:12.5px;color:var(--mute)}
+.chk{display:inline-flex;align-items:center;gap:6px;min-height:32px;padding:0 10px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
+.chk input{width:16px;height:16px;accent-color:var(--acc);margin:0}
+.row[hidden]{display:none}
 .tools button{font:inherit;font-size:12.5px;background:var(--card);border:1px solid var(--line);color:var(--ink);padding:6px 10px;min-height:32px;cursor:pointer}
 .tools button[aria-pressed="true"]{border-color:var(--acc);color:var(--acc)}
 .rows{display:flex;flex-direction:column;gap:6px}
@@ -137,8 +140,12 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <button data-key="year" data-dir="1">oldest</button>
 <button data-key="country" data-dir="1">by country</button>
 </div>
+<div class="tools filt">Filter:
+<label class="chk"><input type="checkbox" id="f-rob"> hide Robertson STOL (13)</label>
+<span class="mute small" id="shown" aria-live="polite"></span>
+</div>
 <div class="rows" id="rows">
-<details class="row" id="r-gigharbor180share" data-price="53500" data-year="1954" data-hrs="3317.4" data-country="US" data-rec="nosn">
+<details class="row" id="r-gigharbor180share" data-price="53500" data-year="1954" data-hrs="3317.4" data-country="US" data-rec="nosn" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/gigharbor180share_l.jpg" aria-label="Enlarge photo"><img src="photos/gigharbor180share.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail none">tail not published</div><div class="ym">1954 Cessna 180</div><div class="sub">🇺🇸 Gig Harbor, WA · <span class="kind">1/3 share</span> · 3,317.4 airframe hrs · no serial or tail published · not screened</div></div>
@@ -151,7 +158,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.facebook.com/marketplace/item/1811592810256060/" target="_blank" rel="noopener">Facebook Marketplace</a><a href="https://www.barnstormers.com/classified-2078340-1954-C180.html" target="_blank" rel="noopener">Barnstormers</a></div></div>
 </div>
 </details>
-<details class="row" id="r-renton180share" data-price="85000" data-year="1979" data-hrs="1000000000" data-country="US" data-rec="nosn">
+<details class="row" id="r-renton180share" data-price="85000" data-year="1979" data-hrs="1000000000" data-country="US" data-rec="nosn" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/renton180share_l.jpg" aria-label="Enlarge photo"><img src="photos/renton180share.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail none">tail not published</div><div class="ym">1979 Cessna 180</div><div class="sub">🇺🇸 Renton, WA · <span class="kind">1/4 share</span> · airframe hours not published · no serial or tail published · not screened</div></div>
@@ -164,7 +171,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.craigslist.org/view/d/renton-4-share-1979-cessna-180-on/463ANZgkVrsCk7DoCd8ZpV" target="_blank" rel="noopener">Craigslist</a><a href="https://www.facebook.com/marketplace/item/1497032678837544/" target="_blank" rel="noopener">Facebook Marketplace</a></div></div>
 </div>
 </details>
-<details class="row" id="r-golf180project" data-price="105000" data-year="1953" data-hrs="4100.0" data-country="US" data-rec="nosn">
+<details class="row" id="r-golf180project" data-price="105000" data-year="1953" data-hrs="4100.0" data-country="US" data-rec="nosn" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/golf180project_l.jpg" aria-label="Enlarge photo"><img src="photos/golf180project.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail none">tail not published</div><div class="ym">1953 Cessna 180</div><div class="sub">🇺🇸 Golf, IL · <span class="kind">project · the ad says &quot;this is a project&quot;</span> · 4,100 airframe hrs · no serial or tail published · not screened</div></div>
@@ -177,7 +184,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.barnstormers.com/classified-2076070-Cessna-180-project.html" target="_blank" rel="noopener">Barnstormers</a><a href="https://www.facebook.com/commerce/listing/2089112771809835/" target="_blank" rel="noopener">Facebook group</a></div></div>
 </div>
 </details>
-<details class="row" id="r-anchorage1954" data-price="120000" data-year="1954" data-hrs="5000.0" data-country="US" data-rec="nosn">
+<details class="row" id="r-anchorage1954" data-price="120000" data-year="1954" data-hrs="5000.0" data-country="US" data-rec="nosn" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/anchorage1954_l.jpg" aria-label="Enlarge photo"><img src="photos/anchorage1954.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail none">tail not published</div><div class="ym">1954 Cessna 180</div><div class="sub">🇺🇸 Anchorage, AK · about 5,000 airframe hrs · no serial or tail published · not screened</div></div>
@@ -190,7 +197,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.facebook.com/marketplace/item/2034757583819441/" target="_blank" rel="noopener">Facebook Marketplace</a></div></div>
 </div>
 </details>
-<details class="row" id="r-minnedosa180" data-price="120000" data-year="1955" data-hrs="5000.0" data-country="CA" data-rec="nosn">
+<details class="row" id="r-minnedosa180" data-price="120000" data-year="1955" data-hrs="5000.0" data-country="CA" data-rec="nosn" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/minnedosa180_l.jpg" aria-label="Enlarge photo"><img src="photos/minnedosa180.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail none">tail not published</div><div class="ym">1955 Cessna 180</div><div class="sub">🇨🇦 Minnedosa, MB · 5,000 airframe hrs · no serial or tail published · not screened</div></div>
@@ -203,7 +210,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.barnstormers.com/classified-1951029-Cessna-180.html" target="_blank" rel="noopener">Barnstormers</a></div></div>
 </div>
 </details>
-<details class="row" id="r-CFJXF" data-price="122500" data-year="1955" data-hrs="7155.0" data-country="CA" data-rec="clean">
+<details class="row" id="r-CFJXF" data-price="122500" data-year="1955" data-hrs="7155.0" data-country="CA" data-rec="clean" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/CFJXF_l.jpg" aria-label="Enlarge photo"><img src="photos/CFJXF.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">C-FJXF</div><div class="ym">1955 Cessna 180</div><div class="sub">🇨🇦 Lac du Bonnet, MB · 7,155 airframe hrs · no entries found</div></div>
@@ -216,7 +223,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.facebook.com/groups/509332419231596/posts/3591191101045697/" target="_blank" rel="noopener">Facebook group</a></div></div>
 </div>
 </details>
-<details class="row" id="r-waukesha180a" data-price="130000" data-year="1958" data-hrs="4000.0" data-country="US" data-rec="entries">
+<details class="row" id="r-waukesha180a" data-price="130000" data-year="1958" data-hrs="4000.0" data-country="US" data-rec="entries" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/waukesha180a_l.jpg" aria-label="Enlarge photo"><img src="photos/waukesha180a.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N392PT</div><div class="ym">1958 Cessna 180A</div><div class="sub">🇺🇸 Waukesha, WI · 4,000 airframe hrs · 1 NTSB · 2 AIDS</div></div>
@@ -229,7 +236,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.barnstormers.com/classified-2056846-Cessna-180A-Amphib!.html" target="_blank" rel="noopener">Barnstormers</a><a href="https://www.barnstormers.com/classified-2056846-Cessna-180A-Amphib.html" target="_blank" rel="noopener">Barnstormers (another ad)</a><a href="https://www.facebook.com/groups/planes4sale/permalink/27649361328038332/" target="_blank" rel="noopener">Facebook group</a><a href="https://www.facebook.com/groups/222297818133271/permalink/2824628297900197/" target="_blank" rel="noopener">Facebook group (another ad)</a><a href="https://www.facebook.com/commerce/listing/27708889142097337/" target="_blank" rel="noopener">Facebook group (another ad)</a></div></div>
 </div>
 </details>
-<details class="row" id="r-siouxlookout" data-price="135000" data-year="1976" data-hrs="8807.0" data-country="CA" data-rec="nosn">
+<details class="row" id="r-siouxlookout" data-price="135000" data-year="1976" data-hrs="8807.0" data-country="CA" data-rec="nosn" data-robertson="0">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
 <div class="mid"><div class="tail none">tail not published</div><div class="ym">1976 Cessna A185F</div><div class="sub">🇨🇦 Sioux Lookout, ON · 8,807 airframe hrs · no serial or tail published · not screened</div></div>
@@ -242,7 +249,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.barnstormers.com/classified-2003876-CESSNA--A185F.html" target="_blank" rel="noopener">Barnstormers</a><a href="https://www.barnstormers.com/classified-2003876-Cessna-A185F.html" target="_blank" rel="noopener">Barnstormers (another ad)</a></div></div>
 </div>
 </details>
-<details class="row" id="r-millerton180h" data-price="145000" data-year="1965" data-hrs="4438.0" data-country="US" data-rec="nosn">
+<details class="row" id="r-millerton180h" data-price="145000" data-year="1965" data-hrs="4438.0" data-country="US" data-rec="nosn" data-robertson="0">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
 <div class="mid"><div class="tail none">tail not published</div><div class="ym">1965 Cessna 180H</div><div class="sub">🇺🇸 Millerton, NY · 4,438 airframe hrs · no serial or tail published · not screened</div></div>
@@ -255,7 +262,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.barnstormers.com/classified-2078551-C180H.html" target="_blank" rel="noopener">Barnstormers</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N4979A" data-price="149000" data-year="1956" data-hrs="4290.0" data-country="US" data-rec="entries">
+<details class="row" id="r-N4979A" data-price="149000" data-year="1956" data-hrs="4290.0" data-country="US" data-rec="entries" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N4979A_l.jpg" aria-label="Enlarge photo"><img src="photos/N4979A.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N4979A</div><div class="ym">1956 Cessna 180</div><div class="sub">🇺🇸 Watsonville, CA · 4,290 airframe hrs · 1 NTSB · 1 AIDS</div></div>
@@ -268,7 +275,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.aircraftforsale.com/listing/cessna-180-skywagon-502363" target="_blank" rel="noopener">AircraftForSale</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N217M" data-price="149500" data-year="1955" data-hrs="5622.0" data-country="US" data-rec="clean">
+<details class="row" id="r-N217M" data-price="149500" data-year="1955" data-hrs="5622.0" data-country="US" data-rec="clean" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N217M_l.jpg" aria-label="Enlarge photo"><img src="photos/N217M.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N217M</div><div class="ym">1955 Cessna 180</div><div class="sub">🇺🇸 Lewiston, ID · 5,622 airframe hrs · no entries found</div></div>
@@ -281,7 +288,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2447202" target="_blank" rel="noopener">Trade-A-Plane</a></div></div>
 </div>
 </details>
-<details class="row" id="r-terlingua180" data-price="149500" data-year="1956" data-hrs="5640.0" data-country="US" data-rec="nosn">
+<details class="row" id="r-terlingua180" data-price="149500" data-year="1956" data-hrs="5640.0" data-country="US" data-rec="nosn" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/terlingua180_l.jpg" aria-label="Enlarge photo"><img src="photos/terlingua180.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail none">tail not published</div><div class="ym">1956 Cessna 180</div><div class="sub">🇺🇸 Terlingua, TX · 5,640 airframe hrs · no serial or tail published · not screened</div></div>
@@ -294,7 +301,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.barnstormers.com/classified-2019222-For-Sale.html" target="_blank" rel="noopener">Barnstormers</a><a href="https://www.aircraftdealer.com/view-ad-list.php?searchVal=cessna+180&amp;search=" target="_blank" rel="noopener">aircraftdealer.com</a></div></div>
 </div>
 </details>
-<details class="row" id="r-ZSCVI" data-price="150000" data-year="1962" data-hrs="10123.0" data-country="ZA" data-rec="nomatch">
+<details class="row" id="r-ZSCVI" data-price="150000" data-year="1962" data-hrs="10123.0" data-country="ZA" data-rec="nomatch" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/ZSCVI_l.jpg" aria-label="Enlarge photo"><img src="photos/ZSCVI.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">ZS-CVI</div><div class="ym">1962 Cessna 185A</div><div class="sub">🇿🇦 <span class="foreign">foreign</span> Johannesburg, Gauteng, South Africa · about 10,123 airframe hrs · serial not in the record · not screened</div></div>
@@ -307,7 +314,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.globalplanesearch.com/aircraft/7068293-1962-cessna-185a-skywagon-for-sale-in" target="_blank" rel="noopener">GlobalPlaneSearch</a><a href="https://www.controller.com/listing/for-sale/237458011/1962-cessna-185-piston-single-aircraft" target="_blank" rel="noopener">Controller</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N757DJ" data-price="150000" data-year="1960" data-hrs="3350.0" data-country="US" data-rec="entries">
+<details class="row" id="r-N757DJ" data-price="150000" data-year="1960" data-hrs="3350.0" data-country="US" data-rec="entries" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N757DJ_l.jpg" aria-label="Enlarge photo"><img src="photos/N757DJ.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N757DJ</div><div class="ym">1960 Cessna 180C</div><div class="sub">🇺🇸 Patterson, LA · 3,350 airframe hrs · 1 NTSB · 2 AIDS</div></div>
@@ -320,7 +327,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.facebook.com/commerce/listing/28962616743391231/" target="_blank" rel="noopener">Facebook group</a></div></div>
 </div>
 </details>
-<details class="row" id="r-CFSRQ" data-price="160000" data-year="1976" data-hrs="4600.0" data-country="CA" data-rec="clean">
+<details class="row" id="r-CFSRQ" data-price="160000" data-year="1976" data-hrs="4600.0" data-country="CA" data-rec="clean" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/CFSRQ_l.jpg" aria-label="Enlarge photo"><img src="photos/CFSRQ.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">C-FSRQ</div><div class="ym">1976 Cessna 180J</div><div class="sub">🇨🇦 Thunder Bay, ON · 4,600 airframe hrs · no entries found</div></div>
@@ -333,7 +340,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.facebook.com/groups/509332419231596/posts/3569105696587571/" target="_blank" rel="noopener">Facebook group</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N7681K" data-price="169000" data-year="1976" data-hrs="5444.0" data-country="US" data-rec="clean">
+<details class="row" id="r-N7681K" data-price="169000" data-year="1976" data-hrs="5444.0" data-country="US" data-rec="clean" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N7681K_l.jpg" aria-label="Enlarge photo"><img src="photos/N7681K.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N7681K</div><div class="ym">1976 Cessna 180J</div><div class="sub">🇺🇸 Polk County, FL · 5,444 airframe hrs · no entries found</div></div>
@@ -346,7 +353,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2441947" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.aircraftforsale.com/listing/1976-cessna-180j-skywagon-60f78d3a" target="_blank" rel="noopener">AircraftForSale</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N2802A" data-price="169900" data-year="1953" data-hrs="5900.0" data-country="US" data-rec="entries">
+<details class="row" id="r-N2802A" data-price="169900" data-year="1953" data-hrs="5900.0" data-country="US" data-rec="entries" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N2802A_l.jpg" aria-label="Enlarge photo"><img src="photos/N2802A.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N2802A</div><div class="ym">1953 Cessna 180</div><div class="sub">🇺🇸 Northern California · 5,900 airframe hrs · 1 NTSB · 1 AIDS</div></div>
@@ -359,7 +366,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2459277" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.barnstormers.com/classified-2065890-1953-Cessna-180.html" target="_blank" rel="noopener">Barnstormers</a><a href="https://www.aircraftdealer.com/view-ad-list.php?searchVal=cessna+180&amp;search=" target="_blank" rel="noopener">aircraftdealer.com</a><a href="https://www.skywagons.com/airplanes-for-sale" target="_blank" rel="noopener">Skywagons.com</a><a href="https://findaircraft.com/aircraft-for-sale/?AircraftType=Cessna+180" target="_blank" rel="noopener">FindAircraft</a><a href="https://www.hangar67.com/aircraft/1953-cessna-180/41348" target="_blank" rel="noopener">Hangar67</a></div></div>
 </div>
 </details>
-<details class="row" id="r-CFQKZ" data-price="175000" data-year="1956" data-hrs="8168.0" data-country="CA" data-rec="entries">
+<details class="row" id="r-CFQKZ" data-price="175000" data-year="1956" data-hrs="8168.0" data-country="CA" data-rec="entries" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/CFQKZ_l.jpg" aria-label="Enlarge photo"><img src="photos/CFQKZ.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">C-FQKZ</div><div class="ym">1956 Cessna 180</div><div class="sub">🇨🇦 Hawkesbury, ON · 8,168 airframe hrs · 1 NTSB · 1 TSB</div></div>
@@ -372,7 +379,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2460148" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.globalair.com/aircraft-for-sale/cessna-180" target="_blank" rel="noopener">GlobalAir</a><a href="https://csplane.com/aircraft/1956-cessna-180/" target="_blank" rel="noopener">Canadian Aircraft Sales (csplane.com)</a><a href="https://findaircraft.com/aircraft-for-sale/?AircraftType=Cessna+180" target="_blank" rel="noopener">FindAircraft</a><a href="https://www.barnstormers.com/classified-2070881-x.html" target="_blank" rel="noopener">Barnstormers</a></div></div>
 </div>
 </details>
-<details class="row" id="r-booneville180" data-price="175000" data-year="1953" data-hrs="4923.8" data-country="US" data-rec="nosn">
+<details class="row" id="r-booneville180" data-price="175000" data-year="1953" data-hrs="4923.8" data-country="US" data-rec="nosn" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/booneville180_l.jpg" aria-label="Enlarge photo"><img src="photos/booneville180.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail none">tail not published</div><div class="ym">1953 Cessna 180</div><div class="sub">🇺🇸 Booneville, AR · 4,923.8 airframe hrs · no serial or tail published · not screened</div></div>
@@ -385,7 +392,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.facebook.com/groups/skywagons/posts/10164176644331693/" target="_blank" rel="noopener">Facebook group</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N4798B" data-price="175000" data-year="1955" data-hrs="1000000000" data-country="US" data-rec="entries">
+<details class="row" id="r-N4798B" data-price="175000" data-year="1955" data-hrs="1000000000" data-country="US" data-rec="entries" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N4798B_l.jpg" aria-label="Enlarge photo"><img src="photos/N4798B.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N4798B</div><div class="ym">1955 Cessna 180</div><div class="sub">🇺🇸 Wasilla, AK · airframe hours not published · 2 NTSB · 1 AIDS</div></div>
@@ -398,7 +405,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.craigslist.org/view/d/wasilla-cessna-180/3156Hq84AqEPkowHfWuPXh" target="_blank" rel="noopener">Craigslist</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N4961A" data-price="176000" data-year="1956" data-hrs="7200.0" data-country="US" data-rec="entries">
+<details class="row" id="r-N4961A" data-price="176000" data-year="1956" data-hrs="7200.0" data-country="US" data-rec="entries" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N4961A_l.jpg" aria-label="Enlarge photo"><img src="photos/N4961A.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N4961A</div><div class="ym">1956 Cessna 180</div><div class="sub">🇺🇸 Caldwell, ID · 7,200 airframe hrs · 2 NTSB · 2 AIDS</div></div>
@@ -411,7 +418,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2454991" target="_blank" rel="noopener">Trade-A-Plane</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N4619A" data-price="180000" data-year="1956" data-hrs="4556.0" data-country="US" data-rec="clean">
+<details class="row" id="r-N4619A" data-price="180000" data-year="1956" data-hrs="4556.0" data-country="US" data-rec="clean" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N4619A_l.jpg" aria-label="Enlarge photo"><img src="photos/N4619A.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N4619A</div><div class="ym">1956 Cessna 180</div><div class="sub">🇺🇸 Bakersfield, CA · 4,556 airframe hrs · no entries found</div></div>
@@ -424,7 +431,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.controller.com/listing/for-sale/261100755/1956-cessna-180-piston-single-aircraft" target="_blank" rel="noopener">Controller</a><a href="https://www.facebook.com/groups/bigtireaircraft/permalink/1699414704456830/" target="_blank" rel="noopener">Facebook group</a></div></div>
 </div>
 </details>
-<details class="row" id="r-chatham180" data-price="185000" data-year="1965" data-hrs="3086.0" data-country="US" data-rec="nosn">
+<details class="row" id="r-chatham180" data-price="185000" data-year="1965" data-hrs="3086.0" data-country="US" data-rec="nosn" data-robertson="0">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
 <div class="mid"><div class="tail none">tail not published</div><div class="ym">1965 Cessna 180H</div><div class="sub">🇺🇸 Chatham, NY · 3,086 airframe hrs · no serial or tail published · not screened</div></div>
@@ -437,7 +444,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.barnstormers.com/category-16268-Cessna--Amphibian.html" target="_blank" rel="noopener">Barnstormers amphibian</a><a href="https://www.barnstormers.com/classified-2011699-Cessna-180H.html" target="_blank" rel="noopener">Barnstormers</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N5900M" data-price="189900" data-year="1956" data-hrs="3225.0" data-country="US" data-rec="clean">
+<details class="row" id="r-N5900M" data-price="189900" data-year="1956" data-hrs="3225.0" data-country="US" data-rec="clean" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N5900M_l.jpg" aria-label="Enlarge photo"><img src="photos/N5900M.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N5900M</div><div class="ym">1956 Cessna 180</div><div class="sub">🇺🇸 Kenosha, WI · 3,225 airframe hrs · no entries found</div></div>
@@ -450,7 +457,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2456630" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.controller.com/listings/for-sale/cessna/180/piston-single-aircraft" target="_blank" rel="noopener">Controller</a><a href="https://www.hangar67.com/aircraft/1956-cessna-180/40118" target="_blank" rel="noopener">Hangar67</a><a href="https://findaircraft.com/aircraft-for-sale/?AircraftType=Cessna+180" target="_blank" rel="noopener">FindAircraft</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N1795R" data-price="190000" data-year="1974" data-hrs="5313.0" data-country="US" data-rec="entries">
+<details class="row" id="r-N1795R" data-price="190000" data-year="1974" data-hrs="5313.0" data-country="US" data-rec="entries" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N1795R_l.jpg" aria-label="Enlarge photo"><img src="photos/N1795R.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N1795R</div><div class="ym">1974 Cessna A185F</div><div class="sub">🇺🇸 Anchorage, AK · 5,313 airframe hrs · 2 NTSB · 2 AIDS</div></div>
@@ -463,7 +470,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.facebook.com/marketplace/item/1769427164341008/" target="_blank" rel="noopener">Facebook Marketplace</a><a href="https://www.facebook.com/groups/bigtireaircraft/permalink/1732231591175141/" target="_blank" rel="noopener">Facebook group</a><a href="https://www.facebook.com/groups/509332419231596/permalink/3658710020960471/" target="_blank" rel="noopener">Facebook group (another ad)</a><a href="https://www.facebook.com/groups/643991529756730/permalink/2283868849102315/" target="_blank" rel="noopener">Facebook group (another ad)</a><a href="https://www.facebook.com/groups/642009419189644/permalink/29139129905717548/" target="_blank" rel="noopener">Facebook group (another ad)</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N111EY" data-price="195000" data-year="1974" data-hrs="4500.0" data-country="US" data-rec="entries">
+<details class="row" id="r-N111EY" data-price="195000" data-year="1974" data-hrs="4500.0" data-country="US" data-rec="entries" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N111EY_l.jpg" aria-label="Enlarge photo"><img src="photos/N111EY.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N111EY</div><div class="ym">1974 Cessna 185E</div><div class="sub">🇺🇸 Viola, ID · 4,500 airframe hrs · 1 NTSB · 1 AIDS</div></div>
@@ -476,7 +483,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2452517" target="_blank" rel="noopener">Trade-A-Plane</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N9740G" data-price="195000" data-year="1972" data-hrs="4578.0" data-country="US" data-rec="clean">
+<details class="row" id="r-N9740G" data-price="195000" data-year="1972" data-hrs="4578.0" data-country="US" data-rec="clean" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N9740G_l.jpg" aria-label="Enlarge photo"><img src="photos/N9740G.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N9740G</div><div class="ym">1972 Cessna 180H</div><div class="sub">🇺🇸 Westcliffe, CO · 4,578 airframe hrs · no entries found</div></div>
@@ -489,7 +496,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.barnstormers.com/classified-2078964-1972-C-180H.html" target="_blank" rel="noopener">Barnstormers</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N91291" data-price="199000" data-year="1969" data-hrs="6892.0" data-country="US" data-rec="entries">
+<details class="row" id="r-N91291" data-price="199000" data-year="1969" data-hrs="6892.0" data-country="US" data-rec="entries" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N91291_l.jpg" aria-label="Enlarge photo"><img src="photos/N91291.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N91291</div><div class="ym">1969 Cessna 180H</div><div class="sub">🇺🇸 Carrabassett Valley, ME · 6,892 airframe hrs · 1 NTSB · 1 AIDS</div></div>
@@ -502,7 +509,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2459643" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.barnstormers.com/category-17396-Cessna--C-180-Skywagon.html" target="_blank" rel="noopener">Barnstormers</a><a href="https://findaircraft.com/aircraft-for-sale/?AircraftType=Cessna+180" target="_blank" rel="noopener">FindAircraft</a><a href="https://www.facebook.com/commerce/listing/2036338330420613/" target="_blank" rel="noopener">Facebook group</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N91397" data-price="199900" data-year="1969" data-hrs="3535.0" data-country="US" data-rec="clean">
+<details class="row" id="r-N91397" data-price="199900" data-year="1969" data-hrs="3535.0" data-country="US" data-rec="clean" data-robertson="1">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N91397_l.jpg" aria-label="Enlarge photo"><img src="photos/N91397.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N91397</div><div class="ym">1969 Cessna 180H</div><div class="sub">🇺🇸 Duluth, MN · 3,535 airframe hrs · no entries found</div></div>
@@ -515,7 +522,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.controller.com/listing/for-sale/258994767/1969-cessna-180-floatplane-piston-amphibious-slash-floatplanes" target="_blank" rel="noopener">Controller</a><a href="https://www.globalair.com/aircraft-for-sale/cessna-180" target="_blank" rel="noopener">GlobalAir</a><a href="https://www.aircraftforsale.com/listing/n91397-cessna-skywagon-180-45ed9029" target="_blank" rel="noopener">AircraftForSale</a><a href="https://www.hangar67.com/aircraft/1969-cessna-180-floats/40645" target="_blank" rel="noopener">Hangar67</a><a href="https://findaircraft.com/aircraft-for-sale/?AircraftType=Cessna+180" target="_blank" rel="noopener">FindAircraft</a><a href="https://www.globalplanesearch.com/aircraft/7067013-1969-cessna-180-skywagon-for-sale-in-minnesota" target="_blank" rel="noopener">GlobalPlaneSearch</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N185EE" data-price="200000" data-year="1961" data-hrs="7300.0" data-country="US" data-rec="clean">
+<details class="row" id="r-N185EE" data-price="200000" data-year="1961" data-hrs="7300.0" data-country="US" data-rec="clean" data-robertson="0">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
 <div class="mid"><div class="tail">N185EE</div><div class="ym">1961 Cessna 185</div><div class="sub">🇺🇸 Boulder, CO · 7,300 airframe hrs · no entries found</div></div>
@@ -528,7 +535,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.barnstormers.com/classified-2075873-C185.html" target="_blank" rel="noopener">Barnstormers</a></div></div>
 </div>
 </details>
-<details class="row" id="r-CGLCQ" data-price="204237" data-year="1974" data-hrs="2784.2" data-country="CA" data-rec="entries">
+<details class="row" id="r-CGLCQ" data-price="204237" data-year="1974" data-hrs="2784.2" data-country="CA" data-rec="entries" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/CGLCQ_l.jpg" aria-label="Enlarge photo"><img src="photos/CGLCQ.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">C-GLCQ</div><div class="ym">1974 Cessna 180J</div><div class="sub">🇨🇦 St John&#x27;s, NL · 2,784.2 airframe hrs · 1 TSB</div></div>
@@ -541,7 +548,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.controller.com/listing/for-sale/259763095/1974-cessna-180j-piston-amphibious-slash-floatplanes" target="_blank" rel="noopener">Controller</a><a href="https://findaircraft.com/aircraft-for-sale/?AircraftType=Cessna+180" target="_blank" rel="noopener">FindAircraft</a><a href="https://www.facebook.com/groups/509332419231596/permalink/3600250050139802/" target="_blank" rel="noopener">Facebook group</a></div></div>
 </div>
 </details>
-<details class="row" id="r-spokane" data-price="205000" data-year="1962" data-hrs="1000000000" data-country="US" data-rec="nosn">
+<details class="row" id="r-spokane" data-price="205000" data-year="1962" data-hrs="1000000000" data-country="US" data-rec="nosn" data-robertson="0">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
 <div class="mid"><div class="tail none">tail not published</div><div class="ym">1962 Cessna 185A</div><div class="sub">🇺🇸 Spokane, WA · airframe hours not published · no serial or tail published · not screened</div></div>
@@ -554,7 +561,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.barnstormers.com/classified-2075248-EXCELLENT-1962-C-185A-I0-470-F.html" target="_blank" rel="noopener">Barnstormers</a><a href="https://www.barnstormers.com/classified-2075248-Excellent-1962-C-185A-IO-470-F.html" target="_blank" rel="noopener">Barnstormers (another ad)</a></div></div>
 </div>
 </details>
-<details class="row" id="r-CGIAL" data-price="209000" data-year="1980" data-hrs="10427.0" data-country="CA" data-rec="entries">
+<details class="row" id="r-CGIAL" data-price="209000" data-year="1980" data-hrs="10427.0" data-country="CA" data-rec="entries" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/CGIAL_l.jpg" aria-label="Enlarge photo"><img src="photos/CGIAL.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">C-GIAL</div><div class="ym">1980 Cessna A185F</div><div class="sub">🇨🇦 Port Elgin, ON · 10,427 airframe hrs · 5 TSB</div></div>
@@ -567,7 +574,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2460410" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.barnstormers.com/classified-2070560-1980-Cessna-A185F-For-Sale.html" target="_blank" rel="noopener">Barnstormers</a></div></div>
 </div>
 </details>
-<details class="row" id="r-YV1742" data-price="210000" data-year="1978" data-hrs="7430.0" data-country="VE" data-rec="clean">
+<details class="row" id="r-YV1742" data-price="210000" data-year="1978" data-hrs="7430.0" data-country="VE" data-rec="clean" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/YV1742_l.jpg" aria-label="Enlarge photo"><img src="photos/YV1742.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">YV-1742</div><div class="ym">1978 Cessna A185F</div><div class="sub">🇻🇪 <span class="foreign">foreign</span> Venezuela · 7,430 airframe hrs · no entries found</div></div>
@@ -580,7 +587,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2461340" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.barnstormers.com/classified-2072829-1978-Cessna-A185F-Skywagon.html" target="_blank" rel="noopener">Barnstormers</a><a href="https://www.facebook.com/groups/pipercessna/posts/1774116557121176/" target="_blank" rel="noopener">Facebook group</a><a href="https://www.facebook.com/groups/pipercessna/posts/1750394439493388/" target="_blank" rel="noopener">Facebook group (another ad)</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N4841C" data-price="219000" data-year="1975" data-hrs="5530.0" data-country="US" data-rec="clean">
+<details class="row" id="r-N4841C" data-price="219000" data-year="1975" data-hrs="5530.0" data-country="US" data-rec="clean" data-robertson="1">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N4841C_l.jpg" aria-label="Enlarge photo"><img src="photos/N4841C.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N4841C</div><div class="ym">1975 Cessna A185F</div><div class="sub">🇺🇸 Hayden, ID · 5,530 airframe hrs · no entries found</div></div>
@@ -593,7 +600,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;category_level1=Single%20Engine%20Piston&amp;make=CESSNA&amp;model_group=CESSNA+185+SERIES&amp;s-page_size=96" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.aircraftforsale.com/listing/cessna-185f-skywagon-601555" target="_blank" rel="noopener">AircraftForSale</a><a href="https://www.facebook.com/marketplace/seattle/search?query=cessna%20185" target="_blank" rel="noopener">Facebook Marketplace</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N180BG" data-price="219000" data-year="1955" data-hrs="6150.0" data-country="US" data-rec="entries">
+<details class="row" id="r-N180BG" data-price="219000" data-year="1955" data-hrs="6150.0" data-country="US" data-rec="entries" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N180BG_l.jpg" aria-label="Enlarge photo"><img src="photos/N180BG.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N180BG</div><div class="ym">1955 Cessna 180</div><div class="sub">🇺🇸 Caldwell, ID · 6,150 airframe hrs · 2 NTSB · 2 AIDS</div></div>
@@ -606,7 +613,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2460536" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.barnstormers.com/classified-2073031-55-C-180-Ground-Up-Restored!.html" target="_blank" rel="noopener">Barnstormers</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N9911X" data-price="219900" data-year="1961" data-hrs="4500.0" data-country="US" data-rec="clean">
+<details class="row" id="r-N9911X" data-price="219900" data-year="1961" data-hrs="4500.0" data-country="US" data-rec="clean" data-robertson="1">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N9911X_l.jpg" aria-label="Enlarge photo"><img src="photos/N9911X.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N9911X</div><div class="ym">1961 Cessna 185</div><div class="sub">🇺🇸 Bend, OR · 4,500 airframe hrs · no entries found</div></div>
@@ -619,7 +626,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.controller.com/listing/for-sale/261154307/1961-cessna-185-piston-single-aircraft" target="_blank" rel="noopener">Controller</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N115AW" data-price="220000" data-year="1976" data-hrs="3940.0" data-country="US" data-rec="clean">
+<details class="row" id="r-N115AW" data-price="220000" data-year="1976" data-hrs="3940.0" data-country="US" data-rec="clean" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N115AW_l.jpg" aria-label="Enlarge photo"><img src="photos/N115AW.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N115AW</div><div class="ym">1976 Cessna A185F</div><div class="sub">🇺🇸 Placerville, CA · 3,940 airframe hrs · no entries found</div></div>
@@ -632,7 +639,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.barnstormers.com/classified-2072084-1976-Cessna-A185F.html?catid=17400" target="_blank" rel="noopener">Barnstormers</a><a href="https://www.barnstormers.com/classified-2072084-1976-Cessna-A185F.html" target="_blank" rel="noopener">Barnstormers (another ad)</a><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2460353" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.controller.com/listings/for-sale/cessna/185/piston-single-aircraft" target="_blank" rel="noopener">Controller</a><a href="https://www.hangar67.com/aircraft/1976-cessna-a185f/40936" target="_blank" rel="noopener">Hangar67</a><a href="https://www.globalplanesearch.com/" target="_blank" rel="noopener">GlobalPlaneSearch</a><a href="https://www.findaircraft.com/" target="_blank" rel="noopener">FindAircraft</a><a href="https://www.aircraftdealer.com/aircraft-for-sale-detail/Cessna_185/1976-Cessna-A185F-Skywagon/95289.htm" target="_blank" rel="noopener">aircraftdealer.com</a></div></div>
 </div>
 </details>
-<details class="row" id="r-CFNHM" data-price="230000" data-year="1961" data-hrs="3155.0" data-country="CA" data-rec="clean">
+<details class="row" id="r-CFNHM" data-price="230000" data-year="1961" data-hrs="3155.0" data-country="CA" data-rec="clean" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/CFNHM_l.jpg" aria-label="Enlarge photo"><img src="photos/CFNHM.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">C-FNHM</div><div class="ym">1961 Cessna 185</div><div class="sub">🇨🇦 Nipawin, SK · 3,155 airframe hrs · no entries found</div></div>
@@ -645,7 +652,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.controller.com/listing/for-sale/228788029/1961-cessna-185-floatplane-piston-amphibious-slash-floatplanes" target="_blank" rel="noopener">Controller</a><a href="https://www.hangar67.com/aircraft/1961-cessna-185-floats/29902" target="_blank" rel="noopener">Hangar67</a><a href="https://www.facebook.com/groups/airplanefever/permalink/1795164288508014/" target="_blank" rel="noopener">Facebook group</a><a href="https://www.facebook.com/commerce/listing/1779628789893343/" target="_blank" rel="noopener">Facebook group (another ad)</a></div></div>
 </div>
 </details>
-<details class="row" id="r-conshohocken180h" data-price="230000" data-year="1967" data-hrs="2300.0" data-country="US" data-rec="nosn">
+<details class="row" id="r-conshohocken180h" data-price="230000" data-year="1967" data-hrs="2300.0" data-country="US" data-rec="nosn" data-robertson="0">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
 <div class="mid"><div class="tail none">tail not published</div><div class="ym">1967 Cessna 180H</div><div class="sub">🇺🇸 Conshohocken, PA · <span class="kind">trade only</span> · 2,300 airframe hrs · no serial or tail published · not screened</div></div>
@@ -658,7 +665,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.barnstormers.com/classified-2076319-TRADE-ONLY-1967-Cessna-180H.html" target="_blank" rel="noopener">Barnstormers</a><a href="https://www.barnstormers.com/classified-2076319-Trade-only-1967-Cessna-180H.html" target="_blank" rel="noopener">Barnstormers (another ad)</a><a href="https://www.facebook.com/commerce/listing/1980431366011310/" target="_blank" rel="noopener">Facebook group</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N185DL" data-price="235000" data-year="1964" data-hrs="5463.0" data-country="US" data-rec="entries">
+<details class="row" id="r-N185DL" data-price="235000" data-year="1964" data-hrs="5463.0" data-country="US" data-rec="entries" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N185DL_l.jpg" aria-label="Enlarge photo"><img src="photos/N185DL.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N185DL</div><div class="ym">1964 Cessna 185C</div><div class="sub">🇺🇸 Sheridan, MI · 5,463 airframe hrs · 3 NTSB · 3 AIDS</div></div>
@@ -671,7 +678,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.facebook.com/marketplace/item/2172659143355197/" target="_blank" rel="noopener">Facebook Marketplace</a><a href="https://www.facebook.com/groups/740271542838306/posts/3250921648439937/" target="_blank" rel="noopener">Facebook group</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N58SD" data-price="235000" data-year="1958" data-hrs="5500.0" data-country="US" data-rec="entries">
+<details class="row" id="r-N58SD" data-price="235000" data-year="1958" data-hrs="5500.0" data-country="US" data-rec="entries" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N58SD_l.jpg" aria-label="Enlarge photo"><img src="photos/N58SD.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N58SD</div><div class="ym">1958 Cessna 180A</div><div class="sub">🇺🇸 Caldwell, ID · 5,500 airframe hrs · 1 AIDS</div></div>
@@ -684,7 +691,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2456069" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.facebook.com/marketplace/item/2040390506544769/" target="_blank" rel="noopener">Facebook Marketplace</a><a href="https://www.facebook.com/marketplace/item/993445960260490/" target="_blank" rel="noopener">Facebook Marketplace (another ad)</a></div></div>
 </div>
 </details>
-<details class="row" id="r-duluth180h" data-price="235000" data-year="1967" data-hrs="2765.0" data-country="US" data-rec="nosn">
+<details class="row" id="r-duluth180h" data-price="235000" data-year="1967" data-hrs="2765.0" data-country="US" data-rec="nosn" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/duluth180h_l.jpg" aria-label="Enlarge photo"><img src="photos/duluth180h.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail none">tail not published</div><div class="ym">1967 Cessna 180H</div><div class="sub">🇺🇸 Duluth, MN · 2,765 airframe hrs · no serial or tail published · not screened</div></div>
@@ -697,7 +704,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.barnstormers.com/classified-2058598-1967-Cessna-180-H.html" target="_blank" rel="noopener">Barnstormers</a></div></div>
 </div>
 </details>
-<details class="row" id="r-anchorage1976" data-price="240000" data-year="1976" data-hrs="1000000000" data-country="US" data-rec="nosn">
+<details class="row" id="r-anchorage1976" data-price="240000" data-year="1976" data-hrs="1000000000" data-country="US" data-rec="nosn" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/anchorage1976_l.jpg" aria-label="Enlarge photo"><img src="photos/anchorage1976.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail none">tail not published</div><div class="ym">1976 Cessna A185F</div><div class="sub">🇺🇸 Anchorage, AK · airframe hours not published · no serial or tail published · not screened</div></div>
@@ -710,7 +717,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.facebook.com/groups/bigtireaircraft/permalink/1606770173721284/" target="_blank" rel="noopener">Facebook group</a><a href="https://www.facebook.com/groups/509332419231596/permalink/3490511044447037/" target="_blank" rel="noopener">Facebook group (another ad)</a><a href="https://www.facebook.com/groups/642009419189644/permalink/27267590989538125/" target="_blank" rel="noopener">Facebook group (another ad)</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N3197C" data-price="246000" data-year="1954" data-hrs="5628.5" data-country="US" data-rec="clean">
+<details class="row" id="r-N3197C" data-price="246000" data-year="1954" data-hrs="5628.5" data-country="US" data-rec="clean" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N3197C_l.jpg" aria-label="Enlarge photo"><img src="photos/N3197C.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N3197C</div><div class="ym">1954 Cessna 180</div><div class="sub">🇺🇸 Mesa, AZ · 5,628.5 airframe hrs · no entries found</div></div>
@@ -723,7 +730,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2460678" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.barnstormers.com/category-17396-Cessna--C-180-Skywagon.html" target="_blank" rel="noopener">Barnstormers</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N8536T" data-price="247500" data-year="1970" data-hrs="6009.0" data-country="US" data-rec="clean">
+<details class="row" id="r-N8536T" data-price="247500" data-year="1970" data-hrs="6009.0" data-country="US" data-rec="clean" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N8536T_l.jpg" aria-label="Enlarge photo"><img src="photos/N8536T.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N8536T</div><div class="ym">1970 Cessna A185E</div><div class="sub">🇺🇸 Minden, NV · 6,009 airframe hrs · no entries found</div></div>
@@ -736,7 +743,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2448106" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.controller.com/listings/for-sale/cessna/185/piston-single-aircraft" target="_blank" rel="noopener">Controller</a><a href="https://www.barnstormers.com/classified-2051282-Cessna-185-w-IO-550-and-STC’s.html" target="_blank" rel="noopener">Barnstormers</a><a href="https://www.globalplanesearch.com/" target="_blank" rel="noopener">GlobalPlaneSearch</a><a href="https://www.aircraftdealer.com/" target="_blank" rel="noopener">aircraftdealer.com</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N4448R" data-price="250000" data-year="1976" data-hrs="4681.6" data-country="US" data-rec="entries">
+<details class="row" id="r-N4448R" data-price="250000" data-year="1976" data-hrs="4681.6" data-country="US" data-rec="entries" data-robertson="1">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N4448R_l.jpg" aria-label="Enlarge photo"><img src="photos/N4448R.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N4448R</div><div class="ym">1976 Cessna 185F</div><div class="sub">🇺🇸 Anchorage, AK · 4,681.6 airframe hrs · 1 NTSB · 1 AIDS</div></div>
@@ -749,7 +756,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.facebook.com/marketplace/item/1399740905369736/" target="_blank" rel="noopener">Facebook Marketplace</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N969WM" data-price="250000" data-year="1962" data-hrs="9524.0" data-country="US" data-rec="clean">
+<details class="row" id="r-N969WM" data-price="250000" data-year="1962" data-hrs="9524.0" data-country="US" data-rec="clean" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N969WM_l.jpg" aria-label="Enlarge photo"><img src="photos/N969WM.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N969WM</div><div class="ym">1962 Cessna 185A</div><div class="sub">🇺🇸 Little Rock, AR · 9,524 airframe hrs · no entries found</div></div>
@@ -762,7 +769,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2453669" target="_blank" rel="noopener">Trade-A-Plane</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N18500" data-price="250000" data-year="1977" data-hrs="661.8" data-country="US" data-rec="clean">
+<details class="row" id="r-N18500" data-price="250000" data-year="1977" data-hrs="661.8" data-country="US" data-rec="clean" data-robertson="1">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N18500_l.jpg" aria-label="Enlarge photo"><img src="photos/N18500.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N18500</div><div class="ym">1977 Cessna A185F</div><div class="sub">🇺🇸 Anchorage, AK · <span class="kind">project · engine disassembled, sold as-is</span> · 661.8 airframe hrs · no entries found</div></div>
@@ -775,7 +782,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.craigslist.org/view/d/anchorage-1977-cessna-185-one-of-kind/tVHLWyNru81PSLjbqTzrtN" target="_blank" rel="noopener">Craigslist</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N164JD" data-price="250000" data-year="1967" data-hrs="5577.0" data-country="US" data-rec="entries">
+<details class="row" id="r-N164JD" data-price="250000" data-year="1967" data-hrs="5577.0" data-country="US" data-rec="entries" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N164JD_l.jpg" aria-label="Enlarge photo"><img src="photos/N164JD.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N164JD</div><div class="ym">1967 Cessna 180H</div><div class="sub">🇺🇸 Minnesota, per the dealer&#x27;s own inventory page · 5,577 airframe hrs · 1 NTSB</div></div>
@@ -788,7 +795,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2451016" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.controller.com/listings/for-sale/cessna/180/piston-single-aircraft" target="_blank" rel="noopener">Controller</a><a href="https://www.barnstormers.com/classified-2021640-1967-Cessna-180-Skywagon.html" target="_blank" rel="noopener">Barnstormers</a><a href="https://www.skywagons.com/airplanes-for-sale" target="_blank" rel="noopener">Skywagons.com</a><a href="https://findaircraft.com/aircraft-for-sale/?AircraftType=Cessna+180" target="_blank" rel="noopener">FindAircraft</a><a href="https://www.aircraftdealer.com/view-ad-list.php?searchVal=cessna+180&amp;search=" target="_blank" rel="noopener">aircraftdealer.com</a><a href="https://www.hangar67.com/aircraft/1967-cessna-180/38526" target="_blank" rel="noopener">Hangar67</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N92AT" data-price="250000" data-year="1981" data-hrs="1911.0" data-country="US" data-rec="clean">
+<details class="row" id="r-N92AT" data-price="250000" data-year="1981" data-hrs="1911.0" data-country="US" data-rec="clean" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N92AT_l.jpg" aria-label="Enlarge photo"><img src="photos/N92AT.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N92AT</div><div class="ym">1981 Cessna 180K</div><div class="sub">🇺🇸 Anchorage, AK · 1,911 airframe hrs · no entries found</div></div>
@@ -801,7 +808,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2458111" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.hangar67.com/aircraft/1981-cessna-180k/40473" target="_blank" rel="noopener">Hangar67</a><a href="https://findaircraft.com/aircraft-for-sale/?AircraftType=Cessna+180" target="_blank" rel="noopener">FindAircraft</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N4775U" data-price="250000" data-year="1965" data-hrs="6300.0" data-country="US" data-rec="entries">
+<details class="row" id="r-N4775U" data-price="250000" data-year="1965" data-hrs="6300.0" data-country="US" data-rec="entries" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N4775U_l.jpg" aria-label="Enlarge photo"><img src="photos/N4775U.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N4775U</div><div class="ym">1965 Cessna 180H</div><div class="sub">🇺🇸 Colorado · 6,300 airframe hrs · 1 NTSB</div></div>
@@ -814,7 +821,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.globalplanesearch.com/aircraft/7001687-1965-cessna-c-180-skywagon-for-sale-in-co-co" target="_blank" rel="noopener">GlobalPlaneSearch</a><a href="https://www.aircraftdealer.com/aircraft-for-sale-detail/Cessna_180/1965-Cessna-C-180-Skywagon/92100.htm" target="_blank" rel="noopener">aircraftdealer.com</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N666SB" data-price="255000" data-year="1980" data-hrs="2620.0" data-country="US" data-rec="entries">
+<details class="row" id="r-N666SB" data-price="255000" data-year="1980" data-hrs="2620.0" data-country="US" data-rec="entries" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N666SB_l.jpg" aria-label="Enlarge photo"><img src="photos/N666SB.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N666SB</div><div class="ym">1980 Cessna A185F</div><div class="sub">🇺🇸 Santa Paula, CA · 2,620 airframe hrs · 1 NTSB · 1 AIDS</div></div>
@@ -827,7 +834,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2458523" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.barnstormers.com/category-17400-Cessna--C-185.html" target="_blank" rel="noopener">Barnstormers</a><a href="https://www.facebook.com/groups/skywagons/permalink/10163987247126693/" target="_blank" rel="noopener">Facebook group</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N91PH" data-price="265000" data-year="1973" data-hrs="3550.0" data-country="US" data-rec="clean">
+<details class="row" id="r-N91PH" data-price="265000" data-year="1973" data-hrs="3550.0" data-country="US" data-rec="clean" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N91PH_l.jpg" aria-label="Enlarge photo"><img src="photos/N91PH.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N91PH</div><div class="ym">1973 Cessna A185F</div><div class="sub">🇺🇸 Pampa, TX · 3,550 airframe hrs · no entries found</div></div>
@@ -840,7 +847,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2459651" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.globalplanesearch.com/" target="_blank" rel="noopener">GlobalPlaneSearch</a><a href="https://www.findaircraft.com/" target="_blank" rel="noopener">FindAircraft</a><a href="https://www.aircraftdealer.com/" target="_blank" rel="noopener">aircraftdealer.com</a></div></div>
 </div>
 </details>
-<details class="row" id="r-OODUK" data-price="265000" data-year="1961" data-hrs="6021.0" data-country="BE" data-rec="nomatch">
+<details class="row" id="r-OODUK" data-price="265000" data-year="1961" data-hrs="6021.0" data-country="BE" data-rec="nomatch" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/OODUK_l.jpg" aria-label="Enlarge photo"><img src="photos/OODUK.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">OO-DUK</div><div class="ym">1961 Cessna 185</div><div class="sub">🇧🇪 <span class="foreign">foreign</span> Brasschaat, Belgium · about 6,021 airframe hrs · serial not in the record · not screened</div></div>
@@ -853,7 +860,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.globalplanesearch.com/aircraft/6985446-1961-cessna-a-185-skywagon-amphib-for-sale-in-paris-idf" target="_blank" rel="noopener">GlobalPlaneSearch</a><a href="https://www.barnstormers.com/classified-2033194-CESSNA-185-AMPHIBIAM.html" target="_blank" rel="noopener">Barnstormers</a><a href="https://www.barnstormers.com/classified-2033194-Cessna-185-Amphibiam.html" target="_blank" rel="noopener">Barnstormers (another ad)</a><a href="https://www.barnstormers.com/category-16268-Cessna--Amphibian.html" target="_blank" rel="noopener">Barnstormers amphibian</a><a href="https://www.hangar67.com/aircraft/1961-cessna-185-floats/39190" target="_blank" rel="noopener">Hangar67</a></div></div>
 </div>
 </details>
-<details class="row" id="r-CGUIC" data-price="268000" data-year="1976" data-hrs="4825.0" data-country="CA" data-rec="entries">
+<details class="row" id="r-CGUIC" data-price="268000" data-year="1976" data-hrs="4825.0" data-country="CA" data-rec="entries" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/CGUIC_l.jpg" aria-label="Enlarge photo"><img src="photos/CGUIC.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">C-GUIC</div><div class="ym">1976 Cessna A185F</div><div class="sub">🇨🇦 Hawkesbury, ON · 4,825 airframe hrs · 2 TSB</div></div>
@@ -866,7 +873,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2436256" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.globalair.com/aircraft-for-sale/single-engine-piston/cessna-185" target="_blank" rel="noopener">GlobalAir</a><a href="https://www.csplane.com/" target="_blank" rel="noopener">Canadian Aircraft Sales</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N4761Q" data-price="275000" data-year="1967" data-hrs="9787.7" data-country="US" data-rec="entries">
+<details class="row" id="r-N4761Q" data-price="275000" data-year="1967" data-hrs="9787.7" data-country="US" data-rec="entries" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N4761Q_l.jpg" aria-label="Enlarge photo"><img src="photos/N4761Q.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N4761Q</div><div class="ym">1967 Cessna 185E</div><div class="sub">🇺🇸 Anchorage, AK · 9,787.7 airframe hrs · 2 NTSB · 1 AIDS</div></div>
@@ -879,7 +886,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.hangar67.com/aircraft/1967-cessna-185e/40543" target="_blank" rel="noopener">Hangar67</a><a href="https://www.craigslist.org/view/d/anchorage-1967-cessna-185e/fPNxQwvQDef5fdxdeswmUE" target="_blank" rel="noopener">Craigslist</a></div></div>
 </div>
 </details>
-<details class="row" id="r-TFORN" data-price="275000" data-year="1974" data-hrs="4503.7" data-country="CA" data-rec="entries">
+<details class="row" id="r-TFORN" data-price="275000" data-year="1974" data-hrs="4503.7" data-country="CA" data-rec="entries" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/TFORN_l.jpg" aria-label="Enlarge photo"><img src="photos/TFORN.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">TF-ORN</div><div class="ym">1974 Cessna A185F</div><div class="sub">🇨🇦 Winnipeg, MB · 4,503.7 airframe hrs · 1 AIDS</div></div>
@@ -892,7 +899,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.controller.com/listing/for-sale/261139143/1974-cessna-a185f-piston-single-aircraft" target="_blank" rel="noopener">Controller</a><a href="https://www.hangar67.com/aircraft/1974-cessna-a185f/41181" target="_blank" rel="noopener">Hangar67</a><a href="https://www.kijiji.ca/b-canada/cessna-185/k0l0" target="_blank" rel="noopener">Kijiji</a><a href="https://www.aircraftforsale.com/listing/1974-cessna-a185f-skywagon-c7147970" target="_blank" rel="noopener">AircraftForSale</a><a href="https://www.facebook.com/groups/Aircraft.for.sale/permalink/28914056128247293/" target="_blank" rel="noopener">Facebook group</a><a href="https://www.facebook.com/groups/airplanefever/permalink/1838487497509026/" target="_blank" rel="noopener">Facebook group (another ad)</a><a href="https://www.facebook.com/commerce/listing/1822027552320133/" target="_blank" rel="noopener">Facebook group (another ad)</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N116AK" data-price="275000" data-year="1965" data-hrs="3967.0" data-country="US" data-rec="clean">
+<details class="row" id="r-N116AK" data-price="275000" data-year="1965" data-hrs="3967.0" data-country="US" data-rec="clean" data-robertson="1">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N116AK_l.jpg" aria-label="Enlarge photo"><img src="photos/N116AK.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N116AK</div><div class="ym">1965 Cessna 180H</div><div class="sub">🇺🇸 Wasilla, AK · 3,967 airframe hrs · no entries found</div></div>
@@ -905,7 +912,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.hangar67.com/aircraft/1965-cessna-180h/39724" target="_blank" rel="noopener">Hangar67</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N1577H" data-price="275000" data-year="1977" data-hrs="5400.0" data-country="US" data-rec="clean">
+<details class="row" id="r-N1577H" data-price="275000" data-year="1977" data-hrs="5400.0" data-country="US" data-rec="clean" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N1577H_l.jpg" aria-label="Enlarge photo"><img src="photos/N1577H.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N1577H</div><div class="ym">1977 Cessna 185F</div><div class="sub">🇺🇸 Anchorage, AK · 5,400 airframe hrs · no entries found</div></div>
@@ -918,7 +925,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2457474" target="_blank" rel="noopener">Trade-A-Plane</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N5830J" data-price="279000" data-year="1970" data-hrs="3470.0" data-country="US" data-rec="clean">
+<details class="row" id="r-N5830J" data-price="279000" data-year="1970" data-hrs="3470.0" data-country="US" data-rec="clean" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N5830J_l.jpg" aria-label="Enlarge photo"><img src="photos/N5830J.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N5830J</div><div class="ym">1970 Cessna A185E</div><div class="sub">🇺🇸 Fort Myers, FL · 3,470 airframe hrs · no entries found</div></div>
@@ -931,7 +938,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2459533" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2459529" target="_blank" rel="noopener">Trade-A-Plane (second ad)</a><a href="https://www.barnstormers.com/classified-2067586-1970-Cessna-A185E.html" target="_blank" rel="noopener">Barnstormers</a><a href="https://www.barnstormers.com/category-16268-Cessna--Amphibian.html" target="_blank" rel="noopener">Barnstormers amphibian</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N8SQ" data-price="280000" data-year="1966" data-hrs="6000.0" data-country="AT" data-rec="clean">
+<details class="row" id="r-N8SQ" data-price="280000" data-year="1966" data-hrs="6000.0" data-country="AT" data-rec="clean" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N8SQ_l.jpg" aria-label="Enlarge photo"><img src="photos/N8SQ.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N8SQ</div><div class="ym">1966 Cessna 180H</div><div class="sub">🏳️ <span class="foreign">foreign</span> Salzburg, Austria · 6,000 airframe hrs · no entries found</div></div>
@@ -944,7 +951,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.controller.com/listing/for-sale/252674897/1966-cessna-180-piston-single-aircraft" target="_blank" rel="noopener">Controller</a><a href="https://findaircraft.com/aircraft-for-sale/?AircraftType=Cessna+180" target="_blank" rel="noopener">FindAircraft</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N717SW" data-price="284900" data-year="1977" data-hrs="4246.0" data-country="US" data-rec="clean">
+<details class="row" id="r-N717SW" data-price="284900" data-year="1977" data-hrs="4246.0" data-country="US" data-rec="clean" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N717SW_l.jpg" aria-label="Enlarge photo"><img src="photos/N717SW.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N717SW</div><div class="ym">1977 Cessna 180K</div><div class="sub">🇺🇸 Coeur d&#x27;Alene, ID · 4,246 airframe hrs · no entries found</div></div>
@@ -957,7 +964,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2460458" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.controller.com/listing/for-sale/260252151/1977-cessna-180k-piston-single-aircraft" target="_blank" rel="noopener">Controller</a><a href="https://www.barnstormers.com/classified-2076958-Spectacular-Idaho-Cessna-180.html" target="_blank" rel="noopener">Barnstormers</a><a href="https://www.hangar67.com/aircraft/1977-cessna-180k/40913" target="_blank" rel="noopener">Hangar67</a><a href="https://findaircraft.com/aircraft-for-sale/?AircraftType=Cessna+180" target="_blank" rel="noopener">FindAircraft</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N6307B" data-price="285000" data-year="1979" data-hrs="7145.0" data-country="US" data-rec="clean">
+<details class="row" id="r-N6307B" data-price="285000" data-year="1979" data-hrs="7145.0" data-country="US" data-rec="clean" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N6307B_l.jpg" aria-label="Enlarge photo"><img src="photos/N6307B.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N6307B</div><div class="ym">1979 Cessna A185F</div><div class="sub">🇺🇸 Palmer, AK · 7,145 airframe hrs · no entries found</div></div>
@@ -970,7 +977,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.facebook.com/marketplace/item/809408015382816/" target="_blank" rel="noopener">Facebook Marketplace</a></div></div>
 </div>
 </details>
-<details class="row" id="r-CGAIX" data-price="285000" data-year="1979" data-hrs="16965.0" data-country="CA" data-rec="entries">
+<details class="row" id="r-CGAIX" data-price="285000" data-year="1979" data-hrs="16965.0" data-country="CA" data-rec="entries" data-robertson="1">
 <summary>
 <div class="ph"><a class="zoom" href="photos/CGAIX_l.jpg" aria-label="Enlarge photo"><img src="photos/CGAIX.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">C-GAIX</div><div class="ym">1979 Cessna A185F</div><div class="sub">🇨🇦 Fort Smith, NT · 16,965 airframe hrs · 1 TSB</div></div>
@@ -983,7 +990,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2440682" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.controller.com/listings/for-sale/cessna/185/piston-single-aircraft" target="_blank" rel="noopener">Controller</a><a href="https://www.hangar67.com/aircraft/1979-cessna-a185f/35333" target="_blank" rel="noopener">Hangar67</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N1669" data-price="285000" data-year="1955" data-hrs="5400.0" data-country="US" data-rec="clean">
+<details class="row" id="r-N1669" data-price="285000" data-year="1955" data-hrs="5400.0" data-country="US" data-rec="clean" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N1669_l.jpg" aria-label="Enlarge photo"><img src="photos/N1669.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N1669</div><div class="ym">1955 Cessna 180</div><div class="sub">🇺🇸 Caldwell, ID · 5,400 airframe hrs · no entries found</div></div>
@@ -996,7 +1003,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2461560" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.facebook.com/marketplace/item/2017895302179851/" target="_blank" rel="noopener">Facebook Marketplace</a><a href="https://www.facebook.com/groups/bigtireaircraft/permalink/1728691434862490/" target="_blank" rel="noopener">Facebook group</a><a href="https://www.facebook.com/groups/509332419231596/permalink/3654003924764414/" target="_blank" rel="noopener">Facebook group (another ad)</a><a href="https://www.facebook.com/commerce/listing/2083566759031103/" target="_blank" rel="noopener">Facebook group (another ad)</a></div></div>
 </div>
 </details>
-<details class="row" id="r-huntsville185" data-price="289000" data-year="1979" data-hrs="2610.0" data-country="CA" data-rec="nosn">
+<details class="row" id="r-huntsville185" data-price="289000" data-year="1979" data-hrs="2610.0" data-country="CA" data-rec="nosn" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/huntsville185_l.jpg" aria-label="Enlarge photo"><img src="photos/huntsville185.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail none">tail not published</div><div class="ym">1979 Cessna A185F</div><div class="sub">🇨🇦 Huntsville, ON · 2,610 airframe hrs · no serial or tail published · not screened</div></div>
@@ -1009,7 +1016,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.facebook.com/groups/1489454144684768/posts/3905665103063648/" target="_blank" rel="noopener">Facebook group</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N93033" data-price="295000" data-year="1976" data-hrs="1623.0" data-country="US" data-rec="entries">
+<details class="row" id="r-N93033" data-price="295000" data-year="1976" data-hrs="1623.0" data-country="US" data-rec="entries" data-robertson="1">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N93033_l.jpg" aria-label="Enlarge photo"><img src="photos/N93033.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N93033</div><div class="ym">1976 Cessna A185F</div><div class="sub">🇺🇸 Plymouth, MA · 1,623 airframe hrs · 1 AIDS</div></div>
@@ -1022,7 +1029,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2454518" target="_blank" rel="noopener">Trade-A-Plane</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N5227R" data-price="295000" data-year="1976" data-hrs="3070.0" data-country="US" data-rec="entries">
+<details class="row" id="r-N5227R" data-price="295000" data-year="1976" data-hrs="3070.0" data-country="US" data-rec="entries" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N5227R_l.jpg" aria-label="Enlarge photo"><img src="photos/N5227R.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N5227R</div><div class="ym">1976 Cessna A185F</div><div class="sub">🇺🇸 Fairbanks, AK · 3,070 airframe hrs · 1 NTSB · 2 AIDS</div></div>
@@ -1035,7 +1042,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.barnstormers.com/classified-2056041-1976-Cessna-A185F-N5227R.html" target="_blank" rel="noopener">Barnstormers</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N2493C" data-price="295000" data-year="1954" data-hrs="3366.0" data-country="US" data-rec="entries">
+<details class="row" id="r-N2493C" data-price="295000" data-year="1954" data-hrs="3366.0" data-country="US" data-rec="entries" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N2493C_l.jpg" aria-label="Enlarge photo"><img src="photos/N2493C.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N2493C</div><div class="ym">1954 Cessna 180</div><div class="sub">🇺🇸 Louisburg, NC · 3,366 airframe hrs · 2 NTSB</div></div>
@@ -1048,7 +1055,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2452097" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.controller.com/listing/for-sale/252444053/1954-cessna-180-piston-single-aircraft" target="_blank" rel="noopener">Controller</a><a href="https://www.globalair.com/aircraft-for-sale/cessna-180" target="_blank" rel="noopener">GlobalAir</a><a href="https://www.aircraftforsale.com/listing/cessna-180-skywagon-602088" target="_blank" rel="noopener">AircraftForSale</a><a href="https://www.aircraftdealer.com/view-ad-list.php?searchVal=cessna+180&amp;search=" target="_blank" rel="noopener">aircraftdealer.com</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N889SL" data-price="295000" data-year="1958" data-hrs="3393.8" data-country="US" data-rec="entries">
+<details class="row" id="r-N889SL" data-price="295000" data-year="1958" data-hrs="3393.8" data-country="US" data-rec="entries" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N889SL_l.jpg" aria-label="Enlarge photo"><img src="photos/N889SL.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N889SL</div><div class="ym">1958 Cessna 180A</div><div class="sub">🇺🇸 Justin, TX · 3,393.8 airframe hrs · 1 NTSB · 1 AIDS</div></div>
@@ -1061,7 +1068,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2459430" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.facebook.com/marketplace/item/1547328153368191/" target="_blank" rel="noopener">Facebook Marketplace</a><a href="https://www.barnstormers.com/classified-2066495-1958-Cessna-180A.html" target="_blank" rel="noopener">Barnstormers</a><a href="https://www.facebook.com/groups/skywagons/posts/10164291121336693/" target="_blank" rel="noopener">Facebook group</a><a href="https://www.facebook.com/groups/433635187108128/posts/2507519023053057/" target="_blank" rel="noopener">Facebook group (another ad)</a><a href="https://www.facebook.com/groups/aircraftsaleandtrade/posts/39765127106419167/" target="_blank" rel="noopener">Facebook group (another ad)</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N9733G" data-price="295000" data-year="1972" data-hrs="5100.0" data-country="US" data-rec="clean">
+<details class="row" id="r-N9733G" data-price="295000" data-year="1972" data-hrs="5100.0" data-country="US" data-rec="clean" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N9733G_l.jpg" aria-label="Enlarge photo"><img src="photos/N9733G.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N9733G</div><div class="ym">1972 Cessna 180H</div><div class="sub">🇺🇸 McLean, VA · 5,100 airframe hrs · no entries found</div></div>
@@ -1074,7 +1081,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.barnstormers.com/classified-2075041-1972-Cessna-180H-Skywagon.html" target="_blank" rel="noopener">Barnstormers</a></div></div>
 </div>
 </details>
-<details class="row" id="r-CFSEC" data-price="299000" data-year="1973" data-hrs="6883.0" data-country="CA" data-rec="entries">
+<details class="row" id="r-CFSEC" data-price="299000" data-year="1973" data-hrs="6883.0" data-country="CA" data-rec="entries" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/CFSEC_l.jpg" aria-label="Enlarge photo"><img src="photos/CFSEC.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">C-FSEC</div><div class="ym">1973 Cessna 185</div><div class="sub">🇨🇦 Hawkesbury, ON · 6,883 airframe hrs · 1 TSB</div></div>
@@ -1087,7 +1094,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2452630" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.globalair.com/aircraft-for-sale/single-engine-piston/cessna-185" target="_blank" rel="noopener">GlobalAir</a><a href="https://www.csplane.com/" target="_blank" rel="noopener">Canadian Aircraft Sales</a><a href="https://www.barnstormers.com/classified-2031015-x.html" target="_blank" rel="noopener">Barnstormers</a></div></div>
 </div>
 </details>
-<details class="row" id="r-anch80" data-price="300000" data-year="1980" data-hrs="2200.0" data-country="US" data-rec="nosn">
+<details class="row" id="r-anch80" data-price="300000" data-year="1980" data-hrs="2200.0" data-country="US" data-rec="nosn" data-robertson="1">
 <summary>
 <div class="ph"><a class="zoom" href="photos/anch80_l.jpg" aria-label="Enlarge photo"><img src="photos/anch80.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail none">tail not published</div><div class="ym">1980 Cessna A185F</div><div class="sub">🇺🇸 Wasilla, AK · 2,200 airframe hrs · no serial or tail published · not screened</div></div>
@@ -1100,7 +1107,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.craigslist.org/view/d/wasilla-cessna-185/6kjZXnsY2WMqnwcWYA4Ccz" target="_blank" rel="noopener">Craigslist</a><a href="https://www.facebook.com/marketplace/item/2902903376769108/" target="_blank" rel="noopener">Facebook Marketplace</a></div></div>
 </div>
 </details>
-<details class="row" id="r-kirkland180j" data-price="300000" data-year="1974" data-hrs="7781.1" data-country="US" data-rec="nomatch">
+<details class="row" id="r-kirkland180j" data-price="300000" data-year="1974" data-hrs="7781.1" data-country="US" data-rec="nomatch" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/kirkland180j_l.jpg" aria-label="Enlarge photo"><img src="photos/kirkland180j.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail none">tail not published</div><div class="ym">1974 Cessna 180J</div><div class="sub">🇺🇸 Kirkland, WA · 7,781.1 airframe hrs · serial not in the record · not screened</div></div>
@@ -1113,7 +1120,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2456289" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.facebook.com/marketplace/item/3368359699992489/" target="_blank" rel="noopener">Facebook Marketplace</a></div></div>
 </div>
 </details>
-<details class="row" id="r-alberta78" data-price="310000" data-year="1978" data-hrs="1000000000" data-country="CA" data-rec="entries">
+<details class="row" id="r-alberta78" data-price="310000" data-year="1978" data-hrs="1000000000" data-country="CA" data-rec="entries" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/alberta78_l.jpg" aria-label="Enlarge photo"><img src="photos/alberta78.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">C-GFCF</div><div class="ym">1978 Cessna A185F</div><div class="sub">🇨🇦 Front Sight, AB · airframe hours not published · 2 AIDS</div></div>
@@ -1126,7 +1133,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.globalplanesearch.com/aircraft/4413556-1978-cessna-185f-for-sale-in-ab-ab" target="_blank" rel="noopener">GlobalPlaneSearch</a><a href="https://www.aircraftdealer.com/" target="_blank" rel="noopener">aircraftdealer.com</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N4095L" data-price="313809" data-year="1979" data-hrs="10904.2" data-country="CH" data-rec="nomatch">
+<details class="row" id="r-N4095L" data-price="313809" data-year="1979" data-hrs="10904.2" data-country="CH" data-rec="nomatch" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N4095L_l.jpg" aria-label="Enlarge photo"><img src="photos/N4095L.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N4095L</div><div class="ym">1979 Cessna A185F</div><div class="sub">🇨🇭 <span class="foreign">foreign</span> Locarno, Switzerland · 10,904.2 airframe hrs · serial not in the record · not screened</div></div>
@@ -1139,7 +1146,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.controller.com/listing/for-sale/237884245/1979-cessna-a185f-piston-single-aircraft" target="_blank" rel="noopener">Controller</a><a href="https://www.globalplanesearch.com/aircraft/6719600-1979-cessna-185-skywagon-f-gfc500-ap-for-sale-in-bia-ystok-" target="_blank" rel="noopener">GlobalPlaneSearch</a><a href="https://www.aircraftdealer.com/" target="_blank" rel="noopener">aircraftdealer.com</a><a href="https://avpay.aero/company/aeromeccanica/product/1979-cessna-a-185-skywagon-f-single-engine-piston-aircraft-for-sale-n4095l/" target="_blank" rel="noopener">AvPay</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N93183" data-price="315000" data-year="1976" data-hrs="2194.0" data-country="US" data-rec="entries">
+<details class="row" id="r-N93183" data-price="315000" data-year="1976" data-hrs="2194.0" data-country="US" data-rec="entries" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N93183_l.jpg" aria-label="Enlarge photo"><img src="photos/N93183.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N93183</div><div class="ym">1976 Cessna A185F</div><div class="sub">🇺🇸 Anchorage, AK · 2,194 airframe hrs · 1 NTSB · 2 AIDS</div></div>
@@ -1152,7 +1159,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2458037" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.hangar67.com/aircraft/1976-cessna-a185f/40421" target="_blank" rel="noopener">Hangar67</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N1848Q" data-price="315000" data-year="1977" data-hrs="1632.9" data-country="US" data-rec="clean">
+<details class="row" id="r-N1848Q" data-price="315000" data-year="1977" data-hrs="1632.9" data-country="US" data-rec="clean" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N1848Q_l.jpg" aria-label="Enlarge photo"><img src="photos/N1848Q.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N1848Q</div><div class="ym">1977 Cessna A185F</div><div class="sub">🇺🇸 Kenmore, WA · 1,632.9 airframe hrs · no entries found</div></div>
@@ -1165,7 +1172,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2456317" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.barnstormers.com/classified-2049693-FOR-SALE-CESSNA-A185F.html" target="_blank" rel="noopener">Barnstormers</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N1089F" data-price="325000" data-year="1975" data-hrs="2776.0" data-country="US" data-rec="entries">
+<details class="row" id="r-N1089F" data-price="325000" data-year="1975" data-hrs="2776.0" data-country="US" data-rec="entries" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N1089F_l.jpg" aria-label="Enlarge photo"><img src="photos/N1089F.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N1089F</div><div class="ym">1975 Cessna A185F</div><div class="sub">🇺🇸 Alaska · 2,776 airframe hrs · 1 NTSB · 1 AIDS</div></div>
@@ -1178,7 +1185,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.hangar67.com/aircraft/1975-cessna-185f/41129" target="_blank" rel="noopener">Hangar67</a></div></div>
 </div>
 </details>
-<details class="row" id="r-CFGCG" data-price="335000" data-year="1968" data-hrs="1938.0" data-country="CA" data-rec="clean">
+<details class="row" id="r-CFGCG" data-price="335000" data-year="1968" data-hrs="1938.0" data-country="CA" data-rec="clean" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/CFGCG_l.jpg" aria-label="Enlarge photo"><img src="photos/CFGCG.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">CF-GCG</div><div class="ym">1968 Cessna 185E</div><div class="sub">🇨🇦 Bonnyville, AB · 1,938 airframe hrs · no entries found</div></div>
@@ -1191,7 +1198,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2455427" target="_blank" rel="noopener">Trade-A-Plane</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N1050F" data-price="340000" data-year="1975" data-hrs="2114.0" data-country="CA" data-rec="entries">
+<details class="row" id="r-N1050F" data-price="340000" data-year="1975" data-hrs="2114.0" data-country="CA" data-rec="entries" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N1050F_l.jpg" aria-label="Enlarge photo"><img src="photos/N1050F.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N1050F</div><div class="ym">1975 Cessna A185F</div><div class="sub">🇨🇦 Sidney, BC · 2,114 airframe hrs · 2 NTSB · 3 AIDS</div></div>
@@ -1204,7 +1211,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.hangar67.com/aircraft/1975-cessna-a185f/39382" target="_blank" rel="noopener">Hangar67</a><a href="https://www.globalplanesearch.com/" target="_blank" rel="noopener">GlobalPlaneSearch</a><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2453496" target="_blank" rel="noopener">Trade-A-Plane</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N7802F" data-price="349000" data-year="1973" data-hrs="8974.0" data-country="US" data-rec="entries">
+<details class="row" id="r-N7802F" data-price="349000" data-year="1973" data-hrs="8974.0" data-country="US" data-rec="entries" data-robertson="1">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N7802F_l.jpg" aria-label="Enlarge photo"><img src="photos/N7802F.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N7802F</div><div class="ym">1973 Cessna A185F</div><div class="sub">🇺🇸 Camp Verde, AZ · 8,974 airframe hrs · 1 NTSB</div></div>
@@ -1217,7 +1224,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2460669" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.barnstormers.com/classified-2073887-**1973-Cessna-A185F-Skywagon**.html" target="_blank" rel="noopener">Barnstormers</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N86SS" data-price="349900" data-year="1977" data-hrs="1801.0" data-country="US" data-rec="entries">
+<details class="row" id="r-N86SS" data-price="349900" data-year="1977" data-hrs="1801.0" data-country="US" data-rec="entries" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N86SS_l.jpg" aria-label="Enlarge photo"><img src="photos/N86SS.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N86SS</div><div class="ym">1977 Cessna A185F</div><div class="sub">🇺🇸 Camarillo, CA · 1,801.0 airframe hrs · 1 NTSB · 1 AIDS</div></div>
@@ -1230,7 +1237,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2452078" target="_blank" rel="noopener">Trade-A-Plane</a></div></div>
 </div>
 </details>
-<details class="row" id="r-CFADR" data-price="350000" data-year="1969" data-hrs="1959.0" data-country="CA" data-rec="clean">
+<details class="row" id="r-CFADR" data-price="350000" data-year="1969" data-hrs="1959.0" data-country="CA" data-rec="clean" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/CFADR_l.jpg" aria-label="Enlarge photo"><img src="photos/CFADR.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">C-FADR</div><div class="ym">1969 Cessna 185E</div><div class="sub">🇨🇦 Winnipeg, MB · 1,959 airframe hrs · no entries found</div></div>
@@ -1243,7 +1250,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2461805" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://aerogurus.com/" target="_blank" rel="noopener">aerogurus</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N866PH" data-price="357500" data-year="1977" data-hrs="3890.0" data-country="US" data-rec="entries">
+<details class="row" id="r-N866PH" data-price="357500" data-year="1977" data-hrs="3890.0" data-country="US" data-rec="entries" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N866PH_l.jpg" aria-label="Enlarge photo"><img src="photos/N866PH.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N866PH</div><div class="ym">1977 Cessna A185F</div><div class="sub">🇺🇸 Galesburg, IL · 3,890 airframe hrs · 1 SDR</div></div>
@@ -1256,7 +1263,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.controller.com/listings/for-sale/cessna/185/piston-single-aircraft" target="_blank" rel="noopener">Controller</a><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2457588" target="_blank" rel="noopener">Trade-A-Plane</a></div></div>
 </div>
 </details>
-<details class="row" id="r-alpena" data-price="359000" data-year="1975" data-hrs="3000.0" data-country="US" data-rec="nosn">
+<details class="row" id="r-alpena" data-price="359000" data-year="1975" data-hrs="3000.0" data-country="US" data-rec="nosn" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/alpena_l.jpg" aria-label="Enlarge photo"><img src="photos/alpena.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail none">tail not published</div><div class="ym">1975 Cessna A185F</div><div class="sub">🇺🇸 Alpena, MI · 3,000 airframe hrs · no serial or tail published · not screened</div></div>
@@ -1269,7 +1276,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.barnstormers.com/category-16268-Cessna--Amphibian.html" target="_blank" rel="noopener">Barnstormers amphibian</a><a href="https://www.barnstormers.com/classified-2069900-Cessna-185-on-Wipline-3000As.html" target="_blank" rel="noopener">Barnstormers</a></div></div>
 </div>
 </details>
-<details class="row" id="r-ZSFNF" data-price="360000" data-year="1980" data-hrs="6540.0" data-country="ZA" data-rec="nomatch">
+<details class="row" id="r-ZSFNF" data-price="360000" data-year="1980" data-hrs="6540.0" data-country="ZA" data-rec="nomatch" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/ZSFNF_l.jpg" aria-label="Enlarge photo"><img src="photos/ZSFNF.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">ZS-FNF</div><div class="ym">1980 Cessna A185F</div><div class="sub">🇿🇦 <span class="foreign">foreign</span> Sandton / Mosselbay / Johannesburg, South Africa · 6,540 airframe hrs · serial not in the record · not screened</div></div>
@@ -1282,7 +1289,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.controller.com/listing/for-sale/260157841/1980-cessna-a185f-piston-single-aircraft" target="_blank" rel="noopener">Controller</a><a href="https://www.hangar67.com/aircraft/1980-cessna-a185f/40925" target="_blank" rel="noopener">Hangar67</a><a href="https://www.globalplanesearch.com/aircraft/7075978-1980-cessna-185-skywagon-f-for-sale-in-johannesburg-gp" target="_blank" rel="noopener">GlobalPlaneSearch</a><a href="https://www.findaircraft.com/" target="_blank" rel="noopener">FindAircraft</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N4711E" data-price="369000" data-year="1979" data-hrs="3810.0" data-country="US" data-rec="clean">
+<details class="row" id="r-N4711E" data-price="369000" data-year="1979" data-hrs="3810.0" data-country="US" data-rec="clean" data-robertson="1">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N4711E_l.jpg" aria-label="Enlarge photo"><img src="photos/N4711E.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N4711E</div><div class="ym">1979 Cessna 185F</div><div class="sub">🇺🇸 St George, UT · 3,810 airframe hrs · no entries found</div></div>
@@ -1295,7 +1302,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2461300" target="_blank" rel="noopener">Trade-A-Plane</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N78BL" data-price="369900" data-year="1977" data-hrs="2772.0" data-country="US" data-rec="clean">
+<details class="row" id="r-N78BL" data-price="369900" data-year="1977" data-hrs="2772.0" data-country="US" data-rec="clean" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N78BL_l.jpg" aria-label="Enlarge photo"><img src="photos/N78BL.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N78BL</div><div class="ym">1977 Cessna 185F</div><div class="sub">🇺🇸 Hampstead, NH · 2,772 airframe hrs · no entries found</div></div>
@@ -1308,7 +1315,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.facebook.com/marketplace/item/3946761962286090/" target="_blank" rel="noopener">Facebook Marketplace</a><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2460918" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.barnstormers.com/classified-2078654-1977-Cessna-185F-Amphibian.html" target="_blank" rel="noopener">Barnstormers</a><a href="https://www.facebook.com/commerce/listing/1975840916717212/" target="_blank" rel="noopener">Facebook group</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N1790R" data-price="395000" data-year="1974" data-hrs="2400.0" data-country="US" data-rec="entries">
+<details class="row" id="r-N1790R" data-price="395000" data-year="1974" data-hrs="2400.0" data-country="US" data-rec="entries" data-robertson="1">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N1790R_l.jpg" aria-label="Enlarge photo"><img src="photos/N1790R.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N1790R</div><div class="ym">1974 Cessna A185F</div><div class="sub">🇺🇸 Lagrangeville, NY · 2,400 airframe hrs · 1 NTSB · 1 AIDS</div></div>
@@ -1321,7 +1328,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2460909" target="_blank" rel="noopener">Trade-A-Plane</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N185KS" data-price="399000" data-year="1974" data-hrs="3413.0" data-country="US" data-rec="entries">
+<details class="row" id="r-N185KS" data-price="399000" data-year="1974" data-hrs="3413.0" data-country="US" data-rec="entries" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N185KS_l.jpg" aria-label="Enlarge photo"><img src="photos/N185KS.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N185KS</div><div class="ym">1974 Cessna A185F</div><div class="sub">🇺🇸 Springfield, IL · 3,413 airframe hrs · 1 NTSB · 1 SDR · 1 AIDS</div></div>
@@ -1334,7 +1341,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2461408" target="_blank" rel="noopener">Trade-A-Plane</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N87TM" data-price="399900" data-year="1970" data-hrs="1032.0" data-country="US" data-rec="clean">
+<details class="row" id="r-N87TM" data-price="399900" data-year="1970" data-hrs="1032.0" data-country="US" data-rec="clean" data-robertson="1">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N87TM_l.jpg" aria-label="Enlarge photo"><img src="photos/N87TM.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N87TM</div><div class="ym">1970 Cessna A185E</div><div class="sub">🇺🇸 Lexington, KY · 1,032 airframe hrs · no entries found</div></div>
@@ -1347,7 +1354,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2459170" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.controller.com/listing/for-sale/261385435/1970-cessna-a185e-piston-single-aircraft" target="_blank" rel="noopener">Controller</a></div></div>
 </div>
 </details>
-<details class="row" id="r-bielsko185" data-price="425000" data-year="1975" data-hrs="1000000000" data-country="PL" data-rec="nosn">
+<details class="row" id="r-bielsko185" data-price="425000" data-year="1975" data-hrs="1000000000" data-country="PL" data-rec="nosn" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/bielsko185_l.jpg" aria-label="Enlarge photo"><img src="photos/bielsko185.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail none">tail not published</div><div class="ym">1975 Cessna A185F</div><div class="sub">🇵🇱 <span class="foreign">foreign</span> Bielsko-Biała, Poland · airframe hours not published · no serial or tail published · not screened</div></div>
@@ -1360,7 +1367,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.facebook.com/groups/133197020734763/posts/1947878389266608/" target="_blank" rel="noopener">Facebook group</a><a href="https://www.facebook.com/groups/264065583995947/permalink/2585564445179371/" target="_blank" rel="noopener">Facebook group (another ad)</a></div></div>
 </div>
 </details>
-<details class="row" id="r-CGGMP" data-price="429900" data-year="1980" data-hrs="2651.0" data-country="CA" data-rec="entries">
+<details class="row" id="r-CGGMP" data-price="429900" data-year="1980" data-hrs="2651.0" data-country="CA" data-rec="entries" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/CGGMP_l.jpg" aria-label="Enlarge photo"><img src="photos/CGGMP.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">C-GGMP</div><div class="ym">1980 Cessna A185F</div><div class="sub">🇨🇦 Memphis, TN · 2,651 airframe hrs · 1 NTSB · 2 AIDS</div></div>
@@ -1373,7 +1380,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2457405" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.barnstormers.com/classified-2055121-Cessna-185-on-Amphib-Floats.html" target="_blank" rel="noopener">Barnstormers</a><a href="https://www.facebook.com/commerce/listing/3518723208292487/" target="_blank" rel="noopener">Facebook group</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N6397E" data-price="430000" data-year="1980" data-hrs="1907.0" data-country="US" data-rec="entries">
+<details class="row" id="r-N6397E" data-price="430000" data-year="1980" data-hrs="1907.0" data-country="US" data-rec="entries" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N6397E_l.jpg" aria-label="Enlarge photo"><img src="photos/N6397E.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N6397E</div><div class="ym">1980 Cessna A185F</div><div class="sub">🇺🇸 Moscow, ME · 1,907 airframe hrs · 1 AIDS</div></div>
@@ -1386,7 +1393,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.facebook.com/groups/133197020734763/permalink/2082587112462401/" target="_blank" rel="noopener">Facebook group</a><a href="https://www.facebook.com/groups/509332419231596/permalink/3652672371564236/" target="_blank" rel="noopener">Facebook group (another ad)</a><a href="https://www.facebook.com/groups/planes4sale/permalink/28800154509625669/" target="_blank" rel="noopener">Facebook group (another ad)</a></div></div>
 </div>
 </details>
-<details class="row" id="r-CFTLM" data-price="450000" data-year="1976" data-hrs="2505.5" data-country="CA" data-rec="clean">
+<details class="row" id="r-CFTLM" data-price="450000" data-year="1976" data-hrs="2505.5" data-country="CA" data-rec="clean" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/CFTLM_l.jpg" aria-label="Enlarge photo"><img src="photos/CFTLM.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">C-FTLM</div><div class="ym">1976 Cessna A185F</div><div class="sub">🇨🇦 Foothills County, AB · 2,505.5 airframe hrs · no entries found</div></div>
@@ -1399,7 +1406,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.controller.com/listing/for-sale/259607761/1976-cessna-a185f-piston-single-aircraft" target="_blank" rel="noopener">Controller</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N53044" data-price="520000" data-year="1973" data-hrs="650.0" data-country="US" data-rec="clean">
+<details class="row" id="r-N53044" data-price="520000" data-year="1973" data-hrs="650.0" data-country="US" data-rec="clean" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N53044_l.jpg" aria-label="Enlarge photo"><img src="photos/N53044.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N53044</div><div class="ym">1973 Cessna A185F</div><div class="sub">🇺🇸 Punta Gorda, FL · 650 airframe hrs · no entries found</div></div>
@@ -1412,7 +1419,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.controller.com/listing/for-sale/255061757/1973-cessna-a185f-amphibian-piston-amphibious-slash-floatplanes" target="_blank" rel="noopener">Controller</a><a href="https://www.globalair.com/aircraft-for-sale/single-engine-piston/cessna-185" target="_blank" rel="noopener">GlobalAir</a><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2461471" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.barnstormers.com/classified-2042146-1973-Cessna-A185F.html" target="_blank" rel="noopener">Barnstormers</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N185HR" data-price="540000" data-year="1975" data-hrs="459.0" data-country="US" data-rec="clean">
+<details class="row" id="r-N185HR" data-price="540000" data-year="1975" data-hrs="459.0" data-country="US" data-rec="clean" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N185HR_l.jpg" aria-label="Enlarge photo"><img src="photos/N185HR.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N185HR</div><div class="ym">1975 Cessna A185F</div><div class="sub">🇺🇸 Liberal, KS · 459 airframe hrs · no entries found</div></div>
@@ -1425,7 +1432,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.controller.com/listing/for-sale/257412531/1975-cessna-a185f-piston-single-aircraft" target="_blank" rel="noopener">Controller</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N85AJ" data-price="575000" data-year="1977" data-hrs="2465.0" data-country="US" data-rec="clean">
+<details class="row" id="r-N85AJ" data-price="575000" data-year="1977" data-hrs="2465.0" data-country="US" data-rec="clean" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N85AJ_l.jpg" aria-label="Enlarge photo"><img src="photos/N85AJ.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N85AJ</div><div class="ym">1977 Cessna A185F</div><div class="sub">🇺🇸 Gorham, ME · 2,465.0 airframe hrs · no entries found</div></div>
@@ -1438,7 +1445,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.facebook.com/groups/Aircraft.for.sale/posts/27344437345209187/" target="_blank" rel="noopener">Facebook group</a><a href="https://www.findaircraft.com/" target="_blank" rel="noopener">FindAircraft</a><a href="https://www.facebook.com/commerce/listing/1602381567948302/" target="_blank" rel="noopener">Facebook Marketplace</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N185GG" data-price="650000" data-year="1975" data-hrs="5234.0" data-country="US" data-rec="entries">
+<details class="row" id="r-N185GG" data-price="650000" data-year="1975" data-hrs="5234.0" data-country="US" data-rec="entries" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N185GG_l.jpg" aria-label="Enlarge photo"><img src="photos/N185GG.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N185GG</div><div class="ym">1975 Cessna A185F</div><div class="sub">🇺🇸 Loveland, CO · 5,234 airframe hrs · 2 NTSB · 1 TSB · 2 AIDS</div></div>
@@ -1451,7 +1458,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.controller.com/listing/for-sale/260483397/1975-cessna-a185f-piston-single-aircraft" target="_blank" rel="noopener">Controller</a></div></div>
 </div>
 </details>
-<details class="row" id="r-fla82" data-price="1000000000000" data-year="1982" data-hrs="5620.0" data-country="US" data-rec="clean">
+<details class="row" id="r-fla82" data-price="1000000000000" data-year="1982" data-hrs="5620.0" data-country="US" data-rec="clean" data-robertson="0">
 <summary>
 <div class="ph"><div class="noimg">no photo</div></div>
 <div class="mid"><div class="tail">N91WM</div><div class="ym">1982 Cessna A185F</div><div class="sub">🇺🇸 Florida · 5,620 airframe hrs · no entries found</div></div>
@@ -1464,7 +1471,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.findaircraft.com/" target="_blank" rel="noopener">FindAircraft</a></div></div>
 </div>
 </details>
-<details class="row" id="r-CGYIS" data-price="1000000000000" data-year="1976" data-hrs="11860.0" data-country="CA" data-rec="entries">
+<details class="row" id="r-CGYIS" data-price="1000000000000" data-year="1976" data-hrs="11860.0" data-country="CA" data-rec="entries" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/CGYIS_l.jpg" aria-label="Enlarge photo"><img src="photos/CGYIS.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">C-GYIS</div><div class="ym">1976 Cessna A185F</div><div class="sub">🇨🇦 Smithers, BC · 11,860 airframe hrs · 1 TSB</div></div>
@@ -1477,7 +1484,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.controller.com/listings/for-sale/cessna/185/piston-single-aircraft" target="_blank" rel="noopener">Controller</a><a href="https://www.aircraftforsale.com/listing/cessna-a185f-skywagon-501964" target="_blank" rel="noopener">AircraftForSale</a><a href="https://www.hangar67.com/aircraft/1976-cessna-a185f/31676" target="_blank" rel="noopener">Hangar67</a><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2431048" target="_blank" rel="noopener">Trade-A-Plane</a></div></div>
 </div>
 </details>
-<details class="row" id="r-CFCUK" data-price="1000000000000" data-year="1973" data-hrs="6927.0" data-country="CA" data-rec="clean">
+<details class="row" id="r-CFCUK" data-price="1000000000000" data-year="1973" data-hrs="6927.0" data-country="CA" data-rec="clean" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/CFCUK_l.jpg" aria-label="Enlarge photo"><img src="photos/CFCUK.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">C-FCUK</div><div class="ym">1973 Cessna A185F</div><div class="sub">🇨🇦 Delta, BC · 6,927 airframe hrs · no entries found</div></div>
@@ -1490,7 +1497,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2444847" target="_blank" rel="noopener">Trade-A-Plane</a></div></div>
 </div>
 </details>
-<details class="row" id="r-fairley76" data-price="1000000000000" data-year="1976" data-hrs="7270.1" data-country="CA" data-rec="entries">
+<details class="row" id="r-fairley76" data-price="1000000000000" data-year="1976" data-hrs="7270.1" data-country="CA" data-rec="entries" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/fairley76_l.jpg" aria-label="Enlarge photo"><img src="photos/fairley76.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">C-GNTC</div><div class="ym">1976 Cessna A185F</div><div class="sub">🇨🇦 Vancouver, BC · 7,270.1 airframe hrs · 1 TSB</div></div>
@@ -1503,7 +1510,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.barnstormers.com/classified-2077289-Cessna-185-ready-to-go.html" target="_blank" rel="noopener">Barnstormers</a></div></div>
 </div>
 </details>
-<details class="row" id="r-GOMUD" data-price="1000000000000" data-year="1972" data-hrs="3050.0" data-country="GB" data-rec="nomatch">
+<details class="row" id="r-GOMUD" data-price="1000000000000" data-year="1972" data-hrs="3050.0" data-country="GB" data-rec="nomatch" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/GOMUD_l.jpg" aria-label="Enlarge photo"><img src="photos/GOMUD.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">G-OMUD</div><div class="ym">1972 Cessna A185F</div><div class="sub">🇬🇧 <span class="foreign">foreign</span> Maidenhead, United Kingdom · 3,050 airframe hrs · serial not in the record · not screened</div></div>
@@ -1516,7 +1523,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.globalplanesearch.com/aircraft/5878329-1972-cessna-185-skywagon-for-sale-in-maidenhead-" target="_blank" rel="noopener">GlobalPlaneSearch</a></div></div>
 </div>
 </details>
-<details class="row" id="r-norway81" data-price="1000000000000" data-year="1981" data-hrs="1139.0" data-country="NO" data-rec="nomatch">
+<details class="row" id="r-norway81" data-price="1000000000000" data-year="1981" data-hrs="1139.0" data-country="NO" data-rec="nomatch" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/norway81_l.jpg" aria-label="Enlarge photo"><img src="photos/norway81.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">LN-NFD</div><div class="ym">1981 Cessna A185F</div><div class="sub">🇳🇴 <span class="foreign">foreign</span> Norway · 1,139 airframe hrs · serial not in the record · not screened</div></div>
@@ -1529,7 +1536,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.globalplanesearch.com/aircraft/6928734-1981-cessna-185-skywagon-f-for-sale-in-enno-" target="_blank" rel="noopener">GlobalPlaneSearch</a></div></div>
 </div>
 </details>
-<details class="row" id="r-norway77" data-price="1000000000000" data-year="1977" data-hrs="4350.0" data-country="NO" data-rec="nomatch">
+<details class="row" id="r-norway77" data-price="1000000000000" data-year="1977" data-hrs="4350.0" data-country="NO" data-rec="nomatch" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/norway77_l.jpg" aria-label="Enlarge photo"><img src="photos/norway77.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">LN-LMG</div><div class="ym">1977 Cessna A185F</div><div class="sub">🇳🇴 <span class="foreign">foreign</span> Rakkestad, Norway · 4,350 airframe hrs · serial not in the record · not screened</div></div>
@@ -1542,7 +1549,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.globalplanesearch.com/aircraft/6905091-1977-cessna-185-skywagon-amphib-for-sale-in-rakkestad-" target="_blank" rel="noopener">GlobalPlaneSearch</a></div></div>
 </div>
 </details>
-<details class="row" id="r-V5RED" data-price="1000000000000" data-year="1978" data-hrs="5112.0" data-country="NA" data-rec="clean">
+<details class="row" id="r-V5RED" data-price="1000000000000" data-year="1978" data-hrs="5112.0" data-country="NA" data-rec="clean" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/V5RED_l.jpg" aria-label="Enlarge photo"><img src="photos/V5RED.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">V5-RED</div><div class="ym">1978 Cessna A185F</div><div class="sub">🇳🇦 <span class="foreign">foreign</span> Namibia · 5,112 airframe hrs · no entries found</div></div>
@@ -1555,7 +1562,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.controller.com/listing/for-sale/260357685/1978-cessna-a185f-piston-single-aircraft" target="_blank" rel="noopener">Controller</a></div></div>
 </div>
 </details>
-<details class="row" id="r-chugiak180h" data-price="1000000000000" data-year="1970" data-hrs="2900.0" data-country="US" data-rec="nosn">
+<details class="row" id="r-chugiak180h" data-price="1000000000000" data-year="1970" data-hrs="2900.0" data-country="US" data-rec="nosn" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/chugiak180h_l.jpg" aria-label="Enlarge photo"><img src="photos/chugiak180h.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail none">tail not published</div><div class="ym">1970 Cessna 180H</div><div class="sub">🇺🇸 Chugiak, AK · 2,900 airframe hrs · no serial or tail published · not screened</div></div>
@@ -1568,7 +1575,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.barnstormers.com/classified-2077672-For-sale.html" target="_blank" rel="noopener">Barnstormers</a><a href="https://www.barnstormers.com/classified-2077672-For-Sale.html" target="_blank" rel="noopener">Barnstormers (another ad)</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N180CJ" data-price="1000000000000" data-year="1975" data-hrs="3176.0" data-country="US" data-rec="clean">
+<details class="row" id="r-N180CJ" data-price="1000000000000" data-year="1975" data-hrs="3176.0" data-country="US" data-rec="clean" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N180CJ_l.jpg" aria-label="Enlarge photo"><img src="photos/N180CJ.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N180CJ</div><div class="ym">1975 Cessna 180J</div><div class="sub">🇺🇸 South St. Paul, MN · 3,176 airframe hrs · no entries found</div></div>
@@ -1581,7 +1588,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.hangar67.com/aircraft/1975-cessna-180j/40713" target="_blank" rel="noopener">Hangar67</a><a href="https://www.globalair.com/aircraft-for-sale/cessna-180" target="_blank" rel="noopener">GlobalAir</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N585Z" data-price="1000000000000" data-year="1977" data-hrs="3590.0" data-country="US" data-rec="clean">
+<details class="row" id="r-N585Z" data-price="1000000000000" data-year="1977" data-hrs="3590.0" data-country="US" data-rec="clean" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N585Z_l.jpg" aria-label="Enlarge photo"><img src="photos/N585Z.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N585Z</div><div class="ym">1977 Cessna A185F</div><div class="sub">🇺🇸 Camarillo, CA · 3,590 airframe hrs · no entries found</div></div>
@@ -1594,7 +1601,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.controller.com/listing/for-sale/258529343/" target="_blank" rel="noopener">Controller</a><a href="https://www.controller.com/listing/for-sale/258529343/1977-cessna-a185f-piston-single-aircraft" target="_blank" rel="noopener">Controller (another ad)</a><a href="https://aerogurus.com/" target="_blank" rel="noopener">aerogurus</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N6328E" data-price="1000000000000" data-year="1980" data-hrs="2096.0" data-country="US" data-rec="clean">
+<details class="row" id="r-N6328E" data-price="1000000000000" data-year="1980" data-hrs="2096.0" data-country="US" data-rec="clean" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N6328E_l.jpg" aria-label="Enlarge photo"><img src="photos/N6328E.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N6328E</div><div class="ym">1980 Cessna A185F</div><div class="sub">🇺🇸 Baton Rouge, LA · 2,096 airframe hrs · no entries found</div></div>
@@ -1607,7 +1614,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.trade-a-plane.com/search?s-type=aircraft&amp;listing_id=2429154" target="_blank" rel="noopener">Trade-A-Plane</a><a href="https://www.controller.com/listing/for-sale/232744125/" target="_blank" rel="noopener">Controller</a></div></div>
 </div>
 </details>
-<details class="row" id="r-kathu185" data-price="1000000000000" data-year="1968" data-hrs="1000000000" data-country="ZA" data-rec="nomatch">
+<details class="row" id="r-kathu185" data-price="1000000000000" data-year="1968" data-hrs="1000000000" data-country="ZA" data-rec="nomatch" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/kathu185_l.jpg" aria-label="Enlarge photo"><img src="photos/kathu185.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail none">tail not published</div><div class="ym">1968 Cessna 185E</div><div class="sub">🇿🇦 <span class="foreign">foreign</span> Kathu, Northern Cape, South Africa · airframe hours not published · serial not in the record · not screened</div></div>
@@ -1620,7 +1627,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.facebook.com/groups/1824473054436104/posts/4229802887236430/" target="_blank" rel="noopener">Facebook group</a></div></div>
 </div>
 </details>
-<details class="row" id="r-uk185" data-price="1000000000000" data-year="1979" data-hrs="4263.5" data-country="GB" data-rec="entries">
+<details class="row" id="r-uk185" data-price="1000000000000" data-year="1979" data-hrs="4263.5" data-country="GB" data-rec="entries" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/uk185_l.jpg" aria-label="Enlarge photo"><img src="photos/uk185.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail none">tail not published</div><div class="ym">1979 Cessna A185F</div><div class="sub">🇬🇧 <span class="foreign">foreign</span> United Kingdom · 4,263.5 airframe hrs · 1 NTSB · 1 AIDS</div></div>
@@ -1633,7 +1640,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.facebook.com/groups/skywagons/posts/10164112725911693/" target="_blank" rel="noopener">Facebook group</a></div></div>
 </div>
 </details>
-<details class="row" id="r-N2915C" data-price="1000000000000" data-year="1954" data-hrs="4500.0" data-country="US" data-rec="entries">
+<details class="row" id="r-N2915C" data-price="1000000000000" data-year="1954" data-hrs="4500.0" data-country="US" data-rec="entries" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/N2915C_l.jpg" aria-label="Enlarge photo"><img src="photos/N2915C.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">N2915C</div><div class="ym">1954 Cessna 180</div><div class="sub">🇺🇸 Whiteman Airport · 4,500 airframe hrs · 1 NTSB</div></div>
@@ -1646,7 +1653,7 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 <div class="srcs"><div class="mute small">Advertised on</div><div class="srclinks"><a href="https://www.facebook.com/groups/988156629859160/posts/1418840720124080/" target="_blank" rel="noopener">Facebook group</a></div></div>
 </div>
 </details>
-<details class="row" id="r-VHTPG" data-price="1000000000000" data-year="1959" data-hrs="8841.7" data-country="AU" data-rec="nomatch">
+<details class="row" id="r-VHTPG" data-price="1000000000000" data-year="1959" data-hrs="8841.7" data-country="AU" data-rec="nomatch" data-robertson="0">
 <summary>
 <div class="ph"><a class="zoom" href="photos/VHTPG_l.jpg" aria-label="Enlarge photo"><img src="photos/VHTPG.jpg" alt="" loading="lazy"></a></div>
 <div class="mid"><div class="tail">VH-TPG</div><div class="ym">1959 Cessna 180B</div><div class="sub">🏳️ <span class="foreign">foreign</span> Warren, NSW, Australia · 8,841.7 airframe hrs · serial not in the record · not screened</div></div>
@@ -1743,6 +1750,15 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
   });
   function openHash(){var h=location.hash.replace('#',''); if(!h) return; var el=document.getElementById(h); if(el&&el.tagName==='DETAILS'){el.open=true;}}
   openHash(); window.addEventListener('hashchange',openHash);
+  var fr=document.getElementById('f-rob'), shown=document.getElementById('shown');
+  function applyFilter(){
+    var all=rows.querySelectorAll('.row'), n=0;
+    all.forEach(function(r){ var hide=fr.checked && r.dataset.robertson==='1'; r.hidden=hide; if(!hide) n++; });
+    shown.textContent=fr.checked ? 'showing '+n+' of '+all.length+' · going by what each ad lists' : '';
+    try{ localStorage.setItem('f-rob', fr.checked?'1':'0'); }catch(e){}
+  }
+  try{ fr.checked = localStorage.getItem('f-rob')==='1'; }catch(e){}
+  fr.addEventListener('change',applyFilter); applyFilter();
   var lb=document.getElementById('lb'), lbi=lb.querySelector('img');
   function closeLb(){lb.classList.remove('on'); lbi.src='';}
   document.querySelectorAll('a.zoom').forEach(function(a){

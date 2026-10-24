@@ -147,6 +147,11 @@ def record_summary(l):
     parts = [f"{use[k]} {k.upper()}" for k in ('ntsb','tsb','sdr','aids') if use[k]]
     return ('entries', ' · '.join(parts))
 
+def has_robertson(l):
+    """True when the ad itself lists a Robertson STOL kit (mods, gear, panel, history or the ad's equipment lists)."""
+    blob = json.dumps({k: l.get(k) for k in ('mods','gear','panel','history','ad_facts')}, ensure_ascii=False)
+    return bool(re.search(r'rob(ert|er)son', blob, re.I))
+
 def row_html(l):
     st, row, ents = screen(l)
     rk, rtext = record_summary(l)
@@ -209,7 +214,8 @@ def row_html(l):
     pnum = l['price'] if l.get('price') is not None else 10**12
     ynum = l.get('year') or 0
     hnum = float(mnum.group(0).replace(',','')) if mnum else 10**9
-    return f'''<details class="row" id="r-{l["key"]}" data-price="{pnum}" data-year="{ynum}" data-hrs="{hnum}" data-country="{esc(l["country"])}" data-rec="{rk}">
+    rob = '1' if has_robertson(l) else '0'
+    return f'''<details class="row" id="r-{l["key"]}" data-price="{pnum}" data-year="{ynum}" data-hrs="{hnum}" data-country="{esc(l["country"])}" data-rec="{rk}" data-robertson="{rob}">
 <summary>
 <div class="ph">{thumb}</div>
 <div class="mid">{tail}<div class="ym">{ymodel}</div><div class="sub">{flag(l)} {loc}{kind} · {hrs} · {esc(rtext)}</div></div>
@@ -297,6 +303,9 @@ h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;marg
 .tile .v{font-family:"Barlow Condensed",sans-serif;font-size:26px;font-weight:600;line-height:1.1;font-variant-numeric:tabular-nums}
 .tile .d{font-size:11.5px;color:var(--mute)}
 .tools{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:12.5px;color:var(--mute)}
+.chk{display:inline-flex;align-items:center;gap:6px;min-height:32px;padding:0 10px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
+.chk input{width:16px;height:16px;accent-color:var(--acc);margin:0}
+.row[hidden]{display:none}
 .tools button{font:inherit;font-size:12.5px;background:var(--card);border:1px solid var(--line);color:var(--ink);padding:6px 10px;min-height:32px;cursor:pointer}
 .tools button[aria-pressed="true"]{border-color:var(--acc);color:var(--acc)}
 .rows{display:flex;flex-direction:column;gap:6px}
@@ -373,6 +382,15 @@ JS = r'''
   });
   function openHash(){var h=location.hash.replace('#',''); if(!h) return; var el=document.getElementById(h); if(el&&el.tagName==='DETAILS'){el.open=true;}}
   openHash(); window.addEventListener('hashchange',openHash);
+  var fr=document.getElementById('f-rob'), shown=document.getElementById('shown');
+  function applyFilter(){
+    var all=rows.querySelectorAll('.row'), n=0;
+    all.forEach(function(r){ var hide=fr.checked && r.dataset.robertson==='1'; r.hidden=hide; if(!hide) n++; });
+    shown.textContent=fr.checked ? 'showing '+n+' of '+all.length+' · going by what each ad lists' : '';
+    try{ localStorage.setItem('f-rob', fr.checked?'1':'0'); }catch(e){}
+  }
+  try{ fr.checked = localStorage.getItem('f-rob')==='1'; }catch(e){}
+  fr.addEventListener('change',applyFilter); applyFilter();
   var lb=document.getElementById('lb'), lbi=lb.querySelector('img');
   function closeLb(){lb.classList.remove('on'); lbi.src='';}
   document.querySelectorAll('a.zoom').forEach(function(a){
@@ -442,6 +460,10 @@ page = f'''<!doctype html>
 <button data-key="year" data-dir="-1">newest</button>
 <button data-key="year" data-dir="1">oldest</button>
 <button data-key="country" data-dir="1">by country</button>
+</div>
+<div class="tools filt">Filter:
+<label class="chk"><input type="checkbox" id="f-rob"> hide Robertson STOL ({sum(1 for l in L if has_robertson(l))})</label>
+<span class="mute small" id="shown" aria-live="polite"></span>
 </div>
 <div class="rows" id="rows">
 {rows}
