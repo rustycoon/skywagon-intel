@@ -1,1 +1,4 @@
 __pycache__/
+# Serial-spine working copies: copied from project knowledge beside the tool for each run, not published
+serial_index.csv
+damage_digest.csv
