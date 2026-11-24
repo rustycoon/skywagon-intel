@@ -62,7 +62,7 @@ def dedupe_sources(srcs):
     return out
 
 DMG={'SUBS':'SUBSTANTIAL','DEST':'DESTROYED','MIN':'MINOR','MINOR':'MINOR','NONE':'NONE','UNK':'UNKNOWN','SUBSTANTIAL':'SUBSTANTIAL','DESTROYED':'DESTROYED','INCIDENT':'INCIDENT'}
-FLAG = {"US":"🇺🇸","CA":"🇨🇦","VE":"🇻🇪","CH":"🇨🇭","BE":"🇧🇪","FR":"🇫🇷","GB":"🇬🇧","PL":"🇵🇱","NO":"🇳🇴","ZA":"🇿🇦","NA":"🇳🇦","NZ":"🇳🇿","IS":"🇮🇸"}
+FLAG = {"US":"🇺🇸","CA":"🇨🇦","VE":"🇻🇪","CH":"🇨🇭","BE":"🇧🇪","FR":"🇫🇷","GB":"🇬🇧","PL":"🇵🇱","NO":"🇳🇴","ZA":"🇿🇦","NA":"🇳🇦","NZ":"🇳🇿","IS":"🇮🇸","AU":"🇦🇺","AT":"🇦🇹","SE":"🇸🇪","IT":"🇮🇹"}
 def flag(l):
     c = l.get('country','')
     f = FLAG.get(c, '🏳️')
