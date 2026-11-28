@@ -25,7 +25,7 @@
   "planephd",
   "underwriterssalvage.com (not opened; open item)"
  ],
- "provenance": "The Mac mini answered at 12:04 UTC and its browser pane was usable throughout the run (12:06 UTC to 12:45 UTC), signed in to Facebook with no sign-in wall and no password entered anywhere; password fields were seen only as site chrome (Trade-A-Plane 1, GlobalAir 1, Stick 'n Rudder 6, aeromarket24 3). The one page that could not be opened was AvPay's N28JE product page, behind a Cloudflare security check (HTTP 403), not retried. Cloud tier first (the WebSearch catch-all, four queries, 12:05 UTC); every page read came from the Mac mini's browser.",
+ "provenance": "The Mac mini answered at 12:04 UTC and its browser pane was usable throughout the run (12:06 UTC to 12:33 UTC), signed in to Facebook with no sign-in wall and no password entered anywhere; password fields were seen only as site chrome (Trade-A-Plane 1, GlobalAir 1, Stick 'n Rudder 6, aeromarket24 3). The one page that could not be opened was AvPay's N28JE product page, behind a Cloudflare security check (HTTP 403), not retried. Cloud tier first (the WebSearch catch-all, four queries, 12:05 UTC); every page read came from the Mac mini's browser.",
  "new": [],
  "departed": [],
  "listings": [
